@@ -1,0 +1,148 @@
+import { Layout } from "@/components/layout/Layout";
+import { Section } from "@/components/ui/Section";
+import { Button } from "@/components/ui/Button";
+import { Calendar, Mail, MapPin } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
+
+type ContactFormData = {
+  name: string;
+  email: string;
+  organization?: string;
+  message: string;
+  referral: string;
+};
+
+export function Contact() {
+  const { register, handleSubmit, reset, formState: { isSubmitting } } = useForm<ContactFormData>();
+  const { toast } = useToast();
+  const [submitted, setSubmitted] = useState(false);
+
+  const onSubmit = async (data: ContactFormData) => {
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    console.log("Form data:", data);
+    setSubmitted(true);
+    toast({
+      title: "Message Sent",
+      description: "Thanks for reaching out! We'll be in touch soon.",
+    });
+    reset();
+  };
+
+  return (
+    <Layout>
+      <Section className="pt-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h1 className="mb-4">Let's Talk</h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Whether you need project clarity, admin support, or an impact report, the best way to start is with a conversation.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Calendly Column */}
+            <div>
+              <h2 className="text-2xl mb-6 flex items-center gap-2">
+                <Calendar className="w-6 h-6 text-primary" /> Book a Call
+              </h2>
+              <div className="bg-card border border-border shadow-sm rounded-xl p-8 h-[500px] flex flex-col items-center justify-center text-center">
+                {/* Calendly Placeholder */}
+                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                  <Calendar className="w-10 h-10 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Schedule your clarity session</h3>
+                <p className="text-muted-foreground text-sm mb-8 max-w-sm">
+                  Choose a 30-minute slot that works for you. This is a no-pressure discovery call.
+                </p>
+                <div className="p-4 bg-muted w-full rounded-lg border border-dashed border-border/60">
+                  <p className="text-xs text-muted-foreground uppercase font-semibold tracking-wider">Calendly Embed Placeholder</p>
+                  <Button variant="outline" className="mt-4 w-full" disabled>Loading calendar...</Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Form Column */}
+            <div>
+              <h2 className="text-2xl mb-6 flex items-center gap-2">
+                <Mail className="w-6 h-6 text-primary" /> Send a Message
+              </h2>
+              
+              {submitted ? (
+                <div className="bg-accent/30 border border-primary/20 rounded-xl p-8 text-center h-full flex flex-col justify-center">
+                  <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Mail className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl mb-2">Message Received!</h3>
+                  <p className="text-muted-foreground">I'll get back to you within 48 hours.</p>
+                  <Button variant="outline" className="mt-8 mx-auto" onClick={() => setSubmitted(false)}>Send another message</Button>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-5 bg-card p-8 rounded-xl shadow-sm border border-border">
+                  <div className="grid grid-cols-2 gap-5">
+                    <div className="space-y-1.5 col-span-2 sm:col-span-1">
+                      <label className="text-sm font-medium">Name <span className="text-destructive">*</span></label>
+                      <input 
+                        {...register("name", { required: true })}
+                        className="w-full px-4 py-2.5 rounded-lg border border-border bg-background focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+                        placeholder="Jane Doe"
+                      />
+                    </div>
+                    <div className="space-y-1.5 col-span-2 sm:col-span-1">
+                      <label className="text-sm font-medium">Email <span className="text-destructive">*</span></label>
+                      <input 
+                        type="email"
+                        {...register("email", { required: true })}
+                        className="w-full px-4 py-2.5 rounded-lg border border-border bg-background focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+                        placeholder="jane@example.com"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-sm font-medium">Organisation (Optional)</label>
+                    <input 
+                      {...register("organization")}
+                      className="w-full px-4 py-2.5 rounded-lg border border-border bg-background focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+                      placeholder="Your Company or CIC"
+                    />
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-sm font-medium">Message <span className="text-destructive">*</span></label>
+                    <textarea 
+                      {...register("message", { required: true })}
+                      rows={5}
+                      className="w-full px-4 py-2.5 rounded-lg border border-border bg-background focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none"
+                      placeholder="How can I help you?"
+                    />
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <label className="text-sm font-medium">How did you hear about us?</label>
+                    <select 
+                      {...register("referral")}
+                      className="w-full px-4 py-2.5 rounded-lg border border-border bg-background focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+                    >
+                      <option value="">Select an option...</option>
+                      <option value="search">Google / Search</option>
+                      <option value="linkedin">LinkedIn</option>
+                      <option value="referral">Word of Mouth</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
+                    {isSubmitting ? "Sending..." : "Send Message"}
+                  </Button>
+                </form>
+              )}
+            </div>
+          </div>
+        </div>
+      </Section>
+    </Layout>
+  );
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --radius-sm: 0.3rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+:root {
+  /* Warm minimal palette with Teal primary */
+  --background: 40 33% 98%;      /* Warm off-white #FAF9F6 */
+  --foreground: 220 20% 15%;     /* Soft near-black */
+  
+  --card: 0 0% 100%;             /* Pure white for cards */
+  --card-foreground: 220 20% 15%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 20% 15%;
+  
+  --primary: 173 80% 28%;        /* Deep Teal #0D8278 */
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 40 20% 90%;       /* Warm grey */
+  --secondary-foreground: 220 20% 15%;
+  
+  --muted: 40 15% 94%;           /* Lighter warm grey */
+  --muted-foreground: 220 10% 45%;
+  
+  --accent: 173 40% 92%;         /* Very light teal background */
+  --accent-foreground: 173 80% 28%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  
+  --border: 40 15% 90%;          /* Soft border */
+  --input: 40 15% 90%;
+  --ring: 173 80% 28%;
+  
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased selection:bg-primary/20 selection:text-primary;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-foreground;
+  }
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+}
+
+@layer utilities {
+  .glass-nav {
+    @apply bg-background/80 backdrop-blur-md border-b border-border/50 supports-[backdrop-filter]:bg-background/60;
+  }
+  .notion-card {
+    @apply bg-card border border-border/60 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.08)] transition-all duration-300 rounded-xl;
+  }
+}

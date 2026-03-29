@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Elevated Living"
+version = "1.0.0"
+id = "artifacts/elevated-living"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18352
+
+[services.development]
+run = "pnpm --filter @workspace/elevated-living run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/elevated-living", "run", "build" ]
+publicDir = "artifacts/elevated-living/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18352"
+BASE_PATH = "/"

@@ -1,0 +1,17 @@
+packages:
+  "framer-motion": "For smooth page transitions and premium micro-interactions"
+  "clsx": "For merging tailwind classes safely"
+  "tailwind-merge": "For merging tailwind classes safely"
+  "react-hook-form": "For robust contact form handling"
+
+images:
+  - path: "artifacts/elevated-living/public/images/hero-abstract.png"
+    description: "Very minimal, warm off-white and soft teal abstract geometric background, clean lines, plenty of negative space, notion style"
+    aspect_ratio: "16:9"
+  - path: "artifacts/elevated-living/public/images/about-portrait.png"
+    description: "Minimalist warm illustration of a confident professional, soft lines, teal accents, off-white background"
+    aspect_ratio: "4:3"
+
+notes:
+  - Static frontend implementation only, no backend integrations required for this phase.
+  - Forms use local state to simulate submission.
