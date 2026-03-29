@@ -8,13 +8,6 @@ import { motion } from "framer-motion";
 export function Home() {
   return (
     <Layout>
-      {/* Trust Strip */}
-      <div className="bg-primary/5 border-b border-primary/10 py-3 text-center px-4">
-        <p className="text-sm font-medium text-primary">
-          Helping clients generate <span className="font-bold">£8,948+</span> in consultancy revenue since December 2025.
-        </p>
-      </div>
-
       {/* Hero Section */}
       <Section className="relative overflow-hidden pt-20 pb-32">
         <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none flex justify-end">
