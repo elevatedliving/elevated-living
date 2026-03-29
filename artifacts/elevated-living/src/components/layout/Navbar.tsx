@@ -46,8 +46,12 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="text-xl md:text-2xl font-bold tracking-tight text-primary flex items-center gap-2 z-50">
-            Elevated Living.
+          <Link href="/" className="flex items-center z-50">
+            <img
+              src={`${import.meta.env.BASE_URL}images/elevated-living-logo.png`}
+              alt="Elevated Living"
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}

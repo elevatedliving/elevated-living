@@ -8,7 +8,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
-            <h3 className="text-2xl font-bold text-background mb-4">Elevated Living.</h3>
+            <img
+              src={`${import.meta.env.BASE_URL}images/elevated-living-logo.png`}
+              alt="Elevated Living"
+              className="h-14 w-auto mb-4 brightness-0 invert"
+            />
             <p className="text-background/70 text-sm mb-6 max-w-xs">
               UK-based consultancy helping business owners and community organisations find clarity, execute projects, and elevate their impact.
             </p>
