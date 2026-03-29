@@ -14,7 +14,7 @@ export function CommunityOrgs() {
           </div>
           <h1 className="mb-6">For Community Organisations & VCSEs</h1>
           <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-            Translating your frontline impact into funder-friendly language, and building the operational bedrock you need to scale sustainably.
+            The people doing the most important work often have the least support behind them. That's exactly why Elevated Living exists — to help community organisations and VCSEs get organised, evidence their impact, and build something that lasts.
           </p>
           <Link href="/contact">
             <Button size="lg">Discuss Your Organisation's Needs</Button>
