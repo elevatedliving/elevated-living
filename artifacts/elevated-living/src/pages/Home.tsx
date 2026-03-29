@@ -73,12 +73,12 @@ export function Home() {
             </div>
             <h3 className="mb-4">For Business Owners</h3>
             <p className="text-muted-foreground mb-8 flex-grow">
-              You're a consultant, creative, or solopreneur drowning in admin. You need project clarity, a reliable VA, or help claiming Access to Work funding for ADHD.
+              You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need clarity, structure, and someone who actually follows through.
             </p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Project Clarity Sessions</li>
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Virtual Assistant Support</li>
-              <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> ADHD / Access to Work Admin</li>
+              <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> ADHD-Friendly Business Support</li>
             </ul>
             <Link href="/for-business-owners">
               <Button variant="outline" className="w-full">Explore Services</Button>
@@ -92,12 +92,13 @@ export function Home() {
             </div>
             <h3 className="mb-4">For Community Organisations</h3>
             <p className="text-muted-foreground mb-8 flex-grow">
-              You're a charity, CIC, or social enterprise needing to translate complex work into compelling impact reports, or seeking strategic operational capacity.
+              You started your organisation because you cared deeply about your community. Now you're drowning in admin, chasing funders, writing the same story six different ways, and wondering how everyone else seems to manage it. They don't. They just have better support.
             </p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Impact Report Writing</li>
-              <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Operational Strategy</li>
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Project Management</li>
+              <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Operational & Admin Support</li>
+              <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Partnership Development & Stakeholder Engagement</li>
             </ul>
             <Link href="/for-community-organisations">
               <Button variant="outline" className="w-full">Explore Services</Button>
