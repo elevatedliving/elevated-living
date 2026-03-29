@@ -2,7 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Link } from "wouter";
-import { CheckCircle2, ListChecks, BrainCircuit } from "lucide-react";
+import { CheckCircle2, BrainCircuit } from "lucide-react";
 
 export function BusinessOwners() {
   return (
@@ -19,36 +19,22 @@ export function BusinessOwners() {
         </div>
       </Section>
 
+      {/* Who I Help */}
       <Section bg="muted">
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <div className="notion-card p-8 bg-card flex flex-col">
-            <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
-              <ListChecks className="w-6 h-6" />
-            </div>
-            <h2 className="text-2xl mb-4">Project Clarity</h2>
-            <p className="text-muted-foreground mb-6 flex-grow">
-              Got a massive idea but no idea where to start? We sit down, empty your brain onto the table, and organize it into a step-by-step actionable roadmap. You leave knowing exactly what to do next.
-            </p>
-            <ul className="space-y-2 text-sm font-medium mb-6">
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> 90-minute deep dive</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Visual roadmap provided</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Accountability check-ins</li>
-            </ul>
-          </div>
-
-          <div className="notion-card p-8 bg-card flex flex-col">
-            <div className="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
-              <CheckCircle2 className="w-6 h-6" />
-            </div>
-            <h2 className="text-2xl mb-4">Virtual Assistant Support</h2>
-            <p className="text-muted-foreground mb-6 flex-grow">
-              High-level administrative support that doesn't need hand-holding. Inbox management, client onboarding, data entry, and schedule wrangling. I handle the noise, you handle the business.
-            </p>
-            <ul className="space-y-2 text-sm font-medium mb-6">
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Flexible monthly retainers</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Proactive problem solving</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> System setup & cleanup</li>
-            </ul>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl mb-6">Who I help</h2>
+          <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+            You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need clarity, structure, and someone who actually follows through.
+          </p>
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            If you have ADHD, Elevated Living also offers specialist support tailored to how your brain works — and if you're eligible, this can be funded through the DWP's Access to Work scheme. You handle the application; we handle the rest.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {["Project Clarity Sessions", "Virtual Assistant Support", "ADHD-Friendly Business Support"].map((service) => (
+              <span key={service} className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold">
+                <CheckCircle2 className="w-4 h-4" /> {service}
+              </span>
+            ))}
           </div>
         </div>
       </Section>
