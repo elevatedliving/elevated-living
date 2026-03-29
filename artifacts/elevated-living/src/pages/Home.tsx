@@ -41,7 +41,7 @@ export function Home() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
           >
-            Expert strategic clarity and hands-on operational support to get you out of the weeds and back to the work that matters.
+            Supporting solopreneurs, small business owners, and community organisations to cut through the chaos, get properly organised, and build ways of working that don't burn them out.
           </motion.p>
 
           <motion.div 
