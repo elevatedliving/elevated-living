@@ -46,12 +46,12 @@ export function Home() {
             <div className="text-sm font-medium text-muted-foreground mr-2 hidden sm:block">I am a...</div>
             <Link href="/for-business-owners">
               <Button size="lg" className="w-full sm:w-auto gap-2">
-                Business Owner <ArrowRight className="w-4 h-4" />
+                Solopreneur / Small Business Owner <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
             <Link href="/for-community-organisations">
               <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2">
-                Small Charity <ArrowRight className="w-4 h-4" />
+                Charity / VCSE <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </motion.div>
