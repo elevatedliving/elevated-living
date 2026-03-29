@@ -13,7 +13,7 @@ const DUMMY_POSTS = [
   {
     id: 2,
     title: "Stop Using Corporate Jargon in Your Impact Reports",
-    category: "For Community Orgs",
+    category: "Small Charities",
     date: "Feb 28, 2026",
     excerpt: "Funders want to see human stories backed by solid data. Here's why plain English always wins over consultant-speak.",
   },

@@ -51,7 +51,7 @@ export function Home() {
             </Link>
             <Link href="/for-community-organisations">
               <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2">
-                Community Org <ArrowRight className="w-4 h-4" />
+                Small Charity <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </motion.div>
@@ -90,7 +90,7 @@ export function Home() {
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 text-primary">
               <HeartHandshake className="w-7 h-7" />
             </div>
-            <h3 className="mb-4">For Community Organisations</h3>
+            <h3 className="mb-4">Small Charities & VCSEs</h3>
             <p className="text-muted-foreground mb-8 flex-grow">
               You started your organisation because you cared deeply about your community. Now you're drowning in admin, chasing funders, writing the same story six different ways, and wondering how everyone else seems to manage it. They don't. They just have better support.
             </p>

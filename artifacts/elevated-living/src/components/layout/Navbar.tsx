@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/for-business-owners", label: "For Business Owners" },
-  { href: "/for-community-organisations", label: "For Community Orgs" },
+  { href: "/for-community-organisations", label: "Small Charities" },
 ];
 
 const SERVICES_LINKS = [
