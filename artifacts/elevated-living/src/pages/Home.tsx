@@ -73,7 +73,7 @@ export function Home() {
             </div>
             <h3 className="mb-4">For Business Owners</h3>
             <p className="text-muted-foreground mb-8 flex-grow">
-              You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need clarity, structure, and someone who actually follows through.
+              You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need clarity, structure, and someone who actually follows through. If you're wondering how everyone else seems to manage it — they don't. They just have better support behind them.
             </p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Project Clarity Sessions</li>
