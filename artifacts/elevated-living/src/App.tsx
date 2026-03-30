@@ -12,6 +12,7 @@ import { ImpactReportWriting } from "@/pages/ImpactReportWriting";
 import { ElevatedImpact } from "@/pages/ElevatedImpact";
 import { Contact } from "@/pages/Contact";
 import { Blog } from "@/pages/Blog";
+import { BlogPostTOMs } from "@/pages/BlogPostTOMs";
 import { Testimonials } from "@/pages/Testimonials";
 import { Resources } from "@/pages/Resources";
 import NotFound from "@/pages/not-found";
@@ -29,6 +30,7 @@ function Router() {
       <Route path="/elevated-impact" component={ElevatedImpact} />
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />
+      <Route path="/blog/toms-vs-social-value" component={BlogPostTOMs} />
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/resources" component={Resources} />
       <Route component={NotFound} />

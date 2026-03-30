@@ -4,7 +4,16 @@ import { Link } from "wouter";
 
 const DUMMY_POSTS = [
   {
+    id: 4,
+    slug: "/blog/toms-vs-social-value",
+    title: "TOMs, Social Value, and Why You Actually Need to Know the Difference",
+    category: "Small Charities",
+    date: "Mar 29, 2026",
+    excerpt: "You've probably been asked to help a contractor 'demonstrate their social value.' This post explains what TOMs actually are, how they differ from social impact, and what to watch out for before you say yes.",
+  },
+  {
     id: 1,
+    slug: null,
     title: "Why Access to Work is a Game Changer for Solopreneurs",
     category: "For Business Owners",
     date: "Mar 12, 2026",
@@ -12,6 +21,7 @@ const DUMMY_POSTS = [
   },
   {
     id: 2,
+    slug: null,
     title: "Stop Using Corporate Jargon in Your Impact Reports",
     category: "Small Charities",
     date: "Feb 28, 2026",
@@ -19,6 +29,7 @@ const DUMMY_POSTS = [
   },
   {
     id: 3,
+    slug: null,
     title: "The Project Clarity Checklist",
     category: "Resources",
     date: "Jan 15, 2026",
@@ -39,26 +50,32 @@ export function Blog() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {DUMMY_POSTS.map((post) => (
-              <article key={post.id} className="notion-card flex flex-col overflow-hidden bg-card group cursor-pointer">
-                <div className="h-48 bg-muted border-b border-border relative overflow-hidden">
-                  <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors"></div>
-                  {/* Placeholder for real images later */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:scale-105 transition-transform duration-500">
-                     <span className="text-6xl font-serif italic text-primary">EL</span>
+            {DUMMY_POSTS.map((post) => {
+              const card = (
+                <article className="notion-card flex flex-col overflow-hidden bg-card group cursor-pointer h-full">
+                  <div className="h-48 bg-muted border-b border-border relative overflow-hidden">
+                    <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors"></div>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:scale-105 transition-transform duration-500">
+                      <span className="text-6xl font-serif italic text-primary">EL</span>
+                    </div>
                   </div>
-                </div>
-                <div className="p-6 flex flex-col flex-grow">
-                  <div className="flex justify-between items-center mb-3">
-                    <span className="text-xs font-bold uppercase tracking-wider text-primary">{post.category}</span>
-                    <span className="text-xs text-muted-foreground">{post.date}</span>
+                  <div className="p-6 flex flex-col flex-grow">
+                    <div className="flex justify-between items-center mb-3">
+                      <span className="text-xs font-bold uppercase tracking-wider text-primary">{post.category}</span>
+                      <span className="text-xs text-muted-foreground">{post.date}</span>
+                    </div>
+                    <h3 className="text-xl mb-3 group-hover:text-primary transition-colors">{post.title}</h3>
+                    <p className="text-sm text-muted-foreground flex-grow">{post.excerpt}</p>
+                    <div className="mt-6 text-sm font-semibold text-primary">
+                      {post.slug ? "Read article →" : "Coming soon"}
+                    </div>
                   </div>
-                  <h3 className="text-xl mb-3 group-hover:text-primary transition-colors">{post.title}</h3>
-                  <p className="text-sm text-muted-foreground flex-grow">{post.excerpt}</p>
-                  <div className="mt-6 text-sm font-semibold text-primary">Read article &rarr;</div>
-                </div>
-              </article>
-            ))}
+                </article>
+              );
+              return post.slug
+                ? <Link key={post.id} href={post.slug}>{card}</Link>
+                : <div key={post.id}>{card}</div>;
+            })}
           </div>
         </div>
       </Section>
