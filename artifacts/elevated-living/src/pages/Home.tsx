@@ -155,7 +155,7 @@ export function Home() {
         </p>
         <Link href="/contact">
           <Button size="lg" variant="secondary" className="text-primary font-bold">
-            Book Your Free 30-Min Session
+            Book a Complimentary Clarity Session
           </Button>
         </Link>
       </Section>

@@ -127,7 +127,7 @@ export function BlogPostTOMs() {
               If you'd like support evidencing your organisation's impact — in plain English, for funders who actually want to understand what you do — Elevated Living can help.
             </p>
             <Link href="/contact" className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
-              Book a free 30-minute clarity session →
+              Book a Complimentary Clarity Session →
             </Link>
           </div>
         </div>
