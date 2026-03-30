@@ -61,7 +61,7 @@ export function Home() {
       {/* Audience Split Cards */}
       <Section bg="muted">
         <div className="text-center mb-16">
-          <h2 className="mb-4">Who I Help</h2>
+          <h2 className="mb-4">Who We Help</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">Tailored infrastructure and strategic support, adapted for your specific world.</p>
         </div>
 
@@ -127,12 +127,12 @@ export function Home() {
             {
               icon: Lightbulb,
               title: "2. The Plan",
-              desc: "I'll map out exactly how to tackle your roadblocks. You'll get a clear proposal outlining scope, timelines, and costs."
+              desc: "Elevated Living will map out exactly how to tackle your roadblocks. You'll get a clear proposal outlining scope, timelines, and costs."
             },
             {
               icon: Target,
               title: "3. The Execution",
-              desc: "I handle the operations, report writing, or project management, while you get back to leading your organisation."
+              desc: "Elevated Living will handle the operations, report writing, or project management, while you get back to leading your organisation."
             }
           ].map((step, i) => (
             <div key={i} className="relative z-10 flex flex-col items-center text-center">
