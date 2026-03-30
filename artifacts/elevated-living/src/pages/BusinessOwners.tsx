@@ -30,7 +30,7 @@ export function BusinessOwners() {
             If you have ADHD, Elevated Living also offers specialist support tailored to how your brain works — and if you're eligible, this can be funded through the DWP's Access to Work scheme. You handle the application; we handle the rest.
           </p>
           <div className="flex flex-wrap gap-3">
-            {["Project Clarity Sessions", "Virtual Assistant Support", "ADHD-Friendly Business Support"].map((service) => (
+            {["Project Clarity Sessions", "Virtual Assistant Support", "ADHD-Friendly Business Support", "Accountability & Action Planning"].map((service) => (
               <span key={service} className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold">
                 <CheckCircle2 className="w-4 h-4" /> {service}
               </span>
