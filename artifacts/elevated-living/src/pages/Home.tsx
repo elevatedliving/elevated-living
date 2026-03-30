@@ -65,17 +65,17 @@ export function Home() {
           <p className="text-muted-foreground max-w-2xl mx-auto">Tailored infrastructure and strategic support, adapted for your specific world.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 items-stretch">
           {/* Solopreneur Card */}
           <div className="notion-card p-8 md:p-10 flex flex-col h-full bg-card">
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 text-primary">
               <Briefcase className="w-7 h-7" />
             </div>
             <h3 className="mb-4">For Business Owners</h3>
-            <p className="text-muted-foreground mb-8 flex-grow">
+            <p className="text-muted-foreground mb-8">
               You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need clarity, structure, and someone who actually follows through. If you're wondering how everyone else seems to manage it — they don't. They just have better support behind them.
             </p>
-            <ul className="space-y-3 mb-8">
+            <ul className="space-y-3 mb-8 mt-auto">
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Project Clarity Sessions</li>
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Virtual Assistant Support</li>
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> ADHD-Friendly Business Support</li>
@@ -92,14 +92,14 @@ export function Home() {
               <HeartHandshake className="w-7 h-7" />
             </div>
             <h3 className="mb-4">Small Charities & VCSEs</h3>
-            <p className="text-muted-foreground mb-8 flex-grow">
+            <p className="text-muted-foreground mb-8">
               You started your organisation because you cared deeply about your community. Now you're drowning in admin, chasing funders, writing the same story six different ways, and wondering how everyone else seems to manage it. They don't. They just have the right people in their corner.
             </p>
-            <ul className="space-y-3 mb-8">
+            <ul className="space-y-3 mb-8 mt-auto">
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Impact Report Writing</li>
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Project Management</li>
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Operational & Admin Support</li>
-              <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Partnership Development & Stakeholder Engagement</li>
+              <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Partnership & Stakeholder Work</li>
             </ul>
             <Link href="/for-community-organisations">
               <Button variant="outline" className="w-full">Explore Services</Button>
