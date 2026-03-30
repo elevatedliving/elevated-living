@@ -1,9 +1,9 @@
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
-import { Calendar, Mail, MapPin } from "lucide-react";
+import { Calendar, Mail } from "lucide-react";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 type ContactFormData = {
@@ -18,6 +18,16 @@ export function Contact() {
   const { register, handleSubmit, reset, formState: { isSubmitting } } = useForm<ContactFormData>();
   const { toast } = useToast();
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    const existing = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+    if (!existing) {
+      const script = document.createElement("script");
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
 
   const onSubmit = async (data: ContactFormData) => {
     // Simulate API call
@@ -48,20 +58,11 @@ export function Contact() {
               <h2 className="text-2xl mb-6 flex items-center gap-2">
                 <Calendar className="w-6 h-6 text-primary" /> Book a Call
               </h2>
-              <div className="bg-card border border-border shadow-sm rounded-xl p-8 h-[500px] flex flex-col items-center justify-center text-center">
-                {/* Calendly Placeholder */}
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                  <Calendar className="w-10 h-10 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Schedule your clarity session</h3>
-                <p className="text-muted-foreground text-sm mb-8 max-w-sm">
-                  Choose a 30-minute slot that works for you. This is a no-pressure discovery call.
-                </p>
-                <div className="p-4 bg-muted w-full rounded-lg border border-dashed border-border/60">
-                  <p className="text-xs text-muted-foreground uppercase font-semibold tracking-wider">Calendly Embed Placeholder</p>
-                  <Button variant="outline" className="mt-4 w-full" disabled>Loading calendar...</Button>
-                </div>
-              </div>
+              <div
+                className="calendly-inline-widget rounded-xl overflow-hidden border border-border shadow-sm"
+                data-url="https://calendly.com/contact-elevatedliving/30min"
+                style={{ minWidth: "320px", height: "700px" }}
+              />
             </div>
 
             {/* Form Column */}
