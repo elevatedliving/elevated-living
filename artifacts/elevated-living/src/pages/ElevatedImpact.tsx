@@ -13,7 +13,7 @@ export function ElevatedImpact() {
           </div>
           <h1 className="text-3xl md:text-4xl mb-6">Elevated Impact®</h1>
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
-            Elevated Impact® is a separate, dedicated platform designed specifically to help organisations measure, track, and amplify their social value. 
+            Elevated Impact® is a separate, dedicated platform designed specifically to help organisations measure, track, and amplify their social impact. 
           </p>
           <p className="text-base text-foreground/80 mb-10">
             For specialized software and frameworks regarding impact measurement, please visit the dedicated platform.
