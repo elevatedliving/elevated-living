@@ -53,7 +53,7 @@ export function Blog() {
           <div className="text-center mb-16">
             <h1 className="mb-4">Insights & Notes</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Thoughts on operations, funding, neurodivergence in business, and keeping things beautifully simple.
+              Thoughts on strategy, funding, neurodivergence in business, managing overwhelm and keeping things as simple as possible!
             </p>
           </div>
 
