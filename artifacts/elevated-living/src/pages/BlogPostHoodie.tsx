@@ -13,7 +13,7 @@ export function BlogPostHoodie() {
           </Link>
 
           <div className="mb-4 flex items-center gap-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-primary">For Business Owners</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-primary">Solopreneurs</span>
             <span className="text-xs text-muted-foreground">·</span>
             <span className="text-xs text-muted-foreground">April 2026</span>
           </div>

@@ -7,7 +7,7 @@ const DUMMY_POSTS = [
     id: 5,
     slug: "/blog/hoodie-hypothesis",
     title: "The Hoodie Hypothesis: What Your Comfort Rituals Are Actually Telling You About How You Work",
-    category: "For Business Owners",
+    category: "Solopreneurs",
     date: "Apr 1, 2026",
     excerpt: "You've reached for the hoodie. Or the hat. Or the specific mug. This post unpacks why your comfort rituals are a legitimate productivity strategy — and the science that backs it up.",
   },
