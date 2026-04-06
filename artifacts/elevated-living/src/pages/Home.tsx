@@ -51,7 +51,7 @@ export function Home() {
             </Link>
             <Link href="/for-community-organisations">
               <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2">
-                Charity / VCSE <ArrowRight className="w-4 h-4" />
+                VCSE <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </motion.div>
