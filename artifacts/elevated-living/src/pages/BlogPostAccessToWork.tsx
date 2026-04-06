@@ -42,10 +42,10 @@ export function BlogPostAccessToWork() {
             Access to Work (AtW) is a publicly funded grant scheme run by the Department for Work and Pensions. It exists to help disabled and neurodivergent people remove the practical barriers that make work harder than it needs to be — and critically, it applies to self-employed people, not just those in traditional employment.
           </p>
           <p>
-            It is not means-tested. Your savings, your partner's income, your business bank balance — none of it affects your eligibility. The only question that matters is whether your condition creates a practical disadvantage at work. Unlike many benefits, it doesn't matter how much you have in savings — it only matters that your condition impacts your ability to do your job (according to <a href="#" className="text-primary">Curiously Divergent</a>).
+            It is not means-tested. Your savings, your partner's income, your business bank balance — none of it affects your eligibility. The only question that matters is whether your condition creates a practical disadvantage at work. Unlike many benefits, it doesn't matter how much you have in savings — it only matters that your condition impacts your ability to do your job (according to <a href="https://www.curiouslydivergent.co.uk/blog/access-to-work-for-self-employed/" target="_blank" rel="noopener noreferrer" className="text-primary">Curiously Divergent</a>).
           </p>
           <p>
-            And crucially: it's a grant, not a loan. As long as you are honestly working on your business, they aren't going to come knocking for the money back just because you had a slow month (according to <a href="#" className="text-primary">Curiously Divergent</a>).
+            And crucially: it's a grant, not a loan. As long as you are honestly working on your business, they aren't going to come knocking for the money back just because you had a slow month (according to <a href="https://www.curiouslydivergent.co.uk/blog/access-to-work-for-self-employed/" target="_blank" rel="noopener noreferrer" className="text-primary">Curiously Divergent</a>).
           </p>
 
           <h2>Do I Need a Diagnosis?</h2>
