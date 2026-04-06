@@ -77,7 +77,7 @@ export function Contact() {
                     <Mail className="w-8 h-8" />
                   </div>
                   <h3 className="text-2xl mb-2">Message Received!</h3>
-                  <p className="text-muted-foreground">I'll get back to you within 48 hours.</p>
+                  <p className="text-muted-foreground">We'll get back to you within 48 hours.</p>
                   <Button variant="outline" className="mt-8 mx-auto" onClick={() => setSubmitted(false)}>Send another message</Button>
                 </div>
               ) : (
@@ -117,7 +117,7 @@ export function Contact() {
                       {...register("message", { required: true })}
                       rows={5}
                       className="w-full px-4 py-2.5 rounded-lg border border-border bg-background focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none"
-                      placeholder="How can I help you?"
+                      placeholder="How can we help you?"
                     />
                   </div>
 

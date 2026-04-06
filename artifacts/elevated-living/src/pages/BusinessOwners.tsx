@@ -19,10 +19,8 @@ export function BusinessOwners() {
         </div>
       </Section>
 
-      {/* Who I Help */}
       <Section bg="muted">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl mb-6">Who I help</h2>
           <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
             You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need clarity, structure, and someone who actually follows through.
           </p>
@@ -58,10 +56,10 @@ export function BusinessOwners() {
                 If you are a business owner with ADHD (or awaiting diagnosis), the administrative side of running a business isn't just annoying—it can be paralyzing.
               </p>
               <p>
-                <strong>The good news:</strong> The DWP's <span className="font-semibold text-primary">Access to Work</span> scheme provides grants to pay for support workers (like me) to help you manage the tasks that your brain struggles with. 
+                <strong>The good news:</strong> The DWP's <span className="font-semibold text-primary">Access to Work</span> scheme provides grants to pay for specialist support to help manage the tasks that your brain struggles with.
               </p>
               <p>
-                I understand the specific challenges of working with ADHD. I can help you navigate the application process for funding, and once approved, provide the cost-neutral admin support that allows you to operate in your zone of genius.
+                Elevated Living understands the specific challenges of working with ADHD and can help navigate the application process for funding. Once approved, the cost-neutral admin support means you can operate in your zone of genius.
               </p>
             </div>
 

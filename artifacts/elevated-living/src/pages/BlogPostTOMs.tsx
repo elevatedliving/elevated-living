@@ -87,7 +87,7 @@ export function BlogPostTOMs() {
 
           <h2>What this looks like in practice for small charities</h2>
           <p>
-            Here's the scenario I see repeatedly: a housing association wins a large contract. As part of that contract, they've committed to a set of TOMs targets. To hit those targets, they need to demonstrate community engagement, volunteer hours, training delivered in the local area — and suddenly they're on the phone to your organisation asking if you'd like to "partner" with them.
+            Here's a scenario that comes up repeatedly: a housing association wins a large contract. As part of that contract, they've committed to a set of TOMs targets. To hit those targets, they need to demonstrate community engagement, volunteer hours, training delivered in the local area — and suddenly they're on the phone to your organisation asking if you'd like to "partner" with them.
           </p>
           <p>
             Sometimes this is a genuine partnership with real resource behind it. Often, it isn't. Often what they actually want is for you to host one of their staff members for a day so they can log it as volunteering. Or for you to run a free workshop and let them claim the hours.
@@ -96,7 +96,7 @@ export function BlogPostTOMs() {
             You do the work. They get the credit. And they hit their procurement targets.
           </p>
           <p>
-            I'm not saying all corporate social value partnerships are like this — some are excellent, transformative, and properly resourced. But you need to go in with your eyes open.
+            Not all corporate social value partnerships are like this — some are excellent, transformative, and properly resourced. But it's important to go in with your eyes open.
           </p>
 
           <h2>Questions to ask before you say yes</h2>

@@ -9,19 +9,19 @@ export function About() {
       <Section className="pt-20">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h1 className="mb-6">I understand the messy reality of doing good work.</h1>
+            <h1 className="mb-6">The messy reality of doing good work — understood.</h1>
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
-                Hi, I'm the founder of Elevated Living. For over 30 years, I've worked deep inside community infrastructure. I've been the one writing the bids, managing the partnerships, and trying to keep the lights on while still delivering the mission.
+                The founder of Elevated Living has spent over 30 years working deep inside community infrastructure — writing the bids, managing the partnerships, and trying to keep the lights on while still delivering the mission.
               </p>
               <p>
-                I know what it feels like to be a business owner or a charity leader who is brilliant at what they do, but utterly bogged down by the administrative weight of doing it.
+                We know what it feels like to be a business owner or a charity leader who is brilliant at what they do, but utterly bogged down by the administrative weight of doing it.
               </p>
               <p>
-                I set up Elevated Living because I saw too many passionate people burning out over operations. You shouldn't have to be an expert in project management, funding compliance, or system design just to run your business or community group.
+                Elevated Living was founded because too many passionate people were burning out over operations. You shouldn't have to be an expert in project management, funding compliance, or system design just to run your business or community group.
               </p>
               <p className="text-foreground font-medium border-l-4 border-primary pl-4 py-2">
-                My job is to come in, find the clarity in the chaos, and build the structures that let you breathe again.
+                The job is to come in, find the clarity in the chaos, and build the structures that let you breathe again.
               </p>
             </div>
             <div className="mt-10">
@@ -48,12 +48,12 @@ export function About() {
 
       <Section bg="muted">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="mb-8">My Approach</h2>
+          <h2 className="mb-8">The Approach</h2>
           <div className="grid sm:grid-cols-2 gap-8 text-left">
             <div className="bg-card p-6 rounded-xl shadow-sm border border-border/50">
               <h3 className="text-xl mb-3 text-primary">Zero Judgment</h3>
               <p className="text-muted-foreground text-sm">
-                I don't care how messy your inbox is or if you're a year behind on your impact tracking. I'm here to fix it, not judge it.
+                Elevated Living doesn't care how messy your inbox is or if you're a year behind on your impact tracking. We're here to fix it, not judge it.
               </p>
             </div>
             <div className="bg-card p-6 rounded-xl shadow-sm border border-border/50">
@@ -65,13 +65,13 @@ export function About() {
             <div className="bg-card p-6 rounded-xl shadow-sm border border-border/50">
               <h3 className="text-xl mb-3 text-primary">Lived Experience</h3>
               <p className="text-muted-foreground text-sm">
-                Particularly for neurodivergent founders, I get it. We build systems that work for *your* brain, not a textbook ideal.
+                Particularly for neurodivergent founders — we get it. Systems are built around how your brain actually works, not a textbook ideal.
               </p>
             </div>
             <div className="bg-card p-6 rounded-xl shadow-sm border border-border/50">
               <h3 className="text-xl mb-3 text-primary">Sector Knowledge</h3>
               <p className="text-muted-foreground text-sm">
-                I know how funders think, how CICs operate, and the unique pressures of the VCSE sector.
+                Elevated Living knows how funders think, how CICs operate, and the unique pressures of the VCSE sector.
               </p>
             </div>
           </div>

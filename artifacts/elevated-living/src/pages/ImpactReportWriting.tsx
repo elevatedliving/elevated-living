@@ -12,7 +12,7 @@ export function ImpactReportWriting() {
           <div className="mb-4 text-primary font-semibold uppercase tracking-wider text-sm">Specialist Service</div>
           <h1 className="mb-6">Impact Report Writing</h1>
           <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
-            Stop staring at a blank page. Let me turn your hard work, data, and case studies into a professional impact report that proves your value to funders and stakeholders.
+            Stop staring at a blank page. Elevated Living will turn your hard work, data, and case studies into a professional impact report that proves your value to funders and stakeholders.
           </p>
           
           <div className="bg-accent/40 rounded-2xl p-8 mb-16 border border-primary/10">
@@ -22,14 +22,14 @@ export function ImpactReportWriting() {
                 <div className="shrink-0 w-10 h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">1</div>
                 <div>
                   <h4 className="text-lg font-bold mb-1">The Fact-Find</h4>
-                  <p className="text-muted-foreground text-sm">I provide a structured, easy-to-fill questionnaire. You dump in your stats, outcomes, and raw stories. We do a 45-minute call to fill in any gaps.</p>
+                  <p className="text-muted-foreground text-sm">Elevated Living provides a structured, easy-to-fill questionnaire. You dump in your stats, outcomes, and raw stories. Then there's a 45-minute call to fill in any gaps.</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <div className="shrink-0 w-10 h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">2</div>
                 <div>
                   <h4 className="text-lg font-bold mb-1">The Draft</h4>
-                  <p className="text-muted-foreground text-sm">I structure the narrative, applying sector-appropriate language. I highlight the vital statistics and build a compelling case for your continued support.</p>
+                  <p className="text-muted-foreground text-sm">The narrative is structured using sector-appropriate language, the vital statistics are highlighted, and a compelling case is built for your continued support.</p>
                 </div>
               </div>
               <div className="flex gap-4">

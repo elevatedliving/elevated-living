@@ -22,10 +22,8 @@ export function CommunityOrgs() {
         </div>
       </Section>
 
-      {/* Who I Help */}
       <Section bg="muted">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl mb-6">Who I help</h2>
           <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
             You started your organisation because you cared deeply about your community. Now you're drowning in admin, chasing funders, writing the same story six different ways, and wondering how everyone else seems to manage it.
           </p>
@@ -51,10 +49,10 @@ export function CommunityOrgs() {
         <div className="max-w-4xl mx-auto border-l-4 border-primary pl-8 py-4">
           <h2 className="text-3xl mb-4">30 Years of Sector Context</h2>
           <p className="text-lg text-muted-foreground mb-6">
-            I don't need you to explain what a CIC is, how tricky it is to balance restricted versus unrestricted funding, or the nuanced dynamics of local authority partnerships.
+            There's no need to explain what a CIC is, how tricky it is to balance restricted versus unrestricted funding, or the nuanced dynamics of local authority partnerships.
           </p>
           <p className="text-lg text-muted-foreground">
-            I bring three decades of built-in context, meaning we hit the ground running from day one.
+            Elevated Living brings three decades of built-in context, meaning we hit the ground running from day one.
           </p>
         </div>
       </Section>
