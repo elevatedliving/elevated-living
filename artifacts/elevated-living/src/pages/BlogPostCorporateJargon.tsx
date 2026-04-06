@@ -28,7 +28,13 @@ export function BlogPostCorporateJargon() {
             Funders want to see human stories backed by solid data. Here's why plain English always wins over consultant-speak — and why your impact report might be accidentally hiding the very thing that makes your organisation worth funding.
           </p>
 
-          <div className="rounded-2xl overflow-hidden mb-10 h-48 bg-gradient-to-br from-primary/20 via-accent to-primary/10"></div>
+          <div className="rounded-2xl overflow-hidden mb-10 shadow-md">
+            <img
+              src={`${import.meta.env.BASE_URL}images/corporate-jargon.png`}
+              alt="Person at desk looking tired and overwhelmed by a stack of documents"
+              className="w-full h-auto object-cover"
+            />
+          </div>
         <div className="prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground mt-2">
 
           <p>

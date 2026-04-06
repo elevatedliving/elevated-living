@@ -46,7 +46,7 @@ const DUMMY_POSTS = [
     category: "For VCSEs",
     date: "Feb 28, 2026",
     excerpt: "Funders want to see human stories backed by solid data. Here's why plain English always wins over consultant-speak.",
-    image: null,
+    image: "images/corporate-jargon.png",
   },
 ];
 
