@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -10,9 +10,6 @@ const NAV_LINKS = [
   { href: "/about", label: "About" },
   { href: "/for-business-owners", label: "For Business Owners" },
   { href: "/for-community-organisations", label: "For VCSEs" },
-];
-
-const SERVICES_LINKS = [
   { href: "/impact-report-writing", label: "Impact Report Writing" },
 ];
 
@@ -20,7 +17,6 @@ export function Navbar() {
   const [location] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,39 +70,6 @@ export function Navbar() {
               </Link>
             ))}
 
-            {/* Services Dropdown */}
-            <div 
-              className="relative"
-              onMouseEnter={() => setServicesOpen(true)}
-              onMouseLeave={() => setServicesOpen(false)}
-            >
-              <button className="flex items-center gap-1 text-sm font-medium text-foreground/80 hover:text-primary py-2">
-                Services <ChevronDown className="w-4 h-4" />
-              </button>
-              
-              <AnimatePresence>
-                {servicesOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute top-full left-0 w-56 bg-card border border-border shadow-lg rounded-xl overflow-hidden py-2"
-                  >
-                    {SERVICES_LINKS.map((link) => (
-                      <Link
-                        key={link.href}
-                        href={link.href}
-                        className="block px-4 py-2 text-sm hover:bg-accent hover:text-primary transition-colors"
-                      >
-                        {link.label}
-                      </Link>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-
             <Link href="/blog" className="text-sm font-medium text-foreground/80 hover:text-primary">
               Blog
             </Link>
@@ -155,21 +118,6 @@ export function Navbar() {
                 </Link>
               ))}
               
-              <div className="py-2">
-                <span className="text-sm text-muted-foreground uppercase font-bold tracking-wider mb-3 block">Services</span>
-                <div className="flex flex-col gap-4 pl-4 border-l-2 border-primary/20">
-                  {SERVICES_LINKS.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="font-medium text-foreground"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
               <Link href="/blog" className="font-semibold pb-2 border-b border-border/50">
                 Blog
               </Link>
