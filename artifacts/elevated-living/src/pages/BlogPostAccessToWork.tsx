@@ -82,7 +82,7 @@ export function BlogPostAccessToWork() {
 
           <h2>To Be Eligible as a Self-Employed Person, You Need to Know This</h2>
           <p>
-            Paid work includes self-employment above the lower earnings limit, which is £559 per month (£6,708 per year) for 2026/2027 (according to <a href="https://carescribe.io/resources/access-to-work-guide/" target="_blank" rel="noopener noreferrer" className="text-primary">Scope UK</a>). You'll need to demonstrate you're actively trading — invoices, business records, evidence of work. If you're self-employed, describe your work clearly and show that you're actively earning or trading (according to <a href="https://adhdaptive.org/access-to-work-uk-guide/" target="_blank" rel="noopener noreferrer" className="text-primary">ADHDaptive</a>).
+            Paid work includes self-employment above the lower earnings limit, which is £559 per month (£6,708 per year) for 2026/2027 (according to <a href="https://www.scope.org.uk/advice-and-support/access-to-work-grant-scheme" target="_blank" rel="noopener noreferrer" className="text-primary">Scope UK</a>). You'll need to demonstrate you're actively trading — invoices, business records, evidence of work. If you're self-employed, describe your work clearly and show that you're actively earning or trading (according to <a href="https://adhdaptive.org/access-to-work-uk-guide/" target="_blank" rel="noopener noreferrer" className="text-primary">ADHDaptive</a>).
           </p>
           <p>
             You must be based in England, Scotland, or Wales (Northern Ireland has a separate scheme). You must be 16 or over. And you must have a condition that creates a genuine work-related barrier. That's it.
