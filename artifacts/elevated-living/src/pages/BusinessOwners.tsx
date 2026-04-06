@@ -55,7 +55,7 @@ export function BusinessOwners() {
           <div className="space-y-8">
 
             <div className="bg-card border border-border rounded-2xl p-8 shadow-sm">
-              <h3 className="text-xl mb-3">Project Clarity Sessions</h3>
+              <h3 className="text-xl mb-3">Project Focus Sessions</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Sometimes you just need someone to sit with you, look at everything on your plate, and help you make sense of it. You'll leave with a clear picture of where you are, where you're going, and what needs to happen next.
               </p>
