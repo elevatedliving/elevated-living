@@ -5,7 +5,7 @@ import { Quote } from "lucide-react";
 const DUMMY_TESTIMONIALS = [
   {
     id: 1,
-    quote: "Working with Elevated Living completely changed how I run my consultancy. I was drowning in admin and ignoring my own growth. The clarity session gave me a roadmap, and the VA support gave me my weekends back.",
+    quote: "Working with Elevated Living completely changed how I run my consultancy. I was drowning in admin and ignoring my own growth. The focus session gave me a roadmap, and the VA support gave me my weekends back.",
     name: "Sarah J.",
     role: "Independent Consultant"
   },

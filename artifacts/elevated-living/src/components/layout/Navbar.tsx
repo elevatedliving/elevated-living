@@ -116,7 +116,7 @@ export function Navbar() {
           <div className="flex items-center gap-4">
             <div className="hidden md:block">
               <Link href="/contact">
-                <Button variant="default">Book a Complimentary Clarity Session</Button>
+                <Button variant="default">Book a Complimentary Focus Session</Button>
               </Link>
             </div>
             
@@ -180,7 +180,7 @@ export function Navbar() {
 
               <div className="mt-8">
                 <Link href="/contact">
-                  <Button className="w-full" size="lg">Book a Complimentary Clarity Session</Button>
+                  <Button className="w-full" size="lg">Book a Complimentary Focus Session</Button>
                 </Link>
               </div>
             </div>

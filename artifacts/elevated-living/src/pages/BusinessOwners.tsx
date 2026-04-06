@@ -14,7 +14,7 @@ export function BusinessOwners() {
             You're wearing every hat in the business. It's time to take a few of them off.
           </p>
           <Link href="/contact">
-            <Button size="lg">Book a Clarity Session</Button>
+            <Button size="lg">Book a Focus Session</Button>
           </Link>
         </div>
       </Section>
@@ -30,13 +30,13 @@ export function BusinessOwners() {
           </div>
           <div>
           <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-            You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need clarity, structure, and someone who actually follows through.
+            You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need focus, structure, and someone who actually follows through.
           </p>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
             If you have ADHD, Elevated Living also offers specialist support tailored to how your brain works — and if you're eligible, this can be funded through the DWP's Access to Work scheme. You handle the application; we handle the rest.
           </p>
           <div className="flex flex-wrap gap-3">
-            {["Project Clarity Sessions", "Virtual Assistant Support", "ADHD-Friendly Business Support", "Accountability & Action Planning"].map((service) => (
+            {["Project Focus Sessions", "Virtual Assistant Support", "ADHD-Friendly Business Support", "Accountability & Action Planning"].map((service) => (
               <span key={service} className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold">
                 <CheckCircle2 className="w-4 h-4" /> {service}
               </span>

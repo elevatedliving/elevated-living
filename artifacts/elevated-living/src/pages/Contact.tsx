@@ -48,7 +48,7 @@ export function Contact() {
           <div className="text-center mb-16">
             <h1 className="mb-4">Let's Talk</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Whether you need project clarity, admin support, or an impact report, the best way to start is with a conversation.
+              Whether you need project focus, admin support, or an impact report, the best way to start is with a conversation.
             </p>
           </div>
 

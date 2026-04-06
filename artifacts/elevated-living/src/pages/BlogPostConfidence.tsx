@@ -156,7 +156,7 @@ export function BlogPostConfidence() {
               Elevated Living supports solopreneurs, small business owners, and community organisation leaders to move through the overwhelm, get clear on what matters, and build the confidence to actually do the thing. We'd love to work with you.
             </p>
             <Link href="/contact" className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
-              Book a Complimentary Clarity Session →
+              Book a Complimentary Focus Session →
             </Link>
           </div>
         </div>

@@ -73,10 +73,10 @@ export function Home() {
             </div>
             <h3 className="mb-4">For Business Owners</h3>
             <p className="text-muted-foreground mb-8">
-              You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need clarity, structure, and someone who actually follows through. If you're wondering how everyone else seems to manage it — they don't. They just have better support behind them.
+              You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need focus, structure, and someone who actually follows through. If you're wondering how everyone else seems to manage it — they don't. They just have better support behind them.
             </p>
             <ul className="space-y-3 mb-8 mt-auto">
-              <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Project Clarity Sessions</li>
+              <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Project Focus Sessions</li>
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Virtual Assistant Support</li>
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> ADHD-Friendly Business Support</li>
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Accountability & Action Planning</li>
@@ -122,7 +122,7 @@ export function Home() {
           {[
             {
               icon: MessageSquare,
-              title: "1. The Clarity Session",
+              title: "1. The Focus Session",
               desc: "We start with a free 30-minute chat. No pressure, no pitch. Just untangling what you need and seeing if we're a fit."
             },
             {
@@ -149,13 +149,13 @@ export function Home() {
 
       {/* CTA Section */}
       <Section bg="primary" className="text-center">
-        <h2 className="text-primary-foreground mb-6">Ready to find some clarity?</h2>
+        <h2 className="text-primary-foreground mb-6">Ready to find some focus?</h2>
         <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-10 text-lg">
           Stop staring at the to-do list. Let's get on a call and figure out the very next step.
         </p>
         <Link href="/contact">
           <Button size="lg" variant="secondary" className="text-primary font-bold">
-            Book a Complimentary Clarity Session
+            Book a Complimentary Focus Session
           </Button>
         </Link>
       </Section>

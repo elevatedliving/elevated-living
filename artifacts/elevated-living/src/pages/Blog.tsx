@@ -46,7 +46,7 @@ const DUMMY_POSTS = [
   {
     id: 3,
     slug: null,
-    title: "The Project Clarity Checklist",
+    title: "The Project Focus Checklist",
     category: "Resources",
     date: "Jan 15, 2026",
     excerpt: "Five questions you need to ask before starting any new operational initiative in your small business.",

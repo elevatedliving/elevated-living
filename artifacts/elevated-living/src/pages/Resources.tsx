@@ -10,7 +10,7 @@ export function Resources() {
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="mb-4">Free Resources</h1>
           <p className="text-xl text-muted-foreground">
-            Tools, templates, and guides to help you find clarity right now.
+            Tools, templates, and guides to help you find focus right now.
           </p>
         </div>
 

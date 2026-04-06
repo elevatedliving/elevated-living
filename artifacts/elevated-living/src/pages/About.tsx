@@ -21,7 +21,7 @@ export function About() {
                 Elevated Living was founded because too many passionate people were burning out over operations. You shouldn't have to be an expert in project management, funding compliance, or system design just to run your business or community group.
               </p>
               <p className="text-foreground font-medium border-l-4 border-primary pl-4 py-2">
-                The job is to come in, find the clarity in the chaos, and build the structures that let you breathe again.
+                The job is to come in, find the focus in the chaos, and build the structures that let you breathe again.
               </p>
             </div>
             <div className="mt-10">
