@@ -39,7 +39,7 @@ const DUMMY_POSTS = [
     category: "For Business Owners",
     date: "Mar 12, 2026",
     excerpt: "Navigating the DWP isn't easy, but the funding available for neurodivergent founders can completely transform your capacity. Here's what it is, what it covers, and how to apply.",
-    image: DEFAULT_IMAGE,
+    image: "images/access-to-work.png",
   },
   {
     id: 2,
