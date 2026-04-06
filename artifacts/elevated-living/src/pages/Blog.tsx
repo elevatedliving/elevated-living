@@ -34,11 +34,11 @@ const DUMMY_POSTS = [
   },
   {
     id: 1,
-    slug: null,
-    title: "Why Access to Work is a Game Changer for Solopreneurs",
+    slug: "/blog/access-to-work",
+    title: "Why Access to Work Is a Game Changer for Neurodivergent Solopreneurs",
     category: "For Business Owners",
     date: "Mar 12, 2026",
-    excerpt: "Navigating the DWP isn't easy, but the funding available for neurodivergent founders can completely transform your capacity.",
+    excerpt: "Navigating the DWP isn't easy, but the funding available for neurodivergent founders can completely transform your capacity. Here's what it is, what it covers, and how to apply.",
     image: DEFAULT_IMAGE,
   },
   {

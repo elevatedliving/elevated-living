@@ -15,6 +15,7 @@ import { Blog } from "@/pages/Blog";
 import { BlogPostTOMs } from "@/pages/BlogPostTOMs";
 import { BlogPostHoodie } from "@/pages/BlogPostHoodie";
 import { BlogPostConfidence } from "@/pages/BlogPostConfidence";
+import { BlogPostAccessToWork } from "@/pages/BlogPostAccessToWork";
 import { Testimonials } from "@/pages/Testimonials";
 import { Resources } from "@/pages/Resources";
 import NotFound from "@/pages/not-found";
@@ -44,6 +45,7 @@ function Router() {
       <Route path="/blog/toms-vs-social-value" component={BlogPostTOMs} />
       <Route path="/blog/hoodie-hypothesis" component={BlogPostHoodie} />
       <Route path="/blog/confidence-action" component={BlogPostConfidence} />
+      <Route path="/blog/access-to-work" component={BlogPostAccessToWork} />
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/resources" component={Resources} />
       <Route component={NotFound} />
