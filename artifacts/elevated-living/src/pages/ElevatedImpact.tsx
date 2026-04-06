@@ -16,7 +16,7 @@ export function ElevatedImpact() {
             Elevated Impact® is a separate, dedicated platform designed specifically to help organisations measure, track, and amplify their social impact. 
           </p>
           <p className="text-base text-foreground/80 mb-10">
-            For specialized software and frameworks regarding impact measurement, please visit the dedicated platform.
+            For specialised software and frameworks regarding impact measurement, please visit the dedicated platform.
           </p>
           
           <a href="https://example.com" target="_blank" rel="noopener noreferrer">

@@ -17,7 +17,7 @@ const DUMMY_TESTIMONIALS = [
   },
   {
     id: 3,
-    quote: "I didn't even know Access to Work applied to me as a solopreneur with ADHD. The guidance through that process was invaluable, and having specialized admin support has quieted the noise in my brain.",
+    quote: "I didn't even know Access to Work applied to me as a solopreneur with ADHD. The guidance through that process was invaluable, and having specialised admin support has quieted the noise in my brain.",
     name: "Marcus T.",
     role: "Creative Director"
   },
