@@ -22,9 +22,17 @@ export function BlogPostTOMs() {
             TOMs, Social Value, and Why You Actually Need to Know the Difference
           </h1>
 
-          <p className="text-lg text-muted-foreground mb-12 leading-relaxed border-l-4 border-primary pl-6">
+          <p className="text-lg text-muted-foreground mb-10 leading-relaxed border-l-4 border-primary pl-6">
             You've probably been approached by a housing association, contractor, or local authority asking you to "help them demonstrate their social value." Maybe they've sent over a spreadsheet and a lot of acronyms. This post cuts through it — so you know exactly what you're being asked, and what to do about it.
           </p>
+
+          <div className="rounded-2xl overflow-hidden mb-12 shadow-md">
+            <img
+              src={`${import.meta.env.BASE_URL}images/toms-social-value.png`}
+              alt="Social value terminology word cloud including TOMs, SROI, deadweight, stakeholders and more"
+              className="w-full h-auto object-cover"
+            />
+          </div>
         </div>
       </Section>
 

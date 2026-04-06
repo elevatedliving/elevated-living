@@ -30,7 +30,7 @@ const DUMMY_POSTS = [
     category: "Small Charities",
     date: "Mar 29, 2026",
     excerpt: "You've probably been asked to help a contractor 'demonstrate their social value.' This post explains what TOMs actually are, how they differ from social impact, and what to watch out for before you say yes.",
-    image: DEFAULT_IMAGE,
+    image: "images/toms-social-value.png",
   },
   {
     id: 1,
