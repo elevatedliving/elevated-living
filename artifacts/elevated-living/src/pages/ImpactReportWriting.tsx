@@ -46,9 +46,6 @@ export function ImpactReportWriting() {
             <Link href="/contact">
               <Button size="lg" className="w-full sm:w-auto">Request a Quote</Button>
             </Link>
-            <Link href="/elevated-impact">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto">View the Elevated Impact Platform</Button>
-            </Link>
           </div>
         </div>
       </Section>

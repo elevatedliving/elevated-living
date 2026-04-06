@@ -14,7 +14,6 @@ const NAV_LINKS = [
 
 const SERVICES_LINKS = [
   { href: "/impact-report-writing", label: "Impact Report Writing" },
-  { href: "/elevated-impact", label: "Elevated Impact®" },
 ];
 
 export function Navbar() {
