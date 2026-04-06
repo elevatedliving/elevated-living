@@ -12,7 +12,7 @@ export function CommunityOrgs() {
           <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-6">
             <Building2 className="w-8 h-8 text-primary" />
           </div>
-          <h1 className="mb-6">For Community Organisations & VCSEs</h1>
+          <h1 className="mb-6">For VCSEs</h1>
           <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
             The people doing the most important work often have the least support behind them. That's exactly why Elevated Living exists — to help voluntary, community organisations and social enterprises get organised, evidence their impact, and build something that lasts.
           </p>
