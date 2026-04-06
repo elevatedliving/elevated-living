@@ -7,7 +7,7 @@ export function About() {
   return (
     <Layout>
       <Section className="pt-20">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-3xl mx-auto">
           <div>
             <h1 className="mb-6">The messy reality of doing good work — understood.</h1>
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
@@ -29,19 +29,6 @@ export function About() {
                 <Button size="lg">Let's chat about your work</Button>
               </Link>
             </div>
-          </div>
-          
-          <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-muted shadow-xl">
-              {/* Using a placeholder aesthetic image since we requested one in requirements */}
-              <img 
-                src={`${import.meta.env.BASE_URL}images/about-portrait.png`}
-                alt="Illustration representing the founder" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            {/* Decorative element */}
-            <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-accent rounded-full -z-10 blur-3xl opacity-50"></div>
           </div>
         </div>
       </Section>

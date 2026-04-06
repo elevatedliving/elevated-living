@@ -2,8 +2,6 @@ import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Link } from "wouter";
 
-const DEFAULT_IMAGE = "images/blog-card-abstract.png";
-
 const DUMMY_POSTS = [
   {
     id: 6,
@@ -48,7 +46,7 @@ const DUMMY_POSTS = [
     category: "Small Charities",
     date: "Feb 28, 2026",
     excerpt: "Funders want to see human stories backed by solid data. Here's why plain English always wins over consultant-speak.",
-    image: DEFAULT_IMAGE,
+    image: null,
   },
   {
     id: 3,
@@ -57,7 +55,7 @@ const DUMMY_POSTS = [
     category: "Resources",
     date: "Jan 15, 2026",
     excerpt: "Five questions you need to ask before starting any new operational initiative in your small business.",
-    image: DEFAULT_IMAGE,
+    image: null,
   }
 ];
 
@@ -78,12 +76,18 @@ export function Blog() {
               const card = (
                 <article className="notion-card flex flex-col overflow-hidden bg-card group cursor-pointer h-full">
                   <div className="h-48 border-b border-border relative overflow-hidden">
-                    <img
-                      src={`${import.meta.env.BASE_URL}${post.image}`}
-                      alt=""
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-primary/10 group-hover:bg-primary/5 transition-colors"></div>
+                    {post.image ? (
+                      <>
+                        <img
+                          src={`${import.meta.env.BASE_URL}${post.image}`}
+                          alt=""
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-primary/10 group-hover:bg-primary/5 transition-colors"></div>
+                      </>
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-primary/20 via-accent to-primary/10 group-hover:from-primary/30 transition-colors"></div>
+                    )}
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <div className="mb-3">

@@ -10,13 +10,6 @@ export function Home() {
     <Layout>
       {/* Hero Section */}
       <Section className="relative overflow-hidden pt-20 pb-32">
-        <div className="absolute inset-0 z-0 opacity-[0.12] pointer-events-none">
-          <img 
-            src={`${import.meta.env.BASE_URL}images/hero-texture.png`} 
-            alt="" 
-            className="w-full h-full object-cover"
-          />
-        </div>
         
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <motion.h1 
