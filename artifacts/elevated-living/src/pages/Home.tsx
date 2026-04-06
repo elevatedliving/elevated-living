@@ -10,11 +10,11 @@ export function Home() {
     <Layout>
       {/* Hero Section */}
       <Section className="relative overflow-hidden pt-20 pb-32">
-        <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none flex justify-end">
-           <img 
-            src={`${import.meta.env.BASE_URL}images/hero-abstract.png`} 
-            alt="Abstract background" 
-            className="h-full object-cover"
+        <div className="absolute inset-0 z-0 opacity-[0.12] pointer-events-none">
+          <img 
+            src={`${import.meta.env.BASE_URL}images/hero-texture.png`} 
+            alt="" 
+            className="w-full h-full object-cover"
           />
         </div>
         

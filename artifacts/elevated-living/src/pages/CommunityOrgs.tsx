@@ -23,7 +23,8 @@ export function CommunityOrgs() {
       </Section>
 
       <Section bg="muted">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
           <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
             You started your organisation because you cared deeply about your community. Now you're drowning in admin, chasing funders, writing the same story six different ways, and wondering how everyone else seems to manage it.
           </p>
@@ -41,6 +42,14 @@ export function CommunityOrgs() {
                 <CheckCircle2 className="w-4 h-4" /> {service}
               </span>
             ))}
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
+            <img
+              src={`${import.meta.env.BASE_URL}images/community-section.png`}
+              alt="Community group working together"
+              className="w-full h-full object-cover"
+            />
+          </div>
           </div>
         </div>
       </Section>

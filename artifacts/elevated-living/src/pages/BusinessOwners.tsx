@@ -20,7 +20,15 @@ export function BusinessOwners() {
       </Section>
 
       <Section bg="muted">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
+            <img
+              src={`${import.meta.env.BASE_URL}images/solopreneur-section.png`}
+              alt="Solopreneur working confidently"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div>
           <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
             You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need clarity, structure, and someone who actually follows through.
           </p>
@@ -33,6 +41,7 @@ export function BusinessOwners() {
                 <CheckCircle2 className="w-4 h-4" /> {service}
               </span>
             ))}
+          </div>
           </div>
         </div>
       </Section>

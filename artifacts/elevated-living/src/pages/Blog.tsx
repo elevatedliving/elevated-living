@@ -69,11 +69,13 @@ export function Blog() {
             {DUMMY_POSTS.map((post) => {
               const card = (
                 <article className="notion-card flex flex-col overflow-hidden bg-card group cursor-pointer h-full">
-                  <div className="h-48 bg-muted border-b border-border relative overflow-hidden">
-                    <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors"></div>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:scale-105 transition-transform duration-500">
-                      <span className="text-6xl font-serif italic text-primary">EL</span>
-                    </div>
+                  <div className="h-48 border-b border-border relative overflow-hidden">
+                    <img
+                      src={`${import.meta.env.BASE_URL}images/blog-card-abstract.png`}
+                      alt=""
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-primary/10 group-hover:bg-primary/5 transition-colors"></div>
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <div className="mb-3">

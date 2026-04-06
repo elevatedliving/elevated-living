@@ -1,0 +1,32 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "nVfURKDsLmjxNFISsNlye"
+uri = "file://artifacts/elevated-living/public/images/about-portrait.png"
+type = "image"
+title = "about portrait founder"
+
+[[generated]]
+id = "3R32p3c0ZiZl6PBgv4UDt"
+uri = "file://artifacts/elevated-living/public/images/hero-texture.png"
+type = "image"
+title = "hero abstract teal texture"
+
+[[generated]]
+id = "Um10HxlOItz9XvMkJNGQz"
+uri = "file://artifacts/elevated-living/public/images/community-section.png"
+type = "image"
+title = "community charity collaboration scene"
+
+[[generated]]
+id = "iIl3BmYj9gLp_Rl-FmN0D"
+uri = "file://artifacts/elevated-living/public/images/blog-card-abstract.png"
+type = "image"
+title = "blog card abstract teal ink"
+
+[[generated]]
+id = "pJUHMiVzqlK5XGJFF0N9C"
+uri = "file://artifacts/elevated-living/public/images/solopreneur-section.png"
+type = "image"
+title = "solopreneur working warmly"
