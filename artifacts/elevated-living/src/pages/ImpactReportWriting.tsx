@@ -14,6 +14,14 @@ export function ImpactReportWriting() {
           <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
             Stop staring at a blank page. Elevated Living will turn your hard work, data, and case studies into a professional impact report that proves your value to funders and stakeholders.
           </p>
+
+          <div className="rounded-2xl overflow-hidden mb-16 shadow-md">
+            <img
+              src={`${import.meta.env.BASE_URL}images/impact-report-writing.png`}
+              alt="A blank page and pen on a desk, ready to become an impact report"
+              className="w-full h-auto object-cover"
+            />
+          </div>
           
           <div className="bg-accent/40 rounded-2xl p-8 mb-16 border border-primary/10">
             <h3 className="text-2xl mb-4">How it works:</h3>
