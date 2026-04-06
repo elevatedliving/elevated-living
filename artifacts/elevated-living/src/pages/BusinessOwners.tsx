@@ -62,7 +62,7 @@ export function BusinessOwners() {
             
             <div className="space-y-4 text-foreground/80 text-lg mb-8">
               <p>
-                If you are a business owner with ADHD (or awaiting diagnosis), the administrative side of running a business isn't just annoying—it can be paralyzing.
+                If you are a business owner with ADHD (or awaiting diagnosis), the administrative side of running a business isn't just annoying—it can be paralysing.
               </p>
               <p>
                 <strong>The good news:</strong> The DWP's <span className="font-semibold text-primary">Access to Work</span> scheme provides grants to pay for specialist support to help manage the tasks that your brain struggles with.
