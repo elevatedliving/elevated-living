@@ -71,8 +71,12 @@ export function About() {
       <Section>
         <div className="max-w-3xl mx-auto">
           <div className="bg-accent/40 border border-primary/10 rounded-2xl p-8 flex flex-col sm:flex-row gap-6 items-start">
-            <div className="shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
-              K
+            <div className="shrink-0 w-28 h-36 rounded-xl overflow-hidden shadow-md">
+              <img
+                src={`${import.meta.env.BASE_URL}images/kay-oldroyd.jpg`}
+                alt="Kay Oldroyd, Founder and Director of Elevated Living"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
             <div>
               <p className="text-foreground/80 text-lg leading-relaxed mb-4">
