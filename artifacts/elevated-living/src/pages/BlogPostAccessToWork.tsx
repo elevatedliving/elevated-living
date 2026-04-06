@@ -50,7 +50,7 @@ export function BlogPostAccessToWork() {
 
           <h2>Do I Need a Diagnosis?</h2>
           <p>
-            This is the question that stops so many people before they've even started. Access to Work is open to anyone in the UK who has a disability, health condition, or neurodivergent profile that makes some part of work harder than it should be. You do not need a formal diagnosis, but it helps to have evidence that you are affected in a way that meets the Equality Act definition of disability — that is, a condition that has a substantial and long-term impact on your ability to carry out normal daily activities (according to <a href="#" className="text-primary">ADHDaptive</a>).
+            This is the question that stops so many people before they've even started. Access to Work is open to anyone in the UK who has a disability, health condition, or neurodivergent profile that makes some part of work harder than it should be. You do not need a formal diagnosis, but it helps to have evidence that you are affected in a way that meets the Equality Act definition of disability — that is, a condition that has a substantial and long-term impact on your ability to carry out normal daily activities (according to <a href="https://adhdaptive.org/access-to-work-uk-guide/" target="_blank" rel="noopener noreferrer" className="text-primary">ADHDaptive</a>).
           </p>
           <p>
             In plain terms: if your ADHD means you lose three hours a day to executive dysfunction; if your autism means the admin and communication load of running a business is genuinely exhausting in ways that affect your output; if your dyslexia means every proposal, email, and report takes you significantly longer than it should — you likely meet the threshold. You don't need to perform severity or prove you're struggling enough. You deserve a level playing field, full stop.
@@ -74,7 +74,7 @@ export function BlogPostAccessToWork() {
 
           <h2>To Be Eligible as a Self-Employed Person, You Need to Know This</h2>
           <p>
-            Paid work includes self-employment above the lower earnings limit, which is £559 per month (£6,708 per year) for 2026/2027 (according to <a href="#" className="text-primary">Scope UK</a>). You'll need to demonstrate you're actively trading — invoices, business records, evidence of work. If you're self-employed, describe your work clearly and show that you're actively earning or trading (according to <a href="#" className="text-primary">ADHDaptive</a>).
+            Paid work includes self-employment above the lower earnings limit, which is £559 per month (£6,708 per year) for 2026/2027 (according to <a href="#" className="text-primary">Scope UK</a>). You'll need to demonstrate you're actively trading — invoices, business records, evidence of work. If you're self-employed, describe your work clearly and show that you're actively earning or trading (according to <a href="https://adhdaptive.org/access-to-work-uk-guide/" target="_blank" rel="noopener noreferrer" className="text-primary">ADHDaptive</a>).
           </p>
           <p>
             You must be based in England, Scotland, or Wales (Northern Ireland has a separate scheme). You must be 16 or over. And you must have a condition that creates a genuine work-related barrier. That's it.
