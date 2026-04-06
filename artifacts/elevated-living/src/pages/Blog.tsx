@@ -12,7 +12,7 @@ const DUMMY_POSTS = [
     category: "Solopreneurs",
     date: "Apr 6, 2026",
     excerpt: "If you're waiting to feel ready before you start, you could be waiting a very long time. Here's why confidence is a consequence of action — not a condition of it.",
-    image: DEFAULT_IMAGE,
+    image: "images/confidence-action.png",
   },
   {
     id: 5,

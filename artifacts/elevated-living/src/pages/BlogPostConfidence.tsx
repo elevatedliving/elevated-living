@@ -24,9 +24,17 @@ export function BlogPostConfidence() {
 
           <p className="text-sm text-muted-foreground mb-10">By Elevated Living</p>
 
-          <p className="text-lg text-muted-foreground mb-12 leading-relaxed border-l-4 border-primary pl-6">
+          <p className="text-lg text-muted-foreground mb-10 leading-relaxed border-l-4 border-primary pl-6">
             If you've been waiting until you feel ready — this is the post you didn't know you needed. Because confidence isn't a prerequisite for starting. It's a consequence of having started.
           </p>
+
+          <div className="rounded-2xl overflow-hidden mb-12 shadow-md">
+            <img
+              src={`${import.meta.env.BASE_URL}images/confidence-action.png`}
+              alt="Woman walking confidently into a community hub"
+              className="w-full h-auto object-cover"
+            />
+          </div>
         </div>
       </Section>
 
