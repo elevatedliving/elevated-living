@@ -12,7 +12,7 @@ export function About() {
             <h1 className="mb-6">The messy reality of doing good work — understood.</h1>
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
-                The founder of Elevated Living has spent over 30 years working deep inside community infrastructure — writing the bids, managing the partnerships, and trying to keep the lights on while still delivering the mission.
+                The founder of Elevated Living has spent over 30 years working deep inside community infrastructure — creating and running the projects, managing the partnerships, and trying to keep the lights on while still delivering the mission.
               </p>
               <p>
                 We know what it feels like to be a business owner or a charity leader who is brilliant at what they do, but utterly bogged down by the administrative weight of doing it.
