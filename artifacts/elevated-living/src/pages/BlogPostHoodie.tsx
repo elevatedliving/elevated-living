@@ -153,7 +153,7 @@ export function BlogPostHoodie() {
             <p className="text-sm text-muted-foreground mb-4">
               Elevated Living supports solopreneurs, small business owners, and community organisation leaders to manage the overwhelm, create focus, and build businesses that actually work for them — not the other way around.
             </p>
-            <Link href="/contact" className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
+            <Link href="/book" className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
               Book a Complimentary Focus Session →
             </Link>
           </div>

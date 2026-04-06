@@ -78,7 +78,7 @@ export function Navbar() {
           {/* CTA & Mobile Toggle */}
           <div className="flex items-center gap-4">
             <div className="hidden md:block">
-              <Link href="/contact">
+              <Link href="/book">
                 <Button variant="default">Book a Complimentary Focus Session</Button>
               </Link>
             </div>
@@ -127,7 +127,7 @@ export function Navbar() {
               </Link>
 
               <div className="mt-8">
-                <Link href="/contact">
+                <Link href="/book">
                   <Button className="w-full" size="lg">Book a Complimentary Focus Session</Button>
                 </Link>
               </div>

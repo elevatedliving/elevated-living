@@ -60,7 +60,7 @@ export function ImpactReportWriting() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8 border-t border-border">
-            <Link href="/contact">
+            <Link href="/book">
               <Button size="lg" className="w-full sm:w-auto">Request a Quote</Button>
             </Link>
           </div>

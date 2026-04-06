@@ -25,7 +25,7 @@ export function CommunityOrgs() {
           <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
             The people doing the most important work often have the least support behind them. That's exactly why Elevated Living exists — to help voluntary, community organisations and social enterprises get organised, evidence their impact, and build something that lasts.
           </p>
-          <Link href="/contact">
+          <Link href="/book">
             <Button size="lg">Discuss Your Organisation's Needs</Button>
           </Link>
         </div>

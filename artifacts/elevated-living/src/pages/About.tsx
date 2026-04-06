@@ -37,7 +37,7 @@ export function About() {
               </p>
             </div>
             <div className="mt-10">
-              <Link href="/contact">
+              <Link href="/book">
                 <Button size="lg">Let's chat about your work</Button>
               </Link>
             </div>

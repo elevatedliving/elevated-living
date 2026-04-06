@@ -20,6 +20,7 @@ import { BlogPostAccessToWork } from "@/pages/BlogPostAccessToWork";
 import { BlogPostCorporateJargon } from "@/pages/BlogPostCorporateJargon";
 import { Testimonials } from "@/pages/Testimonials";
 import { Resources } from "@/pages/Resources";
+import { Book } from "@/pages/Book";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -51,6 +52,7 @@ function Router() {
       <Route path="/blog/corporate-jargon" component={BlogPostCorporateJargon} />
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/resources" component={Resources} />
+      <Route path="/book" component={Book} />
       <Route component={NotFound} />
     </Switch>
     </>

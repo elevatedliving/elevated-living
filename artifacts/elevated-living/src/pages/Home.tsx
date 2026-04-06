@@ -155,7 +155,7 @@ export function Home() {
         <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-10 text-lg">
           Stop staring at the to-do list. Let's get on a call and figure out the very next step.
         </p>
-        <Link href="/contact">
+        <Link href="/book">
           <Button size="lg" variant="secondary" className="text-primary font-bold">
             Book a Complimentary Focus Session
           </Button>

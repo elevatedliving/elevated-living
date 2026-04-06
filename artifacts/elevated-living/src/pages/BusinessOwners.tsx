@@ -22,7 +22,7 @@ export function BusinessOwners() {
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             You're wearing every hat in the business. It's time to take a few of them off.
           </p>
-          <Link href="/contact">
+          <Link href="/book">
             <Button size="lg">Book a Focus Session</Button>
           </Link>
         </div>
@@ -73,7 +73,7 @@ export function BusinessOwners() {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
+              <Link href="/book">
                 <Button size="lg" className="bg-primary text-primary-foreground">Discuss Access to Work</Button>
               </Link>
               <Link href="/resources">

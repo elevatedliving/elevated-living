@@ -139,7 +139,7 @@ export function BlogPostTOMs() {
             <p className="text-sm text-muted-foreground mb-4">
               If you'd like support evidencing your organisation's impact — in plain English, for funders who actually want to understand what you do — Elevated Living can help.
             </p>
-            <Link href="/contact" className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
+            <Link href="/book" className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
               Book a Complimentary Focus Session →
             </Link>
           </div>
