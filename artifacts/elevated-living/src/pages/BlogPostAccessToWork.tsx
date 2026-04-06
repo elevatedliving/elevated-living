@@ -66,7 +66,7 @@ export function BlogPostAccessToWork() {
             <li><strong>Assistive technology</strong> — software like Dragon NaturallySpeaking, Read&Write, or specialist time management and planning tools — that removes friction from the parts of work that slow you down most.</li>
           </ul>
           <p>
-            For neurodivergent people, that often means support that helps with planning, communication, sensory load, reading and writing tasks, organisation, focus, transitions, or understanding workplace expectations (according to <a href="#" className="text-primary">Divergent Thinking</a>).
+            For neurodivergent people, that often means support that helps with planning, communication, sensory load, reading and writing tasks, organisation, focus, transitions, or understanding workplace expectations (according to <a href="https://www.divergentthinking.uk/post/access-to-work-for-neurodivergent-people-what-it-is-what-it-can-fund-and-how-to-apply" target="_blank" rel="noopener noreferrer" className="text-primary">Divergent Thinking</a>).
           </p>
           <p>
             As a self-employed applicant, you also benefit from something employed people don't: cost-sharing does not apply (according to <a href="#" className="text-primary">CareScribe</a>). If you're employed and apply after six weeks in a role, your employer picks up part of the tab. When you're the employer and the employee? The full approved cost is covered.
