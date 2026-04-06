@@ -2,10 +2,19 @@ import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export function BlogPostAccessToWork() {
   return (
     <Layout>
+      <Helmet>
+        <title>Access to Work: What Self-Employed People Are Missing Out On | Elevated Living</title>
+        <meta name="description" content="Access to Work isn't just for employed people. If you're self-employed with a disability or health condition, you may be entitled to government-funded support — here's what you need to know." />
+        <meta property="og:title" content="Access to Work: What Self-Employed People Are Missing Out On | Elevated Living" />
+        <meta property="og:description" content="Access to Work isn't just for employed people. If you're self-employed with a disability or health condition, you may be entitled to government-funded support — here's what you need to know." />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">

@@ -2,10 +2,19 @@ import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/Button";
+import { Helmet } from "react-helmet-async";
 
 export function About() {
   return (
     <Layout>
+      <Helmet>
+        <title>About | Elevated Living</title>
+        <meta name="description" content="Meet Kay Oldroyd — Founder and Director of Elevated Living. With 30+ years in community infrastructure, Kay built Elevated Living to help others stop burning out over operations." />
+        <meta property="og:title" content="About | Elevated Living" />
+        <meta property="og:description" content="Meet Kay Oldroyd — Founder and Director of Elevated Living. With 30+ years in community infrastructure, Kay built Elevated Living to help others stop burning out over operations." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20">
         <div className="max-w-3xl mx-auto">
           <div>

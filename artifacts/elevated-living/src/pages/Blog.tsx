@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 const DUMMY_POSTS = [
   {
@@ -53,6 +54,14 @@ const DUMMY_POSTS = [
 export function Blog() {
   return (
     <Layout>
+      <Helmet>
+        <title>Blog | Elevated Living</title>
+        <meta name="description" content="Practical insights on impact measurement, operational focus, and social value — written for solopreneurs and VCSE leaders by the team at Elevated Living." />
+        <meta property="og:title" content="Blog | Elevated Living" />
+        <meta property="og:description" content="Practical insights on impact measurement, operational focus, and social value — written for solopreneurs and VCSE leaders by the team at Elevated Living." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">

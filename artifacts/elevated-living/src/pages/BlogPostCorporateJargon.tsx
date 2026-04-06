@@ -2,10 +2,19 @@ import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export function BlogPostCorporateJargon() {
   return (
     <Layout>
+      <Helmet>
+        <title>Stop Using Corporate Jargon in Your Impact Reports | Elevated Living</title>
+        <meta name="description" content="Funders want human stories backed by solid data — not consultant-speak. Here's why plain English always wins in impact reporting, and how to write one that actually works." />
+        <meta property="og:title" content="Stop Using Corporate Jargon in Your Impact Reports | Elevated Living" />
+        <meta property="og:description" content="Funders want human stories backed by solid data — not consultant-speak. Here's why plain English always wins in impact reporting, and how to write one that actually works." />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">

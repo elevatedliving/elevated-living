@@ -3,10 +3,19 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Link } from "wouter";
 import { CheckCircle2, Building2 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export function CommunityOrgs() {
   return (
     <Layout>
+      <Helmet>
+        <title>For VCSEs | Elevated Living</title>
+        <meta name="description" content="Specialist operational and impact support for voluntary, community and social enterprises. Elevated Living helps VCSEs evidence their work, build capacity, and sustain what matters." />
+        <meta property="og:title" content="For VCSEs | Elevated Living" />
+        <meta property="og:description" content="Specialist operational and impact support for voluntary, community and social enterprises. Elevated Living helps VCSEs evidence their work, build capacity, and sustain what matters." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20 pb-12">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-6">

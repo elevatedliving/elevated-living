@@ -2,10 +2,19 @@ import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export function BlogPostConfidence() {
   return (
     <Layout>
+      <Helmet>
+        <title>Confidence Doesn't Come First. Action Does. | Elevated Living</title>
+        <meta name="description" content="Waiting to feel ready before you start is the trap. Why action — even small, imperfect action — is the only real route to the confidence you're waiting for." />
+        <meta property="og:title" content="Confidence Doesn't Come First. Action Does. | Elevated Living" />
+        <meta property="og:description" content="Waiting to feel ready before you start is the trap. Why action — even small, imperfect action — is the only real route to the confidence you're waiting for." />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">

@@ -5,6 +5,7 @@ import { Calendar, Mail } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { Helmet } from "react-helmet-async";
 
 type ContactFormData = {
   name: string;
@@ -43,6 +44,14 @@ export function Contact() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Contact | Elevated Living</title>
+        <meta name="description" content="Get in touch with Elevated Living. Book a complimentary focus session, ask about impact report writing, or find out how we can support your organisation or business." />
+        <meta property="og:title" content="Contact | Elevated Living" />
+        <meta property="og:description" content="Get in touch with Elevated Living. Book a complimentary focus session, ask about impact report writing, or find out how we can support your organisation or business." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">

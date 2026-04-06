@@ -3,10 +3,19 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Link } from "wouter";
 import { CheckCircle2, BrainCircuit } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export function BusinessOwners() {
   return (
     <Layout>
+      <Helmet>
+        <title>For Business Owners | Elevated Living</title>
+        <meta name="description" content="Operational support for solopreneurs and small business owners — from focus sessions and VA support to Access to Work guidance. Stop drowning in admin and start moving forward." />
+        <meta property="og:title" content="For Business Owners | Elevated Living" />
+        <meta property="og:description" content="Operational support for solopreneurs and small business owners — from focus sessions and VA support to Access to Work guidance. Stop drowning in admin and start moving forward." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20 pb-12">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="mb-6">For Solopreneurs & Business Owners</h1>

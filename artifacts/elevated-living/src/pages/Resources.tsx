@@ -2,10 +2,19 @@ import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Download, FileText, CheckSquare } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export function Resources() {
   return (
     <Layout>
+      <Helmet>
+        <title>Resources | Elevated Living</title>
+        <meta name="description" content="Free guides and tools from Elevated Living — practical resources to help solopreneurs and VCSE organisations get more organised and evidence their impact." />
+        <meta property="og:title" content="Resources | Elevated Living" />
+        <meta property="og:description" content="Free guides and tools from Elevated Living — practical resources to help solopreneurs and VCSE organisations get more organised and evidence their impact." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="mb-4">Free Resources</h1>

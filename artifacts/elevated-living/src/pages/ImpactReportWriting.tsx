@@ -3,10 +3,19 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Link } from "wouter";
 import { FileSearch, PenTool, Presentation } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export function ImpactReportWriting() {
   return (
     <Layout>
+      <Helmet>
+        <title>Impact Report Writing | Elevated Living</title>
+        <meta name="description" content="Professional impact report writing for charities, CICs and social enterprises. Elevated Living turns your data, stories and case studies into reports that funders actually read." />
+        <meta property="og:title" content="Impact Report Writing | Elevated Living" />
+        <meta property="og:description" content="Professional impact report writing for charities, CICs and social enterprises. Elevated Living turns your data, stories and case studies into reports that funders actually read." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20">
         <div className="max-w-3xl mx-auto">
           <div className="mb-4 text-primary font-semibold uppercase tracking-wider text-sm">Specialist Service</div>

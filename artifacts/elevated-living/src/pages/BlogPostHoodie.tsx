@@ -2,10 +2,19 @@ import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export function BlogPostHoodie() {
   return (
     <Layout>
+      <Helmet>
+        <title>The Hoodie Hypothesis | Elevated Living</title>
+        <meta name="description" content="Why the outfit you work in tells you more about your business boundaries than any productivity system ever will. A thought on the psychology of solopreneur life." />
+        <meta property="og:title" content="The Hoodie Hypothesis | Elevated Living" />
+        <meta property="og:description" content="Why the outfit you work in tells you more about your business boundaries than any productivity system ever will. A thought on the psychology of solopreneur life." />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">

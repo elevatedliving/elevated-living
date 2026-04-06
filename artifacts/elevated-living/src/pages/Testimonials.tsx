@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Quote } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const DUMMY_TESTIMONIALS = [
   {
@@ -32,6 +33,14 @@ const DUMMY_TESTIMONIALS = [
 export function Testimonials() {
   return (
     <Layout>
+      <Helmet>
+        <title>Client Stories | Elevated Living</title>
+        <meta name="description" content="Hear from the solopreneurs, business owners and VCSE leaders who've worked with Elevated Living — and what changed when they stopped trying to do it all alone." />
+        <meta property="og:title" content="Client Stories | Elevated Living" />
+        <meta property="og:description" content="Hear from the solopreneurs, business owners and VCSE leaders who've worked with Elevated Living — and what changed when they stopped trying to do it all alone." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       <Section className="pt-20">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="mb-4">Words from Clients</h1>

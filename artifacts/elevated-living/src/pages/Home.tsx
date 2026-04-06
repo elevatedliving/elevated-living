@@ -4,10 +4,19 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Briefcase, HeartHandshake, Lightbulb, MessageSquare, Target } from "lucide-react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 export function Home() {
   return (
     <Layout>
+      <Helmet>
+        <title>Elevated Living | Operational Support for Solopreneurs &amp; VCSEs</title>
+        <meta name="description" content="Elevated Living helps solopreneurs, small business owners, and voluntary sector organisations cut through the operational overwhelm and build structures that actually work." />
+        <meta property="og:title" content="Elevated Living | Operational Support for Solopreneurs &amp; VCSEs" />
+        <meta property="og:description" content="Elevated Living helps solopreneurs, small business owners, and voluntary sector organisations cut through the operational overwhelm and build structures that actually work." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+      </Helmet>
       {/* Hero Section */}
       <Section className="relative overflow-hidden pt-20 pb-32">
         
