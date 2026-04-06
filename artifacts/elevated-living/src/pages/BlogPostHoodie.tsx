@@ -24,9 +24,17 @@ export function BlogPostHoodie() {
 
           <p className="text-sm text-muted-foreground mb-10">By Kay at Elevated Living</p>
 
-          <p className="text-lg text-muted-foreground mb-12 leading-relaxed border-l-4 border-primary pl-6">
+          <p className="text-lg text-muted-foreground mb-10 leading-relaxed border-l-4 border-primary pl-6">
             If you've ever reached for a specific hoodie, mug, or playlist before you could even think about starting work — this one's for you. Your comfort rituals are telling you something important. It's time to listen.
           </p>
+
+          <div className="rounded-2xl overflow-hidden mb-12 shadow-md">
+            <img
+              src={`${import.meta.env.BASE_URL}images/hoodie-hypothesis.png`}
+              alt="Person working from home in a hoodie, focused at a kitchen table with a coffee"
+              className="w-full h-auto object-cover"
+            />
+          </div>
         </div>
       </Section>
 
