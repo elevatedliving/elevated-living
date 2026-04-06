@@ -85,7 +85,7 @@ export function BlogPostAccessToWork() {
             I'd be doing you a disservice if I made this sound straightforward, because navigating the DWP is its own full-time job — and the current state of the Access to Work scheme requires some frank acknowledgement.
           </p>
           <p>
-            Delays are at an all-time high. Over 60,000 applicants were waiting for a decision in early 2025, with standard waits ranging from 16 to 24 weeks (according to <a href="#" className="text-primary">The Exec Office</a>). That's four to six months of waiting before you see a penny. For a solopreneur running on stretched capacity, that is not nothing.
+            Delays are at an all-time high. Over 60,000 applicants were waiting for a decision in early 2025, with standard waits ranging from 16 to 24 weeks (according to <a href="https://theexecoffice.com/access-to-work-eligibility-2025-2/" target="_blank" rel="noopener noreferrer" className="text-primary">The Exec Office</a>). That's four to six months of waiting before you see a penny. For a solopreneur running on stretched capacity, that is not nothing.
           </p>
           <p>
             There are also reports of awards being significantly reduced with little explanation, and the government is consulting on reforms that may change how Access to Work is delivered in the future — including platform-based or employer-led models, possibly from late 2025 or 2026 (according to <a href="#" className="text-primary">Anita's ND Consultancy</a>). The landscape is shifting. The scheme is under pressure. And neurodivergent people — who arguably benefit most from it — are among those most affected by the uncertainty.
