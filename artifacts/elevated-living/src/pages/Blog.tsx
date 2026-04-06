@@ -41,9 +41,9 @@ const DUMMY_POSTS = [
   },
   {
     id: 2,
-    slug: null,
+    slug: "/blog/corporate-jargon",
     title: "Stop Using Corporate Jargon in Your Impact Reports",
-    category: "Small Charities",
+    category: "For VCSEs",
     date: "Feb 28, 2026",
     excerpt: "Funders want to see human stories backed by solid data. Here's why plain English always wins over consultant-speak.",
     image: null,
