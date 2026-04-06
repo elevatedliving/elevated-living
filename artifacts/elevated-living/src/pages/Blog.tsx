@@ -4,6 +4,14 @@ import { Link } from "wouter";
 
 const DUMMY_POSTS = [
   {
+    id: 6,
+    slug: "/blog/confidence-action",
+    title: "Confidence Doesn't Come First. Action Does.",
+    category: "Solopreneurs",
+    date: "Apr 6, 2026",
+    excerpt: "If you're waiting to feel ready before you start, you could be waiting a very long time. Here's why confidence is a consequence of action — not a condition of it.",
+  },
+  {
     id: 5,
     slug: "/blog/hoodie-hypothesis",
     title: "The Hoodie Hypothesis: What Your Comfort Rituals Are Actually Telling You About How You Work",
