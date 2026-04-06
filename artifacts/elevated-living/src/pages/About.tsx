@@ -70,6 +70,32 @@ export function About() {
           </div>
         </div>
       </Section>
+
+      <Section>
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-accent/40 border border-primary/10 rounded-2xl p-8 flex flex-col sm:flex-row gap-6 items-start">
+            <div className="shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xl">
+              K
+            </div>
+            <div>
+              <p className="text-foreground/80 text-lg leading-relaxed mb-4">
+                Kay Oldroyd, Founder and Director of Elevated Living, has spent over 30 years working deep inside community infrastructure — creating and running the projects, managing the partnerships, and trying to keep the lights on while still delivering the mission.
+              </p>
+              <p className="text-foreground/80 text-lg leading-relaxed mb-5">
+                Kay is a Level 1 Associate of the Institute of Social Value and a qualified Social Value and Return on Investment Practitioner.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                  Level 1 Associate — Institute of Social Value
+                </span>
+                <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                  Social Value &amp; SROI Practitioner
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
     </Layout>
   );
 }
