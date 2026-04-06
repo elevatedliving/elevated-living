@@ -48,15 +48,6 @@ const DUMMY_POSTS = [
     excerpt: "Funders want to see human stories backed by solid data. Here's why plain English always wins over consultant-speak.",
     image: null,
   },
-  {
-    id: 3,
-    slug: null,
-    title: "The Project Focus Checklist",
-    category: "Resources",
-    date: "Jan 15, 2026",
-    excerpt: "Five questions you need to ask before starting any new operational initiative in your small business.",
-    image: null,
-  }
 ];
 
 export function Blog() {
