@@ -12,7 +12,7 @@ export function About() {
             <h1 className="mb-6">The messy reality of doing good work — understood.</h1>
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
-                The founder of Elevated Living has spent over 30 years working deep inside community infrastructure — creating and running the projects, managing the partnerships, and trying to keep the lights on while still delivering the mission.
+                Kay Oldroyd, Founder and Director of Elevated Living, has spent over 30 years working deep inside community infrastructure — creating and running the projects, managing the partnerships, and trying to keep the lights on while still delivering the mission.
               </p>
               <p>
                 We know what it feels like to be a business owner or a charity leader who is brilliant at what they do, but utterly bogged down by the administrative weight of doing it.
@@ -20,7 +20,13 @@ export function About() {
               <p>
                 Elevated Living was founded because too many passionate people were burning out over operations. You shouldn't have to be an expert in project management, funding compliance, or system design just to run your business or community group.
               </p>
-              <p className="text-foreground font-medium border-l-4 border-primary pl-4 py-2">
+              <blockquote className="border-l-4 border-primary pl-4 py-2 not-italic">
+                <p className="text-foreground font-medium">
+                  "When you remove the overwhelm, focus follows — and when focus follows, everything else starts to move."
+                </p>
+                <footer className="mt-2 text-sm text-muted-foreground">Kay Oldroyd, Founder &amp; Director, Elevated Living</footer>
+              </blockquote>
+              <p>
                 Elevated Living's job is to come in, find the focus in the chaos, and build the structures that let you breathe again.
               </p>
             </div>
