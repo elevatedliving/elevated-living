@@ -59,18 +59,12 @@ export function BusinessOwners() {
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Sometimes you just need someone to sit with you, look at everything on your plate, and help you make sense of it. You'll leave with a clear picture of where you are, where you're going, and what needs to happen next.
               </p>
-              <p className="text-sm text-primary/80 italic">
-                Start here if everything feels overwhelming and you're not sure where to begin.
-              </p>
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8 shadow-sm">
               <h3 className="text-xl mb-3">Virtual Assistant Support</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Ongoing, practical, hands-on support. Weekly planning sessions, action logs that actually get followed up, and someone in your corner making sure things don't fall through the cracks. Not a task-ticking service — a proper working partnership.
-              </p>
-              <p className="text-sm text-primary/80 italic">
-                Start here if you know what needs doing but keep running out of time and energy to do it.
               </p>
             </div>
 
@@ -85,9 +79,6 @@ export function BusinessOwners() {
                 <h3 className="text-xl mb-3">ADHD-Friendly Business Support</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Standard business advice often doesn't account for how the ADHD brain actually works. Elevated Living offers support built specifically around you — systems that will actually stick, not just look good on paper. If you're eligible for the DWP's Access to Work scheme, this support can be fully or partially funded. You make the application; we deliver the support.
-                </p>
-                <p className="text-sm text-primary/80 italic">
-                  Start here if you've always worked differently and finally want support that gets that.
                 </p>
               </div>
             </div>
