@@ -133,7 +133,7 @@ export function Home() {
             {
               icon: Target,
               title: "3. The Execution",
-              desc: "Elevated Living will handle the operations, report writing, or project management, while you get back to leading your organisation."
+              desc: "Elevated Living steps in with project management, virtual assistant support, or accountability check-ins — so you can focus on leading your organisation."
             }
           ].map((step, i) => (
             <div key={i} className="relative z-10 flex flex-col items-center text-center">
