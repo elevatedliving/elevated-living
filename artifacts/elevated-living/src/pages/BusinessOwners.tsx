@@ -101,12 +101,12 @@ export function BusinessOwners() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-primary-foreground mb-4">Ready to make sense of the chaos?</h2>
           <p className="text-primary-foreground/80 text-lg mb-10 leading-relaxed">
-            Book a complimentary clarity session — no obligation, no sales pitch. Just an honest conversation about where you are and whether Elevated Living can help.
+            Book a complimentary focus session — no obligation, no sales pitch. Just an honest conversation about where you are and whether Elevated Living can help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/book">
               <Button size="lg" variant="secondary" className="text-primary font-bold w-full sm:w-auto">
-                Book your complimentary clarity session →
+                Book your complimentary focus session →
               </Button>
             </Link>
             <Link href="/contact">
