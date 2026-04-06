@@ -6,7 +6,7 @@ import { ArrowLeft } from "lucide-react";
 export function BlogPostHoodie() {
   return (
     <Layout>
-      <Section className="pt-20 pb-4">
+      <Section className="pt-20 pb-0">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> Back to Insights
@@ -28,7 +28,7 @@ export function BlogPostHoodie() {
             If you've ever reached for a specific hoodie, mug, or playlist before you could even think about starting work — this one's for you. Your comfort rituals are telling you something important. It's time to listen.
           </p>
 
-          <div className="rounded-2xl overflow-hidden mb-12 shadow-md">
+          <div className="rounded-2xl overflow-hidden mb-0 shadow-md">
             <img
               src={`${import.meta.env.BASE_URL}images/hoodie-hypothesis.png`}
               alt="Person working from home in a hoodie, focused at a kitchen table with a coffee"

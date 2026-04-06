@@ -6,7 +6,7 @@ import { ArrowLeft } from "lucide-react";
 export function BlogPostTOMs() {
   return (
     <Layout>
-      <Section className="pt-20 pb-4">
+      <Section className="pt-20 pb-0">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> Back to Insights
@@ -26,7 +26,7 @@ export function BlogPostTOMs() {
             You've probably been approached by a housing association, contractor, or local authority asking you to "help them demonstrate their social value." Maybe they've sent over a spreadsheet and a lot of acronyms. This post cuts through it — so you know exactly what you're being asked, and what to do about it.
           </p>
 
-          <div className="rounded-2xl overflow-hidden mb-12 shadow-md">
+          <div className="rounded-2xl overflow-hidden mb-0 shadow-md">
             <img
               src={`${import.meta.env.BASE_URL}images/toms-social-value.png`}
               alt="Social value terminology word cloud including TOMs, SROI, deadweight, stakeholders and more"

@@ -6,7 +6,7 @@ import { ArrowLeft } from "lucide-react";
 export function BlogPostConfidence() {
   return (
     <Layout>
-      <Section className="pt-20 pb-4">
+      <Section className="pt-20 pb-0">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> Back to Insights
@@ -28,7 +28,7 @@ export function BlogPostConfidence() {
             If you've been waiting until you feel ready — this is the post you didn't know you needed. Because confidence isn't a prerequisite for starting. It's a consequence of having started.
           </p>
 
-          <div className="rounded-2xl overflow-hidden mb-12 shadow-md">
+          <div className="rounded-2xl overflow-hidden mb-0 shadow-md">
             <img
               src={`${import.meta.env.BASE_URL}images/confidence-action.png`}
               alt="Woman walking confidently into a community hub"
