@@ -76,14 +76,13 @@ export function Blog() {
                     </div>
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <div className="flex justify-between items-center mb-3">
-                      <span className="text-xs font-bold uppercase tracking-wider text-primary">{post.category}</span>
+                    <div className="mb-3">
                       <span className="text-xs text-muted-foreground">{post.date}</span>
                     </div>
                     <h3 className="text-xl mb-3 group-hover:text-primary transition-colors">{post.title}</h3>
                     <p className="text-sm text-muted-foreground flex-grow">{post.excerpt}</p>
                     <div className="mt-6 text-sm font-semibold text-primary">
-                      {post.slug ? "Read article →" : "Coming soon"}
+                      Read article →
                     </div>
                   </div>
                 </article>
