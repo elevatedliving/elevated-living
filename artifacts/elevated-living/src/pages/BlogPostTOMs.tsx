@@ -6,7 +6,7 @@ import { ArrowLeft } from "lucide-react";
 export function BlogPostTOMs() {
   return (
     <Layout>
-      <Section className="pt-20 pb-0">
+      <Section className="pt-20">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> Back to Insights
@@ -26,18 +26,14 @@ export function BlogPostTOMs() {
             You've probably been approached by a housing association, contractor, or local authority asking you to "help them demonstrate their social value." Maybe they've sent over a spreadsheet and a lot of acronyms. This post cuts through it — so you know exactly what you're being asked, and what to do about it.
           </p>
 
-          <div className="rounded-2xl overflow-hidden mb-0 shadow-md">
+          <div className="rounded-2xl overflow-hidden mb-10 shadow-md">
             <img
               src={`${import.meta.env.BASE_URL}images/toms-social-value.png`}
               alt="Social value terminology word cloud including TOMs, SROI, deadweight, stakeholders and more"
               className="w-full h-auto object-cover"
             />
           </div>
-        </div>
-      </Section>
-
-      <Section className="pt-0">
-        <div className="max-w-2xl mx-auto prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground">
+        <div className="prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground mt-2">
 
           <h2>First: what is "social value"?</h2>
           <p>
@@ -138,6 +134,7 @@ export function BlogPostTOMs() {
               Book a Complimentary Focus Session →
             </Link>
           </div>
+        </div>
         </div>
       </Section>
     </Layout>

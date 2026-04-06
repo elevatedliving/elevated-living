@@ -6,7 +6,7 @@ import { ArrowLeft } from "lucide-react";
 export function BlogPostAccessToWork() {
   return (
     <Layout>
-      <Section className="pt-20 pb-0">
+      <Section className="pt-20">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> Back to Insights
@@ -28,18 +28,14 @@ export function BlogPostAccessToWork() {
             If you are a neurodivergent solopreneur, there is a government grant with your name on it. It won't sort itself out. Nobody from the DWP is going to knock on your door. You have to go and get it yourself. But it exists, it's real, and for many neurodivergent founders, it is the single most impactful thing they access in their entire business journey.
           </p>
 
-          <div className="rounded-2xl overflow-hidden mb-0 shadow-md">
+          <div className="rounded-2xl overflow-hidden mb-10 shadow-md">
             <img
               src={`${import.meta.env.BASE_URL}images/access-to-work.png`}
               alt="Solopreneur working calmly at home with notes and laptop"
               className="w-full h-auto object-cover"
             />
           </div>
-        </div>
-      </Section>
-
-      <Section className="pt-0">
-        <div className="max-w-2xl mx-auto prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground">
+        <div className="prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground mt-2">
 
           <p>
             Let's start with something that doesn't get said nearly enough. If you're running your own business with ADHD, autism, dyslexia, dyspraxia, or any other condition that makes the administrative, organisational, or communicative side of work significantly harder — there is a government grant with your name on it. It's called <strong>Access to Work</strong>. And if you haven't heard of it, that's not an accident. It's one of the most under-promoted, underused support schemes in the UK. Let's fix that.
@@ -147,6 +143,7 @@ export function BlogPostAccessToWork() {
             </Link>
           </div>
 
+        </div>
         </div>
       </Section>
     </Layout>

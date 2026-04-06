@@ -6,7 +6,7 @@ import { ArrowLeft } from "lucide-react";
 export function BlogPostCorporateJargon() {
   return (
     <Layout>
-      <Section className="pt-20 pb-0">
+      <Section className="pt-20">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> Back to Insights
@@ -28,12 +28,8 @@ export function BlogPostCorporateJargon() {
             Funders want to see human stories backed by solid data. Here's why plain English always wins over consultant-speak — and why your impact report might be accidentally hiding the very thing that makes your organisation worth funding.
           </p>
 
-          <div className="rounded-2xl overflow-hidden mb-0 h-48 bg-gradient-to-br from-primary/20 via-accent to-primary/10"></div>
-        </div>
-      </Section>
-
-      <Section className="pt-0">
-        <div className="max-w-2xl mx-auto prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground">
+          <div className="rounded-2xl overflow-hidden mb-10 h-48 bg-gradient-to-br from-primary/20 via-accent to-primary/10"></div>
+        <div className="prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground mt-2">
 
           <p>
             Picture the scene.
@@ -198,6 +194,7 @@ export function BlogPostCorporateJargon() {
           <p className="text-sm text-muted-foreground">
             <em>Elevated Living helps VCSEs, community organisations, CICs, and purpose-led businesses measure, evidence, and communicate their impact in plain English. No jargon. No fluff. Just your work, clearly told.</em>
           </p>
+        </div>
         </div>
       </Section>
     </Layout>

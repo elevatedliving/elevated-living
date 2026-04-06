@@ -6,7 +6,7 @@ import { ArrowLeft } from "lucide-react";
 export function BlogPostHoodie() {
   return (
     <Layout>
-      <Section className="pt-20 pb-0">
+      <Section className="pt-20">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> Back to Insights
@@ -28,18 +28,14 @@ export function BlogPostHoodie() {
             If you've ever reached for a specific hoodie, mug, or playlist before you could even think about starting work — this one's for you. Your comfort rituals are telling you something important. It's time to listen.
           </p>
 
-          <div className="rounded-2xl overflow-hidden mb-0 shadow-md">
+          <div className="rounded-2xl overflow-hidden mb-10 shadow-md">
             <img
               src={`${import.meta.env.BASE_URL}images/hoodie-hypothesis.png`}
               alt="Person working from home in a hoodie, focused at a kitchen table with a coffee"
               className="w-full h-auto object-cover"
             />
           </div>
-        </div>
-      </Section>
-
-      <Section className="pt-0">
-        <div className="max-w-2xl mx-auto prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground">
+        <div className="prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground mt-2">
 
           <p>
             Let me paint you a picture.
@@ -152,6 +148,7 @@ export function BlogPostHoodie() {
               Book a Complimentary Focus Session →
             </Link>
           </div>
+        </div>
         </div>
       </Section>
     </Layout>

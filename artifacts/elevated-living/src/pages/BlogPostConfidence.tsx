@@ -6,7 +6,7 @@ import { ArrowLeft } from "lucide-react";
 export function BlogPostConfidence() {
   return (
     <Layout>
-      <Section className="pt-20 pb-0">
+      <Section className="pt-20">
         <div className="max-w-2xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" /> Back to Insights
@@ -28,18 +28,14 @@ export function BlogPostConfidence() {
             If you've been waiting until you feel ready — this is the post you didn't know you needed. Because confidence isn't a prerequisite for starting. It's a consequence of having started.
           </p>
 
-          <div className="rounded-2xl overflow-hidden mb-0 shadow-md">
+          <div className="rounded-2xl overflow-hidden mb-10 shadow-md">
             <img
               src={`${import.meta.env.BASE_URL}images/confidence-action.png`}
               alt="Woman walking confidently into a community hub"
               className="w-full h-auto object-cover"
             />
           </div>
-        </div>
-      </Section>
-
-      <Section className="pt-0">
-        <div className="max-w-2xl mx-auto prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground">
+        <div className="prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground mt-2">
 
           <p>
             Let's have an honest conversation about the lie we've all told ourselves at some point.
@@ -167,6 +163,7 @@ export function BlogPostConfidence() {
               Book a Complimentary Focus Session →
             </Link>
           </div>
+        </div>
         </div>
       </Section>
     </Layout>
