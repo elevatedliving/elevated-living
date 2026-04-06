@@ -2,6 +2,8 @@ import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Link } from "wouter";
 
+const DEFAULT_IMAGE = "images/blog-card-abstract.png";
+
 const DUMMY_POSTS = [
   {
     id: 6,
@@ -10,6 +12,7 @@ const DUMMY_POSTS = [
     category: "Solopreneurs",
     date: "Apr 6, 2026",
     excerpt: "If you're waiting to feel ready before you start, you could be waiting a very long time. Here's why confidence is a consequence of action — not a condition of it.",
+    image: DEFAULT_IMAGE,
   },
   {
     id: 5,
@@ -18,6 +21,7 @@ const DUMMY_POSTS = [
     category: "Solopreneurs",
     date: "Apr 1, 2026",
     excerpt: "You've reached for the hoodie. Or the hat. Or the specific mug. This post unpacks why your comfort rituals are a legitimate productivity strategy — and the science that backs it up.",
+    image: "images/hoodie-hypothesis.png",
   },
   {
     id: 4,
@@ -26,6 +30,7 @@ const DUMMY_POSTS = [
     category: "Small Charities",
     date: "Mar 29, 2026",
     excerpt: "You've probably been asked to help a contractor 'demonstrate their social value.' This post explains what TOMs actually are, how they differ from social impact, and what to watch out for before you say yes.",
+    image: DEFAULT_IMAGE,
   },
   {
     id: 1,
@@ -34,6 +39,7 @@ const DUMMY_POSTS = [
     category: "For Business Owners",
     date: "Mar 12, 2026",
     excerpt: "Navigating the DWP isn't easy, but the funding available for neurodivergent founders can completely transform your capacity.",
+    image: DEFAULT_IMAGE,
   },
   {
     id: 2,
@@ -42,6 +48,7 @@ const DUMMY_POSTS = [
     category: "Small Charities",
     date: "Feb 28, 2026",
     excerpt: "Funders want to see human stories backed by solid data. Here's why plain English always wins over consultant-speak.",
+    image: DEFAULT_IMAGE,
   },
   {
     id: 3,
@@ -50,6 +57,7 @@ const DUMMY_POSTS = [
     category: "Resources",
     date: "Jan 15, 2026",
     excerpt: "Five questions you need to ask before starting any new operational initiative in your small business.",
+    image: DEFAULT_IMAGE,
   }
 ];
 
@@ -71,7 +79,7 @@ export function Blog() {
                 <article className="notion-card flex flex-col overflow-hidden bg-card group cursor-pointer h-full">
                   <div className="h-48 border-b border-border relative overflow-hidden">
                     <img
-                      src={`${import.meta.env.BASE_URL}images/blog-card-abstract.png`}
+                      src={`${import.meta.env.BASE_URL}${post.image}`}
                       alt=""
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
