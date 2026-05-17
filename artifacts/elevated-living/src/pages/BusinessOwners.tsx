@@ -22,67 +22,152 @@ export function BusinessOwners() {
         <div className="max-w-3xl mx-auto">
           <h1 className="mb-6">For Business Owners &amp; Solopreneurs</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need focus, structure, and someone who actually follows through.
+            You started your business because you were good at something. You had the idea, the drive, the passion — and then the business side of business arrived. The invoices. The inbox. The to-do list that never gets shorter.
           </p>
         </div>
       </Section>
 
-      {/* The reality */}
+      {/* Self-Assessment */}
       <Section bg="muted">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl mb-8">Sound familiar?</h2>
-          <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
-            <p>
-              You started your business because you were good at something. You had the idea, the drive, the passion — and then the business side of business arrived.
-            </p>
-            <p>
-              The invoices. The inbox. The projects you said yes to because you couldn't afford to say no. The to-do list that never gets shorter.
-            </p>
-            <p>
-              To the outside world, you look like you've got it together. Inside, it's a different story.
-            </p>
-            <p>
-              That's not failure. That's what happens when brilliant, passionate people build something without anyone helping them with the rest of it.
-            </p>
+          <h2 className="text-2xl mb-3">Not sure where to start?</h2>
+          <p className="text-muted-foreground mb-8 leading-relaxed">
+            Answer seven quick questions and we'll recommend the right support for where you are right now — no jargon, no pressure.
+          </p>
+          <div className="rounded-2xl overflow-hidden border border-border shadow-sm bg-background">
+            <iframe
+              src={`${import.meta.env.BASE_URL}assessments/solopreneur.html`}
+              title="Find your support — solopreneurs and small business owners"
+              className="w-full"
+              style={{ height: "820px", border: "none" }}
+              scrolling="yes"
+            />
           </div>
         </div>
       </Section>
 
-      {/* What we offer */}
+      {/* Services & Pricing */}
       <Section>
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl mb-10">What we offer</h2>
-          <div className="space-y-8">
+          <h2 className="text-2xl mb-3">Services &amp; Fees</h2>
+          <p className="text-muted-foreground mb-10 leading-relaxed">
+            All prices exclude VAT. A written agreement is issued before every engagement. Bespoke packages are available on request.
+          </p>
 
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-sm">
-              <h3 className="text-xl mb-3">Project Focus Sessions</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Sometimes you just need someone to sit with you, look at everything on your plate, and help you make sense of it. You'll leave with a clear picture of where you are, where you're going, and what needs to happen next.
+          {/* The Elevated Edit */}
+          <div className="mb-12">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">The Elevated Edit</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Elevated Living's signature thinking and strategy service — cutting through the noise to find what matters and move you forward. The Power Hour is the recommended entry point for new clients.
               </p>
             </div>
-
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-sm">
-              <h3 className="text-xl mb-3">Virtual Assistant Support</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Ongoing, practical, hands-on support. Weekly planning sessions, action logs that actually get followed up, and someone in your corner making sure things don't fall through the cracks. Not a task-ticking service — a proper working partnership.
-              </p>
-            </div>
-
-            <div className="bg-accent/50 border-2 border-primary/20 rounded-2xl p-8 relative overflow-hidden shadow-sm">
-              <div className="absolute top-0 right-0 p-6 opacity-10 pointer-events-none">
-                <BrainCircuit className="w-40 h-40 text-primary" />
-              </div>
-              <div className="relative z-10">
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold tracking-wide uppercase mb-4">
-                  <BrainCircuit className="w-3.5 h-3.5" /> Access to Work eligible
+            <div className="grid gap-4">
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">Best start</p>
+                  <h4 className="font-semibold text-lg mb-1">Power Hour</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">A focused 60-minute session — one problem, cut through, one clear next step.</p>
                 </div>
-                <h3 className="text-xl mb-3">ADHD-Friendly Business Support</h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Standard business advice often doesn't account for how the ADHD brain actually works. Elevated Living offers support built specifically around you — systems that will actually stick, not just look good on paper. If you're eligible for the DWP's Access to Work scheme, this support can be fully or partially funded. You make the application; we deliver the support.
-                </p>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£125</p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Half-Day</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">3.5 hours including prep and written action notes — cutting through the noise to leave you with a sharp, actionable plan.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£350</p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Full Day</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">A full day including a written roadmap and 30-day check-in — your vision, blockers and next 90 days worked through in full.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£650</p>
+                </div>
               </div>
             </div>
+          </div>
 
+          {/* VA Support */}
+          <div className="mb-12">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Virtual Assistant Support</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Practical, hands-on support — admin, coordination, inbox management, scheduling and day-to-day business operations. Not a task-ticking service; a proper working partnership. Minimum one-month commitment on retainers. Additional hours within a retainer month are charged at £45/hour.
+              </p>
+            </div>
+            <div className="grid gap-4">
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Ad Hoc Support</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Flexible support as and when you need it. Minimum 2 hours per booking.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£50<span className="text-base font-normal text-muted-foreground">/hour</span></p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Starter</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">8 hours per month of dedicated support — the right amount to take the admin off your plate and free you up for the work you love.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£360<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Regular</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">16 hours per month of consistent support — the equivalent of two solid days off your to-do list every month.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£680<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Project Management */}
+          <div className="mb-12">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Project Management</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                End-to-end delivery of defined projects and programmes — backed by 20+ years of specialist community and housing sector experience. A scoping session is recommended before any ongoing work begins.
+              </p>
+            </div>
+            <div className="grid gap-4">
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Project Scoping &amp; Setup</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">A half-day discovery, scoping and project planning session — scope, timeline, priorities, risk and next actions.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£495</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ADHD note */}
+          <div className="bg-accent/50 border-2 border-primary/20 rounded-2xl p-8 relative overflow-hidden shadow-sm">
+            <div className="absolute top-0 right-0 p-6 opacity-10 pointer-events-none">
+              <BrainCircuit className="w-40 h-40 text-primary" />
+            </div>
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold tracking-wide uppercase mb-4">
+                <BrainCircuit className="w-3.5 h-3.5" /> Access to Work eligible
+              </div>
+              <h3 className="text-xl font-semibold mb-3">ADHD-Friendly Business Support</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Standard business advice often doesn't account for how the ADHD brain actually works. Elevated Living offers support built specifically around you — systems that will actually stick, not just look good on paper. If you're eligible for the DWP's Access to Work scheme, this support can be fully or partially funded. You make the application; we deliver the support.
+              </p>
+            </div>
           </div>
         </div>
       </Section>
@@ -92,12 +177,12 @@ export function BusinessOwners() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-primary-foreground mb-4">Ready to make sense of the chaos?</h2>
           <p className="text-primary-foreground/80 text-lg mb-10 leading-relaxed">
-            Book a complimentary focus session — no obligation, no sales pitch. Just an honest conversation about where you are and whether Elevated Living can help.
+            Book a complimentary 20-minute session — no obligation, no sales pitch. Just an honest conversation about where you are and whether Elevated Living can help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/book">
               <Button size="lg" variant="secondary" className="text-primary font-bold w-full sm:w-auto">
-                Book your complimentary focus session →
+                Book your complimentary session →
               </Button>
             </Link>
             <Link href="/contact">

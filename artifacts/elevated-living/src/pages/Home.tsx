@@ -46,16 +46,16 @@ export function Home() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <div className="text-sm font-medium text-muted-foreground mr-2 hidden sm:block">I am a...</div>
-            <a href={`${import.meta.env.BASE_URL}assessments/solopreneur.html`}>
+            <Link href="/for-business-owners">
               <Button size="lg" className="w-full sm:w-auto gap-2">
                 Solopreneur / Small Business Owner <ArrowRight className="w-4 h-4" />
               </Button>
-            </a>
-            <a href={`${import.meta.env.BASE_URL}assessments/vcse.html`}>
+            </Link>
+            <Link href="/for-community-organisations">
               <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2">
                 VCSE <ArrowRight className="w-4 h-4" />
               </Button>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </Section>
