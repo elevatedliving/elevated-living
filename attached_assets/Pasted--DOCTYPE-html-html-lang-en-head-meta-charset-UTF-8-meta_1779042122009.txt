@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Your Support — Elevated Living</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#097B7C;--teal-dark:#065f60;--teal-light:#f0fafa;--teal-pale:#D6EEEE;--text-primary:#0f1724;--text-secondary:#5a6472;--text-hint:#9aa3ad;--bg-primary:#ffffff;--bg-secondary:#f7f8f9;--border-light:rgba(0,0,0,0.09);--border-mid:rgba(0,0,0,0.18);--radius-md:10px;--radius-lg:14px}
+body{font-family:'DM Sans',sans-serif;background:var(--bg-secondary);min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:2rem 1rem 4rem;color:var(--text-primary)}
+.sf{width:100%;max-width:600px}
+.sf-intro-title{font-family:'DM Serif Display',serif;font-size:32px;color:var(--text-primary);line-height:1.2;margin-bottom:.75rem}
+.sf-intro-sub{font-size:15px;color:var(--text-secondary);line-height:1.75;margin-bottom:2rem;font-weight:300;max-width:480px}
+.sf-intro-meta{display:flex;gap:1.5rem;margin-bottom:2rem;flex-wrap:wrap}
+.sf-intro-meta-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);font-weight:300}
+.sf-intro-meta-dot{width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0}
+.sf-progress{display:flex;align-items:center;gap:12px;margin-bottom:1.5rem}
+.sf-progress-track{flex:1;height:3px;background:var(--border-light);border-radius:2px;overflow:hidden}
+.sf-progress-fill{height:100%;background:var(--teal);border-radius:2px;transition:width .4s ease}
+.sf-progress-label{font-size:12px;color:var(--text-hint);white-space:nowrap;min-width:48px;text-align:right}
+.sf-card{background:var(--bg-primary);border:.5px solid var(--border-light);border-radius:var(--radius-lg);padding:2rem;margin-bottom:1rem;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.sf-q-label{font-size:11px;font-weight:500;color:var(--teal);letter-spacing:1px;text-transform:uppercase;margin-bottom:.5rem}
+.sf-q-text{font-family:'DM Serif Display',serif;font-size:21px;color:var(--text-primary);line-height:1.35;margin-bottom:.5rem}
+.sf-q-hint{font-size:13px;color:var(--text-secondary);margin-bottom:1.25rem;font-weight:300;line-height:1.5}
+.sf-options{display:flex;flex-direction:column;gap:8px}
+.sf-opt{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:.5px solid var(--border-light);border-radius:var(--radius-md);cursor:pointer;transition:border-color .15s,background .15s;background:var(--bg-primary);user-select:none}
+.sf-opt:hover{border-color:var(--teal);background:var(--teal-light)}
+.sf-opt.selected{border-color:var(--teal);background:var(--teal-light)}
+.sf-radio{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--border-mid);flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;transition:background .15s,border-color .15s}
+.sf-opt.selected .sf-radio{background:var(--teal);border-color:var(--teal)}
+.sf-radio-inner{width:6px;height:6px;border-radius:50%;background:#fff;display:none}
+.sf-opt.selected .sf-radio-inner{display:block}
+.sf-checkbox{width:18px;height:18px;border-radius:4px;border:1.5px solid var(--border-mid);flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;transition:background .15s,border-color .15s}
+.sf-opt.selected .sf-checkbox{background:var(--teal);border-color:var(--teal)}
+.sf-checkbox svg{display:none}
+.sf-opt.selected .sf-checkbox svg{display:block}
+.sf-opt-text{font-size:14px;color:var(--text-primary);line-height:1.55}
+.sf-nav{display:flex;align-items:center;justify-content:space-between}
+.sf-btn{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;padding:11px 26px;border-radius:var(--radius-md);cursor:pointer;transition:all .15s;border:.5px solid}
+.sf-btn-back{background:transparent;border-color:var(--border-mid);color:var(--text-secondary)}
+.sf-btn-next{background:var(--teal);border-color:var(--teal);color:#fff}
+.sf-btn-next:disabled{background:var(--bg-secondary);border-color:var(--border-light);color:var(--text-hint);cursor:not-allowed}
+.sf-result-badge{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.5px;padding:5px 14px;border-radius:20px;background:var(--teal-pale);color:#065A5A;margin-bottom:1rem;text-transform:uppercase}
+.sf-result-title{font-family:'DM Serif Display',serif;font-size:26px;color:var(--text-primary);margin-bottom:.75rem;line-height:1.3}
+.sf-result-feel{font-size:15px;color:var(--text-secondary);line-height:1.75;margin-bottom:1.5rem;font-weight:300;font-style:italic;border-left:3px solid var(--teal-pale);padding-left:1rem}
+.sf-new-client-note{background:var(--teal-light);border:1px solid var(--teal-pale);border-radius:var(--radius-md);padding:14px 18px;margin-bottom:1.25rem;font-size:13px;color:var(--text-secondary);line-height:1.6;font-weight:300}
+.sf-new-client-note strong{color:var(--text-primary);font-weight:500}
+.sf-recs{display:flex;flex-direction:column;gap:10px;margin-bottom:1.5rem}
+.sf-rec{border:.5px solid var(--border-light);border-radius:var(--radius-md);padding:16px 18px}
+.sf-rec.primary{border-color:var(--teal);border-width:1.5px}
+.sf-rec-tag{font-size:11px;font-weight:500;color:var(--teal);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.sf-rec-name{font-size:16px;font-weight:500;color:var(--text-primary);margin-bottom:5px}
+.sf-rec-desc{font-size:13px;color:var(--text-secondary);line-height:1.6;font-weight:300;margin-bottom:8px}
+.sf-rec-price{font-size:15px;color:var(--teal);font-weight:500;margin-bottom:12px}
+.sf-rec-context{font-size:12px;color:var(--text-secondary);line-height:1.5;margin-bottom:12px;font-style:italic}
+.sf-rec-actions{display:flex;gap:8px;flex-wrap:wrap}
+.sf-btn-pay{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:9px 18px;border-radius:8px;background:var(--teal);color:#fff;border:none;cursor:pointer;text-decoration:none;display:inline-block}
+.sf-btn-book{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:9px 18px;border-radius:8px;background:transparent;color:var(--teal);border:1.5px solid var(--teal);cursor:pointer;text-decoration:none;display:inline-block}
+.sf-impact-callout{background:var(--teal-light);border:1px solid var(--teal-pale);border-radius:var(--radius-md);padding:14px 18px;margin-bottom:1.5rem;display:none}
+.sf-impact-callout.show{display:block}
+.sf-impact-callout-label{font-size:11px;font-weight:500;color:var(--teal);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.sf-impact-callout-text{font-size:13px;color:var(--text-secondary);line-height:1.6;font-weight:300}
+.sf-divider{border:none;border-top:.5px solid var(--border-light);margin:1.5rem 0}
+.sf-cta-text{font-size:14px;color:var(--text-secondary);margin-bottom:1.25rem;line-height:1.7;font-weight:300}
+.sf-cta-row{display:flex;gap:10px;flex-wrap:wrap}
+.sf-btn-primary{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;padding:12px 24px;border-radius:var(--radius-md);cursor:pointer;background:var(--teal);border:none;color:#fff;text-decoration:none;display:inline-block}
+.sf-btn-secondary{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:400;padding:12px 24px;border-radius:var(--radius-md);cursor:pointer;background:transparent;border:.5px solid var(--border-mid);color:var(--text-primary)}
+</style>
+</head>
+<body>
+<div class="sf"><div id="sf-screen"></div></div>
+<script>
+var CAL="https://cal.com/elevatedlivingenterprise";
+var CONSULT=CAL+"/free-consultation";
+
+var questions=[
+  {id:"q0",label:"Question 1 of 7",text:"Has your organisation worked with Elevated Living before?",hint:null,type:"single",options:[
+    {id:"yes",text:"Yes — we are an existing client"},
+    {id:"no",text:"No — this is our first time"}
+  ]},
+  {id:"q1",label:"Question 2 of 7",text:"Where does your organisation feel it is at right now?",hint:"Pick up to 2 that feel most honest.",type:"multi",max:2,options:[
+    {id:"a",text:"Doing great work but struggling to keep up"},
+    {id:"b",text:"We know what we want but are stuck on how to get there"},
+    {id:"c",text:"Trying to grow but without the structure to support it"},
+    {id:"d",text:"We need funding but struggle to show funders the difference we make"},
+    {id:"e",text:"We feel isolated and need stronger partnerships"},
+    {id:"f",text:"At a crossroads and need to think carefully about our future"}
+  ]},
+  {id:"q2",label:"Question 3 of 7",text:"What does your current capacity look like?",hint:"Be honest — this helps us suggest support that will actually work for you.",type:"single",options:[
+    {id:"a",text:"Just me — I am running everything alone"},
+    {id:"b",text:"Small team but everyone is stretched to their limit"},
+    {id:"c",text:"Mostly volunteer-led with very limited time and resource"},
+    {id:"d",text:"Some structure but important things are still falling through the cracks"}
+  ]},
+  {id:"q3",label:"Question 4 of 7",text:"When it comes to your vision, which feels most true?",hint:null,type:"single",options:[
+    {id:"a",text:"Clear vision but no real plan for getting there"},
+    {id:"b",text:"Our vision needs revisiting — things have changed"},
+    {id:"c",text:"We have never properly defined what success looks like"},
+    {id:"d",text:"We know where we are going — we just need help doing it"}
+  ]},
+  {id:"q4",label:"Question 5 of 7",text:"What is your biggest challenge with funding and impact?",hint:"Pick up to 2.",type:"multi",max:2,options:[
+    {id:"a",text:"No consistent way to record what we do or who we help"},
+    {id:"b",text:"We write funding bids in a rush and it shows"},
+    {id:"c",text:"We struggle to show funders the real difference we make"},
+    {id:"d",text:"We have lost funding recently and need to think about sustainability"},
+    {id:"e",text:"Too busy delivering to think about fundraising"},
+    {id:"f",text:"Funding is not our main challenge right now"}
+  ]},
+  {id:"q5",label:"Question 6 of 7",text:"How connected does your organisation feel to others?",hint:null,type:"single",options:[
+    {id:"a",text:"Very isolated — we mostly work alone and it is not working"},
+    {id:"b",text:"Some connections but not consistent or structured"},
+    {id:"c",text:"Well connected but want to do more"},
+    {id:"d",text:"Partnership is central to what we do — we just need help managing it better"}
+  ]},
+  {id:"q6",label:"Question 7 of 7",text:"What would make the biggest difference in the next six months?",hint:null,type:"single",options:[
+    {id:"a",text:"Getting clear on our direction, priorities and what we are working towards"},
+    {id:"b",text:"Having someone help us plan and deliver a specific project"},
+    {id:"c",text:"Building stronger relationships with funders, partners and communities"},
+    {id:"d",text:"Being able to measure and communicate our impact with confidence"},
+    {id:"e",text:"Having practical support so we can keep delivering without burning out"}
+  ]}
+];
+
+var services={
+  powerHour:{tag:"Best start",name:"Elevated Edit — Power Hour",desc:"A focused 60-minute session — one challenge, cut through, one clear next step.",price:"125",calUrl:CAL+"/power-hour",bookPay:true},
+  clarityHalfDay:{tag:"Recommended",name:"Elevated Edit — Half-Day",desc:"A structured half-day — cutting through the noise on where your organisation is and where it needs to go. You will leave with clear priorities and a practical plan.",price:"350",calUrl:CAL+"/halfday-session",bookPay:true},
+  fullDay:{tag:"Recommended",name:"Elevated Edit — Full Day",desc:"A full-day session — your organisation's vision, direction and priorities worked through in full, with a written roadmap and 30-day follow-up.",price:"650",calUrl:CAL+"/fullday-intensive",bookPay:true},
+  advisory:{tag:"Ongoing",name:"Elevated Edit — Monthly Retainer",desc:"Two sessions a month plus async support — an ongoing thinking partnership as your organisation grows.",price:"475 per month",calUrl:CONSULT,bookPay:false,context:"Tailored ongoing service — book a free consultation before committing."},
+  pm:{tag:"Recommended",name:"Project Scoping and Setup",desc:"A half-day specialist scoping session — scope, timeline, priorities, risk and next actions.",price:"495",calUrl:CAL+"/project-scoping",bookPay:true},
+  pmRetainer:{tag:"Next step",name:"Project Management Retainer",desc:"Ongoing, hands-on management of your project or programme from scoping to delivery.",price:"From 1,050 per month",calUrl:CONSULT,bookPay:false,context:"Discuss ongoing management in your free consultation."},
+  partnership:{tag:"Recommended",name:"Partnership Development and Community Engagement",desc:"Support to identify, build and manage meaningful relationships with organisations, funders, local authorities and the communities you serve.",price:"Bespoke",calUrl:CONSULT,bookPay:false,context:"Tailored to your needs — book a free consultation and we will scope it together."},
+  impactReport:{tag:"Recommended",name:"Impact Report Writing",desc:"A comprehensive report capturing your outcomes, social value and evidence — including impact summary and social value statement.",price:"Bespoke",calUrl:CONSULT,bookPay:false,context:"Tailored to your needs — book a free consultation and we will scope it together."},
+  consultation:{tag:"Free start",name:"Free Clarity Consultation",desc:"A free 30-minute conversation about where your organisation is and what support might help. No pressure, no agenda.",price:"Free",calUrl:CONSULT,bookPay:false}
+};
+
+var current=-1,answers={};
+var screen=document.getElementById("sf-screen");
+
+function isNewClient(){return answers.q0==="no";}
+function pct(){return current<0?0:Math.round((current/questions.length)*100);}
+
+function score(ans){
+  var s={clarity:0,pm:0,partnership:0,impact:0,capacity:"stretched"};
+  var q1=ans.q1||[],q2=ans.q2,q3=ans.q3,q4=ans.q4||[],q5=ans.q5,q6=ans.q6;
+  if(q1.indexOf("b")>-1||q1.indexOf("f")>-1)s.clarity+=2;
+  if(q1.indexOf("c")>-1){s.clarity+=1;s.pm+=1;}
+  if(q1.indexOf("d")>-1)s.impact+=2;
+  if(q1.indexOf("e")>-1)s.partnership+=2;
+  if(q2==="a"){s.clarity+=1;s.capacity="solo";}
+  if(q2==="b")s.capacity="overstretched";
+  if(q2==="c")s.capacity="volunteer";
+  if(q2==="d"){s.pm+=1;s.clarity+=1;}
+  if(q3==="a"){s.clarity+=2;s.pm+=1;}
+  if(q3==="b"||q3==="c")s.clarity+=3;
+  if(q3==="d")s.pm+=3;
+  if(q4.indexOf("a")>-1||q4.indexOf("c")>-1)s.impact+=2;
+  if(q4.indexOf("b")>-1)s.impact+=1;
+  if(q4.indexOf("d")>-1){s.clarity+=1;s.impact+=1;}
+  if(q4.indexOf("e")>-1)s.clarity+=1;
+  if(q5==="a"||q5==="b")s.partnership+=2;
+  if(q5==="c")s.partnership+=1;
+  if(q5==="d")s.pm+=1;
+  if(q6==="a")s.clarity+=3;if(q6==="b")s.pm+=3;if(q6==="c")s.partnership+=3;if(q6==="d")s.impact+=3;if(q6==="e")s.pm+=2;
+  return s;
+}
+
+function showImpactCallout(ans){
+  var q4=ans.q4||[];
+  return q4.indexOf("a")>-1||q4.indexOf("b")>-1||q4.indexOf("c")>-1||q4.indexOf("d")>-1;
+}
+
+function getResult(ans){
+  var s=score(ans),cap=s.capacity,si=showImpactCallout(ans),newClient=isNewClient();
+  var cats=["clarity","pm","partnership","impact"];
+  cats.sort(function(a,b){return s[b]-s[a];});
+  var top=cats[0];
+  if(newClient){
+    if(top==="clarity"){return{feel:"Your organisation is doing important work but the path forward is not clear. The Elevated Edit Power Hour is the ideal starting point.",newClientNote:"As a new client we recommend starting with a Power Hour — a focused session that gives us both a clear picture of where your organisation is and where it needs to go.",primary:services.powerHour,secondary:{tag:"Where this leads",name:"Elevated Edit — Half-Day",desc:"Once we have worked together, the natural next step is a deeper Half-Day session to build your full organisational plan.",price:"350",calUrl:CAL+"/halfday-session",bookPay:true},showImpact:si};}
+    if(top==="pm"){return{feel:"You have something real to deliver. A Project Scoping session is the right starting point — it maps everything out before delivery begins.",newClientNote:"As a new client, a Project Scoping and Setup session is the right entry point — structured, focused and immediately actionable.",primary:services.pm,secondary:{tag:"Next step",name:"Project Management Retainer",desc:"Once your project is scoped, ongoing PM retainers start from 1,050 per month.",price:"From 1,050 per month",calUrl:CONSULT,bookPay:false,context:"Discuss ongoing support in your free consultation."},showImpact:si};}
+    if(top==="partnership"){return{feel:"Your organisation is doing valuable work — and the right connections could open up real opportunities. A free consultation is the right first step.",newClientNote:"As a new client, a free consultation gives us a clear picture of your needs before we scope a partnership programme.",primary:services.consultation,secondary:{tag:"Next step",name:"Partnership Development and Community Engagement",desc:"Once we understand your needs, we will scope a tailored partnership programme.",price:"Bespoke",calUrl:CONSULT,bookPay:false},showImpact:si};}
+    if(top==="impact"){return{feel:"Your organisation is making a genuine difference — but finding it hard to communicate that to funders and partners. A free consultation is the right first step.",newClientNote:"As a new client, a free consultation lets us understand your work and scope the right impact report for your needs.",primary:services.consultation,secondary:{tag:"Next step",name:"Impact Report Writing",desc:"A comprehensive report capturing your outcomes, social value and evidence for your funders and partners.",price:"Bespoke",calUrl:CONSULT,bookPay:false},showImpact:false};}
+  }
+  if(top==="clarity"){
+    var feel="Your organisation is doing important work but the path forward is not clear. The Elevated Edit gives you dedicated space to cut through the noise and find your direction.";
+    if(cap==="solo"||cap==="volunteer")return{feel:feel,primary:services.powerHour,secondary:services.clarityHalfDay,showImpact:si};
+    return{feel:feel,primary:services.clarityHalfDay,secondary:services.fullDay,showImpact:si};
+  }
+  if(top==="pm"){var feel="You have a sense of where you want to go — but the day-to-day pressure makes it almost impossible to get there.";return{feel:feel,primary:services.pm,secondary:services.pmRetainer,showImpact:si};}
+  if(top==="partnership"){var feel="Your organisation is doing valuable work — and the right connections could open up real opportunities.";return{feel:feel,primary:services.partnership,secondary:services.clarityHalfDay,showImpact:si};}
+  if(top==="impact"){var feel="Your organisation is making a genuine difference — but finding it hard to communicate that in a way that resonates with funders and partners.";return{feel:feel,primary:services.impactReport,secondary:services.clarityHalfDay,showImpact:si};}
+  return{feel:"Every organisation is different — and a conversation is always the best starting point.",primary:services.consultation,secondary:null,showImpact:false};
+}
+
+function actionButtons(svc){
+  if(svc.bookPay&&svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-pay\" target=\"_blank\">Book and Pay &mdash; &pound;"+svc.price+"</a>";}
+  if(svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-book\" target=\"_blank\">Book a free consultation</a>";}
+  return "";
+}
+
+function recCard(svc,isPrimary,tagOverride){
+  var ctx=svc.context?"<p class=\"sf-rec-context\">"+svc.context+"</p>":"";
+  var priceDisplay=svc.price==="Free"||svc.price==="Bespoke"?svc.price:"&pound;"+svc.price;
+  return "<div class=\"sf-rec"+(isPrimary?" primary":"")+"\">"
+    +"<p class=\"sf-rec-tag\">"+(tagOverride||svc.tag)+"</p>"
+    +"<p class=\"sf-rec-name\">"+svc.name+"</p>"
+    +"<p class=\"sf-rec-desc\">"+svc.desc+"</p>"
+    +"<p class=\"sf-rec-price\">"+priceDisplay+"</p>"
+    +ctx
+    +"<div class=\"sf-rec-actions\">"+actionButtons(svc)+"</div>"
+    +"</div>";
+}
+
+function toggleOpt(qid,oid,isMulti,max){
+  if(!answers[qid])answers[qid]=[];
+  var arr=answers[qid];
+  if(isMulti){var idx=arr.indexOf(oid);if(idx>-1){arr.splice(idx,1);}else if(arr.length<max){arr.push(oid);}}
+  else{answers[qid]=[oid];setTimeout(function(){goNext();},220);}
+  renderQuestion(current);
+}
+
+function goNext(){
+  var q=questions[current];
+  if(!answers[q.id]||answers[q.id].length===0)return;
+  if(q.type==="single")answers[q.id]=answers[q.id][0];
+  if(current===questions.length-1){renderResult();return;}
+  current++;renderQuestion(current);
+}
+
+function goBack(){
+  if(current<=0){current=-1;answers={};renderIntro();return;}
+  current--;renderQuestion(current);
+}
+
+function startQuiz(){current=0;renderQuestion(0);}
+function restartQuiz(){current=-1;answers={};renderIntro();}
+
+function renderIntro(){
+  screen.innerHTML="<h1 class=\"sf-intro-title\">Let's work out what your organisation needs</h1><p class=\"sf-intro-sub\">Seven quick questions — no jargon, no pressure. An honest look at where you are and what support could help most.</p><div class=\"sf-intro-meta\"><div class=\"sf-intro-meta-item\"><div class=\"sf-intro-meta-dot\"></div>~2 minutes</div><div class=\"sf-intro-meta-item\"><div class=\"sf-intro-meta-dot\"></div>No sign-up</div><div class=\"sf-intro-meta-item\"><div class=\"sf-intro-meta-dot\"></div>Free consultation available</div></div><button class=\"sf-btn sf-btn-next\" id=\"btn-start\">Get started</button>";
+  document.getElementById("btn-start").addEventListener("click",function(){startQuiz();});
+}
+
+function renderQuestion(idx){
+  var q=questions[idx],ans=answers[q.id]||[],isMulti=q.type==="multi",canNext=ans.length>0;
+  var optsHtml=q.options.map(function(o){
+    var sel=ans.indexOf(o.id)>-1;
+    if(isMulti){return "<div class=\"sf-opt"+(sel?" selected":"")+"\" data-qid=\""+q.id+"\" data-oid=\""+o.id+"\" data-multi=\"1\" data-max=\""+(q.max||99)+"\"><span class=\"sf-checkbox\"><svg width=\"10\" height=\"8\" viewBox=\"0 0 10 8\" fill=\"none\"><polyline points=\"1,4 3.8,7 9,1\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span><span class=\"sf-opt-text\">"+o.text+"</span></div>";}
+    return "<div class=\"sf-opt"+(sel?" selected":"")+"\" data-qid=\""+q.id+"\" data-oid=\""+o.id+"\" data-multi=\"0\" data-max=\"1\"><span class=\"sf-radio\"><span class=\"sf-radio-inner\"></span></span><span class=\"sf-opt-text\">"+o.text+"</span></div>";
+  }).join("");
+  var isLast=idx===questions.length-1;
+  screen.innerHTML="<div class=\"sf-progress\"><div class=\"sf-progress-track\"><div class=\"sf-progress-fill\" style=\"width:"+pct()+"%\"></div></div><span class=\"sf-progress-label\">"+(idx+1)+" of "+questions.length+"</span></div><div class=\"sf-card\"><p class=\"sf-q-label\">"+q.label+"</p><p class=\"sf-q-text\">"+q.text+"</p>"+(q.hint?"<p class=\"sf-q-hint\">"+q.hint+"</p>":"")+"<div class=\"sf-options\">"+optsHtml+"</div></div><div class=\"sf-nav\"><button class=\"sf-btn sf-btn-back\" id=\"btn-back\">"+(idx===0?"Start over":"Back")+"</button><button class=\"sf-btn sf-btn-next\" id=\"btn-next\""+(canNext?"":" disabled")+">"+(isLast?"See my recommendation":"Next")+"</button></div>";
+  document.getElementById("btn-back").addEventListener("click",function(){goBack();});
+  document.getElementById("btn-next").addEventListener("click",function(){goNext();});
+  var opts=screen.querySelectorAll(".sf-opt");
+  for(var i=0;i<opts.length;i++){(function(el){el.addEventListener("click",function(){toggleOpt(el.getAttribute("data-qid"),el.getAttribute("data-oid"),el.getAttribute("data-multi")==="1",parseInt(el.getAttribute("data-max")));});})(opts[i]);}
+}
+
+function renderResult(){
+  var result=getResult(answers),secondary=result.secondary;
+  var noteHtml=result.newClientNote?"<div class=\"sf-new-client-note\"><strong>New clients:</strong> "+result.newClientNote+"</div>":"";
+  var impactHtml="";
+  if(result.showImpact&&result.primary!==services.impactReport){impactHtml="<div class=\"sf-impact-callout show\"><p class=\"sf-impact-callout-label\">Also for you</p><p class=\"sf-impact-callout-text\">You may also benefit from <strong>Impact Report Writing</strong> — capturing the real difference you make in a format funders can act on. Book a free consultation to discuss this <a href=\""+CONSULT+"\" style=\"color:var(--teal);text-decoration:underline;\">here</a>.</p></div>";}
+  var secHtml=secondary?recCard(secondary,false,secondary.tag):"";
+  screen.innerHTML="<div class=\"sf-progress\"><div class=\"sf-progress-track\"><div class=\"sf-progress-fill\" style=\"width:100%\"></div></div><span class=\"sf-progress-label\">Done</span></div><div class=\"sf-card\"><span class=\"sf-result-badge\">Our recommendation</span><h2 class=\"sf-result-title\">Here's our recommendation</h2><p class=\"sf-result-feel\">"+result.feel+"</p>"+noteHtml+"<div class=\"sf-recs\">"+recCard(result.primary,true)+secHtml+"</div>"+impactHtml+"<hr class=\"sf-divider\"><p class=\"sf-cta-text\">Not quite right? A free 30-minute conversation is always the best place to start — no commitment.</p><div class=\"sf-cta-row\"><a href=\""+CONSULT+"\" class=\"sf-btn-primary\" target=\"_blank\">Book a free consultation</a><button class=\"sf-btn-secondary\" id=\"btn-restart\">Start again</button></div></div>";
+  document.getElementById("btn-restart").addEventListener("click",function(){restartQuiz();});
+}
+
+renderIntro();
+</script>
+</body>
+</html>

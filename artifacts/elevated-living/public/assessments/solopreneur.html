@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Your Support — Elevated Living</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#097B7C;--teal-dark:#065f60;--teal-light:#f0fafa;--teal-pale:#D6EEEE;--text-primary:#0f1724;--text-secondary:#5a6472;--text-hint:#9aa3ad;--bg-primary:#ffffff;--bg-secondary:#f7f8f9;--border-light:rgba(0,0,0,0.09);--border-mid:rgba(0,0,0,0.18);--radius-md:10px;--radius-lg:14px}
+body{font-family:'DM Sans',sans-serif;background:var(--bg-secondary);min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:2rem 1rem 4rem;color:var(--text-primary)}
+.sf{width:100%;max-width:600px}
+.sf-intro-title{font-family:'DM Serif Display',serif;font-size:32px;color:var(--text-primary);line-height:1.2;margin-bottom:.75rem}
+.sf-intro-sub{font-size:15px;color:var(--text-secondary);line-height:1.75;margin-bottom:2rem;font-weight:300;max-width:480px}
+.sf-intro-meta{display:flex;gap:1.5rem;margin-bottom:2rem;flex-wrap:wrap}
+.sf-intro-meta-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);font-weight:300}
+.sf-intro-meta-dot{width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0}
+.sf-progress{display:flex;align-items:center;gap:12px;margin-bottom:1.5rem}
+.sf-progress-track{flex:1;height:3px;background:var(--border-light);border-radius:2px;overflow:hidden}
+.sf-progress-fill{height:100%;background:var(--teal);border-radius:2px;transition:width .4s ease}
+.sf-progress-label{font-size:12px;color:var(--text-hint);white-space:nowrap;min-width:48px;text-align:right}
+.sf-card{background:var(--bg-primary);border:.5px solid var(--border-light);border-radius:var(--radius-lg);padding:2rem;margin-bottom:1rem;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.sf-q-label{font-size:11px;font-weight:500;color:var(--teal);letter-spacing:1px;text-transform:uppercase;margin-bottom:.5rem}
+.sf-q-text{font-family:'DM Serif Display',serif;font-size:21px;color:var(--text-primary);line-height:1.35;margin-bottom:.5rem}
+.sf-q-hint{font-size:13px;color:var(--text-secondary);margin-bottom:1.25rem;font-weight:300;line-height:1.5}
+.sf-options{display:flex;flex-direction:column;gap:8px}
+.sf-opt{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:.5px solid var(--border-light);border-radius:var(--radius-md);cursor:pointer;transition:border-color .15s,background .15s;background:var(--bg-primary);user-select:none}
+.sf-opt:hover{border-color:var(--teal);background:var(--teal-light)}
+.sf-opt.selected{border-color:var(--teal);background:var(--teal-light)}
+.sf-radio{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--border-mid);flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;transition:background .15s,border-color .15s}
+.sf-opt.selected .sf-radio{background:var(--teal);border-color:var(--teal)}
+.sf-radio-inner{width:6px;height:6px;border-radius:50%;background:#fff;display:none}
+.sf-opt.selected .sf-radio-inner{display:block}
+.sf-checkbox{width:18px;height:18px;border-radius:4px;border:1.5px solid var(--border-mid);flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;transition:background .15s,border-color .15s}
+.sf-opt.selected .sf-checkbox{background:var(--teal);border-color:var(--teal)}
+.sf-checkbox svg{display:none}
+.sf-opt.selected .sf-checkbox svg{display:block}
+.sf-opt-text{font-size:14px;color:var(--text-primary);line-height:1.55}
+.sf-nav{display:flex;align-items:center;justify-content:space-between}
+.sf-btn{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;padding:11px 26px;border-radius:var(--radius-md);cursor:pointer;transition:all .15s;border:.5px solid}
+.sf-btn-back{background:transparent;border-color:var(--border-mid);color:var(--text-secondary)}
+.sf-btn-next{background:var(--teal);border-color:var(--teal);color:#fff}
+.sf-btn-next:disabled{background:var(--bg-secondary);border-color:var(--border-light);color:var(--text-hint);cursor:not-allowed}
+.sf-result-badge{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.5px;padding:5px 14px;border-radius:20px;background:var(--teal-pale);color:#065A5A;margin-bottom:1rem;text-transform:uppercase}
+.sf-result-title{font-family:'DM Serif Display',serif;font-size:26px;color:var(--text-primary);margin-bottom:.75rem;line-height:1.3}
+.sf-result-feel{font-size:15px;color:var(--text-secondary);line-height:1.75;margin-bottom:1.5rem;font-weight:300;font-style:italic;border-left:3px solid var(--teal-pale);padding-left:1rem}
+.sf-new-client-note{background:var(--teal-light);border:1px solid var(--teal-pale);border-radius:var(--radius-md);padding:14px 18px;margin-bottom:1.25rem;font-size:13px;color:var(--text-secondary);line-height:1.6;font-weight:300}
+.sf-new-client-note strong{color:var(--text-primary);font-weight:500}
+.sf-recs{display:flex;flex-direction:column;gap:10px;margin-bottom:1.5rem}
+.sf-rec{border:.5px solid var(--border-light);border-radius:var(--radius-md);padding:16px 18px}
+.sf-rec.primary{border-color:var(--teal);border-width:1.5px}
+.sf-rec-tag{font-size:11px;font-weight:500;color:var(--teal);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.sf-rec-name{font-size:16px;font-weight:500;color:var(--text-primary);margin-bottom:5px}
+.sf-rec-desc{font-size:13px;color:var(--text-secondary);line-height:1.6;font-weight:300;margin-bottom:8px}
+.sf-rec-price{font-size:15px;color:var(--teal);font-weight:500;margin-bottom:12px}
+.sf-rec-context{font-size:12px;color:var(--text-secondary);line-height:1.5;margin-bottom:12px;font-style:italic}
+.sf-rec-actions{display:flex;gap:8px;flex-wrap:wrap}
+.sf-btn-pay{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:9px 18px;border-radius:8px;background:var(--teal);color:#fff;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:background .15s}
+.sf-btn-book{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:9px 18px;border-radius:8px;background:transparent;color:var(--teal);border:1.5px solid var(--teal);cursor:pointer;text-decoration:none;display:inline-block;transition:all .15s}
+.sf-divider{border:none;border-top:.5px solid var(--border-light);margin:1.5rem 0}
+.sf-cta-text{font-size:14px;color:var(--text-secondary);margin-bottom:1.25rem;line-height:1.7;font-weight:300}
+.sf-cta-row{display:flex;gap:10px;flex-wrap:wrap}
+.sf-btn-primary{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;padding:12px 24px;border-radius:var(--radius-md);cursor:pointer;background:var(--teal);border:none;color:#fff;text-decoration:none;display:inline-block;transition:background .15s}
+.sf-btn-secondary{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:400;padding:12px 24px;border-radius:var(--radius-md);cursor:pointer;background:transparent;border:.5px solid var(--border-mid);color:var(--text-primary);transition:background .15s}
+@media(max-width:480px){body{padding:1.25rem .75rem 3rem}.sf-card{padding:1.5rem}.sf-intro-title{font-size:26px}.sf-q-text{font-size:18px}.sf-result-title{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="sf"><div id="sf-screen"></div></div>
+<script>
+var CAL="https://cal.com/elevatedlivingenterprise";
+var CONSULT=CAL+"/free-consultation";
+
+var questions=[
+  {id:"q0",label:"Question 1 of 7",text:"Have you worked with Elevated Living before?",hint:null,type:"single",options:[
+    {id:"yes",text:"Yes — I am an existing client"},
+    {id:"no",text:"No — this is my first time"}
+  ]},
+  {id:"q1",label:"Question 2 of 7",text:"What is going on for you right now?",hint:"Pick up to 2 that feel most true.",type:"multi",max:2,options:[
+    {id:"a",text:"I have an idea but cannot seem to get started"},
+    {id:"b",text:"I have started something but it feels like chaos"},
+    {id:"c",text:"I am doing too much and burning out"},
+    {id:"d",text:"I know what I want — I just need help doing it"},
+    {id:"e",text:"I want to grow but I am not sure what the next step is"}
+  ]},
+  {id:"q2",label:"Question 3 of 7",text:"How much time do you have to work on your business each week?",hint:"Be honest — there is no wrong answer.",type:"single",options:[
+    {id:"a",text:"Barely any — I am completely in the weeds"},
+    {id:"b",text:"A few hours here and there, if I am lucky"},
+    {id:"c",text:"I can carve out focused time if I have a clear plan"},
+    {id:"d",text:"I am quite structured — I just need the right support"}
+  ]},
+  {id:"q3",label:"Question 4 of 7",text:"Which of these feels most like what you need right now?",hint:null,type:"single",options:[
+    {id:"a",text:"Someone to help me think clearly, cut through the noise and make a plan"},
+    {id:"b",text:"Someone to take tasks off my hands"},
+    {id:"c",text:"Someone to manage a specific project for me"},
+    {id:"d",text:"A trusted thinking partner I can come back to regularly"}
+  ]},
+  {id:"q4",label:"Question 5 of 7",text:"What is your biggest frustration right now?",hint:"Pick up to 2.",type:"multi",max:2,options:[
+    {id:"a",text:"I start things but rarely finish them"},
+    {id:"b",text:"Admin takes up all my time instead of the work I love"},
+    {id:"c",text:"I do not have a clear plan or roadmap"},
+    {id:"d",text:"I feel like I am going round in circles"},
+    {id:"e",text:"I am doing everything myself and it is not sustainable"},
+    {id:"f",text:"I do not know how to take my idea to the next level"}
+  ]},
+  {id:"q5",label:"Question 6 of 7",text:"What would a good outcome look like in the next 90 days?",hint:null,type:"single",options:[
+    {id:"a",text:"A clear, realistic action plan I can actually follow"},
+    {id:"b",text:"More of the daily work taken off my plate"},
+    {id:"c",text:"A specific project completed or well underway"},
+    {id:"d",text:"A strategic thinking partner I can rely on regularly"}
+  ]},
+  {id:"q6",label:"Question 7 of 7",text:"What is your honest relationship with investing in support right now?",hint:null,type:"single",options:[
+    {id:"a",text:"I am cautious — I need to be really sure before I spend"},
+    {id:"b",text:"I have some flexibility if I can see the value clearly"},
+    {id:"c",text:"Budget is not the main barrier — fit and trust are"},
+    {id:"d",text:"I am looking for an ongoing relationship, not a one-off"}
+  ]}
+];
+
+var services={
+  powerHour:{tag:"Best start",name:"Elevated Edit — Power Hour",desc:"A focused 60-minute session — one problem, cut through, one clear next step.",price:"125",calUrl:CAL+"/power-hour",bookPay:true},
+  halfDay:{tag:"Recommended",name:"Elevated Edit — Half-Day",desc:"A structured half-day with written action notes — cutting through the noise to leave you with a sharp, actionable plan.",price:"350",calUrl:CAL+"/halfday-session",bookPay:true},
+  fullDay:{tag:"Recommended",name:"Elevated Edit — Full Day",desc:"A full-day session — your vision, blockers and next 90 days worked through in full. Includes a written roadmap and 30-day check-in.",price:"650",calUrl:CAL+"/fullday-intensive",bookPay:true},
+  advisory:{tag:"Recommended",name:"Elevated Edit — Monthly Retainer",desc:"Two sessions a month plus async support — an ongoing thinking partnership.",price:"475 per month",calUrl:CONSULT,bookPay:false,context:"This is a tailored ongoing service — book a free consultation and we will scope it together before you commit to anything."},
+  vaStarter:{tag:"Recommended",name:"VA Retainer — Starter",desc:"Eight hours a month of dedicated support to take the admin off your plate and free you up for the work you love.",price:"360 per month",calUrl:CAL+"/virtual-assistant",bookPay:false,context:"This is a tailored retainer — book a free consultation and we will scope it together before you commit to anything."},
+  vaRegular:{tag:"Also consider",name:"VA Retainer — Regular",desc:"Sixteen hours a month of consistent support — the equivalent of two solid days off your to-do list every month.",price:"680 per month",calUrl:CAL+"/virtual-assistant",bookPay:false,context:"This is a tailored retainer — book a free consultation and we will scope it together before you commit to anything."},
+  pmScoping:{tag:"Recommended",name:"Project Scoping and Setup",desc:"A half-day specialist scoping session — scope, timeline, priorities, risk and next actions.",price:"495",calUrl:CAL+"/project-scoping",bookPay:true},
+  pmRetainer:{tag:"Next step",name:"Project Management Retainer",desc:"Ongoing, hands-on management of your project or programme from scoping to delivery.",price:"From 1,050 per month",calUrl:CONSULT,bookPay:false,context:"Book a free consultation to discuss ongoing support after your scoping session."},
+  consultation:{tag:"Free start",name:"Free Clarity Consultation",desc:"A free 20-minute conversation to work out what you actually need — no pressure, no agenda.",price:"Free",calUrl:CONSULT,bookPay:false}
+};
+
+var current=-1,answers={};
+var screen=document.getElementById("sf-screen");
+
+function isNewClient(){return answers.q0==="no";}
+function pct(){return current<0?0:Math.round((current/questions.length)*100);}
+
+function score(ans){
+  var s={clarity:0,va:0,pm:0,budget:"flex"};
+  var q1=ans.q1||[],q2=ans.q2,q3=ans.q3,q4=ans.q4||[],q5=ans.q5,q6=ans.q6;
+  if(q1.indexOf("a")>-1||q1.indexOf("e")>-1)s.clarity+=2;
+  if(q1.indexOf("b")>-1||q1.indexOf("c")>-1)s.va+=1;
+  if(q1.indexOf("d")>-1)s.pm+=2;
+  if(q2==="a")s.va+=2;if(q2==="b")s.va+=1;if(q2==="c")s.clarity+=1;if(q2==="d")s.clarity+=1;
+  if(q3==="a"||q3==="d")s.clarity+=3;if(q3==="b")s.va+=3;if(q3==="c")s.pm+=3;
+  if(q4.indexOf("b")>-1||q4.indexOf("e")>-1)s.va+=1;
+  if(q4.indexOf("c")>-1||q4.indexOf("d")>-1||q4.indexOf("f")>-1)s.clarity+=1;
+  if(q4.indexOf("a")>-1)s.clarity+=1;
+  if(q5==="a"||q5==="d")s.clarity+=2;if(q5==="b")s.va+=2;if(q5==="c")s.pm+=2;
+  if(q6==="a")s.budget="tight";if(q6==="b")s.budget="flex";if(q6==="c")s.budget="open";if(q6==="d")s.budget="retainer";
+  return s;
+}
+
+function getResult(ans){
+  var s=score(ans),budget=s.budget,newClient=isNewClient();
+  var cats=["clarity","va","pm"];
+  cats.sort(function(a,b){return s[b]-s[a];});
+  var top=cats[0];
+  if(newClient){
+    if(top==="clarity"){
+      return{feel:"It sounds like you need space to think — to step back from the noise and get genuinely clear on what matters. The Elevated Edit Power Hour is the perfect starting point.",newClientNote:"As a new client we recommend starting with a Power Hour. It gives us both a chance to understand your needs properly and is often all it takes to unlock real momentum.",primary:services.powerHour,secondary:{tag:"Where this leads",name:"Elevated Edit — Half-Day",desc:"Once we have worked together, the natural next step is a deeper Half-Day session to build a full plan.",price:"350",calUrl:CAL+"/halfday-session",bookPay:true}};
+    }
+    if(top==="va"){
+      return{feel:"It sounds like you are drowning in the doing. Before we scope a VA retainer, a Power Hour is the best way to make sure we set it up in the right way for you.",newClientNote:"As a new client we recommend starting with a Power Hour to map exactly what support you need — so your retainer works from day one.",primary:services.powerHour,secondary:{tag:"Where this leads",name:"VA Retainer — Starter",desc:"Once we understand your needs, this is the natural next step — 8 hours a month of dedicated support.",price:"360 per month",calUrl:CAL+"/virtual-assistant",bookPay:false,context:"Book a free consultation to discuss your retainer after your Power Hour."}};
+    }
+    if(top==="pm"){
+      return{feel:"It sounds like you have something real you are trying to build. A Project Scoping session is the right starting point — it maps everything out before any delivery begins.",newClientNote:"As a new client, a Project Scoping and Setup session is exactly the right entry point — structured, focused and immediately actionable.",primary:services.pmScoping,secondary:{tag:"Where this leads",name:"Project Management Retainer",desc:"Once your project is scoped, ongoing management retainers start from 1,050 per month.",price:"From 1,050 per month",calUrl:CONSULT,bookPay:false,context:"Book a free consultation to discuss ongoing support after your scoping session."}};
+    }
+  }
+  if(top==="clarity"){
+    var feel="It sounds like you need space to think — to step back from the noise and get genuinely clear on what matters. That is exactly what The Elevated Edit is designed for.";
+    if(budget==="tight")return{feel:feel,primary:services.powerHour,secondary:services.halfDay};
+    if(budget==="retainer")return{feel:feel,primary:services.halfDay,secondary:services.advisory};
+    return{feel:feel,primary:services.halfDay,secondary:services.fullDay};
+  }
+  if(top==="va"){
+    var feel="It sounds like you are drowning in the doing — and what you really need is someone to take things off your hands so you can breathe again.";
+    if(budget==="tight")return{feel:feel,primary:services.vaStarter,secondary:services.powerHour};
+    return{feel:feel,primary:services.vaStarter,secondary:services.vaRegular};
+  }
+  if(top==="pm"){
+    var feel="It sounds like you have something real you are trying to build or deliver — and you need someone to manage it properly, not just advise from the sidelines.";
+    if(budget==="tight")return{feel:feel,primary:services.pmScoping,secondary:services.consultation};
+    return{feel:feel,primary:services.pmScoping,secondary:services.pmRetainer};
+  }
+  return{feel:"A conversation is the best way to work out exactly what you need.",primary:services.consultation,secondary:null};
+}
+
+function actionButtons(svc){
+  if(svc.bookPay&&svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-pay\" target=\"_blank\">Book and Pay &mdash; &pound;"+svc.price+"</a>";}
+  if(svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-book\" target=\"_blank\">Book a free consultation</a>";}
+  return "";
+}
+
+function recCard(svc,isPrimary,tagOverride){
+  var ctx=svc.context?"<p class=\"sf-rec-context\">"+svc.context+"</p>":"";
+  return "<div class=\"sf-rec"+(isPrimary?" primary":"")+"\">"
+    +"<p class=\"sf-rec-tag\">"+(tagOverride||svc.tag)+"</p>"
+    +"<p class=\"sf-rec-name\">"+svc.name+"</p>"
+    +"<p class=\"sf-rec-desc\">"+svc.desc+"</p>"
+    +"<p class=\"sf-rec-price\">&pound;"+svc.price+"</p>"
+    +ctx
+    +"<div class=\"sf-rec-actions\">"+actionButtons(svc)+"</div>"
+    +"</div>";
+}
+
+function toggleOpt(qid,oid,isMulti,max){
+  if(!answers[qid])answers[qid]=[];
+  var arr=answers[qid];
+  if(isMulti){var idx=arr.indexOf(oid);if(idx>-1){arr.splice(idx,1);}else if(arr.length<max){arr.push(oid);}}
+  else{answers[qid]=[oid];setTimeout(function(){goNext();},220);}
+  renderQuestion(current);
+}
+
+function goNext(){
+  var q=questions[current];
+  if(!answers[q.id]||answers[q.id].length===0)return;
+  if(q.type==="single")answers[q.id]=answers[q.id][0];
+  if(current===questions.length-1){renderResult();return;}
+  current++;renderQuestion(current);
+}
+
+function goBack(){
+  if(current<=0){current=-1;answers={};renderIntro();return;}
+  current--;renderQuestion(current);
+}
+
+function startQuiz(){current=0;renderQuestion(0);}
+function restartQuiz(){current=-1;answers={};renderIntro();}
+
+function renderIntro(){
+  screen.innerHTML="<h1 class=\"sf-intro-title\">Let's find the right support for you</h1><p class=\"sf-intro-sub\">Seven quick questions — no jargon, no pressure. Just honest answers and a clear recommendation at the end.</p><div class=\"sf-intro-meta\"><div class=\"sf-intro-meta-item\"><div class=\"sf-intro-meta-dot\"></div>Takes about 2 minutes</div><div class=\"sf-intro-meta-item\"><div class=\"sf-intro-meta-dot\"></div>No sign-up needed</div><div class=\"sf-intro-meta-item\"><div class=\"sf-intro-meta-dot\"></div>Always free to book a call</div></div><button class=\"sf-btn sf-btn-next\" id=\"btn-start\">Get started</button>";
+  document.getElementById("btn-start").addEventListener("click",function(){startQuiz();});
+}
+
+function renderQuestion(idx){
+  var q=questions[idx],ans=answers[q.id]||[],isMulti=q.type==="multi",canNext=ans.length>0;
+  var optsHtml=q.options.map(function(o){
+    var sel=ans.indexOf(o.id)>-1;
+    if(isMulti){return "<div class=\"sf-opt"+(sel?" selected":"")+"\" data-qid=\""+q.id+"\" data-oid=\""+o.id+"\" data-multi=\"1\" data-max=\""+(q.max||99)+"\"><span class=\"sf-checkbox\"><svg width=\"10\" height=\"8\" viewBox=\"0 0 10 8\" fill=\"none\"><polyline points=\"1,4 3.8,7 9,1\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span><span class=\"sf-opt-text\">"+o.text+"</span></div>";}
+    return "<div class=\"sf-opt"+(sel?" selected":"")+"\" data-qid=\""+q.id+"\" data-oid=\""+o.id+"\" data-multi=\"0\" data-max=\"1\"><span class=\"sf-radio\"><span class=\"sf-radio-inner\"></span></span><span class=\"sf-opt-text\">"+o.text+"</span></div>";
+  }).join("");
+  var isLast=idx===questions.length-1;
+  screen.innerHTML="<div class=\"sf-progress\"><div class=\"sf-progress-track\"><div class=\"sf-progress-fill\" style=\"width:"+pct()+"%\"></div></div><span class=\"sf-progress-label\">"+(idx+1)+" of "+questions.length+"</span></div><div class=\"sf-card\"><p class=\"sf-q-label\">"+q.label+"</p><p class=\"sf-q-text\">"+q.text+"</p>"+(q.hint?"<p class=\"sf-q-hint\">"+q.hint+"</p>":"")+"<div class=\"sf-options\">"+optsHtml+"</div></div><div class=\"sf-nav\"><button class=\"sf-btn sf-btn-back\" id=\"btn-back\">"+(idx===0?"Start over":"Back")+"</button><button class=\"sf-btn sf-btn-next\" id=\"btn-next\""+(canNext?"":" disabled")+">"+(isLast?"See my recommendation":"Next")+"</button></div>";
+  document.getElementById("btn-back").addEventListener("click",function(){goBack();});
+  document.getElementById("btn-next").addEventListener("click",function(){goNext();});
+  var opts=screen.querySelectorAll(".sf-opt");
+  for(var i=0;i<opts.length;i++){(function(el){el.addEventListener("click",function(){toggleOpt(el.getAttribute("data-qid"),el.getAttribute("data-oid"),el.getAttribute("data-multi")==="1",parseInt(el.getAttribute("data-max")));});})(opts[i]);}
+}
+
+function renderResult(){
+  var result=getResult(answers),secondary=result.secondary;
+  var noteHtml=result.newClientNote?"<div class=\"sf-new-client-note\"><strong>New clients:</strong> "+result.newClientNote+"</div>":"";
+  var secHtml=secondary?recCard(secondary,false,secondary.tag):"";
+  screen.innerHTML="<div class=\"sf-progress\"><div class=\"sf-progress-track\"><div class=\"sf-progress-fill\" style=\"width:100%\"></div></div><span class=\"sf-progress-label\">Done</span></div><div class=\"sf-card\"><span class=\"sf-result-badge\">Our recommendation</span><h2 class=\"sf-result-title\">Here's where we'd suggest starting</h2><p class=\"sf-result-feel\">"+result.feel+"</p>"+noteHtml+"<div class=\"sf-recs\">"+recCard(result.primary,true)+secHtml+"</div><hr class=\"sf-divider\"><p class=\"sf-cta-text\">Not quite right? A free 20-minute consultation is always the best way to make sure you get the right support — no pressure, no commitment.</p><div class=\"sf-cta-row\"><a href=\""+CONSULT+"\" class=\"sf-btn-primary\" target=\"_blank\">Book a free consultation</a><button class=\"sf-btn-secondary\" id=\"btn-restart\">Start again</button></div></div>";
+  document.getElementById("btn-restart").addEventListener("click",function(){restartQuiz();});
+}
+
+renderIntro();
+</script>
+</body>
+</html>
