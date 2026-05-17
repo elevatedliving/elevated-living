@@ -28,7 +28,7 @@ function FloatingAssessmentButton() {
       aria-label="Take the self-assessment"
     >
       <HelpCircle className="w-4 h-4 shrink-0" />
-      Not sure where to start?
+      Not sure where to start? Take the quick self-assessment to get an instant recommendation.
     </button>
   );
 }

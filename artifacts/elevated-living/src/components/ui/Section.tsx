@@ -6,9 +6,10 @@ interface SectionProps {
   className?: string;
   containerClass?: string;
   bg?: "default" | "muted" | "accent" | "primary" | "foreground";
+  id?: string;
 }
 
-export function Section({ children, className, containerClass, bg = "default" }: SectionProps) {
+export function Section({ children, className, containerClass, bg = "default", id }: SectionProps) {
   const bgClasses = {
     default: "bg-background text-foreground",
     muted: "bg-muted text-foreground",
@@ -18,7 +19,7 @@ export function Section({ children, className, containerClass, bg = "default" }:
   };
 
   return (
-    <section className={cn("py-16 md:py-24", bgClasses[bg], className)}>
+    <section id={id} className={cn("py-16 md:py-24", bgClasses[bg], className)}>
       <div className={cn("max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", containerClass)}>
         {children}
       </div>
