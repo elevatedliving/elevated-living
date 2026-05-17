@@ -56,21 +56,21 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary relative group",
-                  location === link.href ? "text-primary" : "text-foreground/80"
+                  "text-sm font-medium transition-colors relative group text-primary hover:text-[#1B2B5E]",
+                  location === link.href && "text-[#1B2B5E]"
                 )}
               >
                 {link.label}
                 {location === link.href && (
                   <motion.div
                     layoutId="navbar-indicator"
-                    className="absolute -bottom-1.5 left-0 right-0 h-0.5 bg-primary rounded-full"
+                    className="absolute -bottom-1.5 left-0 right-0 h-0.5 bg-[#1B2B5E] rounded-full"
                   />
                 )}
               </Link>
             ))}
 
-            <Link href="/blog" className="text-sm font-medium text-foreground/80 hover:text-primary">
+            <Link href="/blog" className="text-sm font-medium text-primary hover:text-[#1B2B5E] transition-colors">
               Blog
             </Link>
           </nav>
@@ -112,19 +112,19 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "font-semibold pb-2 border-b border-border/50",
-                    location === link.href ? "text-primary" : "text-foreground"
+                    "font-semibold pb-2 border-b border-border/50 text-primary",
+                    location === link.href && "text-[#1B2B5E]"
                   )}
                 >
                   {link.label}
                 </Link>
               ))}
               
-              <Link href="/blog" className="font-semibold pb-2 border-b border-border/50">
+              <Link href="/blog" className="font-semibold pb-2 border-b border-border/50 text-primary">
                 Blog
               </Link>
               
-              <Link href="/contact" className="font-semibold pb-2 border-b border-border/50">
+              <Link href="/contact" className="font-semibold pb-2 border-b border-border/50 text-primary">
                 Contact
               </Link>
 
