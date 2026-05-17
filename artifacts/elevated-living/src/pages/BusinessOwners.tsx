@@ -1,37 +1,10 @@
-import { useEffect, useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Link } from "wouter";
-import { BrainCircuit, HelpCircle } from "lucide-react";
+import { BrainCircuit } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-
-function FloatingAssessmentButton() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 300);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const scrollToAssessment = () => {
-    document.getElementById("assessment")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  if (!visible) return null;
-
-  return (
-    <button
-      onClick={scrollToAssessment}
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-full shadow-lg hover:bg-primary/90 transition-all duration-200 text-sm font-medium"
-      aria-label="Take the self-assessment"
-    >
-      <HelpCircle className="w-4 h-4 shrink-0" />
-      Not sure where to start? Take the quick self-assessment to get an instant recommendation.
-    </button>
-  );
-}
+import { FloatingAssessmentButton } from "@/components/FloatingAssessmentButton";
 
 export function BusinessOwners() {
   return (

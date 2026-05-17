@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 @import "tailwindcss";
+
+@keyframes soft-pulse {
+  0%, 100% {
+    box-shadow: 0 4px 24px rgba(9, 123, 124, 0.35), 0 0 0 0 rgba(9, 123, 124, 0.25);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 6px 30px rgba(9, 123, 124, 0.45), 0 0 0 10px rgba(9, 123, 124, 0);
+    transform: scale(1.025);
+  }
+}
+
+.floating-assessment-btn {
+  animation: soft-pulse 3s ease-in-out infinite;
+}
 @plugin "@tailwindcss/typography";
 
 @theme inline {
