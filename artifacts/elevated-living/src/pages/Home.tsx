@@ -10,9 +10,9 @@ export function Home() {
   return (
     <Layout>
       <Helmet>
-        <title>Elevated Living | Operational Support for Solopreneurs &amp; VCSEs</title>
-        <meta name="description" content="Elevated Living helps solopreneurs, small business owners, and voluntary sector organisations cut through the operational overwhelm and build structures that actually work." />
-        <meta property="og:title" content="Elevated Living | Operational Support for Solopreneurs &amp; VCSEs" />
+        <title>Elevated Living | Operational Support for Solopreneurs &amp; Community Orgs</title>
+        <meta name="description" content="Elevated Living helps solopreneurs, small business owners, and community organisations and social enterprises cut through the operational overwhelm and build structures that actually work." />
+        <meta property="og:title" content="Elevated Living | Operational Support for Solopreneurs &amp; Community Orgs" />
         <meta property="og:description" content="Elevated Living helps solopreneurs, small business owners, and voluntary sector organisations cut through the operational overwhelm and build structures that actually work." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
@@ -53,7 +53,7 @@ export function Home() {
             </Link>
             <Link href="/for-community-organisations">
               <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2">
-                VCSE <ArrowRight className="w-4 h-4" />
+                Community Org / Social Enterprise <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </motion.div>
@@ -93,7 +93,7 @@ export function Home() {
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 text-primary">
               <HeartHandshake className="w-7 h-7" />
             </div>
-            <h3 className="mb-4">VCSE</h3>
+            <h3 className="mb-4">Community Org / Social Enterprise</h3>
             <p className="text-muted-foreground mb-8">
               You started your organisation because you cared deeply about your community. Now you're drowning in admin, chasing funders, writing the same story six different ways, and wondering how everyone else seems to manage it. They don't. They just have the right people in their corner.
             </p>

@@ -70,7 +70,7 @@ export function About() {
             <div className="bg-card p-6 rounded-xl shadow-sm border border-border/50">
               <h3 className="text-xl mb-3 text-primary">Sector Knowledge</h3>
               <p className="text-muted-foreground text-sm">
-                Elevated Living knows how funders think, how CICs operate, and the unique pressures of the VCSE sector.
+                Elevated Living knows how funders think, how CICs operate, and the unique pressures of the community and social enterprise sector.
               </p>
             </div>
           </div>

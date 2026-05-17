@@ -22,7 +22,7 @@ export function BlogPostCorporateJargon() {
           </Link>
 
           <div className="mb-4 flex items-center gap-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-primary">For VCSEs</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-primary">Community Org / Social Enterprise</span>
             <span className="text-xs text-muted-foreground">·</span>
             <span className="text-xs text-muted-foreground">February 2026</span>
           </div>
@@ -207,7 +207,7 @@ export function BlogPostCorporateJargon() {
           <hr />
 
           <p className="text-sm text-muted-foreground">
-            <em>Elevated Living helps VCSEs, community organisations, CICs, and purpose-led businesses measure, evidence, and communicate their impact in plain English. No jargon. No fluff. Just your work, clearly told.</em>
+            <em>Elevated Living helps community organisations, social enterprises, CICs, and purpose-led businesses measure, evidence, and communicate their impact in plain English. No jargon. No fluff. Just your work, clearly told.</em>
           </p>
         </div>
         </div>

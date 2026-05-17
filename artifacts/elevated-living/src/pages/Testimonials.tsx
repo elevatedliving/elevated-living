@@ -35,9 +35,9 @@ export function Testimonials() {
     <Layout>
       <Helmet>
         <title>Client Stories | Elevated Living</title>
-        <meta name="description" content="Hear from the solopreneurs, business owners and VCSE leaders who've worked with Elevated Living — and what changed when they stopped trying to do it all alone." />
+        <meta name="description" content="Hear from the solopreneurs, business owners and community org leaders who've worked with Elevated Living — and what changed when they stopped trying to do it all alone." />
         <meta property="og:title" content="Client Stories | Elevated Living" />
-        <meta property="og:description" content="Hear from the solopreneurs, business owners and VCSE leaders who've worked with Elevated Living — and what changed when they stopped trying to do it all alone." />
+        <meta property="og:description" content="Hear from the solopreneurs, business owners and community org leaders who've worked with Elevated Living — and what changed when they stopped trying to do it all alone." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
       </Helmet>

@@ -9,9 +9,9 @@ export function Resources() {
     <Layout>
       <Helmet>
         <title>Resources | Elevated Living</title>
-        <meta name="description" content="Free guides and tools from Elevated Living — practical resources to help solopreneurs and VCSE organisations get more organised and evidence their impact." />
+        <meta name="description" content="Free guides and tools from Elevated Living — practical resources to help solopreneurs and community organisations and social enterprises get more organised and evidence their impact." />
         <meta property="og:title" content="Resources | Elevated Living" />
-        <meta property="og:description" content="Free guides and tools from Elevated Living — practical resources to help solopreneurs and VCSE organisations get more organised and evidence their impact." />
+        <meta property="og:description" content="Free guides and tools from Elevated Living — practical resources to help solopreneurs and community organisations and social enterprises get more organised and evidence their impact." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
       </Helmet>

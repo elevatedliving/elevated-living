@@ -9,10 +9,10 @@ export function CommunityOrgs() {
   return (
     <Layout>
       <Helmet>
-        <title>For VCSEs | Elevated Living</title>
-        <meta name="description" content="Specialist operational and impact support for voluntary, community and social enterprises. Elevated Living helps VCSEs evidence their work, build capacity, and sustain what matters." />
-        <meta property="og:title" content="For VCSEs | Elevated Living" />
-        <meta property="og:description" content="Specialist operational and impact support for voluntary, community and social enterprises. Elevated Living helps VCSEs evidence their work, build capacity, and sustain what matters." />
+        <title>For Community Orgs / Social Enterprises | Elevated Living</title>
+        <meta name="description" content="Specialist operational and impact support for community organisations and social enterprises. Elevated Living helps you evidence your work, build capacity, and sustain what matters." />
+        <meta property="og:title" content="For Community Orgs / Social Enterprises | Elevated Living" />
+        <meta property="og:description" content="Specialist operational and impact support for community organisations and social enterprises. Elevated Living helps you evidence your work, build capacity, and sustain what matters." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
@@ -22,7 +22,7 @@ export function CommunityOrgs() {
       {/* Opening */}
       <Section className="pt-20 pb-12">
         <div className="max-w-3xl mx-auto">
-          <h1 className="mb-6">For VCSEs</h1>
+          <h1 className="mb-6">For Community Orgs / Social Enterprises</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             The people doing the most important work often have the least support behind them. You started your organisation because you cared deeply about your community. Now you're drowning in admin, chasing funders, and wondering how everyone else seems to manage it.
           </p>
@@ -185,7 +185,7 @@ export function CommunityOrgs() {
           <div className="rounded-2xl overflow-hidden border border-border shadow-sm bg-background">
             <iframe
               src={`${import.meta.env.BASE_URL}assessments/vcse.html`}
-              title="Find your support — community organisations and VCSEs"
+              title="Find your support — community organisations and social enterprises"
               className="w-full"
               style={{ height: "820px", border: "none" }}
               scrolling="yes"

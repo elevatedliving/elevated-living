@@ -44,7 +44,7 @@ const DUMMY_POSTS = [
     id: 2,
     slug: "/blog/corporate-jargon",
     title: "Stop Using Corporate Jargon in Your Impact Reports",
-    category: "For VCSEs",
+    category: "Community Org / Social Enterprise",
     date: "Feb 28, 2026",
     excerpt: "Funders want to see human stories backed by solid data. Here's why plain English always wins over consultant-speak.",
     image: "images/corporate-jargon.png",
@@ -56,9 +56,9 @@ export function Blog() {
     <Layout>
       <Helmet>
         <title>Blog | Elevated Living</title>
-        <meta name="description" content="Practical insights on impact measurement, operational focus, and social value — written for solopreneurs and VCSE leaders by the team at Elevated Living." />
+        <meta name="description" content="Practical insights on impact measurement, operational focus, and social value — written for solopreneurs and community org leaders by the team at Elevated Living." />
         <meta property="og:title" content="Blog | Elevated Living" />
-        <meta property="og:description" content="Practical insights on impact measurement, operational focus, and social value — written for solopreneurs and VCSE leaders by the team at Elevated Living." />
+        <meta property="og:description" content="Practical insights on impact measurement, operational focus, and social value — written for solopreneurs and community org leaders by the team at Elevated Living." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
