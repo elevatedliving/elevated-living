@@ -1,8 +1,37 @@
+import { useEffect, useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Link } from "wouter";
+import { HelpCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+
+function FloatingAssessmentButton() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 300);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollToAssessment = () => {
+    document.getElementById("assessment")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  if (!visible) return null;
+
+  return (
+    <button
+      onClick={scrollToAssessment}
+      className="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-full shadow-lg hover:bg-primary/90 transition-all duration-200 text-sm font-medium"
+      aria-label="Take the self-assessment"
+    >
+      <HelpCircle className="w-4 h-4 shrink-0" />
+      Not sure where to start?
+    </button>
+  );
+}
 
 export function CommunityOrgs() {
   return (
@@ -15,6 +44,8 @@ export function CommunityOrgs() {
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
+
+      <FloatingAssessmentButton />
 
       {/* Opening */}
       <Section className="pt-20 pb-12">
@@ -29,28 +60,9 @@ export function CommunityOrgs() {
         </div>
       </Section>
 
-      {/* Self-Assessment */}
-      <Section bg="muted">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl mb-3">Not sure where to start?</h2>
-          <p className="text-muted-foreground mb-8 leading-relaxed">
-            Answer seven quick questions and we'll recommend the right support for your organisation — no jargon, no pressure.
-          </p>
-          <div className="rounded-2xl overflow-hidden border border-border shadow-sm bg-background">
-            <iframe
-              src={`${import.meta.env.BASE_URL}assessments/vcse.html`}
-              title="Find your support — community organisations and VCSEs"
-              className="w-full"
-              style={{ height: "820px", border: "none" }}
-              scrolling="yes"
-            />
-          </div>
-        </div>
-      </Section>
-
       {/* 30 years context */}
       <Section>
-        <div className="max-w-3xl mx-auto border-l-4 border-primary pl-8 py-4 mb-16">
+        <div className="max-w-3xl mx-auto border-l-4 border-primary pl-8 py-4">
           <h2 className="text-3xl mb-4">30 Years of Sector Context</h2>
           <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
             There's no need to explain what a CIC is, how tricky it is to balance restricted versus unrestricted funding, or the nuanced dynamics of local authority partnerships.
@@ -59,8 +71,10 @@ export function CommunityOrgs() {
             Elevated Living brings three decades of built-in context, meaning we hit the ground running from day one.
           </p>
         </div>
+      </Section>
 
-        {/* Services & Pricing */}
+      {/* Services & Pricing */}
+      <Section bg="muted">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl mb-3">Services &amp; Fees</h2>
           <p className="text-muted-foreground mb-10 leading-relaxed">
@@ -185,6 +199,25 @@ export function CommunityOrgs() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Self-Assessment */}
+      <Section id="assessment">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl mb-3">Not sure where to start?</h2>
+          <p className="text-muted-foreground mb-8 leading-relaxed">
+            Answer seven quick questions and we'll recommend the right support for your organisation — no jargon, no pressure.
+          </p>
+          <div className="rounded-2xl overflow-hidden border border-border shadow-sm bg-background">
+            <iframe
+              src={`${import.meta.env.BASE_URL}assessments/vcse.html`}
+              title="Find your support — community organisations and VCSEs"
+              className="w-full"
+              style={{ height: "820px", border: "none" }}
+              scrolling="yes"
+            />
           </div>
         </div>
       </Section>

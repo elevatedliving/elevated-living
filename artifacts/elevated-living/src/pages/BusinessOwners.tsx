@@ -1,9 +1,37 @@
+import { useEffect, useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Link } from "wouter";
-import { BrainCircuit } from "lucide-react";
+import { BrainCircuit, HelpCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+
+function FloatingAssessmentButton() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 300);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollToAssessment = () => {
+    document.getElementById("assessment")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  if (!visible) return null;
+
+  return (
+    <button
+      onClick={scrollToAssessment}
+      className="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-full shadow-lg hover:bg-primary/90 transition-all duration-200 text-sm font-medium"
+      aria-label="Take the self-assessment"
+    >
+      <HelpCircle className="w-4 h-4 shrink-0" />
+      Not sure where to start?
+    </button>
+  );
+}
 
 export function BusinessOwners() {
   return (
@@ -17,6 +45,8 @@ export function BusinessOwners() {
         <meta name="twitter:card" content="summary" />
       </Helmet>
 
+      <FloatingAssessmentButton />
+
       {/* Opening */}
       <Section className="pt-20 pb-12">
         <div className="max-w-3xl mx-auto">
@@ -27,27 +57,8 @@ export function BusinessOwners() {
         </div>
       </Section>
 
-      {/* Self-Assessment */}
-      <Section bg="muted">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl mb-3">Not sure where to start?</h2>
-          <p className="text-muted-foreground mb-8 leading-relaxed">
-            Answer seven quick questions and we'll recommend the right support for where you are right now — no jargon, no pressure.
-          </p>
-          <div className="rounded-2xl overflow-hidden border border-border shadow-sm bg-background">
-            <iframe
-              src={`${import.meta.env.BASE_URL}assessments/solopreneur.html`}
-              title="Find your support — solopreneurs and small business owners"
-              className="w-full"
-              style={{ height: "820px", border: "none" }}
-              scrolling="yes"
-            />
-          </div>
-        </div>
-      </Section>
-
       {/* Services & Pricing */}
-      <Section>
+      <Section bg="muted">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl mb-3">Services &amp; Fees</h2>
           <p className="text-muted-foreground mb-10 leading-relaxed">
@@ -168,6 +179,25 @@ export function BusinessOwners() {
                 Standard business advice often doesn't account for how the ADHD brain actually works. Elevated Living offers support built specifically around you — systems that will actually stick, not just look good on paper. If you're eligible for the DWP's Access to Work scheme, this support can be fully or partially funded. You make the application; we deliver the support.
               </p>
             </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Self-Assessment */}
+      <Section id="assessment">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl mb-3">Not sure where to start?</h2>
+          <p className="text-muted-foreground mb-8 leading-relaxed">
+            Answer seven quick questions and we'll recommend the right support for where you are right now — no jargon, no pressure.
+          </p>
+          <div className="rounded-2xl overflow-hidden border border-border shadow-sm bg-background">
+            <iframe
+              src={`${import.meta.env.BASE_URL}assessments/solopreneur.html`}
+              title="Find your support — solopreneurs and small business owners"
+              className="w-full"
+              style={{ height: "820px", border: "none" }}
+              scrolling="yes"
+            />
           </div>
         </div>
       </Section>
