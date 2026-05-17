@@ -79,7 +79,7 @@ export function Navbar() {
           <div className="flex items-center gap-4">
             <div className="hidden md:block">
               <Link href="/book">
-                <div className="w-20 h-20 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-center text-[11px] font-semibold leading-tight p-3 hover:bg-primary/90 transition-colors cursor-pointer">
+                <div className="w-24 h-24 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-center text-[11px] font-semibold leading-tight p-4 hover:bg-primary/90 transition-colors cursor-pointer">
                   Book a Complimentary Focus Session
                 </div>
               </Link>
