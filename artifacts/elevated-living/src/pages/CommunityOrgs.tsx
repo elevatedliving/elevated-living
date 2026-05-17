@@ -90,6 +90,15 @@ export function CommunityOrgs() {
                   <p className="text-2xl font-bold text-primary">£650</p>
                 </div>
               </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Two 60-minute sessions per month plus async support between sessions. Priority scheduling included. Retainers payable in advance.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£375<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -143,6 +152,7 @@ export function CommunityOrgs() {
             <div className="grid gap-4">
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
                 <div className="flex-1">
+                  <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">Recommended first step</p>
                   <h4 className="font-semibold text-lg mb-1">Project Scoping &amp; Setup</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">A half-day session — scope, timeline, priorities, risk and next actions mapped out before delivery begins.</p>
                 </div>
@@ -150,20 +160,95 @@ export function CommunityOrgs() {
                   <p className="text-2xl font-bold text-primary">£495</p>
                 </div>
               </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Ad Hoc Day Rate</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Standalone project days, flexible to your needs — ideal for short bursts of focused delivery.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£600<span className="text-base font-normal text-muted-foreground">/day</span></p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Light</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">2 days per month plus ongoing oversight — keeps momentum without a full-time commitment.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£1,050<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Standard</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">3 days per month with active management — the right level for a project that needs consistent hands-on delivery.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£1,550<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Intensive</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">4 days per month for complex delivery — sustained focus on a high-priority project over several months.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£2,000<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Impact & Partnership */}
+          {/* Partnership Development */}
+          <div className="mb-12">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Partnership Development &amp; Community Engagement</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Building the connections that help your organisation grow and sustain. From identifying the right relationships to facilitating meaningful community consultation — all work is scoped individually to your context.
+              </p>
+            </div>
+            <div className="grid gap-4">
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Partnership Mapping &amp; Strategy</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">A half-day session to identify and prioritise the right relationships to support your vision and growth.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">From £495</p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Community Consultation Support</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Planning and facilitating meaningful community engagement that delivers real insight and genuine participation.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">From £600</p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Ongoing Partnership Management</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Regular support to manage and develop your key partnerships over time — scoped to your organisation's specific relationships.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">From £500<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Impact Report Writing */}
           <div className="mb-4">
             <div className="mb-6">
-              <h3 className="text-xl font-semibold mb-2">Impact Report Writing &amp; Partnership Development</h3>
+              <h3 className="text-xl font-semibold mb-2">Impact Report Writing</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Professionally capturing and communicating the difference your organisation makes — for funders, commissioners and the communities you serve. Partnership development and community engagement support is also available to help you identify, build and manage the relationships that matter. Both are tailored to your organisation's specific needs and audiences.
+                Professionally capturing and communicating the difference your organisation makes — for funders, commissioners and the communities you serve. Bespoke to your outcomes, audience, and funder requirements. A free scoping consultation is always the right first step.
               </p>
             </div>
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
               <p className="text-muted-foreground leading-relaxed">
-                A free 20-minute consultation is the right first step — we'll scope what's needed before any commitment is made.
+                Pricing confirmed following a free 20-minute consultation — we scope what's needed before any commitment is made.
               </p>
               <div className="mt-4">
                 <Link href="/book">

@@ -75,6 +75,15 @@ export function BusinessOwners() {
                   <p className="text-2xl font-bold text-primary">£650</p>
                 </div>
               </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Two 60-minute sessions per month plus async support between sessions. Priority scheduling included. Retainers payable in advance.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£375<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -128,11 +137,48 @@ export function BusinessOwners() {
             <div className="grid gap-4">
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
                 <div className="flex-1">
+                  <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">Recommended first step</p>
                   <h4 className="font-semibold text-lg mb-1">Project Scoping &amp; Setup</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">A half-day discovery, scoping and project planning session — scope, timeline, priorities, risk and next actions.</p>
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">£495</p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Ad Hoc Day Rate</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Standalone project days, flexible to your needs — ideal for short bursts of focused delivery.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£600<span className="text-base font-normal text-muted-foreground">/day</span></p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Light</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">2 days per month plus ongoing oversight — keeps momentum without a full-time commitment.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£1,050<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Standard</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">3 days per month with active management — the right level for a project that needs consistent hands-on delivery.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£1,550<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Intensive</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">4 days per month for complex delivery — sustained focus on a high-priority project over several months.</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£2,000<span className="text-base font-normal text-muted-foreground">/month</span></p>
                 </div>
               </div>
             </div>
