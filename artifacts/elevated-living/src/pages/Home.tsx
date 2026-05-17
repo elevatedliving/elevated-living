@@ -73,7 +73,7 @@ export function Home() {
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 text-primary">
               <Briefcase className="w-7 h-7" />
             </div>
-            <h3 className="mb-4">For Business Owners</h3>
+            <h3 className="mb-4">Solopreneur / Small Business Owner</h3>
             <p className="text-muted-foreground mb-8">
               You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need focus, structure, and someone who actually follows through. If you're wondering how everyone else seems to manage it — they don't. They just have better support behind them.
             </p>
@@ -93,7 +93,7 @@ export function Home() {
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 text-primary">
               <HeartHandshake className="w-7 h-7" />
             </div>
-            <h3 className="mb-4">Small Charities & VCSEs</h3>
+            <h3 className="mb-4">VCSE</h3>
             <p className="text-muted-foreground mb-8">
               You started your organisation because you cared deeply about your community. Now you're drowning in admin, chasing funders, writing the same story six different ways, and wondering how everyone else seems to manage it. They don't. They just have the right people in their corner.
             </p>
@@ -125,7 +125,7 @@ export function Home() {
             {
               icon: MessageSquare,
               title: "1. The Focus Session",
-              desc: "We start with a free 30-minute chat. No pressure, no pitch. Just untangling what you need and seeing if we're a fit."
+              desc: "We start with a free 20-minute chat. No pressure, no pitch. Just untangling what you need and seeing if we're a fit."
             },
             {
               icon: Lightbulb,

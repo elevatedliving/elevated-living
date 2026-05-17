@@ -23,7 +23,7 @@ export function BusinessOwners() {
       {/* Opening */}
       <Section className="pt-20 pb-12">
         <div className="max-w-3xl mx-auto">
-          <h1 className="mb-6">For Business Owners &amp; Solopreneurs</h1>
+          <h1 className="mb-6">For Solopreneurs / Small Business Owners</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             You started your business because you were good at something. You had the idea, the drive, the passion — and then the business side of business arrived. The invoices. The inbox. The to-do list that never gets shorter.
           </p>

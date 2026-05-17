@@ -14,7 +14,7 @@ export function Footer() {
               className="h-14 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-background/70 text-sm mb-6 max-w-xs">
-              UK-based consultancy helping business owners and community organisations find focus, execute projects, and elevate their impact.
+              UK-based consultancy helping solopreneurs, small business owners, and VCSEs find focus, execute projects, and elevate their impact.
             </p>
             <div className="flex items-center gap-4">
               <a href="#" className="p-2 bg-background/10 rounded-full hover:bg-primary transition-colors text-background">
@@ -30,7 +30,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-4 text-background/90">For Solopreneurs</h4>
+            <h4 className="font-semibold text-lg mb-4 text-background/90">Solopreneur / Small Business Owner</h4>
             <ul className="space-y-3">
               <li><Link href="/for-business-owners" className="text-background/70 hover:text-primary transition-colors text-sm">Project Focus</Link></li>
               <li><Link href="/for-business-owners" className="text-background/70 hover:text-primary transition-colors text-sm">Virtual Assistant Support</Link></li>
@@ -39,7 +39,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-4 text-background/90">Small Charities</h4>
+            <h4 className="font-semibold text-lg mb-4 text-background/90">VCSE</h4>
             <ul className="space-y-3">
               <li><Link href="/for-community-organisations" className="text-background/70 hover:text-primary transition-colors text-sm">Project Management</Link></li>
               <li><Link href="/impact-report-writing" className="text-background/70 hover:text-primary transition-colors text-sm">Impact Report Writing</Link></li>

@@ -22,7 +22,7 @@ export function BlogPostTOMs() {
           </Link>
 
           <div className="mb-4 flex items-center gap-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-primary">Small Charities</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-primary">VCSE</span>
             <span className="text-xs text-muted-foreground">·</span>
             <span className="text-xs text-muted-foreground">March 2026</span>
           </div>
@@ -98,7 +98,7 @@ export function BlogPostTOMs() {
             The problem is that in the procurement world, if you can't measure it in TOMs, it often doesn't count — even if the actual community benefit is enormous.
           </p>
 
-          <h2>What this looks like in practice for small charities</h2>
+          <h2>What this looks like in practice for VCSEs</h2>
           <p>
             Here's a scenario that comes up repeatedly: a housing association wins a large contract. As part of that contract, they've committed to a set of TOMs targets. To hit those targets, they need to demonstrate community engagement, volunteer hours, training delivered in the local area — and suddenly they're on the phone to your organisation asking if you'd like to "partner" with them.
           </p>
