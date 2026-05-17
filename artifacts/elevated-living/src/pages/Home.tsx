@@ -51,11 +51,11 @@ export function Home() {
                 Solopreneur / Small Business Owner <ArrowRight className="w-4 h-4" />
               </Button>
             </a>
-            <Link href="/for-community-organisations">
+            <a href={`${import.meta.env.BASE_URL}assessments/vcse.html`}>
               <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2">
                 VCSE <ArrowRight className="w-4 h-4" />
               </Button>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </Section>
