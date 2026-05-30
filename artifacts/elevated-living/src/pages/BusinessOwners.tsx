@@ -48,46 +48,63 @@ export function BusinessOwners() {
               </p>
             </div>
             <div className="grid gap-4">
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">Best start</p>
-                  <h4 className="font-semibold text-lg mb-1">Power Hour</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">A focused 60-minute session — one problem, cut through, one clear next step.</p>
+
+              {/* Power Hour */}
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">Best start</p>
+                    <h4 className="font-semibold text-lg mb-1">Power Hour</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">A focused 60-minute session — one problem, cut through, one clear next step.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£125</p>
+                  </div>
                 </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£125</p>
-                </div>
+                <CalBooking
+                  namespace="elevated-edit-power-hour"
+                  calLink="elevatedlivingenterprise/elevated-edit-power-hour"
+                  label="Book Power Hour"
+                />
               </div>
-              <CalBooking
-                namespace="elevated-edit-power-hour"
-                calLink="elevatedlivingenterprise/elevated-edit-power-hour"
-              />
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Half-Day</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">3.5 hours including prep and written action notes — cutting through the noise to leave you with a sharp, actionable plan.</p>
+
+              {/* Half-Day */}
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-lg mb-1">Half-Day</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">3.5 hours including prep and written action notes — cutting through the noise to leave you with a sharp, actionable plan.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£350</p>
+                  </div>
                 </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£350</p>
-                </div>
+                <CalBooking
+                  namespace="elevated-edit-half-day-session"
+                  calLink="elevatedlivingenterprise/elevated-edit-half-day-session"
+                  label="Book Half-Day"
+                />
               </div>
-              <CalBooking
-                namespace="elevated-edit-half-day-session"
-                calLink="elevatedlivingenterprise/elevated-edit-half-day-session"
-              />
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Full Day</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">A full day including a written roadmap and 30-day check-in — your vision, blockers and next 90 days worked through in full.</p>
+
+              {/* Full Day */}
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-lg mb-1">Full Day</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">A full day including a written roadmap and 30-day check-in — your vision, blockers and next 90 days worked through in full.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£650</p>
+                  </div>
                 </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£650</p>
-                </div>
+                <CalBooking
+                  namespace="elevated-edit-full-day-intensive"
+                  calLink="elevatedlivingenterprise/elevated-edit-full-day-intensive"
+                  label="Book Full Day"
+                />
               </div>
-              <CalBooking
-                namespace="elevated-edit-full-day-intensive"
-                calLink="elevatedlivingenterprise/elevated-edit-full-day-intensive"
-              />
+
+              {/* Monthly Retainer — no booking link yet */}
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Monthly Retainer</h4>
@@ -97,6 +114,7 @@ export function BusinessOwners() {
                   <p className="text-2xl font-bold text-primary">£375<span className="text-base font-normal text-muted-foreground">/month</span></p>
                 </div>
               </div>
+
             </div>
           </div>
 
@@ -148,33 +166,45 @@ export function BusinessOwners() {
               </p>
             </div>
             <div className="grid gap-4">
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">Recommended first step</p>
-                  <h4 className="font-semibold text-lg mb-1">Project Scoping &amp; Setup</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">A half-day discovery, scoping and project planning session — scope, timeline, priorities, risk and next actions.</p>
+
+              {/* Project Scoping */}
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">Recommended first step</p>
+                    <h4 className="font-semibold text-lg mb-1">Project Scoping &amp; Setup</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">A half-day discovery, scoping and project planning session — scope, timeline, priorities, risk and next actions.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£495</p>
+                  </div>
                 </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£495</p>
-                </div>
+                <CalBooking
+                  namespace="project-scoping-setup"
+                  calLink="elevatedlivingenterprise/project-scoping-setup"
+                  label="Book Project Scoping"
+                />
               </div>
-              <CalBooking
-                namespace="project-scoping-setup"
-                calLink="elevatedlivingenterprise/project-scoping-setup"
-              />
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Ad Hoc Day Rate</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">Standalone project days, flexible to your needs — ideal for short bursts of focused delivery.</p>
+
+              {/* Ad Hoc Day Rate */}
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-lg mb-1">Ad Hoc Day Rate</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">Standalone project days, flexible to your needs — ideal for short bursts of focused delivery.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£600<span className="text-base font-normal text-muted-foreground">/day</span></p>
+                  </div>
                 </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£600<span className="text-base font-normal text-muted-foreground">/day</span></p>
-                </div>
+                <CalBooking
+                  namespace="project-adhoc-day-rate"
+                  calLink="elevatedlivingenterprise/project-adhoc-day-rate"
+                  label="Book a Project Day"
+                />
               </div>
-              <CalBooking
-                namespace="project-adhoc-day-rate"
-                calLink="elevatedlivingenterprise/project-adhoc-day-rate"
-              />
+
+              {/* Retainer tiers — no booking links, enquiry via contact */}
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Light</h4>
@@ -202,6 +232,7 @@ export function BusinessOwners() {
                   <p className="text-2xl font-bold text-primary">£2,000<span className="text-base font-normal text-muted-foreground">/month</span></p>
                 </div>
               </div>
+
             </div>
           </div>
 
