@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { Calendar, Mail } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";

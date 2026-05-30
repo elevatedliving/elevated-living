@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { ArrowRight, Briefcase, HeartHandshake, Lightbulb, MessageSquare, Target } from "lucide-react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";

@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 
 export function About() {

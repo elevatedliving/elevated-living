@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { ExternalLink, Rocket } from "lucide-react";
 
 export function ElevatedImpact() {

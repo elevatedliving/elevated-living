@@ -1,0 +1,7 @@
+{
+  "buildCommand": "pnpm --filter @workspace/elevated-living run build",
+  "outputDirectory": "artifacts/elevated-living/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}

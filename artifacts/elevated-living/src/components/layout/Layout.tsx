@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { Link } from "wouter";
-import { Button } from "../ui/Button";
+import { Button } from "../ui/button";
 import { Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 
