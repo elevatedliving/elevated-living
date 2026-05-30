@@ -173,7 +173,7 @@ export function BusinessOwners() {
                     <p className="text-muted-foreground text-sm leading-relaxed">8 hours per month of dedicated support — the right amount to take the admin off your plate and free you up for the work you love.</p>
                   </div>
                   <div className="sm:text-right shrink-0">
-                    <p className="text-2xl font-bold text-primary">£360<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                    <p className="text-2xl font-bold text-primary">£350<span className="text-base font-normal text-muted-foreground">/month</span></p>
                   </div>
                 </div>
                 <CalBooking
@@ -182,14 +182,21 @@ export function BusinessOwners() {
                   label="Book Monthly Retainer — 8 Hours"
                 />
               </div>
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Regular</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">16 hours per month of consistent support — the equivalent of two solid days off your to-do list every month.</p>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-lg mb-1">Monthly Retainer — 16 Hours</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">16 hours per month of consistent support — the equivalent of two solid days off your to-do list every month.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£680<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                  </div>
                 </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£680<span className="text-base font-normal text-muted-foreground">/month</span></p>
-                </div>
+                <CalBooking
+                  namespace="virtual-assistant-monthly-retainer-16-hours"
+                  calLink="elevatedlivingenterprise/virtual-assistant-monthly-retainer-16-hours"
+                  label="Book Monthly Retainer — 16 Hours"
+                />
               </div>
             </div>
           </div>
