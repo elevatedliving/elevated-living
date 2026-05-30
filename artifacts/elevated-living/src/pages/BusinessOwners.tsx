@@ -104,15 +104,22 @@ export function BusinessOwners() {
                 />
               </div>
 
-              {/* Monthly Retainer — no booking link yet */}
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">Two 60-minute sessions per month plus async support between sessions. Priority scheduling included. Retainers payable in advance.</p>
+              {/* Monthly Retainer */}
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-lg mb-1">Monthly Retainer</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">Two 60-minute sessions per month plus async support between sessions. Priority scheduling included. Retainers payable in advance.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£375<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                  </div>
                 </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£375<span className="text-base font-normal text-muted-foreground">/month</span></p>
-                </div>
+                <CalBooking
+                  namespace="elevated-edit-monthly-retainer"
+                  calLink="elevatedlivingenterprise/elevated-edit-monthly-retainer"
+                  label="Book Monthly Retainer"
+                />
               </div>
 
             </div>
