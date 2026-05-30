@@ -137,7 +137,7 @@ export function BusinessOwners() {
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                   <div className="flex-1">
-                    <h4 className="font-semibold text-lg mb-1">Ad Hoc Support</h4>
+                    <h4 className="font-semibold text-lg mb-1">Virtual Assistant — 2 Hours</h4>
                     <p className="text-muted-foreground text-sm leading-relaxed">Flexible support as and when you need it. Minimum 2 hours per booking.</p>
                   </div>
                   <div className="sm:text-right shrink-0">
@@ -147,7 +147,7 @@ export function BusinessOwners() {
                 <CalBooking
                   namespace="virtual-assistant-2-hours"
                   calLink="elevatedlivingenterprise/virtual-assistant-2-hours"
-                  label="Book VA Support"
+                  label="Book Virtual Assistant — 2 Hours"
                 />
               </div>
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
