@@ -150,6 +150,22 @@ export function BusinessOwners() {
                   label="Book Virtual Assistant — 2 Hours"
                 />
               </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-lg mb-1">Virtual Assistant — Additional Hours</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">Additional hours beyond your retainer, charged at £45 per hour.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£45<span className="text-base font-normal text-muted-foreground">/hour</span></p>
+                  </div>
+                </div>
+                <CalBooking
+                  namespace="virtual-assistant-adhoc-hours"
+                  calLink="elevatedlivingenterprise/virtual-assistant-adhoc-hours"
+                  label="Book Additional Hours"
+                />
+              </div>
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Starter</h4>
