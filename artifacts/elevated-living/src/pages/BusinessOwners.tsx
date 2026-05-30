@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/button";
+import { CalBooking } from "@/components/ui/CalBooking";
 import { Link } from "wouter";
 import { BrainCircuit } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -57,6 +58,10 @@ export function BusinessOwners() {
                   <p className="text-2xl font-bold text-primary">£125</p>
                 </div>
               </div>
+              <CalBooking
+                namespace="elevated-edit-power-hour"
+                calLink="elevatedlivingenterprise/elevated-edit-power-hour"
+              />
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Half-Day</h4>
