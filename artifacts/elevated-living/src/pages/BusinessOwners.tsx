@@ -134,14 +134,21 @@ export function BusinessOwners() {
               </p>
             </div>
             <div className="grid gap-4">
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Ad Hoc Support</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">Flexible support as and when you need it. Minimum 2 hours per booking.</p>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-lg mb-1">Ad Hoc Support</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">Flexible support as and when you need it. Minimum 2 hours per booking.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£50<span className="text-base font-normal text-muted-foreground">/hour</span></p>
+                  </div>
                 </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£50<span className="text-base font-normal text-muted-foreground">/hour</span></p>
-                </div>
+                <CalBooking
+                  namespace="virtual-assistant-2-hours"
+                  calLink="elevatedlivingenterprise/virtual-assistant-2-hours"
+                  label="Book VA Support"
+                />
               </div>
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
                 <div className="flex-1">
