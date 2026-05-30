@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 
+const CAL_ORIGIN = "https://cal.eu";
+
 interface CalBookingProps {
   namespace: string;
   calLink: string;
@@ -15,7 +17,7 @@ export function CalBooking({ namespace, calLink, label = "Book this service" }: 
   useEffect(() => {
     if (!open) return;
     (async function () {
-      const cal = await getCalApi({ namespace });
+      const cal = await getCalApi({ namespace, origin: CAL_ORIGIN });
       cal("ui", {
         hideEventTypeDetails: false,
         layout: "month_view",
@@ -54,6 +56,7 @@ export function CalBooking({ namespace, calLink, label = "Book this service" }: 
               <Cal
                 namespace={namespace}
                 calLink={calLink}
+                calOrigin={CAL_ORIGIN}
                 style={{ width: "100%", height: "100%", minHeight: "600px", overflow: "scroll" }}
                 config={{ layout: "month_view", useSlotsViewOnSmallScreen: "true" }}
               />
