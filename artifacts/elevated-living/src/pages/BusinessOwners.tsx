@@ -84,6 +84,10 @@ export function BusinessOwners() {
                   <p className="text-2xl font-bold text-primary">£650</p>
                 </div>
               </div>
+              <CalBooking
+                namespace="elevated-edit-full-day-intensive"
+                calLink="elevatedlivingenterprise/elevated-edit-full-day-intensive"
+              />
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Monthly Retainer</h4>
