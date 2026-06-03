@@ -3,7 +3,7 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/button";
 import { Calendar, Mail } from "lucide-react";
 import { useForm } from "react-hook-form";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet-async";
 
@@ -20,15 +20,6 @@ export function Contact() {
   const { toast } = useToast();
   const [submitted, setSubmitted] = useState(false);
 
-  useEffect(() => {
-    const existing = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
-    if (!existing) {
-      const script = document.createElement("script");
-      script.src = "https://assets.calendly.com/assets/external/widget.js";
-      script.async = true;
-      document.body.appendChild(script);
-    }
-  }, []);
 
   const onSubmit = async (data: ContactFormData) => {
     // Simulate API call
@@ -62,16 +53,19 @@ export function Contact() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16">
-            {/* Calendly Column */}
+            {/* Booking Column */}
             <div>
               <h2 className="text-2xl mb-6 flex items-center gap-2">
                 <Calendar className="w-6 h-6 text-primary" /> Book a Call
               </h2>
-              <div
-                className="calendly-inline-widget rounded-xl overflow-hidden border border-border shadow-sm"
-                data-url="https://calendly.com/contact-elevatedliving/30min"
-                style={{ minWidth: "320px", height: "700px" }}
-              />
+              <div className="rounded-xl overflow-hidden border border-border shadow-sm">
+                <iframe
+                  src="https://cal.com/elevatedlivingenterprise/free-consultation"
+                  title="Book a complimentary focus session"
+                  style={{ width: "100%", height: "700px", border: "none" }}
+                  allow="payment"
+                />
+              </div>
             </div>
 
             {/* Form Column */}

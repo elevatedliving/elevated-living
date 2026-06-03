@@ -1,20 +1,10 @@
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Helmet } from "react-helmet-async";
-import { useEffect } from "react";
+
+const FREE_CONSULTATION_URL = "https://cal.com/elevatedlivingenterprise/free-consultation";
 
 export function Book() {
-  useEffect(() => {
-    const existing = document.getElementById("calendly-script");
-    if (!existing) {
-      const script = document.createElement("script");
-      script.id = "calendly-script";
-      script.src = "https://assets.calendly.com/assets/external/widget.js";
-      script.async = true;
-      document.head.appendChild(script);
-    }
-  }, []);
-
   return (
     <Layout>
       <Helmet>
@@ -38,11 +28,14 @@ export function Book() {
 
       <Section className="pt-4 pb-20">
         <div className="max-w-3xl mx-auto">
-          <div
-            className="calendly-inline-widget rounded-2xl overflow-hidden shadow-sm border border-border/30"
-            data-url="https://calendly.com/contact-elevatedliving/30min"
-            style={{ minWidth: "320px", height: "700px" }}
-          />
+          <div className="rounded-2xl overflow-hidden shadow-sm border border-border/30">
+            <iframe
+              src={FREE_CONSULTATION_URL}
+              title="Book a Complimentary Focus Session"
+              style={{ width: "100%", height: "700px", border: "none" }}
+              allow="payment"
+            />
+          </div>
         </div>
       </Section>
     </Layout>
