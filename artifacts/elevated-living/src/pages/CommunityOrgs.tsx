@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
 import { FloatingAssessmentButton } from "@/components/FloatingAssessmentButton";
+import { CalBooking } from "@/components/ui/CalBooking";
 
 export function CommunityOrgs() {
   return (
@@ -67,6 +68,7 @@ export function CommunityOrgs() {
                   <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">Best start</p>
                   <h4 className="font-semibold text-lg mb-1">Power Hour</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">A focused 60-minute session — one challenge, cut through, one clear next step.</p>
+                  <CalBooking calLink="elevatedlivingenterprise/elevated-edit-power-hour" label="Book Power Hour" />
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">£125</p>
@@ -76,6 +78,7 @@ export function CommunityOrgs() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Half-Day</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">An in-depth session — where your organisation is now and where it needs to go, with clear priorities and a practical plan.</p>
+                  <CalBooking calLink="elevatedlivingenterprise/elevated-edit-half-day-session" label="Book Half-Day Session" />
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">£350</p>
@@ -85,6 +88,7 @@ export function CommunityOrgs() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Full Day</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">A full-day session — your organisation's vision, direction and priorities worked through in full, with a written roadmap and 30-day follow-up.</p>
+                  <CalBooking calLink="elevatedlivingenterprise/elevated-edit-full-day-intensive" label="Book Full-Day Session" />
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">£650</p>
@@ -94,6 +98,7 @@ export function CommunityOrgs() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Monthly Retainer</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">Two 60-minute sessions per month plus async support between sessions. Priority scheduling included. Retainers payable in advance.</p>
+                  <CalBooking calLink="elevatedlivingenterprise/elevated-edit-monthly-retainer" label="Book Monthly Retainer" />
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">£375<span className="text-base font-normal text-muted-foreground">/month</span></p>
@@ -113,8 +118,9 @@ export function CommunityOrgs() {
             <div className="grid gap-4">
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
                 <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Ad Hoc Support</h4>
+                  <h4 className="font-semibold text-lg mb-1">Virtual Assistant — 2 Hours</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">Flexible support as and when you need it. Minimum 2 hours per booking.</p>
+                  <CalBooking calLink="elevatedlivingenterprise/virtual-assistant-2-hours" label="Book VA Support" />
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">£50<span className="text-base font-normal text-muted-foreground">/hour</span></p>
@@ -122,20 +128,32 @@ export function CommunityOrgs() {
               </div>
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
                 <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Starter</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">8 hours per month of dedicated support to take the admin off your plate and free your team up for the work that matters.</p>
+                  <h4 className="font-semibold text-lg mb-1">Virtual Assistant — Additional Hours</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Additional hours beyond your retainer, billed at the standard rate.</p>
+                  <CalBooking calLink="elevatedlivingenterprise/virtual-assistant-adhoc-hours" label="Book Additional Hours" />
                 </div>
                 <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£360<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                  <p className="text-2xl font-bold text-primary">£45<span className="text-base font-normal text-muted-foreground">/hour</span></p>
                 </div>
               </div>
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
                 <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Regular</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">16 hours per month of consistent support — the equivalent of two solid days off your organisation's to-do list every month.</p>
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — 8 Hours</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">8 hours per month of dedicated support to take the admin off your plate and free your team up for the work that matters.</p>
+                  <CalBooking calLink="elevatedlivingenterprise/virtual-assistant-monthly-retainer-8-hours" label="Book 8-Hour Retainer" />
                 </div>
                 <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£680<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                  <p className="text-2xl font-bold text-primary">£350<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                </div>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — 16 Hours</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">16 hours per month of consistent support — the equivalent of two solid days off your organisation's to-do list every month.</p>
+                  <CalBooking calLink="elevatedlivingenterprise/virtual-assistant-monthly-retainer-16-hours" label="Book 16-Hour Retainer" />
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">£650<span className="text-base font-normal text-muted-foreground">/month</span></p>
                 </div>
               </div>
             </div>
@@ -155,6 +173,7 @@ export function CommunityOrgs() {
                   <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">Recommended first step</p>
                   <h4 className="font-semibold text-lg mb-1">Project Scoping &amp; Setup</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">A half-day session — scope, timeline, priorities, risk and next actions mapped out before delivery begins.</p>
+                  <CalBooking calLink="elevatedlivingenterprise/project-scoping-setup" label="Book Scoping Session" />
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">£495</p>
@@ -164,6 +183,7 @@ export function CommunityOrgs() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Ad Hoc Day Rate</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">Standalone project days, flexible to your needs — ideal for short bursts of focused delivery.</p>
+                  <CalBooking calLink="elevatedlivingenterprise/project-adhoc-day-rate" label="Book Day Rate" />
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">£600<span className="text-base font-normal text-muted-foreground">/day</span></p>
@@ -173,6 +193,11 @@ export function CommunityOrgs() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Light</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">2 days per month plus ongoing oversight — keeps momentum without a full-time commitment.</p>
+                  <div className="mt-3">
+                    <Link href="/book">
+                      <Button variant="outline" size="sm">Get in touch to book →</Button>
+                    </Link>
+                  </div>
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">£1,050<span className="text-base font-normal text-muted-foreground">/month</span></p>
@@ -182,6 +207,11 @@ export function CommunityOrgs() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Standard</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">3 days per month with active management — the right level for a project that needs consistent hands-on delivery.</p>
+                  <div className="mt-3">
+                    <Link href="/book">
+                      <Button variant="outline" size="sm">Get in touch to book →</Button>
+                    </Link>
+                  </div>
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">£1,550<span className="text-base font-normal text-muted-foreground">/month</span></p>
@@ -191,6 +221,11 @@ export function CommunityOrgs() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Intensive</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">4 days per month for complex delivery — sustained focus on a high-priority project over several months.</p>
+                  <div className="mt-3">
+                    <Link href="/book">
+                      <Button variant="outline" size="sm">Get in touch to book →</Button>
+                    </Link>
+                  </div>
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">£2,000<span className="text-base font-normal text-muted-foreground">/month</span></p>
@@ -212,6 +247,11 @@ export function CommunityOrgs() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Partnership Mapping &amp; Strategy</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">A half-day session to identify and prioritise the right relationships to support your vision and growth.</p>
+                  <div className="mt-3">
+                    <Link href="/book">
+                      <Button variant="outline" size="sm">Book a free consultation →</Button>
+                    </Link>
+                  </div>
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">From £495</p>
@@ -221,6 +261,11 @@ export function CommunityOrgs() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Community Consultation Support</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">Planning and facilitating meaningful community engagement that delivers real insight and genuine participation.</p>
+                  <div className="mt-3">
+                    <Link href="/book">
+                      <Button variant="outline" size="sm">Book a free consultation →</Button>
+                    </Link>
+                  </div>
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">From £600</p>
@@ -230,6 +275,11 @@ export function CommunityOrgs() {
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg mb-1">Ongoing Partnership Management</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">Regular support to manage and develop your key partnerships over time — scoped to your organisation's specific relationships.</p>
+                  <div className="mt-3">
+                    <Link href="/book">
+                      <Button variant="outline" size="sm">Book a free consultation →</Button>
+                    </Link>
+                  </div>
                 </div>
                 <div className="sm:text-right shrink-0">
                   <p className="text-2xl font-bold text-primary">From £500<span className="text-base font-normal text-muted-foreground">/month</span></p>
