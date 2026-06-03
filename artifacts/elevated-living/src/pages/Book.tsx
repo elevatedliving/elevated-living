@@ -2,7 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Helmet } from "react-helmet-async";
 
-const FREE_CONSULTATION_URL = "https://cal.com/elevatedlivingenterprise/free-consultation";
+const FREE_CONSULTATION_URL = "https://cal.eu/elevatedlivingenterprise/free-consultation";
 
 export function Book() {
   return (
