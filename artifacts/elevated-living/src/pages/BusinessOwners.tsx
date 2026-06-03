@@ -62,7 +62,6 @@ export function BusinessOwners() {
                   </div>
                 </div>
                 <CalBooking
-                  namespace="elevated-edit-power-hour"
                   calLink="elevatedlivingenterprise/elevated-edit-power-hour"
                   label="Book Power Hour"
                 />
@@ -80,7 +79,6 @@ export function BusinessOwners() {
                   </div>
                 </div>
                 <CalBooking
-                  namespace="elevated-edit-half-day-session"
                   calLink="elevatedlivingenterprise/elevated-edit-half-day-session"
                   label="Book Half-Day"
                 />
@@ -98,7 +96,6 @@ export function BusinessOwners() {
                   </div>
                 </div>
                 <CalBooking
-                  namespace="elevated-edit-full-day-intensive"
                   calLink="elevatedlivingenterprise/elevated-edit-full-day-intensive"
                   label="Book Full Day"
                 />
@@ -116,7 +113,6 @@ export function BusinessOwners() {
                   </div>
                 </div>
                 <CalBooking
-                  namespace="elevated-edit-monthly-retainer"
                   calLink="elevatedlivingenterprise/elevated-edit-monthly-retainer"
                   label="Book Monthly Retainer"
                 />
@@ -145,7 +141,6 @@ export function BusinessOwners() {
                   </div>
                 </div>
                 <CalBooking
-                  namespace="virtual-assistant-2-hours"
                   calLink="elevatedlivingenterprise/virtual-assistant-2-hours"
                   label="Book Virtual Assistant — 2 Hours"
                 />
@@ -161,7 +156,6 @@ export function BusinessOwners() {
                   </div>
                 </div>
                 <CalBooking
-                  namespace="virtual-assistant-adhoc-hours"
                   calLink="elevatedlivingenterprise/virtual-assistant-adhoc-hours"
                   label="Book Additional Hours"
                 />
@@ -177,7 +171,6 @@ export function BusinessOwners() {
                   </div>
                 </div>
                 <CalBooking
-                  namespace="virtual-assistant-monthly-retainer-8-hours"
                   calLink="elevatedlivingenterprise/virtual-assistant-monthly-retainer-8-hours"
                   label="Book Monthly Retainer — 8 Hours"
                 />
@@ -193,7 +186,6 @@ export function BusinessOwners() {
                   </div>
                 </div>
                 <CalBooking
-                  namespace="virtual-assistant-monthly-retainer-16-hours"
                   calLink="elevatedlivingenterprise/virtual-assistant-monthly-retainer-16-hours"
                   label="Book Monthly Retainer — 16 Hours"
                 />
@@ -224,7 +216,6 @@ export function BusinessOwners() {
                   </div>
                 </div>
                 <CalBooking
-                  namespace="project-scoping-setup"
                   calLink="elevatedlivingenterprise/project-scoping-setup"
                   label="Book Project Scoping"
                 />
@@ -242,7 +233,6 @@ export function BusinessOwners() {
                   </div>
                 </div>
                 <CalBooking
-                  namespace="project-adhoc-day-rate"
                   calLink="elevatedlivingenterprise/project-adhoc-day-rate"
                   label="Book a Project Day"
                 />
