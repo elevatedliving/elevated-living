@@ -9,9 +9,9 @@ export function Book() {
     <Layout>
       <Helmet>
         <title>Book a Complimentary Focus Session | Elevated Living</title>
-        <meta name="description" content="Book a free 30-minute focus session with Elevated Living. We'll talk through where you're stuck, what's getting in the way, and how we can help." />
+        <meta name="description" content="Book a free 20-minute focus session with Elevated Living. We'll talk through where you're stuck, what's getting in the way, and how we can help." />
         <meta property="og:title" content="Book a Complimentary Focus Session | Elevated Living" />
-        <meta property="og:description" content="Book a free 30-minute focus session with Elevated Living. We'll talk through where you're stuck, what's getting in the way, and how we can help." />
+        <meta property="og:description" content="Book a free 20-minute focus session with Elevated Living. We'll talk through where you're stuck, what's getting in the way, and how we can help." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
@@ -21,7 +21,7 @@ export function Book() {
           <div className="mb-4 text-primary font-semibold uppercase tracking-wider text-sm">Free Session</div>
           <h1 className="mb-4">Book a Complimentary Focus Session</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A free 30-minute conversation to talk through where you're stuck, what's getting in the way, and whether Elevated Living is the right fit. No pressure, no obligation.
+            A free 20-minute conversation to talk through where you're stuck, what's getting in the way, and whether Elevated Living is the right fit. No pressure, no obligation.
           </p>
         </div>
       </Section>
