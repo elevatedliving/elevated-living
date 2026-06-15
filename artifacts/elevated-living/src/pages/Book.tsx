@@ -32,7 +32,8 @@ export function Book() {
             <iframe
               src={FREE_CONSULTATION_URL}
               title="Book a Complimentary Focus Session"
-              style={{ width: "100%", height: "700px", border: "none" }}
+              className="w-full"
+              style={{ height: "clamp(500px, 75vh, 700px)", border: "none" }}
               allow="payment"
             />
           </div>

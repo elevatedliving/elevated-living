@@ -15,7 +15,7 @@ export function Layout({ children }: LayoutProps) {
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       
-      <main className="flex-grow pt-20">
+      <main className="flex-grow pt-20 pb-20 md:pb-0">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}

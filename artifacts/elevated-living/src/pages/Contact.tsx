@@ -34,7 +34,8 @@ export function Contact() {
                 <iframe
                   src="https://cal.eu/elevatedlivingenterprise/free-consultation"
                   title="Book a complimentary focus session"
-                  style={{ width: "100%", height: "700px", border: "none" }}
+                  className="w-full"
+                  style={{ height: "clamp(480px, 60vh, 700px)", border: "none" }}
                   allow="payment"
                 />
               </div>
@@ -48,7 +49,8 @@ export function Contact() {
               <iframe
                 aria-label="Contact Elevated Living"
                 frameBorder="0"
-                style={{ height: "500px", width: "99%", border: "none" }}
+                className="w-full"
+                style={{ height: "clamp(420px, 55vh, 500px)", border: "none" }}
                 src="https://forms.zohopublic.eu/elevatedlivingenterprisegm1/form/contactelevatedlivingenterprise/formperma/mKCVYfjzwhDyApINx2pCQK9o4oDVfhKDYg0qWVslecc"
               />
             </div>
