@@ -1,22 +1,102 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-const NAV_LINKS = [
+type NavLink = {
+  href: string;
+  label: string;
+  children?: { href: string; label: string }[];
+};
+
+const NAV_LINKS: NavLink[] = [
   { href: "/", label: "Home" },
   { href: "/for-business-owners", label: "For Solopreneurs / Small Business Owners" },
-  { href: "/for-community-organisations", label: "For Community Orgs / Social Enterprises" },
-  { href: "/impact-report-writing", label: "Impact Report Writing" },
+  {
+    href: "/for-community-organisations",
+    label: "For Community Orgs / Social Enterprises",
+    children: [
+      { href: "/impact-report-writing", label: "Impact Report Writing" },
+    ],
+  },
   { href: "/about", label: "About" },
 ];
+
+function DropdownLink({ link, location }: { link: NavLink; location: string }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
+
+  const isActive = location === link.href || link.children?.some(c => c.href === location);
+
+  return (
+    <div
+      ref={ref}
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <Link
+        href={link.href}
+        className={cn(
+          "text-sm font-medium transition-colors relative group text-primary hover:text-[#1B2B5E] flex items-center gap-1",
+          isActive && "text-[#1B2B5E]"
+        )}
+      >
+        {link.label}
+        <ChevronDown className={cn("w-3.5 h-3.5 transition-transform", open && "rotate-180")} />
+        {isActive && (
+          <motion.div
+            layoutId="navbar-indicator"
+            className="absolute -bottom-1.5 left-0 right-0 h-0.5 bg-[#1B2B5E] rounded-full"
+          />
+        )}
+      </Link>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -4 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -4 }}
+            transition={{ duration: 0.15 }}
+            className="absolute top-full left-0 mt-2 w-52 bg-background border border-border rounded-xl shadow-lg py-2 z-50"
+          >
+            {link.children?.map(child => (
+              <Link
+                key={child.href}
+                href={child.href}
+                className={cn(
+                  "block px-4 py-2 text-sm font-medium text-primary hover:text-[#1B2B5E] hover:bg-accent/50 transition-colors",
+                  location === child.href && "text-[#1B2B5E] bg-accent/30"
+                )}
+              >
+                {child.label}
+              </Link>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
 
 export function Navbar() {
   const [location] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,9 +106,9 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMobileMenuOpen(false);
+    setMobileExpanded(null);
   }, [location]);
 
   return (
@@ -51,24 +131,28 @@ export function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  "text-sm font-medium transition-colors relative group text-primary hover:text-[#1B2B5E]",
-                  location === link.href && "text-[#1B2B5E]"
-                )}
-              >
-                {link.label}
-                {location === link.href && (
-                  <motion.div
-                    layoutId="navbar-indicator"
-                    className="absolute -bottom-1.5 left-0 right-0 h-0.5 bg-[#1B2B5E] rounded-full"
-                  />
-                )}
-              </Link>
-            ))}
+            {NAV_LINKS.map((link) =>
+              link.children ? (
+                <DropdownLink key={link.href} link={link} location={location} />
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={cn(
+                    "text-sm font-medium transition-colors relative group text-primary hover:text-[#1B2B5E]",
+                    location === link.href && "text-[#1B2B5E]"
+                  )}
+                >
+                  {link.label}
+                  {location === link.href && (
+                    <motion.div
+                      layoutId="navbar-indicator"
+                      className="absolute -bottom-1.5 left-0 right-0 h-0.5 bg-[#1B2B5E] rounded-full"
+                    />
+                  )}
+                </Link>
+              )
+            )}
 
             <Link href="/blog" className="text-sm font-medium text-primary hover:text-[#1B2B5E] transition-colors">
               Blog
@@ -84,7 +168,7 @@ export function Navbar() {
                 </div>
               </Link>
             </div>
-            
+
             <button
               className="lg:hidden p-2 text-foreground z-50 relative"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -108,22 +192,61 @@ export function Navbar() {
           >
             <div className="flex flex-col gap-6 text-lg">
               {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={cn(
-                    "font-semibold pb-2 border-b border-border/50 text-primary",
-                    location === link.href && "text-[#1B2B5E]"
+                <div key={link.href}>
+                  {link.children ? (
+                    <>
+                      <button
+                        onClick={() => setMobileExpanded(mobileExpanded === link.href ? null : link.href)}
+                        className={cn(
+                          "w-full flex items-center justify-between font-semibold pb-2 border-b border-border/50 text-primary",
+                          location === link.href && "text-[#1B2B5E]"
+                        )}
+                      >
+                        <Link href={link.href}>{link.label}</Link>
+                        <ChevronDown className={cn("w-4 h-4 transition-transform shrink-0", mobileExpanded === link.href && "rotate-180")} />
+                      </button>
+                      <AnimatePresence>
+                        {mobileExpanded === link.href && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
+                            className="overflow-hidden"
+                          >
+                            {link.children.map(child => (
+                              <Link
+                                key={child.href}
+                                href={child.href}
+                                className={cn(
+                                  "block pl-4 pt-3 pb-1 text-base font-medium text-primary border-l-2 border-primary/30 ml-2 mt-2",
+                                  location === child.href && "text-[#1B2B5E] border-[#1B2B5E]"
+                                )}
+                              >
+                                {child.label}
+                              </Link>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className={cn(
+                        "block font-semibold pb-2 border-b border-border/50 text-primary",
+                        location === link.href && "text-[#1B2B5E]"
+                      )}
+                    >
+                      {link.label}
+                    </Link>
                   )}
-                >
-                  {link.label}
-                </Link>
+                </div>
               ))}
-              
+
               <Link href="/blog" className="font-semibold pb-2 border-b border-border/50 text-primary">
                 Blog
               </Link>
-              
+
               <Link href="/contact" className="font-semibold pb-2 border-b border-border/50 text-primary">
                 Contact
               </Link>
