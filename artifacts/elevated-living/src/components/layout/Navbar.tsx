@@ -23,7 +23,13 @@ const NAV_LINKS: NavLink[] = [
   },
   { href: "/workshops-events", label: "Workshops & Events" },
   { href: "/contact", label: "Contact" },
-  { href: "/about", label: "About" },
+  {
+    href: "/about",
+    label: "About",
+    children: [
+      { href: "/blog", label: "Blog" },
+    ],
+  },
 ];
 
 function DropdownLink({ link, location }: { link: NavLink; location: string }) {
@@ -156,9 +162,6 @@ export function Navbar() {
               )
             )}
 
-            <Link href="/blog" className="text-sm font-medium text-primary hover:text-[#1B2B5E] transition-colors">
-              Blog
-            </Link>
           </nav>
 
           {/* CTA & Mobile Toggle */}
@@ -244,10 +247,6 @@ export function Navbar() {
                   )}
                 </div>
               ))}
-
-              <Link href="/blog" className="font-semibold pb-2 border-b border-border/50 text-primary">
-                Blog
-              </Link>
 
               <div className="mt-8">
                 <Link href="/book">
