@@ -28,6 +28,17 @@ export function Layout({ children }: LayoutProps) {
 
       <Footer />
 
+      {/* Floating Contact Tab — desktop only */}
+      <div className="hidden md:flex fixed left-0 top-1/2 -translate-y-1/2 z-40">
+        <Link href="/contact">
+          <div className="flex items-center gap-2 bg-primary text-primary-foreground text-xs font-semibold tracking-widest uppercase px-3 py-3 rounded-r-lg shadow-lg hover:bg-primary/90 transition-colors cursor-pointer"
+            style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
+          >
+            Contact Us
+          </div>
+        </Link>
+      </div>
+
       {/* Sticky Mobile CTA */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-background/90 backdrop-blur-md border-t border-border z-40 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
         <Link href="/book">

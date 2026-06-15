@@ -22,7 +22,6 @@ const NAV_LINKS: NavLink[] = [
     ],
   },
   { href: "/workshops-events", label: "Workshops & Events" },
-  { href: "/contact", label: "Contact" },
   {
     href: "/about",
     label: "About",
