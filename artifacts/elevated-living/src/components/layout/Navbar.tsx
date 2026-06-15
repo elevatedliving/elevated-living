@@ -21,6 +21,7 @@ const NAV_LINKS: NavLink[] = [
       { href: "/impact-report-writing", label: "Impact Report Writing" },
     ],
   },
+  { href: "/contact", label: "Contact" },
   { href: "/about", label: "About" },
 ];
 
@@ -245,10 +246,6 @@ export function Navbar() {
 
               <Link href="/blog" className="font-semibold pb-2 border-b border-border/50 text-primary">
                 Blog
-              </Link>
-
-              <Link href="/contact" className="font-semibold pb-2 border-b border-border/50 text-primary">
-                Contact
               </Link>
 
               <div className="mt-8">
