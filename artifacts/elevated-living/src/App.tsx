@@ -22,6 +22,7 @@ import { Testimonials } from "@/pages/Testimonials";
 import { Resources } from "@/pages/Resources";
 import { Services } from "@/pages/Services";
 import { Book } from "@/pages/Book";
+import { WorkshopsEvents } from "@/pages/WorkshopsEvents";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -55,6 +56,7 @@ function Router() {
       <Route path="/resources" component={Resources} />
       <Route path="/services" component={Services} />
       <Route path="/book" component={Book} />
+      <Route path="/workshops-events" component={WorkshopsEvents} />
       <Route component={NotFound} />
     </Switch>
     </>

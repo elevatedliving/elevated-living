@@ -21,6 +21,7 @@ const NAV_LINKS: NavLink[] = [
       { href: "/impact-report-writing", label: "Impact Report Writing" },
     ],
   },
+  { href: "/workshops-events", label: "Workshops & Events" },
   { href: "/contact", label: "Contact" },
   { href: "/about", label: "About" },
 ];
