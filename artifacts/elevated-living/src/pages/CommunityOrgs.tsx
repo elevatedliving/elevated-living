@@ -21,9 +21,9 @@ export function CommunityOrgs() {
       <FloatingAssessmentButton />
 
       {/* Opening */}
-      <Section className="pt-20 pb-12">
+      <Section className="pt-20 pb-8">
         <div className="max-w-3xl mx-auto">
-          <h1 className="mb-6">For Community Orgs / Social Enterprises</h1>
+          <h1 className="mb-3">For Community Orgs / Social Enterprises</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             The people doing the most important work often have the least support behind them. You started your organisation because you cared deeply about your community. Now you're drowning in admin, chasing funders, and wondering how everyone else seems to manage it.
           </p>
@@ -60,7 +60,7 @@ export function CommunityOrgs() {
               Download Service Catalogue
             </a>
           </div>
-          <p className="text-muted-foreground mb-10 leading-relaxed">
+          <p className="text-muted-foreground mb-6 leading-relaxed">
             All prices exclude VAT. A written agreement is issued before every engagement. Bespoke packages are available on request.
           </p>
 

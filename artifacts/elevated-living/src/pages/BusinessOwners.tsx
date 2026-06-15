@@ -22,9 +22,9 @@ export function BusinessOwners() {
       <FloatingAssessmentButton />
 
       {/* Opening */}
-      <Section className="pt-20 pb-12">
+      <Section className="pt-20 pb-8">
         <div className="max-w-3xl mx-auto">
-          <h1 className="mb-6">For Solopreneurs / Small Business Owners</h1>
+          <h1 className="mb-3">For Solopreneurs / Small Business Owners</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             You started your business because you were good at something. You had the idea, the drive, the passion — and then the business side of business arrived. The invoices. The inbox. The to-do list that never gets shorter.
           </p>
@@ -45,7 +45,7 @@ export function BusinessOwners() {
               Download Service Catalogue
             </a>
           </div>
-          <p className="text-muted-foreground mb-10 leading-relaxed">
+          <p className="text-muted-foreground mb-6 leading-relaxed">
             All prices exclude VAT. A written agreement is issued before every engagement. Bespoke packages are available on request.
           </p>
 
