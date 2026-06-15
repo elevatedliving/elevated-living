@@ -60,20 +60,6 @@ export function WorkshopsEvents() {
         </div>
       </Section>
 
-      <Section className="text-center">
-        <div className="max-w-xl mx-auto">
-          <h2 className="text-2xl mb-4">Want to be the first to hear about new events?</h2>
-          <p className="text-muted-foreground mb-6 leading-relaxed">
-            Get in touch and we'll keep you updated when new workshops are added.
-          </p>
-          <a
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-full hover:bg-primary/90 transition-colors"
-          >
-            Get in touch →
-          </a>
-        </div>
-      </Section>
     </Layout>
   );
 }
