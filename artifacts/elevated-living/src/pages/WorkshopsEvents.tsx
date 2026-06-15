@@ -26,38 +26,33 @@ export function WorkshopsEvents() {
       <Section bg="muted">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl mb-8">Upcoming Events</h2>
-          <div className="grid gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {/* Getting Ahead With AI */}
             <a
               href="https://www.eventbrite.co.uk/e/1990882780991?aff=oddtdtcreator"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row"
+              className="group bg-card border border-border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col"
             >
-              <div className="sm:w-64 shrink-0 overflow-hidden">
-                <img
-                  src={`${import.meta.env.BASE_URL}images/getting-ahead-with-ai.png`}
-                  alt="Getting Ahead With AI — Practical AI Skills for Beginners"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  style={{ maxHeight: "280px" }}
-                />
-              </div>
-              <div className="p-6 flex flex-col justify-between">
-                <div>
-                  <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Workshop</p>
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
-                    Getting Ahead With AI — Practical AI Skills for Beginners
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    A hands-on introductory session covering practical AI tools and techniques you can start using straight away — no technical background needed.
-                  </p>
+              <img
+                src={`${import.meta.env.BASE_URL}images/getting-ahead-with-ai.png`}
+                alt="Getting Ahead With AI — Practical AI Skills for Beginners"
+                className="w-full object-contain group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="p-6 flex flex-col gap-3">
+                <p className="text-xs font-semibold text-primary uppercase tracking-wide">Workshop</p>
+                <h3 className="text-lg font-semibold group-hover:text-primary transition-colors leading-snug">
+                  Getting Ahead With AI — Practical AI Skills for Beginners
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  A hands-on introductory session covering practical AI tools and techniques you can start using straight away — no technical background needed.
+                </p>
+                <div className="text-sm text-muted-foreground mt-1">
+                  <p className="font-medium text-foreground">6 August · 18:00</p>
+                  <p>Academy of Success, London</p>
                 </div>
-                <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-                  <span className="font-medium text-foreground">6 August · 18:00</span>
-                  <span>Academy of Success, London</span>
-                  <span className="ml-auto font-semibold text-primary group-hover:underline">Book on Eventbrite →</span>
-                </div>
+                <span className="mt-2 font-semibold text-primary group-hover:underline text-sm">Book on Eventbrite →</span>
               </div>
             </a>
 
