@@ -64,7 +64,7 @@ export function Services() {
         <div className="max-w-3xl mx-auto">
           <h1 className="mb-6">Services &amp; Fees</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Five core services designed to meet you where you are — and move you forward with confidence. All prices exclude VAT. A written agreement or statement of work is issued before every engagement begins.
+            Five core services designed to meet you where you are — and move you forward with confidence. A written agreement or statement of work is issued before every engagement begins.
           </p>
           <p className="text-muted-foreground mt-4 leading-relaxed">
             Bespoke packages are available on request. Not sure where to start? A free 20-minute consultation is always the right first step.
@@ -255,7 +255,6 @@ export function Services() {
             </table>
           </div>
           <div className="mt-6 flex flex-wrap gap-6 text-sm text-muted-foreground">
-            <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> All prices exclude VAT</span>
             <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Written agreement before every engagement</span>
             <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Bespoke packages available on request</span>
             <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Free consultations for impact reporting and partnership work</span>

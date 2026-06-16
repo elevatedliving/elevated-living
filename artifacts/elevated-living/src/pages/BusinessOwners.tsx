@@ -46,7 +46,7 @@ export function BusinessOwners() {
             </a>
           </div>
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            All prices exclude VAT. A written agreement is issued before every engagement. Bespoke packages are available on request.
+            A written agreement is issued before every engagement. Bespoke packages are available on request.
           </p>
 
           {/* The Elevated Edit */}
