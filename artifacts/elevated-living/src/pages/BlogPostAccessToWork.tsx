@@ -11,6 +11,7 @@ export function BlogPostAccessToWork() {
         <title>Access to Work: What Self-Employed People Are Missing Out On | Elevated Living</title>
         <meta name="description" content="Access to Work isn't just for employed people. If you're self-employed with a disability or health condition, you may be entitled to government-funded support — here's what you need to know." />
         <meta property="og:title" content="Access to Work: What Self-Employed People Are Missing Out On | Elevated Living" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta property="og:description" content="Access to Work isn't just for employed people. If you're self-employed with a disability or health condition, you may be entitled to government-funded support — here's what you need to know." />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary" />

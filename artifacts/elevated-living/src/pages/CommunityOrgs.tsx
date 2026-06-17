@@ -15,6 +15,7 @@ export function CommunityOrgs() {
         <meta property="og:title" content="For Community Orgs / Social Enterprises | Elevated Living" />
         <meta property="og:description" content="Specialist operational and impact support for community organisations and social enterprises. Elevated Living helps you evidence your work, build capacity, and sustain what matters." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
 

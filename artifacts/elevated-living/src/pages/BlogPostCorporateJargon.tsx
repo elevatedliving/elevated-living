@@ -11,6 +11,7 @@ export function BlogPostCorporateJargon() {
         <title>Stop Using Corporate Jargon in Your Impact Reports | Elevated Living</title>
         <meta name="description" content="Funders want human stories backed by solid data — not consultant-speak. Here's why plain English always wins in impact reporting, and how to write one that actually works." />
         <meta property="og:title" content="Stop Using Corporate Jargon in Your Impact Reports | Elevated Living" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta property="og:description" content="Funders want human stories backed by solid data — not consultant-speak. Here's why plain English always wins in impact reporting, and how to write one that actually works." />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary" />

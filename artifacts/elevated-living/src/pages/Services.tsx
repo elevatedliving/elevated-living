@@ -54,6 +54,7 @@ export function Services() {
         <title>Services &amp; Fees | Elevated Living</title>
         <meta name="description" content="The full range of Elevated Living services — virtual assistant support, strategy sessions, project management, partnership development, and impact report writing. Transparent pricing, no surprises." />
         <meta property="og:title" content="Services &amp; Fees | Elevated Living" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta property="og:description" content="The full range of Elevated Living services — virtual assistant support, strategy sessions, project management, partnership development, and impact report writing. Transparent pricing, no surprises." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />

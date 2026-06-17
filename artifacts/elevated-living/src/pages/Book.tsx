@@ -11,6 +11,7 @@ export function Book() {
         <title>Book a Complimentary Focus Session | Elevated Living</title>
         <meta name="description" content="Book a free 20-minute focus session with Elevated Living. We'll talk through where you're stuck, what's getting in the way, and how we can help." />
         <meta property="og:title" content="Book a Complimentary Focus Session | Elevated Living" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta property="og:description" content="Book a free 20-minute focus session with Elevated Living. We'll talk through where you're stuck, what's getting in the way, and how we can help." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />

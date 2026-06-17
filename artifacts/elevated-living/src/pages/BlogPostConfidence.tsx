@@ -11,6 +11,7 @@ export function BlogPostConfidence() {
         <title>Confidence Doesn't Come First. Action Does. | Elevated Living</title>
         <meta name="description" content="Waiting to feel ready before you start is the trap. Why action — even small, imperfect action — is the only real route to the confidence you're waiting for." />
         <meta property="og:title" content="Confidence Doesn't Come First. Action Does. | Elevated Living" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta property="og:description" content="Waiting to feel ready before you start is the trap. Why action — even small, imperfect action — is the only real route to the confidence you're waiting for." />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary" />

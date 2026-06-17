@@ -15,6 +15,7 @@ export function Home() {
         <meta property="og:title" content="Elevated Living | Operational Support for Solopreneurs &amp; Community Orgs" />
         <meta property="og:description" content="Elevated Living helps solopreneurs, small business owners, and voluntary sector organisations cut through the operational overwhelm and build structures that actually work." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
       {/* Hero Section */}

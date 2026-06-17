@@ -16,6 +16,7 @@ export function BusinessOwners() {
         <meta property="og:title" content="For Business Owners | Elevated Living" />
         <meta property="og:description" content="Operational support for solopreneurs and small business owners — from focus sessions and VA support to Access to Work guidance. Stop drowning in admin and start moving forward." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
 

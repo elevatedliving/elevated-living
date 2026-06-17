@@ -11,6 +11,7 @@ export function About() {
         <title>About | Elevated Living</title>
         <meta name="description" content="Meet Kay Oldroyd — Founder and Director of Elevated Living. With 30+ years in community infrastructure, Kay built Elevated Living to help others stop burning out over operations." />
         <meta property="og:title" content="About | Elevated Living" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta property="og:description" content="Meet Kay Oldroyd — Founder and Director of Elevated Living. With 30+ years in community infrastructure, Kay built Elevated Living to help others stop burning out over operations." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />

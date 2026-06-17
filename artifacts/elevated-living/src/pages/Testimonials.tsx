@@ -37,6 +37,7 @@ export function Testimonials() {
         <title>Client Stories | Elevated Living</title>
         <meta name="description" content="Hear from the solopreneurs, business owners and community org leaders who've worked with Elevated Living — and what changed when they stopped trying to do it all alone." />
         <meta property="og:title" content="Client Stories | Elevated Living" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta property="og:description" content="Hear from the solopreneurs, business owners and community org leaders who've worked with Elevated Living — and what changed when they stopped trying to do it all alone." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />

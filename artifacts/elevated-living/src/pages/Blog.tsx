@@ -58,6 +58,7 @@ export function Blog() {
         <title>Blog | Elevated Living</title>
         <meta name="description" content="Practical insights on impact measurement, operational focus, and social value — written for solopreneurs and community org leaders by the team at Elevated Living." />
         <meta property="og:title" content="Blog | Elevated Living" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta property="og:description" content="Practical insights on impact measurement, operational focus, and social value — written for solopreneurs and community org leaders by the team at Elevated Living." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />

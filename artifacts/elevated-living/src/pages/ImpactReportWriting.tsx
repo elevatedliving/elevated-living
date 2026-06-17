@@ -12,6 +12,7 @@ export function ImpactReportWriting() {
         <title>Impact Report Writing | Elevated Living</title>
         <meta name="description" content="Professional impact report writing for charities, CICs and social enterprises. Elevated Living turns your data, stories and case studies into reports that funders actually read." />
         <meta property="og:title" content="Impact Report Writing | Elevated Living" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta property="og:description" content="Professional impact report writing for charities, CICs and social enterprises. Elevated Living turns your data, stories and case studies into reports that funders actually read." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />

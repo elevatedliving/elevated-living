@@ -11,6 +11,7 @@ export function BlogPostHoodie() {
         <title>The Hoodie Hypothesis | Elevated Living</title>
         <meta name="description" content="Why the outfit you work in tells you more about your business boundaries than any productivity system ever will. A thought on the psychology of solopreneur life." />
         <meta property="og:title" content="The Hoodie Hypothesis | Elevated Living" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta property="og:description" content="Why the outfit you work in tells you more about your business boundaries than any productivity system ever will. A thought on the psychology of solopreneur life." />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary" />

@@ -9,6 +9,7 @@ export function WorkshopsEvents() {
         <title>Workshops &amp; Events | Elevated Living</title>
         <meta name="description" content="Workshops and events from Elevated Living — practical skills, community learning, and professional development sessions open to all." />
         <meta property="og:title" content="Workshops &amp; Events | Elevated Living" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta property="og:description" content="Workshops and events from Elevated Living — practical skills, community learning, and professional development sessions open to all." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
