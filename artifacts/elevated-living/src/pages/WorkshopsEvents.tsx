@@ -58,6 +58,24 @@ export function WorkshopsEvents() {
             </a>
 
           </div>
+
+          {/* The Small Business Reset */}
+          <div className="mt-16">
+            <h2 className="text-2xl mb-2">Featured Presentation</h2>
+            <p className="text-muted-foreground mb-8">A resource from Elevated Living to help you reset, refocus, and move forward with clarity.</p>
+            <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-sm p-6">
+              <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Presentation</p>
+              <h3 className="text-xl font-semibold mb-4">The Small Business Reset</h3>
+              <div className="w-full rounded-xl overflow-hidden border border-border">
+                <iframe
+                  src="https://gamma.app/embed/04mj68lrk2o9b52"
+                  style={{ width: "100%", maxWidth: "100%", height: "450px", display: "block" }}
+                  allow="fullscreen"
+                  title="The Small Business Reset"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </Section>
 

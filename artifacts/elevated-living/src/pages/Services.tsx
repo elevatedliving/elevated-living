@@ -263,6 +263,53 @@ export function Services() {
         </div>
       </Section>
 
+      {/* Service Catalogue PDF */}
+      <Section bg="muted">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl mb-2">Service Catalogue</h2>
+          <p className="text-muted-foreground mb-6">View or save the full Elevated Living service overview as a PDF.</p>
+          <div className="rounded-2xl overflow-hidden border border-border shadow-sm bg-card">
+            <iframe
+              src={`${import.meta.env.BASE_URL}Elevated-Living-Services-Overview-2026.pdf`}
+              className="w-full"
+              style={{ height: "680px", display: "block" }}
+              title="Elevated Living Service Catalogue"
+            />
+          </div>
+          <p className="text-xs text-muted-foreground mt-3">
+            Not displaying?{" "}
+            <a
+              href={`${import.meta.env.BASE_URL}Elevated-Living-Services-Overview-2026.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-primary transition-colors"
+            >
+              Open the PDF in a new tab
+            </a>
+          </p>
+        </div>
+      </Section>
+
+      {/* The Small Business Reset */}
+      <Section>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl mb-2">Featured Presentation</h2>
+          <p className="text-muted-foreground mb-6">A resource from Elevated Living to help you reset, refocus, and move forward with clarity.</p>
+          <div className="rounded-2xl overflow-hidden border border-border shadow-sm bg-card p-6">
+            <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Presentation</p>
+            <h3 className="text-xl font-semibold mb-4">The Small Business Reset</h3>
+            <div className="rounded-xl overflow-hidden border border-border">
+              <iframe
+                src="https://gamma.app/embed/04mj68lrk2o9b52"
+                style={{ width: "100%", maxWidth: "100%", height: "450px", display: "block" }}
+                allow="fullscreen"
+                title="The Small Business Reset"
+              />
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* CTA */}
       <Section bg="primary" className="text-center">
         <div className="max-w-2xl mx-auto">
