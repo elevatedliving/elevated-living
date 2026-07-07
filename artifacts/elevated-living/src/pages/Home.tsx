@@ -168,9 +168,16 @@ export function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-4">In Partnership</p>
           <h2 className="mb-4">Introducing Square AI Academy</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
             We have partnered with <span className="font-semibold text-foreground">Academy of Success</span> to form Square AI Academy — for all your in-person AI training. Absolute beginners, of all ages and all backgrounds.
           </p>
+          <a href="https://www.squareaiacademy.uk" target="_blank" rel="noopener noreferrer">
+            <img
+              src={`${import.meta.env.BASE_URL}images/square-ai-academy.png`}
+              alt="Square AI Academy — South-East London's First AI Training Hub"
+              className="mx-auto w-full max-w-xs hover:opacity-90 transition-opacity"
+            />
+          </a>
         </div>
       </Section>
     </Layout>
