@@ -17,11 +17,15 @@ export function Services() {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
-      {/* Hero */}
-      <Section className="pt-20 pb-10">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="mb-4">Services Overview</h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+      {/* Banner */}
+      <Section className="pt-20 pb-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <img
+            src={`${import.meta.env.BASE_URL}images/services-banner.png`}
+            alt="Elevated Living Services"
+            className="mx-auto w-full max-w-lg"
+          />
+          <p className="text-lg text-muted-foreground mt-4 leading-relaxed">
             Everything Elevated Living offers — in one place. Browse the service catalogue below, or scroll down to view The Small Business Reset presentation.
           </p>
         </div>
