@@ -60,7 +60,7 @@ export function BlogPostHoodie() {
             Sound familiar?
           </p>
           <p>
-            If you're a solopreneur, a freelancer, or someone running a small organisation largely on vibes, caffeine, and sheer determination — your productivity rituals are probably more specific, more personal, and frankly more bizarre than anything a corporate wellness programme would ever recommend.
+            If you're a solopreneur, a freelancer, or someone running a small organisation largely on stress, caffeine, and sheer determination — your productivity rituals are probably more specific, more personal, and frankly more bizarre than anything a corporate wellness programme would ever recommend.
           </p>
           <p>
             And here's the thing: that's not a quirk. That might actually be genius.
