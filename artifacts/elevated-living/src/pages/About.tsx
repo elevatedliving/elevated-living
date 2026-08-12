@@ -36,7 +36,7 @@ export function About() {
                 Kay has a background in regeneration, social housing, education, community development and training giving her broad sector knowledge and experience, along with having sharp trouble-shooting skills and finding innovative ways to overcome challenges.
               </p>
               <p className="text-foreground/80 text-lg leading-relaxed mb-5">
-                Kay is a Level 1 Associate of the Institute of Social Value, a qualified Social Value and Return on Investment Practitioner, and a qualified Trainer and Assessor.
+                She is a Level 1 Associate of the Institute of Social Value, a qualified Social Value and Return on Investment Practitioner, and a qualified Trainer and Assessor.
               </p>
               <div className="flex flex-wrap gap-3">
                 <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
