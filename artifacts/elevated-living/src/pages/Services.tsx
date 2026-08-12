@@ -191,32 +191,41 @@ export function Services() {
 
             <h4 className="text-sm font-bold uppercase tracking-wide text-muted-foreground mb-3">Monthly Retainers</h4>
             <div className="grid gap-4">
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Light</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">8 hours a month, ongoing oversight — keeps momentum without a full-time commitment.</p>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Light</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">8 hours a month, ongoing oversight — keeps momentum without a full-time commitment.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£720<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                  </div>
                 </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£720<span className="text-base font-normal text-muted-foreground">/month</span></p>
-                </div>
+                <CalBooking calLink="elevatedlivingenterprise/fractional-project-management-monthly-retainer-light-8-hours" label="Book Light Retainer" />
               </div>
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Standard</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">12 hours a month, active management — the right level for a project that needs consistent hands-on delivery.</p>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Standard</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">12 hours a month, active management — the right level for a project that needs consistent hands-on delivery.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£1,020<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                  </div>
                 </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£1,020<span className="text-base font-normal text-muted-foreground">/month</span></p>
-                </div>
+                <CalBooking calLink="elevatedlivingenterprise/fractional-project-management-monthly-retainer-standard-12-hours" label="Book Standard Retainer" />
               </div>
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Intensive</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">16 hours a month for complex delivery — sustained focus on a high-priority project over several months.</p>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-lg mb-1">Monthly Retainer — Intensive</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">16 hours a month for complex delivery — sustained focus on a high-priority project over several months.</p>
+                  </div>
+                  <div className="sm:text-right shrink-0">
+                    <p className="text-2xl font-bold text-primary">£1,280<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                  </div>
                 </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-2xl font-bold text-primary">£1,280<span className="text-base font-normal text-muted-foreground">/month</span></p>
-                </div>
+                <CalBooking calLink="elevatedlivingenterprise/fractional-project-management-monthly-retainer-intensive-16-hours" label="Book Intensive Retainer" />
               </div>
             </div>
             <p className="text-xs text-muted-foreground mt-3 italic">A scoping session is recommended before any retainer. Retainer rates are discounted against ad hoc booking. Minimum 1-month commitment, payable in advance, with 30 days' notice to end.</p>
