@@ -5,33 +5,33 @@ import { Helmet } from "react-helmet-async";
 const TESTIMONIALS = [
   {
     id: 1,
-    src: "testimonial-npc.png",
-    alt: "Testimonial from Nelston Property Consultants",
-  },
-  {
-    id: 2,
-    src: "testimonial-cassandra.png",
-    alt: "Testimonial from Cassandra A Campbell, @eds_unplugged",
-  },
-  {
-    id: 3,
-    src: "testimonial-marcia.png",
-    alt: "Testimonial from Marcia Brock, @marcia_brock",
-  },
-  {
-    id: 4,
     src: "testimonial-tony.png",
     alt: "Testimonial from Your Confidence Coach",
   },
   {
-    id: 5,
+    id: 2,
     src: "testimonial-claudette.png",
     alt: "Testimonial from Claudette H",
   },
   {
-    id: 6,
+    id: 3,
     src: "testimonial-floyd.png",
     alt: "Testimonial from Floyd M",
+  },
+  {
+    id: 4,
+    src: "testimonial-npc.png",
+    alt: "Testimonial from Nelston Property Consultants",
+  },
+  {
+    id: 5,
+    src: "testimonial-cassandra.png",
+    alt: "Testimonial from Cassandra A Campbell, @eds_unplugged",
+  },
+  {
+    id: 6,
+    src: "testimonial-marcia.png",
+    alt: "Testimonial from Marcia Brock, @marcia_brock",
   },
 ];
 
