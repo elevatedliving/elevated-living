@@ -37,19 +37,6 @@ export function Services() {
         </div>
       </Section>
 
-      {/* 30 Years context */}
-      <Section>
-        <div className="max-w-3xl mx-auto border-l-4 border-primary pl-8 py-4">
-          <h2 className="text-3xl mb-4">30 Years of Sector Context</h2>
-          <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-            There's no need to explain what a CIC is, how tricky it is to balance restricted versus unrestricted funding, the nuanced dynamics of local authority partnerships, or the particular pressure of being the only person in your business.
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Elevated Living brings three decades of built-in context, meaning we hit the ground running from day one.
-          </p>
-        </div>
-      </Section>
-
       {/* Services & Pricing */}
       <Section bg="muted">
         <div className="max-w-3xl mx-auto">
