@@ -96,7 +96,7 @@ export function Home() {
             </div>
             <h3 className="mb-4">Community Org / Social Enterprise</h3>
             <p className="text-muted-foreground mb-8">
-              You started your organisation because you cared deeply about your community. Now you're drowning in admin, chasing funders, writing the same story six different ways, and wondering how everyone else seems to manage it. They don't. They just have the right people in their corner.
+              You started your organisation because you cared deeply about your community. Now you're managing multiple activities with different funding streams, writing the same impact story in six different ways, and wondering how everyone else seems to manage it. They don't. They just have the right people in their corner.
             </p>
             <ul className="space-y-3 mb-8 mt-auto">
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Impact Report Writing</li>
