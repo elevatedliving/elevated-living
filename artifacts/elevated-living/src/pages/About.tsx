@@ -32,6 +32,9 @@ export function About() {
               <p className="text-foreground/80 text-lg leading-relaxed mb-4">
                 Kay Oldroyd, Founder and Director of Elevated Living, has spent over 30 years working deep inside community infrastructure — creating and running the projects, managing the partnerships, and supporting other entrepreneurs, small business owners and community organisations in their missions.
               </p>
+              <p className="text-foreground/80 text-lg leading-relaxed mb-4">
+                Kay has a background in regeneration, social housing, education, community development and training giving her broad sector knowledge and experience, along with having sharp trouble-shooting skills and finding innovative ways to overcome challenges.
+              </p>
               <p className="text-foreground/80 text-lg leading-relaxed mb-5">
                 Kay is a Level 1 Associate of the Institute of Social Value, a qualified Social Value and Return on Investment Practitioner, and a qualified Trainer and Assessor.
               </p>
@@ -59,9 +62,6 @@ export function About() {
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
                 We know what it feels like to be a business owner or a community leader who is brilliant at what they do, but utterly bogged down by the administrative weight of doing it.
-              </p>
-              <p>
-                Kay has a background in regeneration, social housing, education, community development and training giving her broad sector knowledge and experience, along with having sharp trouble-shooting skills and finding innovative ways to overcome challenges.
               </p>
               <p>
                 Elevated Living was founded because too many passionate people were burning out over operations. You shouldn't have to be an expert in project management, funding compliance, or system design just to run your business or community group.
