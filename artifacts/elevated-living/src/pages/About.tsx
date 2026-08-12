@@ -100,9 +100,9 @@ export function About() {
               </p>
             </div>
             <div className="bg-card p-6 rounded-xl shadow-sm border border-border/50">
-              <h3 className="text-xl mb-3 text-primary">Lived Experience</h3>
+              <h3 className="text-xl mb-3 text-primary">Neurodivergence Understanding</h3>
               <p className="text-muted-foreground text-sm">
-                Particularly for neurodivergent founders — we get it. Systems are built around how your brain actually works, not a textbook ideal.
+                For neurodivergent founders — we get it. Systems are built around how your brain actually works, not a textbook ideal.
               </p>
             </div>
             <div className="bg-card p-6 rounded-xl shadow-sm border border-border/50">
