@@ -146,26 +146,22 @@ export function Services() {
             {/* Membership */}
             <h4 className="text-sm font-bold uppercase tracking-wide text-muted-foreground mb-3">Membership</h4>
             <div className="grid sm:grid-cols-2 gap-4">
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Free Membership</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">Community access and ongoing support. Full details to follow.</p>
-                </div>
-                <div className="mt-4">
-                  <p className="text-2xl font-bold text-primary">From Free</p>
-                </div>
-              </div>
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Monthly Membership</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">Deeper ongoing support and accountability. Full details to follow.</p>
-                </div>
-                <div className="mt-4">
-                  <p className="text-2xl font-bold text-primary">£17<span className="text-base font-normal text-muted-foreground">/month</span></p>
+              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+                <h4 className="font-semibold text-lg mb-4">Membership</h4>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="bg-muted/50 rounded-xl p-4">
+                    <p className="font-medium mb-1 text-sm">Free Membership</p>
+                    <p className="text-muted-foreground text-xs leading-relaxed mb-3">Community access and ongoing support. Full details to follow.</p>
+                    <p className="text-xl font-bold text-primary">From Free</p>
+                  </div>
+                  <div className="bg-muted/50 rounded-xl p-4">
+                    <p className="font-medium mb-1 text-sm">Monthly Membership</p>
+                    <p className="text-muted-foreground text-xs leading-relaxed mb-3">Deeper ongoing support and accountability. Full details to follow.</p>
+                    <p className="text-xl font-bold text-primary">£17<span className="text-sm font-normal text-muted-foreground">/month</span></p>
+                  </div>
                 </div>
               </div>
             </div>
-            <p className="text-xs text-muted-foreground mt-3 italic">Membership tiers are being finalised — this section will be updated once pricing and structure are confirmed.</p>
             <p className="text-xs text-muted-foreground mt-1 italic">The Elevated Edit is delivered online or in person across London and surrounding areas. Additional travel costs may apply outside Greater London.</p>
           </div>
 
