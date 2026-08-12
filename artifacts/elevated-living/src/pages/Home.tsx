@@ -84,7 +84,7 @@ export function Home() {
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> ADHD-Friendly Business Support</li>
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Accountability & Action Planning</li>
             </ul>
-            <Link href="/for-business-owners">
+            <Link href="/services">
               <Button variant="outline" className="w-full">Explore Services</Button>
             </Link>
           </div>
@@ -104,7 +104,7 @@ export function Home() {
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Operational & Admin Support</li>
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Partnership & Stakeholder Work</li>
             </ul>
-            <Link href="/for-community-organisations">
+            <Link href="/services">
               <Button variant="outline" className="w-full">Explore Services</Button>
             </Link>
           </div>
