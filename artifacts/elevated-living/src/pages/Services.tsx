@@ -40,17 +40,8 @@ export function Services() {
       {/* Services & Pricing */}
       <Section bg="muted">
         <div className="max-w-3xl mx-auto">
-          <div className="flex flex-wrap items-center gap-3 mb-3">
+          <div className="mb-3">
             <h2 className="text-2xl">Services &amp; Fees</h2>
-            <a
-              href={`${import.meta.env.BASE_URL}Elevated-Living-Services-Overview-2026.pdf`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary border border-primary/40 rounded-full px-3 py-1 hover:bg-primary hover:text-primary-foreground transition-colors"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-              View Service Catalogue
-            </a>
           </div>
           <p className="text-muted-foreground mb-10 leading-relaxed">
             A written agreement is issued before every engagement. Bespoke packages are available on request.
