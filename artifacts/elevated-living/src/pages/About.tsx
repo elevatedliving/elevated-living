@@ -61,6 +61,9 @@ export function About() {
                 We know what it feels like to be a business owner or a community leader who is brilliant at what they do, but utterly bogged down by the administrative weight of doing it.
               </p>
               <p>
+                Kay has a background in regeneration, social housing, education, community development and training giving her broad sector knowledge and experience, along with having sharp trouble-shooting skills and finding innovative ways to overcome challenges.
+              </p>
+              <p>
                 Elevated Living was founded because too many passionate people were burning out over operations. You shouldn't have to be an expert in project management, funding compliance, or system design just to run your business or community group.
               </p>
               <blockquote className="border-l-4 border-primary pl-4 py-2 not-italic">
