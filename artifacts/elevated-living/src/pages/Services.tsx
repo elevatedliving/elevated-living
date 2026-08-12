@@ -130,12 +130,12 @@ export function Services() {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                   <div className="flex-1">
                     <h4 className="font-semibold text-lg mb-1">Elevated Edit — Group Session</h4>
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-2">A 12-week programme with fortnightly in-person sessions at a central London location. Guided through the six pressure points that get most small businesses and projects stuck — you leave with a named priority and the first steps of a 90-day action plan.</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-2">A 12-week programme with fortnightly in-person sessions at a central London location. Guided through the six pressure points that get most small businesses and projects stuck — you leave with a named priority, the first steps of a 90-day action plan and most importantly, an accountability partner who will keep you on track!</p>
                     <p className="text-muted-foreground text-sm leading-relaxed mb-2"><span className="font-semibold text-foreground">Next programme:</span> commences 17 September, 11am–1pm</p>
                     <p className="text-muted-foreground text-sm leading-relaxed"><span className="font-semibold text-foreground">Registrations open:</span> 17 August</p>
                   </div>
                   <div className="sm:text-right shrink-0">
-                    <p className="text-2xl font-bold text-primary">£25<span className="text-base font-normal text-muted-foreground">/person</span></p>
+                    <p className="text-2xl font-bold text-primary">From £18<span className="text-base font-normal text-muted-foreground">/person</span></p>
                   </div>
                 </div>
                 <div className="mt-4">
