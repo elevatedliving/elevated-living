@@ -18,6 +18,21 @@ const TESTIMONIALS = [
     src: "testimonial-marcia.png",
     alt: "Testimonial from Marcia Brock, @marcia_brock",
   },
+  {
+    id: 4,
+    src: "testimonial-tony.png",
+    alt: "Testimonial from Your Confidence Coach",
+  },
+  {
+    id: 5,
+    src: "testimonial-claudette.png",
+    alt: "Testimonial from Claudette H",
+  },
+  {
+    id: 6,
+    src: "testimonial-floyd.png",
+    alt: "Testimonial from Floyd M",
+  },
 ];
 
 export function Testimonials() {
