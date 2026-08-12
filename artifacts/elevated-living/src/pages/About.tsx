@@ -30,7 +30,7 @@ export function About() {
             </div>
             <div>
               <p className="text-foreground/80 text-lg leading-relaxed mb-4">
-                Kay Oldroyd, Founder and Director of Elevated Living, has spent over 30 years working deep inside community infrastructure — creating and running the projects, managing the partnerships, and trying to keep the lights on while still delivering the mission.
+                Kay Oldroyd, Founder and Director of Elevated Living, has spent over 30 years working deep inside community infrastructure — creating and running the projects, managing the partnerships, and supporting other entrepreneurs, small business owners and community organisations in their missions.
               </p>
               <p className="text-foreground/80 text-lg leading-relaxed mb-5">
                 Kay is a Level 1 Associate of the Institute of Social Value, a qualified Social Value and Return on Investment Practitioner, and a qualified Trainer and Assessor.
