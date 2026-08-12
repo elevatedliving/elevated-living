@@ -58,7 +58,7 @@ export function About() {
             <h1 className="mb-6">The messy reality of doing good work — understood.</h1>
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
-                We know what it feels like to be a business owner or a charity leader who is brilliant at what they do, but utterly bogged down by the administrative weight of doing it.
+                We know what it feels like to be a business owner or a community leader who is brilliant at what they do, but utterly bogged down by the administrative weight of doing it.
               </p>
               <p>
                 Elevated Living was founded because too many passionate people were burning out over operations. You shouldn't have to be an expert in project management, funding compliance, or system design just to run your business or community group.
