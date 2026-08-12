@@ -46,15 +46,9 @@ export function Home() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <div className="text-sm font-medium text-muted-foreground mr-2 hidden sm:block">I am a...</div>
-            <Link href="/for-business-owners">
+            <Link href="/services">
               <Button size="lg" className="w-full sm:w-auto gap-2">
-                Solopreneur / Small Business Owner <ArrowRight className="w-4 h-4" />
-              </Button>
-            </Link>
-            <Link href="/for-community-organisations">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2">
-                Community Org / Social Enterprise <ArrowRight className="w-4 h-4" />
+                See how Elevated Living can help you <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </motion.div>
