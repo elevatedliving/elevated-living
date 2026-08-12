@@ -146,20 +146,16 @@ export function Services() {
 
             {/* Membership */}
             <h4 className="text-sm font-bold uppercase tracking-wide text-muted-foreground mb-3">Membership</h4>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
-                <h4 className="font-semibold text-lg mb-4">Membership</h4>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="bg-muted/50 rounded-xl p-4">
-                    <p className="font-medium mb-1 text-sm">Free Membership</p>
-                    <p className="text-muted-foreground text-xs leading-relaxed mb-3">Community access and ongoing support. Full details to follow.</p>
-                    <p className="text-xl font-bold text-primary">From Free</p>
-                  </div>
-                  <div className="bg-muted/50 rounded-xl p-4">
-                    <p className="font-medium mb-1 text-sm">Monthly Membership</p>
-                    <p className="text-muted-foreground text-xs leading-relaxed mb-3">Deeper ongoing support and accountability. Full details to follow.</p>
-                    <p className="text-xl font-bold text-primary">£17<span className="text-sm font-normal text-muted-foreground">/month</span></p>
-                  </div>
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+              <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Monthly Membership</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">An ongoing membership giving you real accountability, community access, and deeper support — helping you move past information overwhelm and the barriers that keep you circling the same pressure points without ever finishing the work.</p>
+                  <p className="text-xs text-muted-foreground mt-3 italic">Launching soon</p>
+                </div>
+                <div className="sm:text-right shrink-0">
+                  <p className="text-2xl font-bold text-primary">From Free</p>
+                  <p className="text-sm text-muted-foreground">to £17/month for founder members</p>
                 </div>
               </div>
             </div>
