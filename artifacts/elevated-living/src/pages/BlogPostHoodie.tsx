@@ -74,7 +74,7 @@ export function BlogPostHoodie() {
             And before you call anyone — yes, I've thought about why.
           </p>
           <p>
-            My working theory (and I'm standing by it) is that something about having your head covered quite literally keeps the thoughts in. It creates a kind of neural containment. A cone of focus, if you will. Ideas feel less likely to drift off into the ether when there's a layer of merino wool standing between your cerebral cortex and the cold air of distraction.
+            My working theory (and I'm standing by it) is that something about having your head covered quite literally keeps the thoughts in. It creates a kind of neural containment. A cone of focus, if you will. Ideas feel less likely to drift off into the ether when there's a layer of fleece or fluff standing between your cerebral cortex and the cold air of distraction.
           </p>
           <p>
             Is there science behind this? Loosely, yes — and it's more interesting than you might think.
