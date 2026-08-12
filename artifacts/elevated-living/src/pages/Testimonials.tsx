@@ -1,36 +1,22 @@
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
-import { Quote } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 const TESTIMONIALS = [
   {
     id: 1,
-    quote: "[ Testimonial copy to be added ]",
-    name: "[ Name ]",
-    role: "[ Role / Organisation ]",
-    hasLogo: true,
+    src: "testimonial-npc.png",
+    alt: "Testimonial from Nelston Property Consultants",
   },
   {
     id: 2,
-    quote: "[ Testimonial copy to be added ]",
-    name: "[ Name ]",
-    role: "[ Role / Organisation ]",
-    hasLogo: true,
+    src: "testimonial-cassandra.png",
+    alt: "Testimonial from Cassandra A Campbell, @eds_unplugged",
   },
   {
     id: 3,
-    quote: "[ Testimonial copy to be added ]",
-    name: "[ Name ]",
-    role: "[ Role / Organisation ]",
-    hasLogo: true,
-  },
-  {
-    id: 4,
-    quote: "[ Testimonial copy to be added ]",
-    name: "[ Name ]",
-    role: "[ Role / Organisation ]",
-    hasLogo: true,
+    src: "testimonial-marcia.png",
+    alt: "Testimonial from Marcia Brock, @marcia_brock",
   },
 ];
 
@@ -48,33 +34,21 @@ export function Testimonials() {
       </Helmet>
 
       <Section className="pt-20">
-        <div className="max-w-4xl mx-auto text-center mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="mb-4">Words from Clients</h1>
           <p className="text-xl text-muted-foreground">
             Feedback from previous and current clients.
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {TESTIMONIALS.map((t) => (
-            <div key={t.id} className="bg-card p-8 rounded-2xl border border-border/60 shadow-sm relative flex flex-col gap-6">
-              <Quote className="absolute top-6 right-6 w-12 h-12 text-primary/10" />
-
-              {/* Logo / image placeholder */}
-              <div className="w-full h-16 rounded-xl border-2 border-dashed border-border bg-muted/50 flex items-center justify-center">
-                <span className="text-xs font-medium text-muted-foreground tracking-wide uppercase">[ Client logo / image ]</span>
-              </div>
-
-              {/* Quote */}
-              <p className="text-lg text-muted-foreground/80 relative z-10 font-serif italic leading-relaxed">
-                "{t.quote}"
-              </p>
-
-              {/* Attribution */}
-              <div className="mt-auto">
-                <p className="font-bold text-foreground">{t.name}</p>
-                <p className="text-sm text-primary">{t.role}</p>
-              </div>
+            <div key={t.id} className="rounded-2xl overflow-hidden shadow-sm border border-border/40">
+              <img
+                src={`${import.meta.env.BASE_URL}images/${t.src}`}
+                alt={t.alt}
+                className="w-full h-auto object-cover"
+              />
             </div>
           ))}
         </div>
