@@ -387,7 +387,8 @@ export function Services() {
         </div>
       </Section>
 
-      {/* Self-Assessment */}
+      {/* Self-Assessment — hidden pending reconfiguration for new services/pricing */}
+      <div className="hidden">
       <Section id="assessment">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl mb-3">Not sure where to start?</h2>
@@ -422,6 +423,7 @@ export function Services() {
           </div>
         </div>
       </Section>
+      </div>
 
       {/* CTA */}
       <Section bg="primary" className="text-center">
