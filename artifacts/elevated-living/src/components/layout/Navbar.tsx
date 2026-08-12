@@ -13,14 +13,6 @@ type NavLink = {
 
 const NAV_LINKS: NavLink[] = [
   { href: "/", label: "Home" },
-  { href: "/for-business-owners", label: "For Small Business Owners" },
-  {
-    href: "/for-community-organisations",
-    label: "For Community Orgs",
-    children: [
-      { href: "/impact-report-writing", label: "Impact Report Writing" },
-    ],
-  },
   {
     href: "/about",
     label: "About",
