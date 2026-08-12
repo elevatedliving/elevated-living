@@ -16,7 +16,43 @@ export function About() {
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
+
+      {/* Founder section — moved to top */}
       <Section className="pt-20">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-accent/40 border border-primary/10 rounded-2xl p-8 flex flex-col sm:flex-row gap-6 items-start">
+            <div className="shrink-0 w-28 h-36 rounded-xl overflow-hidden shadow-md">
+              <img
+                src={`${import.meta.env.BASE_URL}images/kay-oldroyd.jpg`}
+                alt="Kay Oldroyd, Founder and Director of Elevated Living"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div>
+              <p className="text-foreground/80 text-lg leading-relaxed mb-4">
+                Kay Oldroyd, Founder and Director of Elevated Living, has spent over 30 years working deep inside community infrastructure — creating and running the projects, managing the partnerships, and trying to keep the lights on while still delivering the mission.
+              </p>
+              <p className="text-foreground/80 text-lg leading-relaxed mb-5">
+                Kay is a Level 1 Associate of the Institute of Social Value, a qualified Social Value and Return on Investment Practitioner, and a qualified Trainer and Assessor.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                  Level 1 Associate — Institute of Social Value
+                </span>
+                <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                  Social Value &amp; SROI Practitioner
+                </span>
+                <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                  Qualified Trainer &amp; Assessor
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Opening text */}
+      <Section>
         <div className="max-w-3xl mx-auto">
           <div>
             <h1 className="mb-6">The messy reality of doing good work — understood.</h1>
@@ -46,6 +82,7 @@ export function About() {
         </div>
       </Section>
 
+      {/* The Approach */}
       <Section bg="muted">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="mb-8">The Approach</h2>
@@ -73,36 +110,6 @@ export function About() {
               <p className="text-muted-foreground text-sm">
                 Elevated Living knows how funders think, how CICs operate, and the unique pressures of the community and social enterprise sector.
               </p>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      <Section>
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-accent/40 border border-primary/10 rounded-2xl p-8 flex flex-col sm:flex-row gap-6 items-start">
-            <div className="shrink-0 w-28 h-36 rounded-xl overflow-hidden shadow-md">
-              <img
-                src={`${import.meta.env.BASE_URL}images/kay-oldroyd.jpg`}
-                alt="Kay Oldroyd, Founder and Director of Elevated Living"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div>
-              <p className="text-foreground/80 text-lg leading-relaxed mb-4">
-                Kay Oldroyd, Founder and Director of Elevated Living, has spent over 30 years working deep inside community infrastructure — creating and running the projects, managing the partnerships, and trying to keep the lights on while still delivering the mission.
-              </p>
-              <p className="text-foreground/80 text-lg leading-relaxed mb-5">
-                Kay is a Level 1 Associate of the Institute of Social Value and a qualified Social Value and Return on Investment Practitioner.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                  Level 1 Associate — Institute of Social Value
-                </span>
-                <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                  Social Value &amp; SROI Practitioner
-                </span>
-              </div>
             </div>
           </div>
         </div>
