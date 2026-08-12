@@ -76,7 +76,7 @@ export function Home() {
             </div>
             <h3 className="mb-4">Solopreneur / Small Business Owner</h3>
             <p className="text-muted-foreground mb-8">
-              You're a consultant, creative, or solopreneur drowning in admin and losing sight of why you started. You need focus, structure, and someone who actually follows through. If you're wondering how everyone else seems to manage it — they don't. They just have better support behind them.
+              You're a consultant, creative, or solopreneur drowning in admin or delivery and losing sight of why you started. You need focus, structure, and someone who actually follows through. If you're wondering how everyone else seems to manage it — they don't. They just have better support behind them.
             </p>
             <ul className="space-y-3 mb-8 mt-auto">
               <li className="flex items-start gap-2 text-sm"><Target className="w-5 h-5 text-primary shrink-0" /> Project Focus Sessions</li>
