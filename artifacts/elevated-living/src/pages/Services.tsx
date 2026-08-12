@@ -19,7 +19,6 @@ export function Services() {
         <meta name="twitter:card" content="summary" />
       </Helmet>
 
-      <FloatingAssessmentButton />
 
       {/* Opening */}
       <Section className="pt-20 pb-8">
