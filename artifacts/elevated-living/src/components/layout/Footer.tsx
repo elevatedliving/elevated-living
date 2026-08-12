@@ -30,21 +30,11 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-4 text-background/90">Solopreneur / Small Business Owner</h4>
-            <ul className="space-y-3">
-              <li><Link href="/for-business-owners" className="text-background/70 hover:text-primary transition-colors text-sm">Project Focus</Link></li>
-              <li><Link href="/for-business-owners" className="text-background/70 hover:text-primary transition-colors text-sm">Virtual Assistant Support</Link></li>
-              <li><Link href="/for-business-owners" className="text-background/70 hover:text-primary transition-colors text-sm">Access to Work (ADHD)</Link></li>
-            </ul>
+            <Link href="/for-business-owners" className="font-semibold text-lg mb-4 text-background/90 hover:text-primary transition-colors block">Solopreneur / Small Business Owner</Link>
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-4 text-background/90">Community Org / Social Enterprise</h4>
-            <ul className="space-y-3">
-              <li><Link href="/for-community-organisations" className="text-background/70 hover:text-primary transition-colors text-sm">Project Management</Link></li>
-              <li><Link href="/impact-report-writing" className="text-background/70 hover:text-primary transition-colors text-sm">Impact Report Writing</Link></li>
-              <li><Link href="/for-community-organisations" className="text-background/70 hover:text-primary transition-colors text-sm">Strategy & Operations</Link></li>
-            </ul>
+            <Link href="/for-community-organisations" className="font-semibold text-lg mb-4 text-background/90 hover:text-primary transition-colors block">Community Org / Social Enterprise</Link>
           </div>
 
           <div>
