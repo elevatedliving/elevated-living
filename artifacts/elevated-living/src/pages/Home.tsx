@@ -37,7 +37,7 @@ export function Home() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
           >
-            Supporting solopreneurs, small business owners, and community organisations to cut through the chaos, get properly organised, and build ways of working that don't burn them out.
+            Supporting solopreneurs, small business owners, and community organisations to get organised and build ways of working without the overwhelm.
           </motion.p>
 
           <motion.div 
