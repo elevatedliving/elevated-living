@@ -51,7 +51,7 @@ export function Testimonials() {
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="mb-4">Words from Clients</h1>
           <p className="text-xl text-muted-foreground">
-            Don't just take my word for it. Here's what happens when we clear the operational roadblocks.
+            Feedback from previous and current clients.
           </p>
         </div>
 
