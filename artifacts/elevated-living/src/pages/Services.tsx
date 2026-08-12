@@ -152,7 +152,7 @@ export function Services() {
                   <p className="text-muted-foreground text-sm leading-relaxed">Community access and ongoing support. Full details to follow.</p>
                 </div>
                 <div className="mt-4">
-                  <p className="text-2xl font-bold text-primary">Free</p>
+                  <p className="text-2xl font-bold text-primary">From Free</p>
                 </div>
               </div>
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col">
