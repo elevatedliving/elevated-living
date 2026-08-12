@@ -64,6 +64,7 @@ export function Services() {
               <p className="text-muted-foreground leading-relaxed">
                 Elevated Living's signature thinking and strategy service, built for people doing too much, thinking in circles, or simply needing expert space to get clear. One door with three ways in: one-to-one sessions, an in-person group session, and an ongoing membership.
               </p>
+              <p className="text-xs text-muted-foreground mt-3 italic">The Elevated Edit is delivered online or in person across London and surrounding areas. Additional travel costs may apply outside Greater London.</p>
             </div>
 
             {/* 1:1 Sessions */}
@@ -162,7 +163,6 @@ export function Services() {
                 </div>
               </div>
             </div>
-            <p className="text-xs text-muted-foreground mt-1 italic">The Elevated Edit is delivered online or in person across London and surrounding areas. Additional travel costs may apply outside Greater London.</p>
           </div>
 
           {/* SERVICE 02 — Fractional Project Management */}
