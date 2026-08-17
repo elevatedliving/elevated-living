@@ -39,7 +39,7 @@ interface WordItem {
 const WORDS: WordItem[] = [
 
   // ── TOP STRIP  (top 3 – 16 %, any left) ──────────────────────────────────
-  { text: "women",        tier: 3, left: 26, top:  6, color: "#2a9d8f", dx:  4, dy:  4, rotate:  2, duration: 14, delay: 3.8, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "women in business", tier: 3, left: 26, top:  6, color: "#2a9d8f", dx:  4, dy:  4, rotate:  2, duration: 14, delay: 3.8, opacityFrom: 0.09, opacityTo: 0.20 },
   { text: "employment",   tier: 3, left: 62, top: 10, color: "#1b7a6e", dx:  4, dy:  5, rotate:  3, duration: 17, delay: 2.8, opacityFrom: 0.09, opacityTo: 0.20 },
   { text: "organisation", tier: 3, left: 82, top:  4, color: "#1c3d5e", dx:  5, dy: -4, rotate: -2, duration: 12, delay: 3.0, opacityFrom: 0.09, opacityTo: 0.20 },
   // T1 — large corners of the top strip
