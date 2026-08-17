@@ -5,6 +5,15 @@ import { Helmet } from "react-helmet-async";
 
 const DUMMY_POSTS = [
   {
+    id: 7,
+    slug: "/blog/eu-ai-transparency",
+    title: "The EU just made AI show its working. Here's what that actually means.",
+    category: "AI & Technology",
+    date: "Aug 2026",
+    excerpt: "Since the 2nd of August, new EU transparency rules mean AI has to say what it is. Here's the plain-English version of what changed, who it applies to, and how to stay on the right side of it.",
+    image: "",
+  },
+  {
     id: 6,
     slug: "/blog/confidence-action",
     title: "Confidence Doesn't Come First. Action Does.",

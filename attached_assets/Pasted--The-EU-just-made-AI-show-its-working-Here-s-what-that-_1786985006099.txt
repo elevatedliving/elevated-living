@@ -1,0 +1,39 @@
+## The EU just made AI show its working. Here's what that actually means.
+
+Since the 2nd of August, if an AI system is talking to you, changing what you see, or reading your face, it now legally has to say so.
+
+That's it. That's the headline. Everything else is detail.
+
+The EU brought in new transparency rules under something called the AI Act — specifically a bit of it called Article 50. And before you switch off at the word "Act," here's the plain-English version: it's not about banning AI, or slowing anyone down. It's about making sure AI stops pretending to be something it isn't. A chatbot has to tell you it's a chatbot. A fake video has to say it's fake. Simple as that.
+
+The bit that catches most people out — this doesn't just apply to companies based in the EU. If your content, your chatbot, or your AI tool touches anyone in the EU market, the rules apply to you too. Based in Woolwich and never sold a thing to Europe? You're probably fine. Running a business, a platform, or content that EU customers can see or use? Read on.
+
+### The four rules, no waffle
+
+**1. If it talks, it has to say what it is.**
+Chatbots, voice assistants, anything built to have a "conversation" with a real person — has to make it obvious you're talking to a machine. No pretending to be a human on the other end.
+
+**2. If it's made or altered by AI, it has to be marked.**
+Images, video, audio, text — if AI generated it or changed it, there needs to be a mark baked in that machines (and eventually humans) can detect. Think of it as an invisible label sewn into the seam, not a watermark plastered across the front.
+
+**3. If it's reading your emotions or your face, it has to tell you.**
+Emotion recognition, biometric categorisation — anything sizing you up based on how you look or sound — the person doing it has to say so before it happens.
+
+**4. If it's a deepfake, or AI text on something that matters, it has to be flagged.**
+Deepfakes of real people, and AI-generated text on matters of public interest — news, current affairs, that kind of thing — need a clear disclosure that it's AI-made.
+
+### Who this actually lands on
+
+Not just Big Tech. The guidance is deliberately broad — companies, charities, media outlets, ad agencies, sole traders, and yes, individuals too. If you're an entrepreneur using AI to write marketing copy, an educator building content with AI tools, or a business owner running a chatbot on your website, this is on your radar now, not someday.
+
+### How to stay out of trouble
+
+Nobody's coming for you because you used AI. They're coming for you if you hid it. So:
+
+- Say when something's AI-generated. A line at the bottom of a blog post, a note under an image, a disclosure in your chatbot's welcome message — that's usually enough.
+- If a real person checks and edits the AI's work before it goes out, you're in stronger territory than if you copy, paste, and publish.
+- Keep it simple and visible. A buried disclosure in the terms and conditions won't cut it — it needs to be something a normal person would actually notice.
+
+The fines are real — up to €15 million or 3% of global turnover for companies, with some leniency built in for smaller businesses. But the honest truth is most people won't get fined for using AI. They'll get caught out for hiding it.
+
+So here's the actual takeaway: use the tools, use them well, just don't pretend a human wrote it when one didn't. Transparency was always going to catch up with AI eventually. Turns out it's landed a bit sooner than most people expected.

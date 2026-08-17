@@ -18,6 +18,7 @@ import { BlogPostHoodie } from "@/pages/BlogPostHoodie";
 import { BlogPostConfidence } from "@/pages/BlogPostConfidence";
 import { BlogPostAccessToWork } from "@/pages/BlogPostAccessToWork";
 import { BlogPostCorporateJargon } from "@/pages/BlogPostCorporateJargon";
+import { BlogPostEUAI } from "@/pages/BlogPostEUAI";
 import { Testimonials } from "@/pages/Testimonials";
 import { Resources } from "@/pages/Resources";
 import { Services } from "@/pages/Services";
@@ -52,6 +53,7 @@ function Router() {
       <Route path="/blog/confidence-action" component={BlogPostConfidence} />
       <Route path="/blog/access-to-work" component={BlogPostAccessToWork} />
       <Route path="/blog/corporate-jargon" component={BlogPostCorporateJargon} />
+      <Route path="/blog/eu-ai-transparency" component={BlogPostEUAI} />
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/resources" component={Resources} />
       <Route path="/services" component={Services} />
