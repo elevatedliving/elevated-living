@@ -37,40 +37,37 @@ interface WordItem {
 
 const WORDS: WordItem[] = [
 
-  // ── TOP STRIP  (top 2 – 17 %) ────────────────────────────────────────────
-  // T3 — small words scattered across the full width
-  { text: "confusion",    tier: 3, left:  5, top:  4, color: "#4a6483", dx: -5, dy:  4, rotate:  3, duration: 15, delay: 1.0, opacityFrom: 0.09, opacityTo: 0.20 },
-  { text: "women",        tier: 3, left: 28, top:  7, color: "#2a9d8f", dx: -4, dy:  4, rotate:  2, duration: 14, delay: 3.8, opacityFrom: 0.09, opacityTo: 0.20 },
-  { text: "to-do-list",   tier: 3, left: 43, top: 13, color: "#5fb3a6", dx: -4, dy:  5, rotate:  2, duration: 14, delay: 5.5, opacityFrom: 0.09, opacityTo: 0.20 },
-  { text: "employment",   tier: 3, left: 65, top: 11, color: "#1b7a6e", dx: -4, dy:  5, rotate:  3, duration: 17, delay: 2.8, opacityFrom: 0.09, opacityTo: 0.20 },
-  { text: "organisation", tier: 3, left: 84, top:  5, color: "#1c3d5e", dx:  5, dy: -4, rotate: -2, duration: 12, delay: 3.0, opacityFrom: 0.09, opacityTo: 0.20 },
-  // T1 — large words anchored to the far left / far right corners of the top strip
-  // "clarity" anchors at left:3 % → text extends ~140 px rightward (~11 %) — safely left of the 13 % content margin
-  { text: "clarity",   tier: 1, left:  2, top: 10, color: "#0f2a44", dx: -8,  dy:  6, rotate:  3, duration: 14, delay: 2.0, opacityFrom: 0.13, opacityTo: 0.27 },
-  // "overwhelm" anchors at left:60 % — extends rightward toward the right margin
-  { text: "overwhelm", tier: 1, left: 60, top:  4, color: "#1b7a6e", dx:  9,  dy: -5, rotate: -3, duration: 17, delay: 3.0, opacityFrom: 0.13, opacityTo: 0.27 },
+  // ── TOP STRIP  (top 2 – 16 %) ────────────────────────────────────────────
+  // "confusion" and "to-do-list" moved to left strip to fill gaps there.
+  // Top strip keeps 5 words evenly spread across the full width.
+  { text: "women",        tier: 3, left: 26, top:  6, color: "#2a9d8f", dx: -4, dy:  4, rotate:  2, duration: 14, delay: 3.8, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "employment",   tier: 3, left: 62, top: 10, color: "#1b7a6e", dx: -4, dy:  5, rotate:  3, duration: 17, delay: 2.8, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "organisation", tier: 3, left: 84, top:  4, color: "#1c3d5e", dx:  5, dy: -4, rotate: -2, duration: 12, delay: 3.0, opacityFrom: 0.09, opacityTo: 0.20 },
+  // T1 large words at far-left and far-right corners of the top strip
+  { text: "clarity",   tier: 1, left:  2, top:  9, color: "#0f2a44", dx: -8, dy:  6, rotate:  3, duration: 14, delay: 2.0, opacityFrom: 0.13, opacityTo: 0.27 },
+  { text: "overwhelm", tier: 1, left: 59, top:  3, color: "#1b7a6e", dx:  9, dy: -5, rotate: -3, duration: 17, delay: 3.0, opacityFrom: 0.13, opacityTo: 0.27 },
 
   // ── LEFT STRIP  (left 0 – 9 %, top 20 – 84 %) ────────────────────────────
-  // Only short T2 / T3 words whose text width stays within ~110 px so they
-  // don't bleed past the 13 % left margin of the content block.
-  { text: "enterprise",   tier: 2, left:  1, top: 26, color: "#4a6483", dx: -5, dy:  5, rotate:  2, duration: 13, delay: 0.5, opacityFrom: 0.10, opacityTo: 0.22 },
+  // 8 words evenly spaced at ~8 % intervals — "confusion" and "to-do-list"
+  // moved here from the top strip to fill the previously empty mid-section gaps.
+  { text: "enterprise",   tier: 2, left:  1, top: 22, color: "#4a6483", dx: -5, dy:  5, rotate:  2, duration: 13, delay: 0.5, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "confusion",    tier: 3, left:  1, top: 30, color: "#4a6483", dx: -5, dy:  4, rotate:  3, duration: 15, delay: 1.0, opacityFrom: 0.09, opacityTo: 0.20 },
   { text: "18 - 24",      tier: 3, left:  3, top: 38, color: "#4a6483", dx:  4, dy: -4, rotate: -2, duration: 16, delay: 8.0, opacityFrom: 0.09, opacityTo: 0.19 },
-  { text: "social value", tier: 2, left:  0, top: 52, color: "#4a6483", dx:  6, dy: -5, rotate: -3, duration: 11, delay: 0.8, opacityFrom: 0.10, opacityTo: 0.22 },
-  { text: "redundancy",   tier: 3, left:  2, top: 66, color: "#4a6483", dx: -4, dy:  4, rotate:  2, duration: 15, delay: 7.5, opacityFrom: 0.09, opacityTo: 0.19 },
-  // Fill the left-side gap below redundancy (highlighted area ~66–86 %)
-  { text: "funding",       tier: 3, left:  3, top: 74, color: "#2a9d8f", dx: -5, dy:  3, rotate:  2, duration: 16, delay: 4.0, opacityFrom: 0.09, opacityTo: 0.20 },
-  { text: "impact reports",tier: 3, left:  0, top: 82, color: "#4a6483", dx:  5, dy: -4, rotate: -1, duration: 13, delay: 6.5, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "to-do-list",   tier: 3, left:  1, top: 46, color: "#5fb3a6", dx: -4, dy:  5, rotate:  2, duration: 14, delay: 5.5, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "social value", tier: 2, left:  0, top: 54, color: "#4a6483", dx:  6, dy: -5, rotate: -3, duration: 11, delay: 0.8, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "redundancy",   tier: 3, left:  2, top: 62, color: "#4a6483", dx: -4, dy:  4, rotate:  2, duration: 15, delay: 7.5, opacityFrom: 0.09, opacityTo: 0.19 },
+  { text: "funding",      tier: 3, left:  3, top: 70, color: "#2a9d8f", dx: -5, dy:  3, rotate:  2, duration: 16, delay: 4.0, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "impact reports",tier: 3, left: 0, top: 78, color: "#4a6483", dx:  5, dy: -4, rotate: -1, duration: 13, delay: 6.5, opacityFrom: 0.09, opacityTo: 0.20 },
 
-  // ── RIGHT STRIP  (left 87 – 100 %, top 20 – 84 %) ────────────────────────
-  // Words anchor at left ≥ 86 % and extend rightward — partial clipping is fine.
-  { text: "coaching",           tier: 2, left: 87, top: 24, color: "#0f2a44", dx:  5, dy: -7, rotate: -1, duration: 14, delay: 3.5, opacityFrom: 0.10, opacityTo: 0.22 },
-  { text: "project management", tier: 2, left: 86, top: 36, color: "#4a6483", dx:  7, dy: -5, rotate: -2, duration: 12, delay: 6.0, opacityFrom: 0.10, opacityTo: 0.20 },
-  { text: "AI Training",        tier: 2, left: 87, top: 50, color: "#1b7a6e", dx: -6, dy:  5, rotate:  2, duration: 18, delay: 7.0, opacityFrom: 0.10, opacityTo: 0.22 },
-  // Fill right-side gap between AI Training and pathways (highlighted ~55–65 %)
-  { text: "accountability",     tier: 2, left: 86, top: 58, color: "#4a6483", dx: -6, dy:  5, rotate:  2, duration: 17, delay: 4.5, opacityFrom: 0.10, opacityTo: 0.22 },
-  { text: "pathways",           tier: 3, left: 89, top: 66, color: "#5fb3a6", dx:  5, dy: -4, rotate: -2, duration: 10, delay: 1.8, opacityFrom: 0.09, opacityTo: 0.18 },
-  { text: "50+",                tier: 3, left: 93, top: 74, color: "#1c3d5e", dx:  4, dy: -5, rotate: -3, duration: 12, delay: 0.6, opacityFrom: 0.09, opacityTo: 0.18 },
-  { text: "tasks",              tier: 3, left: 91, top: 82, color: "#0f2a44", dx:  4, dy: -4, rotate: -2, duration: 11, delay: 0.3, opacityFrom: 0.09, opacityTo: 0.18 },
+  // ── RIGHT STRIP  (left 86 – 100 %, top 20 – 84 %) ────────────────────────
+  // 7 words evenly spaced at ~9 % intervals.
+  { text: "coaching",           tier: 2, left: 87, top: 22, color: "#0f2a44", dx:  5, dy: -7, rotate: -1, duration: 14, delay: 3.5, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "project management", tier: 2, left: 86, top: 32, color: "#4a6483", dx:  7, dy: -5, rotate: -2, duration: 12, delay: 6.0, opacityFrom: 0.10, opacityTo: 0.20 },
+  { text: "AI Training",        tier: 2, left: 87, top: 42, color: "#1b7a6e", dx: -6, dy:  5, rotate:  2, duration: 18, delay: 7.0, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "accountability",     tier: 2, left: 86, top: 52, color: "#4a6483", dx: -6, dy:  5, rotate:  2, duration: 17, delay: 4.5, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "pathways",           tier: 3, left: 89, top: 62, color: "#5fb3a6", dx:  5, dy: -4, rotate: -2, duration: 10, delay: 1.8, opacityFrom: 0.09, opacityTo: 0.18 },
+  { text: "50+",                tier: 3, left: 93, top: 71, color: "#1c3d5e", dx:  4, dy: -5, rotate: -3, duration: 12, delay: 0.6, opacityFrom: 0.09, opacityTo: 0.18 },
+  { text: "tasks",              tier: 3, left: 91, top: 80, color: "#0f2a44", dx:  4, dy: -4, rotate: -2, duration: 11, delay: 0.3, opacityFrom: 0.09, opacityTo: 0.18 },
 
   // ── BOTTOM STRIP  (top 88 – 97 %) ────────────────────────────────────────
   // Row A  top ~89 %
