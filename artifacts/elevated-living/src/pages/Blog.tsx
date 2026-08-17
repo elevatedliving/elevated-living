@@ -11,7 +11,7 @@ const DUMMY_POSTS = [
     category: "AI & Technology",
     date: "Aug 2026",
     excerpt: "Since the 2nd of August, new EU transparency rules mean AI has to say what it is. Here's the plain-English version of what changed, who it applies to, and how to stay on the right side of it.",
-    image: "",
+    image: "images/blog-eu-ai-act.jpeg",
   },
   {
     id: 6,
