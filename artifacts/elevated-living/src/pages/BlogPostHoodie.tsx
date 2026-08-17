@@ -32,7 +32,7 @@ export function BlogPostHoodie() {
             The Hoodie Hypothesis: What Your Comfort Rituals Are Actually Telling You About How You Work
           </h1>
 
-          <p className="text-sm text-muted-foreground mb-10">By Kay at Elevated Living</p>
+          <p className="text-sm text-muted-foreground mb-10">Authored by Kay at Elevated Living (with some AI assistance)</p>
 
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed border-l-4 border-primary pl-6">
             If you've ever reached for a specific hoodie, mug, or playlist before you could even think about starting work — this one's for you. Your comfort rituals are telling you something important. It's time to listen.

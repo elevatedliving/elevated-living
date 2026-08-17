@@ -32,7 +32,7 @@ export function BlogPostAccessToWork() {
             Why Access to Work Is a Game Changer for Neurodivergent Solopreneurs (And Why You Need to Apply Now)
           </h1>
 
-          <p className="text-sm text-muted-foreground mb-10">By Elevated Living</p>
+          <p className="text-sm text-muted-foreground mb-10">Authored by Kay at Elevated Living (with some AI assistance)</p>
 
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed border-l-4 border-primary pl-6">
             If you are a neurodivergent solopreneur, there is a government grant with your name on it. It won't sort itself out. Nobody from the DWP is going to knock on your door. You have to go and get it yourself. But it exists, it's real, and for many neurodivergent founders, it is the single most impactful thing they access in their entire business journey.

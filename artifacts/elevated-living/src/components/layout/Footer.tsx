@@ -49,7 +49,11 @@ export function Footer() {
 
         </div>
 
-        <div className="border-t border-background/20 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-background/50">
+        <div className="border-t border-background/20 mt-16 pt-8 text-xs text-background/40 text-center mb-6">
+          <p>Some content on this site is drafted with AI assistance and reviewed and edited by Elevated Living before publication. Marketing images are AI-generated.</p>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-background/50">
           <p>© {new Date().getFullYear()} Elevated Living. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-background transition-colors">Privacy Policy</Link>

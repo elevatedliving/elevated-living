@@ -32,7 +32,7 @@ export function BlogPostConfidence() {
             Confidence Doesn't Come First. Action Does.
           </h1>
 
-          <p className="text-sm text-muted-foreground mb-10">By Elevated Living</p>
+          <p className="text-sm text-muted-foreground mb-10">Authored by Kay at Elevated Living (with some AI assistance)</p>
 
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed border-l-4 border-primary pl-6">
             If you've been waiting until you feel ready — this is the post you didn't know you needed. Because confidence isn't a prerequisite for starting. It's a consequence of having started.

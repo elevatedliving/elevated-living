@@ -32,7 +32,7 @@ export function BlogPostCorporateJargon() {
             Stop Using Corporate Jargon in Your Impact Reports. Seriously.
           </h1>
 
-          <p className="text-sm text-muted-foreground mb-10">By Elevated Living</p>
+          <p className="text-sm text-muted-foreground mb-10">Authored by Kay at Elevated Living (with some AI assistance)</p>
 
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed border-l-4 border-primary pl-6">
             Funders want to see human stories backed by solid data. Here's why plain English always wins over consultant-speak — and why your impact report might be accidentally hiding the very thing that makes your organisation worth funding.

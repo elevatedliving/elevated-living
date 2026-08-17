@@ -28,9 +28,11 @@ export function BlogPostTOMs() {
             <span className="text-xs text-muted-foreground">March 2026</span>
           </div>
 
-          <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
             TOMs, Social Value, and Why You Actually Need to Know the Difference
           </h1>
+
+          <p className="text-sm text-muted-foreground mb-10">Authored by Kay at Elevated Living (with some AI assistance)</p>
 
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed border-l-4 border-primary pl-6">
             You've probably been approached by a housing association, contractor, or local authority asking you to "help them demonstrate their social value." Maybe they've sent over a spreadsheet and a lot of acronyms. This post cuts through it — so you know exactly what you're being asked, and what to do about it.
