@@ -19,42 +19,46 @@ export function Home() {
         <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
-      {/* Hero Section */}
-      <Section className="relative overflow-hidden pt-20 pb-32">
+      {/* Hero Section — raw <section> so HeroWordCloud fills the true full width */}
+      <section className="relative overflow-hidden pt-20 pb-32 bg-background text-foreground">
+        {/* Word cloud layer: absolute, fills the full section edge-to-edge */}
         <HeroWordCloud />
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-6"
-          >
-            You started this because you had something to give. Now you're buried under everything else. <span className="text-primary">Let's change that.</span>
-          </motion.h1>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
-          >
-            Supporting solopreneurs, small business owners, and community organisations to get organised and build ways of working without the overwhelm.
-          </motion.p>
+        {/* Content layer: centred inside the normal container, above the word cloud */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="mb-6"
+            >
+              You started this because you had something to give. Now you're buried under everything else. <span className="text-primary">Let's change that.</span>
+            </motion.h1>
+            
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
+            >
+              Supporting solopreneurs, small business owners, and community organisations to get organised and build ways of working without the overwhelm.
+            </motion.p>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          >
-            <Link href="/services">
-              <Button size="lg" className="w-full sm:w-auto gap-2">
-                See how Elevated Living can help you <ArrowRight className="w-4 h-4" />
-              </Button>
-            </Link>
-          </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            >
+              <Link href="/services">
+                <Button size="lg" className="w-full sm:w-auto gap-2">
+                  See how Elevated Living can help you <ArrowRight className="w-4 h-4" />
+                </Button>
+              </Link>
+            </motion.div>
+          </div>
         </div>
-      </Section>
+      </section>
 
       {/* Audience Split Cards */}
       <Section bg="muted">

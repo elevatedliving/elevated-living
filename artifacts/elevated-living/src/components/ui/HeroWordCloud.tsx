@@ -5,15 +5,11 @@
  * Words live ONLY in four outer perimeter strips — nothing inside
  * the central content rectangle (heading / blurb / CTA).
  *
- * Exclusion zone (approximate):
- *   Horizontal: left 13 % → right 13 %   (matching max-w-4xl + padding)
- *   Vertical:   top  20 % → top  88 %    (heading top → CTA bottom)
- *
- * Zone definitions
- *   TOP    top  2 – 17 %   any left%
- *   BOTTOM top 88 – 97 %   any left%
- *   LEFT   left 0 – 9 %    top 20 – 84 %   (only words ≤ ~110 px wide at T2)
- *   RIGHT  left 87 – 100 % top 20 – 84 %   (words may clip off-screen right)
+ * LEFT  strip — anchored with `left` ≥ 5 %, drift is positive-only (rightward)
+ *               so words never slide off the left viewport edge.
+ * RIGHT strip — anchored with `right` %, text extends LEFTWARD from that edge,
+ *               so words are always fully visible regardless of viewport width.
+ * TOP / BOTTOM strips — `left` anchored, full width available.
  *
  * pointer-events: none  |  aria-hidden: true  |  respects prefers-reduced-motion
  */
@@ -23,9 +19,14 @@ import { motion, useReducedMotion } from "framer-motion";
 interface WordItem {
   text: string;
   tier: 1 | 2 | 3;
-  left: number;
+  /** % from LEFT edge — word extends rightward. Use for left/top/bottom strip words. */
+  left?: number;
+  /** % from RIGHT edge — word extends LEFTWARD. Use for right strip words. */
+  right?: number;
   top: number;
   color: string;
+  /** Drift magnitude in px. LEFT-strip words use positive dx only (drift right).
+   *  RIGHT-strip words use positive dx only (drift further into right margin). */
   dx: number;
   dy: number;
   rotate: number;
@@ -37,49 +38,47 @@ interface WordItem {
 
 const WORDS: WordItem[] = [
 
-  // ── TOP STRIP  (top 2 – 16 %) ────────────────────────────────────────────
-  // "confusion" and "to-do-list" moved to left strip to fill gaps there.
-  // Top strip keeps 5 words evenly spread across the full width.
-  { text: "women",        tier: 3, left: 26, top:  6, color: "#2a9d8f", dx: -4, dy:  4, rotate:  2, duration: 14, delay: 3.8, opacityFrom: 0.09, opacityTo: 0.20 },
-  { text: "employment",   tier: 3, left: 62, top: 10, color: "#1b7a6e", dx: -4, dy:  5, rotate:  3, duration: 17, delay: 2.8, opacityFrom: 0.09, opacityTo: 0.20 },
-  { text: "organisation", tier: 3, left: 84, top:  4, color: "#1c3d5e", dx:  5, dy: -4, rotate: -2, duration: 12, delay: 3.0, opacityFrom: 0.09, opacityTo: 0.20 },
-  // T1 large words at far-left and far-right corners of the top strip
-  { text: "clarity",   tier: 1, left:  2, top:  9, color: "#0f2a44", dx: -8, dy:  6, rotate:  3, duration: 14, delay: 2.0, opacityFrom: 0.13, opacityTo: 0.27 },
-  { text: "overwhelm", tier: 1, left: 59, top:  3, color: "#1b7a6e", dx:  9, dy: -5, rotate: -3, duration: 17, delay: 3.0, opacityFrom: 0.13, opacityTo: 0.27 },
+  // ── TOP STRIP  (top 3 – 16 %, any left) ──────────────────────────────────
+  { text: "women",        tier: 3, left: 26, top:  6, color: "#2a9d8f", dx:  4, dy:  4, rotate:  2, duration: 14, delay: 3.8, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "employment",   tier: 3, left: 62, top: 10, color: "#1b7a6e", dx:  4, dy:  5, rotate:  3, duration: 17, delay: 2.8, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "organisation", tier: 3, left: 82, top:  4, color: "#1c3d5e", dx:  5, dy: -4, rotate: -2, duration: 12, delay: 3.0, opacityFrom: 0.09, opacityTo: 0.20 },
+  // T1 — large corners of the top strip
+  { text: "clarity",   tier: 1, left:  5, top:  9, color: "#0f2a44", dx:  6, dy:  5, rotate:  2, duration: 14, delay: 2.0, opacityFrom: 0.13, opacityTo: 0.27 },
+  { text: "overwhelm", tier: 1, left: 57, top:  3, color: "#1b7a6e", dx:  8, dy: -5, rotate: -2, duration: 17, delay: 3.0, opacityFrom: 0.13, opacityTo: 0.27 },
 
-  // ── LEFT STRIP  (left 0 – 9 %, top 20 – 84 %) ────────────────────────────
-  // 8 words evenly spaced at ~8 % intervals — "confusion" and "to-do-list"
-  // moved here from the top strip to fill the previously empty mid-section gaps.
-  { text: "enterprise",   tier: 2, left:  1, top: 22, color: "#4a6483", dx: -5, dy:  5, rotate:  2, duration: 13, delay: 0.5, opacityFrom: 0.10, opacityTo: 0.22 },
-  { text: "confusion",    tier: 3, left:  1, top: 30, color: "#4a6483", dx: -5, dy:  4, rotate:  3, duration: 15, delay: 1.0, opacityFrom: 0.09, opacityTo: 0.20 },
-  { text: "18 - 24",      tier: 3, left:  3, top: 38, color: "#4a6483", dx:  4, dy: -4, rotate: -2, duration: 16, delay: 8.0, opacityFrom: 0.09, opacityTo: 0.19 },
-  { text: "to-do-list",   tier: 3, left:  1, top: 46, color: "#5fb3a6", dx: -4, dy:  5, rotate:  2, duration: 14, delay: 5.5, opacityFrom: 0.09, opacityTo: 0.20 },
-  { text: "social value", tier: 2, left:  0, top: 54, color: "#4a6483", dx:  6, dy: -5, rotate: -3, duration: 11, delay: 0.8, opacityFrom: 0.10, opacityTo: 0.22 },
-  { text: "redundancy",   tier: 3, left:  2, top: 62, color: "#4a6483", dx: -4, dy:  4, rotate:  2, duration: 15, delay: 7.5, opacityFrom: 0.09, opacityTo: 0.19 },
-  { text: "funding",      tier: 3, left:  3, top: 70, color: "#2a9d8f", dx: -5, dy:  3, rotate:  2, duration: 16, delay: 4.0, opacityFrom: 0.09, opacityTo: 0.20 },
-  { text: "impact reports",tier: 3, left: 0, top: 78, color: "#4a6483", dx:  5, dy: -4, rotate: -1, duration: 13, delay: 6.5, opacityFrom: 0.09, opacityTo: 0.20 },
+  // ── LEFT STRIP  (left ≥ 5 %, top 20 – 84 %) ──────────────────────────────
+  // All dx positive → words drift rightward, never slide off left edge.
+  { text: "enterprise",    tier: 2, left:  5, top: 22, color: "#4a6483", dx:  5, dy:  5, rotate:  2, duration: 13, delay: 0.5, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "confusion",     tier: 3, left:  5, top: 30, color: "#4a6483", dx:  4, dy:  4, rotate:  2, duration: 15, delay: 1.0, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "18 - 24",       tier: 3, left:  6, top: 38, color: "#4a6483", dx:  4, dy: -4, rotate: -2, duration: 16, delay: 8.0, opacityFrom: 0.09, opacityTo: 0.19 },
+  { text: "to-do-list",    tier: 3, left:  5, top: 46, color: "#5fb3a6", dx:  5, dy:  4, rotate:  2, duration: 14, delay: 5.5, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "social value",  tier: 2, left:  5, top: 54, color: "#4a6483", dx:  6, dy: -4, rotate: -2, duration: 11, delay: 0.8, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "redundancy",    tier: 3, left:  6, top: 62, color: "#4a6483", dx:  4, dy:  4, rotate:  2, duration: 15, delay: 7.5, opacityFrom: 0.09, opacityTo: 0.19 },
+  { text: "funding",       tier: 3, left:  6, top: 70, color: "#2a9d8f", dx:  5, dy:  3, rotate:  2, duration: 16, delay: 4.0, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "impact reports",tier: 3, left:  5, top: 78, color: "#4a6483", dx:  5, dy: -4, rotate: -1, duration: 13, delay: 6.5, opacityFrom: 0.09, opacityTo: 0.20 },
 
-  // ── RIGHT STRIP  (left 86 – 100 %, top 20 – 84 %) ────────────────────────
-  // 7 words evenly spaced at ~9 % intervals.
-  { text: "coaching",           tier: 2, left: 87, top: 22, color: "#0f2a44", dx:  5, dy: -7, rotate: -1, duration: 14, delay: 3.5, opacityFrom: 0.10, opacityTo: 0.22 },
-  { text: "project management", tier: 2, left: 86, top: 32, color: "#4a6483", dx:  7, dy: -5, rotate: -2, duration: 12, delay: 6.0, opacityFrom: 0.10, opacityTo: 0.20 },
-  { text: "AI Training",        tier: 2, left: 87, top: 42, color: "#1b7a6e", dx: -6, dy:  5, rotate:  2, duration: 18, delay: 7.0, opacityFrom: 0.10, opacityTo: 0.22 },
-  { text: "accountability",     tier: 2, left: 86, top: 52, color: "#4a6483", dx: -6, dy:  5, rotate:  2, duration: 17, delay: 4.5, opacityFrom: 0.10, opacityTo: 0.22 },
-  { text: "pathways",           tier: 3, left: 89, top: 62, color: "#5fb3a6", dx:  5, dy: -4, rotate: -2, duration: 10, delay: 1.8, opacityFrom: 0.09, opacityTo: 0.18 },
-  { text: "50+",                tier: 3, left: 93, top: 71, color: "#1c3d5e", dx:  4, dy: -5, rotate: -3, duration: 12, delay: 0.6, opacityFrom: 0.09, opacityTo: 0.18 },
-  { text: "tasks",              tier: 3, left: 91, top: 80, color: "#0f2a44", dx:  4, dy: -4, rotate: -2, duration: 11, delay: 0.3, opacityFrom: 0.09, opacityTo: 0.18 },
+  // ── RIGHT STRIP  (right %, top 20 – 84 %) ────────────────────────────────
+  // Anchored from RIGHT edge — text extends leftward so it's always fully visible.
+  // All dx positive → words drift further right (into margin), never toward content.
+  { text: "coaching",           tier: 2, right:  2, top: 22, color: "#0f2a44", dx:  5, dy: -6, rotate: -1, duration: 14, delay: 3.5, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "project management", tier: 2, right:  2, top: 32, color: "#4a6483", dx:  6, dy: -5, rotate: -2, duration: 12, delay: 6.0, opacityFrom: 0.10, opacityTo: 0.20 },
+  { text: "AI Training",        tier: 2, right:  2, top: 42, color: "#1b7a6e", dx:  5, dy:  5, rotate:  2, duration: 18, delay: 7.0, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "accountability",     tier: 2, right:  2, top: 52, color: "#4a6483", dx:  5, dy:  5, rotate:  2, duration: 17, delay: 4.5, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "pathways",           tier: 3, right:  3, top: 62, color: "#5fb3a6", dx:  4, dy: -4, rotate: -2, duration: 10, delay: 1.8, opacityFrom: 0.09, opacityTo: 0.18 },
+  { text: "50+",                tier: 3, right:  3, top: 71, color: "#1c3d5e", dx:  4, dy: -4, rotate: -2, duration: 12, delay: 0.6, opacityFrom: 0.09, opacityTo: 0.18 },
+  { text: "tasks",              tier: 3, right:  3, top: 80, color: "#0f2a44", dx:  4, dy: -4, rotate: -2, duration: 11, delay: 0.3, opacityFrom: 0.09, opacityTo: 0.18 },
 
   // ── BOTTOM STRIP  (top 88 – 97 %) ────────────────────────────────────────
-  // Row A  top ~89 %
-  { text: "Elevated Living",     tier: 1, left:  6, top: 89, color: "#1b7a6e", dx:  8, dy: -6, rotate: -2, duration: 18, delay: 0.0, opacityFrom: 0.15, opacityTo: 0.30 },
-  { text: "entrepreneur",        tier: 2, left: 44, top: 89, color: "#1c3d5e", dx:  7, dy: -5, rotate: -2, duration: 15, delay: 5.0, opacityFrom: 0.10, opacityTo: 0.22 },
-  { text: "Elevated Edit",       tier: 1, left: 64, top: 89, color: "#1c3d5e", dx:  6, dy: -8, rotate: -1, duration: 20, delay: 4.0, opacityFrom: 0.13, opacityTo: 0.27 },
-  // Row B  top ~93 %
-  { text: "small business owner",tier: 2, left: 18, top: 93, color: "#5fb3a6", dx: -5, dy:  6, rotate:  1, duration: 19, delay: 2.5, opacityFrom: 0.11, opacityTo: 0.23 },
-  { text: "community",           tier: 1, left: 37, top: 93, color: "#2a9d8f", dx: -6, dy:  6, rotate:  2, duration: 16, delay: 1.0, opacityFrom: 0.15, opacityTo: 0.30 },
-  // Row C  top ~96-97 %
-  { text: "business support",    tier: 2, left: 18, top: 96, color: "#2a9d8f", dx: -6, dy:  5, rotate:  2, duration: 16, delay: 1.5, opacityFrom: 0.10, opacityTo: 0.22 },
-  { text: "business development",tier: 2, left: 48, top: 96, color: "#2a9d8f", dx:  5, dy: -5, rotate: -2, duration: 13, delay: 2.0, opacityFrom: 0.10, opacityTo: 0.21 },
+  // Row A  ~89 %
+  { text: "Elevated Living",     tier: 1, left:  6, top: 89, color: "#1b7a6e", dx:  7, dy: -6, rotate: -2, duration: 18, delay: 0.0, opacityFrom: 0.15, opacityTo: 0.30 },
+  { text: "entrepreneur",        tier: 2, left: 44, top: 89, color: "#1c3d5e", dx:  6, dy: -5, rotate: -2, duration: 15, delay: 5.0, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "Elevated Edit",       tier: 1, left: 63, top: 89, color: "#1c3d5e", dx:  5, dy: -7, rotate: -1, duration: 20, delay: 4.0, opacityFrom: 0.13, opacityTo: 0.27 },
+  // Row B  ~93 %
+  { text: "small business owner",tier: 2, left: 18, top: 93, color: "#5fb3a6", dx:  5, dy:  5, rotate:  1, duration: 19, delay: 2.5, opacityFrom: 0.11, opacityTo: 0.23 },
+  { text: "community",           tier: 1, left: 37, top: 93, color: "#2a9d8f", dx:  6, dy:  5, rotate:  2, duration: 16, delay: 1.0, opacityFrom: 0.15, opacityTo: 0.30 },
+  // Row C  ~96 %
+  { text: "business support",    tier: 2, left: 18, top: 96, color: "#2a9d8f", dx:  5, dy:  4, rotate:  2, duration: 16, delay: 1.5, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "business development",tier: 2, left: 47, top: 96, color: "#2a9d8f", dx:  5, dy: -4, rotate: -2, duration: 13, delay: 2.0, opacityFrom: 0.10, opacityTo: 0.21 },
 ];
 
 const FONT_SIZES: Record<1 | 2 | 3, string> = {
@@ -107,12 +106,18 @@ export function HeroWordCloud() {
       {WORDS.map((word) => {
         const midOpacity = (word.opacityFrom + word.opacityTo) / 2;
 
+        // Build the horizontal position — left% or right% depending on which side.
+        const hPos: React.CSSProperties =
+          word.right !== undefined
+            ? { right: `${word.right}%` }
+            : { left: `${word.left ?? 5}%` };
+
         return (
           <motion.span
             key={word.text}
             style={{
               position: "absolute",
-              left: `${word.left}%`,
+              ...hPos,
               top: `${word.top}%`,
               fontSize: FONT_SIZES[word.tier],
               color: word.color,
@@ -126,14 +131,14 @@ export function HeroWordCloud() {
               prefersReducedMotion
                 ? { opacity: midOpacity }
                 : {
-                    x: [0, word.dx, word.dx * 0.3, -word.dx * 0.4, 0],
+                    x: [0, word.dx, word.dx * 0.4, word.dx * 0.1, 0],
                     y: [0, word.dy, -word.dy * 0.3, word.dy * 0.4, 0],
-                    rotate: [0, word.rotate, word.rotate * 0.3, -word.rotate * 0.4, 0],
+                    rotate: [0, word.rotate, word.rotate * 0.3, -word.rotate * 0.2, 0],
                     opacity: [
                       word.opacityFrom,
                       word.opacityTo,
-                      word.opacityFrom * 1.15,
-                      word.opacityTo * 0.85,
+                      word.opacityFrom * 1.1,
+                      word.opacityTo * 0.9,
                       word.opacityFrom,
                     ],
                   }
