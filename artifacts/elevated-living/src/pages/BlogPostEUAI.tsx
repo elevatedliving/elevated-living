@@ -51,7 +51,7 @@ export function BlogPostEUAI() {
 
             <p>
               <strong>1. If it talks, it has to say what it is.</strong><br />
-              Chatbots, voice assistants, anything built to have a "conversation" with a real person — has to make it obvious you're talking to a machine. No pretending to be a human on the other end.
+              Chatbots, voice assistants, anything built to have a conversation with a real person — has to make it obvious you're talking to a machine. No pretending to be a human on the other end.
             </p>
             <p>
               <strong>2. If it's made or altered by AI, it has to be marked.</strong><br />
