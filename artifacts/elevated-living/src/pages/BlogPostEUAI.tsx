@@ -32,7 +32,13 @@ export function BlogPostEUAI() {
             The EU just made AI show its working. Here's what that actually means.
           </h1>
 
-          <p className="text-sm text-muted-foreground mb-10">Authored by Kay at Elevated Living (with some AI assistance)</p>
+          <p className="text-sm text-muted-foreground mb-8">Authored by Kay at Elevated Living (with some AI assistance)</p>
+
+          <img
+            src="/images/blog-eu-ai-act.jpeg"
+            alt="EU AI Act — European Union Artificial Intelligence Regulation"
+            className="w-full rounded-xl mb-10 object-cover"
+          />
 
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed border-l-4 border-primary pl-6">
             Since the 2nd of August, if an AI system is talking to you, changing what you see, or reading your face, it now legally has to say so. That's the headline. Everything else is detail.
