@@ -163,7 +163,7 @@ export function Home() {
           <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-4">In Partnership</p>
           <h2 className="mb-4">Introducing Square AI Academy</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Elevated Living have partnered with <span className="font-semibold text-foreground">Academy of Success</span> to form Square AI Academy — for all your in-person AI training. Absolute beginners, of all ages and all backgrounds.
+            Elevated Living have partnered with <span className="font-semibold text-foreground">Academy of Success</span> to form Square AI Academy — for all your in-person AI training for absolute beginners, of all ages and all backgrounds.
           </p>
           <a href="https://www.squareaiacademy.uk" target="_blank" rel="noopener noreferrer">
             <img
