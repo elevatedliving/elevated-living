@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Briefcase, HeartHandshake, Lightbulb, MessageSquare, Target } from "lucide-react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
+import { HeroWordCloud } from "@/components/ui/HeroWordCloud";
 
 export function Home() {
   return (
@@ -20,7 +21,7 @@ export function Home() {
       </Helmet>
       {/* Hero Section */}
       <Section className="relative overflow-hidden pt-20 pb-32">
-        
+        <HeroWordCloud />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
