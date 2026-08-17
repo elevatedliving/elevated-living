@@ -41,7 +41,7 @@ export function BlogPostEUAI() {
           <div className="prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground mt-2">
 
             <p>
-              The EU brought in new transparency rules under something called the AI Act — specifically a bit of it called Article 50. And before you switch off at the word 'Act,' here's the plain-English version: it's not about banning AI, or slowing anyone down. It's about making sure AI stops pretending to be something it isn't. A chatbot has to tell you it's a chatbot. A fake video has to say it's fake. Simple as that.
+              The EU brought in new transparency rules under something called the AI Act — specifically a bit of it called Article 50. And before you switch off at the word 'Act', here's the plain-English version: it's not about banning AI, or slowing anyone down. It's about making sure AI stops pretending to be something it isn't. A chatbot has to tell you it's a chatbot. A fake video has to say it's fake. Simple as that.
             </p>
             <p>
               The bit that catches most people out — this doesn't just apply to companies based in the EU. If your content, your chatbot, or your AI tool touches anyone in the EU market, the rules apply to you too. Based in Woolwich and never sold a thing to Europe? You're probably fine. Running a business, a platform, or content that EU customers can see or use? Read on.
