@@ -47,7 +47,7 @@ export function BlogPostEUAI() {
               The bit that catches most people out — this doesn't just apply to companies based in the EU. If your content, your chatbot, or your AI tool touches anyone in the EU market, the rules apply to you too. Based in Woolwich and never sold a thing to Europe? You're probably fine. Running a business, a platform, or content that EU customers can see or use? Read on.
             </p>
 
-            <h2>The four rules, no waffle</h2>
+            <h2>The four rules</h2>
 
             <p>
               <strong>1. If it talks, it has to say what it is.</strong><br />
