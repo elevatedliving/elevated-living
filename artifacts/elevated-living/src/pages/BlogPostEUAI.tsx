@@ -35,7 +35,7 @@ export function BlogPostEUAI() {
           <p className="text-sm text-muted-foreground mb-10">By Kay at Elevated Living (assisted by AI)</p>
 
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed border-l-4 border-primary pl-6">
-            Since the 2nd of August, if an AI system is talking to you, changing what you see, or reading your face, it now legally has to say so. That's it. That's the headline. Everything else is detail.
+            Since the 2nd of August, if an AI system is talking to you, changing what you see, or reading your face, it now legally has to say so. That's the headline. Everything else is detail.
           </p>
 
           <div className="prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground mt-2">
