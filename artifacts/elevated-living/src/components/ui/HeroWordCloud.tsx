@@ -57,28 +57,30 @@ const WORDS: WordItem[] = [
   { text: "18 - 24",      tier: 3, left:  3, top: 38, color: "#4a6483", dx:  4, dy: -4, rotate: -2, duration: 16, delay: 8.0, opacityFrom: 0.09, opacityTo: 0.19 },
   { text: "social value", tier: 2, left:  0, top: 52, color: "#4a6483", dx:  6, dy: -5, rotate: -3, duration: 11, delay: 0.8, opacityFrom: 0.10, opacityTo: 0.22 },
   { text: "redundancy",   tier: 3, left:  2, top: 66, color: "#4a6483", dx: -4, dy:  4, rotate:  2, duration: 15, delay: 7.5, opacityFrom: 0.09, opacityTo: 0.19 },
+  // Fill the left-side gap below redundancy (highlighted area ~66–86 %)
+  { text: "funding",       tier: 3, left:  3, top: 74, color: "#2a9d8f", dx: -5, dy:  3, rotate:  2, duration: 16, delay: 4.0, opacityFrom: 0.09, opacityTo: 0.20 },
+  { text: "impact reports",tier: 3, left:  0, top: 82, color: "#4a6483", dx:  5, dy: -4, rotate: -1, duration: 13, delay: 6.5, opacityFrom: 0.09, opacityTo: 0.20 },
 
   // ── RIGHT STRIP  (left 87 – 100 %, top 20 – 84 %) ────────────────────────
-  // Words anchor at left ≥ 87 % and extend rightward — partial clipping is fine.
+  // Words anchor at left ≥ 86 % and extend rightward — partial clipping is fine.
   { text: "coaching",           tier: 2, left: 87, top: 24, color: "#0f2a44", dx:  5, dy: -7, rotate: -1, duration: 14, delay: 3.5, opacityFrom: 0.10, opacityTo: 0.22 },
   { text: "project management", tier: 2, left: 86, top: 36, color: "#4a6483", dx:  7, dy: -5, rotate: -2, duration: 12, delay: 6.0, opacityFrom: 0.10, opacityTo: 0.20 },
   { text: "AI Training",        tier: 2, left: 87, top: 50, color: "#1b7a6e", dx: -6, dy:  5, rotate:  2, duration: 18, delay: 7.0, opacityFrom: 0.10, opacityTo: 0.22 },
-  { text: "pathways",           tier: 3, left: 89, top: 61, color: "#5fb3a6", dx:  5, dy: -4, rotate: -2, duration: 10, delay: 1.8, opacityFrom: 0.09, opacityTo: 0.18 },
-  { text: "50+",                tier: 3, left: 93, top: 70, color: "#1c3d5e", dx:  4, dy: -5, rotate: -3, duration: 12, delay: 0.6, opacityFrom: 0.09, opacityTo: 0.18 },
-  { text: "tasks",              tier: 3, left: 91, top: 79, color: "#0f2a44", dx:  4, dy: -4, rotate: -2, duration: 11, delay: 0.3, opacityFrom: 0.09, opacityTo: 0.18 },
+  // Fill right-side gap between AI Training and pathways (highlighted ~55–65 %)
+  { text: "accountability",     tier: 2, left: 86, top: 58, color: "#4a6483", dx: -6, dy:  5, rotate:  2, duration: 17, delay: 4.5, opacityFrom: 0.10, opacityTo: 0.22 },
+  { text: "pathways",           tier: 3, left: 89, top: 66, color: "#5fb3a6", dx:  5, dy: -4, rotate: -2, duration: 10, delay: 1.8, opacityFrom: 0.09, opacityTo: 0.18 },
+  { text: "50+",                tier: 3, left: 93, top: 74, color: "#1c3d5e", dx:  4, dy: -5, rotate: -3, duration: 12, delay: 0.6, opacityFrom: 0.09, opacityTo: 0.18 },
+  { text: "tasks",              tier: 3, left: 91, top: 82, color: "#0f2a44", dx:  4, dy: -4, rotate: -2, duration: 11, delay: 0.3, opacityFrom: 0.09, opacityTo: 0.18 },
 
   // ── BOTTOM STRIP  (top 88 – 97 %) ────────────────────────────────────────
   // Row A  top ~89 %
   { text: "Elevated Living",     tier: 1, left:  6, top: 89, color: "#1b7a6e", dx:  8, dy: -6, rotate: -2, duration: 18, delay: 0.0, opacityFrom: 0.15, opacityTo: 0.30 },
   { text: "entrepreneur",        tier: 2, left: 44, top: 89, color: "#1c3d5e", dx:  7, dy: -5, rotate: -2, duration: 15, delay: 5.0, opacityFrom: 0.10, opacityTo: 0.22 },
   { text: "Elevated Edit",       tier: 1, left: 64, top: 89, color: "#1c3d5e", dx:  6, dy: -8, rotate: -1, duration: 20, delay: 4.0, opacityFrom: 0.13, opacityTo: 0.27 },
-  { text: "accountability",      tier: 2, left: 82, top: 89, color: "#4a6483", dx: -6, dy:  5, rotate:  2, duration: 17, delay: 4.5, opacityFrom: 0.10, opacityTo: 0.22 },
   // Row B  top ~93 %
   { text: "small business owner",tier: 2, left: 18, top: 93, color: "#5fb3a6", dx: -5, dy:  6, rotate:  1, duration: 19, delay: 2.5, opacityFrom: 0.11, opacityTo: 0.23 },
   { text: "community",           tier: 1, left: 37, top: 93, color: "#2a9d8f", dx: -6, dy:  6, rotate:  2, duration: 16, delay: 1.0, opacityFrom: 0.15, opacityTo: 0.30 },
-  { text: "impact reports",      tier: 3, left: 76, top: 93, color: "#4a6483", dx:  5, dy: -4, rotate: -1, duration: 13, delay: 6.5, opacityFrom: 0.09, opacityTo: 0.20 },
   // Row C  top ~96-97 %
-  { text: "funding",             tier: 3, left:  2, top: 96, color: "#2a9d8f", dx: -5, dy:  3, rotate:  2, duration: 16, delay: 4.0, opacityFrom: 0.09, opacityTo: 0.20 },
   { text: "business support",    tier: 2, left: 18, top: 96, color: "#2a9d8f", dx: -6, dy:  5, rotate:  2, duration: 16, delay: 1.5, opacityFrom: 0.10, opacityTo: 0.22 },
   { text: "business development",tier: 2, left: 48, top: 96, color: "#2a9d8f", dx:  5, dy: -5, rotate: -2, duration: 13, delay: 2.0, opacityFrom: 0.10, opacityTo: 0.21 },
 ];
