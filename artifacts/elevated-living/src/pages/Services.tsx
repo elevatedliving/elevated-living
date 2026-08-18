@@ -137,7 +137,8 @@ export function Services() {
               </div>
             </div>
 
-            {/* Membership */}
+            {/* Membership — hidden until ready to launch */}
+            <div className="hidden">
             <h4 className="text-sm font-bold uppercase tracking-wide text-muted-foreground mb-3">Membership</h4>
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
               <div className="flex flex-col sm:flex-row sm:items-start gap-4">
@@ -151,6 +152,7 @@ export function Services() {
                   <p className="text-sm text-muted-foreground">to £17/month for founder members</p>
                 </div>
               </div>
+            </div>
             </div>
           </div>
 
