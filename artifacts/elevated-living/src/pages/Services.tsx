@@ -123,6 +123,7 @@ export function Services() {
                     <h4 className="font-semibold text-lg mb-1">Elevated Edit — Group Session</h4>
                     <p className="text-muted-foreground text-sm leading-relaxed mb-2">If you're a busy, overwhelmed, under-resourced entrepreneur carrying everything by yourself and just about getting by, then join September's 'Elevated Edit - Group Session' to move from where you've been stuck to where you want to be!</p>
                     <p className="text-muted-foreground text-sm leading-relaxed mb-2"><span className="font-semibold text-foreground">Date:</span> Tuesday 15th September, 11.30am – 1.30pm</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-2"><span className="font-semibold text-foreground">Location:</span> Santander Workcafe, Cheapside, London, EC2V 6AZ</p>
                   </div>
                   <div className="sm:text-right shrink-0">
                     <p className="text-2xl font-bold text-primary">£45 <span className="text-base font-normal text-muted-foreground">+ bf</span></p>
