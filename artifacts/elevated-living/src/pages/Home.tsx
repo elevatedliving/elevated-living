@@ -61,8 +61,13 @@ export function Home() {
         </div>
       </section>
 
-      {/* Eventbrite Checkout Widget */}
-      <EventbriteWidget />
+      {/* Upcoming Training & Events */}
+      <Section>
+        <div className="text-center mb-8">
+          <h2>Upcoming Training &amp; Events</h2>
+        </div>
+        <EventbriteWidget />
+      </Section>
 
       {/* Audience Split Cards */}
       <Section bg="muted">
