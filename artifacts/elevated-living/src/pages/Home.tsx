@@ -90,7 +90,7 @@ export function Home() {
           {/* Location */}
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
             <MapPin className="w-4 h-4 text-red-500 shrink-0" />
-            <span>Santander Workcafe, Cheapside, EC2V 6AZ</span>
+            <span>Santander Workcafe, Cheapside, London, EC2V 6AZ</span>
           </div>
 
           {/* Description — two-column on md+, single on mobile */}
@@ -131,6 +131,10 @@ export function Home() {
                   </li>
                 ))}
               </ul>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground mt-4">
+                <MapPin className="w-4 h-4 text-red-500 shrink-0" />
+                <span>Santander Workcafe, Cheapside, London, EC2V 6AZ</span>
+              </div>
             </div>
           </div>
 
