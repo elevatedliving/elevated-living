@@ -129,7 +129,9 @@ export function Services() {
                   </div>
                 </div>
                 <div className="mt-4">
-                  <Button variant="outline" size="sm" disabled className="opacity-80 cursor-not-allowed">Registrations open 17 August</Button>
+                  <a href="https://SeptemberElevatedEdit.eventbrite.co.uk" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm">Read more and book your place</Button>
+                  </a>
                 </div>
               </div>
             </div>
