@@ -6,6 +6,7 @@ import { ArrowRight, Briefcase, HeartHandshake, Lightbulb, MessageSquare, Target
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { HeroWordCloud } from "@/components/ui/HeroWordCloud";
+import { EventbriteWidget } from "@/components/ui/EventbriteWidget";
 
 export function Home() {
   return (
@@ -59,6 +60,9 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* Eventbrite Checkout Widget */}
+      <EventbriteWidget />
 
       {/* Audience Split Cards */}
       <Section bg="muted">
