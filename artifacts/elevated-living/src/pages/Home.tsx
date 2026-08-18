@@ -131,11 +131,13 @@ export function Home() {
                   </li>
                 ))}
               </ul>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground mt-4">
-                <MapPin className="w-4 h-4 text-red-500 shrink-0" />
-                <span>Santander Workcafe, Cheapside, London, EC2V 6AZ</span>
-              </div>
             </div>
+          </div>
+
+          {/* Location — repeated above checkout */}
+          <div className="flex items-center gap-2 text-base font-semibold text-foreground mb-4">
+            <MapPin className="w-4 h-4 text-red-500 shrink-0" />
+            <span>Santander Workcafe, Cheapside, London, EC2V 6AZ</span>
           </div>
 
           {/* Eventbrite checkout */}
