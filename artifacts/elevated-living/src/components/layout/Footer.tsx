@@ -20,7 +20,7 @@ export function Footer() {
               <a href="https://www.linkedin.com/company/elevatedlivingenterprise/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="p-2 bg-background/10 rounded-full hover:bg-primary transition-colors text-background">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="https://www.instagram.com/elevatedliving.enterprise/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="p-2 bg-background/10 rounded-full hover:bg-primary transition-colors text-background">
+              <a href="https://www.instagram.com/elevatedliving.uk" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="p-2 bg-background/10 rounded-full hover:bg-primary transition-colors text-background">
                 <Instagram className="w-4 h-4" />
               </a>
               <a href="https://www.facebook.com/ElevatedLivingEnterprise" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="p-2 bg-background/10 rounded-full hover:bg-primary transition-colors text-background">
