@@ -63,10 +63,74 @@ export function Home() {
 
       {/* Upcoming Training & Events */}
       <Section>
-        <div className="text-center mb-8">
+        <div className="text-center mb-10">
           <h2>Upcoming Training &amp; Events</h2>
         </div>
-        <EventbriteWidget />
+
+        {/* Event card */}
+        <div className="max-w-4xl mx-auto">
+
+          {/* Hero image */}
+          <img
+            src={`${import.meta.env.BASE_URL}images/elevated-edit-sept.jpg`}
+            alt="The September Elevated Edit"
+            className="w-full rounded-2xl object-cover max-h-80 mb-8 shadow-md"
+          />
+
+          {/* Event title */}
+          <h3 className="text-2xl md:text-3xl font-bold mb-3">
+            Your Business Unstuck in Two Hours — The September Elevated Edit
+          </h3>
+
+          {/* Summary */}
+          <p className="text-lg text-primary font-medium mb-8">
+            Two hours to work out where you're at, where you're heading, and what's next. For entrepreneurs who are done with the overwhelm!
+          </p>
+
+          {/* Description — two-column on md+, single on mobile */}
+          <div className="grid md:grid-cols-2 gap-x-10 gap-y-6 text-sm text-muted-foreground leading-relaxed mb-10">
+
+            {/* Left column */}
+            <div className="space-y-4">
+              <p>
+                Most people running a business, a project or a community organisation on their own aren't stuck because they lack ideas or expertise. They're stuck because they haven't found the time or mental space to actually sit down and really look at what's going on.
+              </p>
+              <p>
+                If you're a busy, overwhelmed, under-resourced entrepreneur carrying everything by yourself and just about getting by, then this is your sign to stop, take a breath and acknowledge that something needs to change.
+              </p>
+
+              <div>
+                <p className="font-semibold text-foreground mb-2">Who it's for</p>
+                <p>
+                  Solopreneurs, small business owners, and community leads who are managing multiple tasks on their own and quietly feeling themselves going under. If you're doing too much and want to stop going around in circles, then you'll be in the right room!
+                </p>
+              </div>
+            </div>
+
+            {/* Right column */}
+            <div>
+              <p className="font-semibold text-foreground mb-3">The September Elevated Edit</p>
+              <p className="mb-3">You won't be bored by slides, and you won't be handed a worksheet you'll never look at again, but you will:</p>
+              <ul className="space-y-2">
+                {[
+                  "Be part of a small group of entrepreneurs and business owners (maximum 6 people)",
+                  "Have the opportunity to share your current business challenges and where you're at vs where you'd like to be",
+                  "Be guided on your next steps that could close the gap between the present situation and your ideal outcome",
+                  "Leave with a named priority and the start of a proper action plan",
+                  "Receive a 30-minute call to follow up on that priority and keep you accountable",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Eventbrite checkout */}
+          <EventbriteWidget />
+        </div>
       </Section>
 
       {/* Audience Split Cards */}
