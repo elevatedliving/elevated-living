@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Briefcase, HeartHandshake, Lightbulb, MessageSquare, Target } from "lucide-react";
+import { ArrowRight, Briefcase, HeartHandshake, Lightbulb, MapPin, MessageSquare, Target } from "lucide-react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { HeroWordCloud } from "@/components/ui/HeroWordCloud";
@@ -83,9 +83,15 @@ export function Home() {
           </h3>
 
           {/* Summary */}
-          <p className="text-lg text-primary font-medium mb-8">
+          <p className="text-lg text-primary font-medium mb-3">
             Two hours to work out where you're at, where you're heading, and what's next. For entrepreneurs who are done with the overwhelm!
           </p>
+
+          {/* Location */}
+          <div className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
+            <MapPin className="w-4 h-4 text-red-500 shrink-0" />
+            <span>Santander Workcafe, Cheapside, EC2V 6AZ</span>
+          </div>
 
           {/* Description — two-column on md+, single on mobile */}
           <div className="grid md:grid-cols-2 gap-x-10 gap-y-6 text-sm text-muted-foreground leading-relaxed mb-10">
