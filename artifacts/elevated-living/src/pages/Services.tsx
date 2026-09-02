@@ -69,7 +69,7 @@ export function Services() {
                   </div>
                   <div className="sm:text-right shrink-0">
                     <p className="inline-block rounded-full bg-red-100 px-3 py-1 text-xs font-bold uppercase tracking-wide text-red-600 mb-2">
-                      September Special
+                      September Special · 25% discount
                     </p>
                     <p className="text-2xl font-bold text-primary">
                       <span className="text-muted-foreground line-through decoration-red-500 decoration-2 mr-2">£125</span>
