@@ -114,7 +114,8 @@ export function Services() {
               </div>
             </div>
 
-            {/* Group Session */}
+            {/* Group Session — hidden until ready to relaunch */}
+            <div className="hidden">
             <h4 className="text-sm font-bold uppercase tracking-wide text-muted-foreground mb-3">Group Session</h4>
             <div className="grid gap-4 mb-8">
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
@@ -135,6 +136,7 @@ export function Services() {
                   </a>
                 </div>
               </div>
+            </div>
             </div>
 
             {/* Membership — hidden until ready to launch */}

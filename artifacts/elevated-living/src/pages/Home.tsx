@@ -62,7 +62,7 @@ export function Home() {
       </section>
 
       {/* Upcoming Training & Events */}
-      <Section>
+      <Section className="hidden">
         <div className="text-center mb-10">
           <h2>Upcoming Training &amp; Events</h2>
         </div>
