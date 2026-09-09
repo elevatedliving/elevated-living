@@ -252,16 +252,23 @@ export function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-4">In Partnership</p>
           <h2 className="mb-4">Introducing Square AI Academy</h2>
+          <img
+            src={`${import.meta.env.BASE_URL}images/square-ai-academy-primary.png`}
+            alt="Square AI Academy — Learn Locally, Grow Globally"
+            className="mx-auto w-full max-w-md mb-8"
+          />
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Elevated Living have partnered with <span className="font-semibold text-foreground">Academy of Success</span> to form Square AI Academy — all your in-person AI training for absolute beginners, of all ages and all backgrounds.
+            Square AI Academy is Elevated Living&apos;s dedicated AI training arm. Delivering in-person sessions for absolute beginners of all ages and all backgrounds. These sessions take place in different locations or can be hosted in your own space. Click{" "}
+            <a
+              href="https://www.squareaiacademy.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-primary underline underline-offset-4 hover:text-primary/80"
+            >
+              here
+            </a>{" "}
+            for more details.
           </p>
-          <a href="https://www.squareaiacademy.uk" target="_blank" rel="noopener noreferrer">
-            <img
-              src={`${import.meta.env.BASE_URL}images/square-ai-academy.png`}
-              alt="Square AI Academy — South-East London's First AI Training Hub"
-              className="mx-auto w-full max-w-xs hover:opacity-90 transition-opacity"
-            />
-          </a>
         </div>
       </Section>
     </Layout>
