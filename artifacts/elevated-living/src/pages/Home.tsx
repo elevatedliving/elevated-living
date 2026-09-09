@@ -250,7 +250,6 @@ export function Home() {
       {/* Square AI Academy Partnership */}
       <Section>
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-4">In Partnership</p>
           <h2 className="mb-4">Introducing Square AI Academy</h2>
           <img
             src={`${import.meta.env.BASE_URL}images/square-ai-academy-primary.png`}
