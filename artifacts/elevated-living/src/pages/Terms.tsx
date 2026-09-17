@@ -57,7 +57,7 @@ export function Terms() {
               <li>Attempt to gain unauthorised access to any part of the site or its systems</li>
               <li>
                 Copy, reproduce, or republish content from the site without our permission (see
-                Section 5, Intellectual Property)
+                Section 6, Intellectual Property)
               </li>
             </ul>
             <p>We may update, suspend, or withdraw any part of the website at any time without notice.</p>
