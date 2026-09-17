@@ -53,9 +53,9 @@ export function ZohoSignupForm() {
         onSubmit={handleSubmit}
         className="grid gap-5 md:grid-cols-2"
       >
-        <input type="hidden" name="xnQsjsdp" value="0ee68b6c2ed45ef454064d8bd562ff8eb9b4bb103556bdba468ce4f9010a8c56" />
+        <input type="hidden" name="xnQsjsdp" value="be8f1eff89211a22631ab23f490f103f1c9e97fb02421590cb2a1a48359aae66" />
         <input type="hidden" name="zc_gad" value="" />
-        <input type="hidden" name="xmIwtLD" value="e0df1b1e2e99815021bc2a37ee9a7c016b2bd6597cd462946ccfc9e8a180a07e3a9052182fd5e020cbc7d517ecf65c9c" />
+        <input type="hidden" name="xmIwtLD" value="5af9a9ed33424ca243bd1cf006a441ee47e13380df7c7fc52b9a551fd4e34c83cc32069a2ba30cc48689c0718691dcc4" />
         <input type="hidden" name="actionType" value="TGVhZHM=" />
         <input type="hidden" name="returnURL" value="null" />
         <input type="hidden" name="aG9uZXlwb3Q" value="" />
@@ -81,6 +81,7 @@ export function ZohoSignupForm() {
               details you provide help us understand our audience but are never sold or shared with third
               parties. You can unsubscribe at any time via the link in every email. See our full privacy
               policy at <a href="/privacy" className="text-primary underline underline-offset-2">elevatedliving.uk/privacy</a>.
+              <span className="mt-1 block">ICO ZB668763</span>
             </span>
           </label>
         </div>
