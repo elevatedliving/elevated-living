@@ -65,7 +65,7 @@ export function Terms() {
             <h2>3. Our services</h2>
             <p>
               We offer a range of consultancy services, described on our website, including but
-              not limited to 1:1 strategy sessions (The Elevated Edit), fractional project
+              not limited to 1:1 strategy sessions, The Elevated Edit, fractional project
               management, AI training and done-for-you AI support, and impact/partnership
               consultancy.
             </p>
@@ -144,6 +144,17 @@ export function Terms() {
               We provide our services with reasonable skill and care, but we do not guarantee
               specific business outcomes, financial results, or funding success, as these depend on
               factors outside our control.
+            </p>
+            <p>
+              We hold Professional Indemnity insurance (cover of £5,000,000) and Public and
+              Products Liability insurance (cover of £1,000,000) with Hiscox.
+            </p>
+            <p>
+              To the fullest extent permitted by law, our total liability to you for any claim
+              arising from our services — whether in contract, tort (including negligence), or
+              otherwise — will not exceed the greater of (a) the total fees paid by you for the
+              specific service giving rise to the claim, or (b) the level of our applicable
+              insurance cover for that type of claim.
             </p>
             <p>
               To the fullest extent permitted by law, Elevated Living Enterprise Limited will not
