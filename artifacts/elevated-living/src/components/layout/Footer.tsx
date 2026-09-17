@@ -57,7 +57,10 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-background/50">
-          <p>© {new Date().getFullYear()} Elevated Living. All rights reserved.</p>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
+            <p>© {new Date().getFullYear()} Elevated Living. All rights reserved.</p>
+            <p>ICO Registration No. ZB668763</p>
+          </div>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-background transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-background transition-colors">Terms of Service</Link>
