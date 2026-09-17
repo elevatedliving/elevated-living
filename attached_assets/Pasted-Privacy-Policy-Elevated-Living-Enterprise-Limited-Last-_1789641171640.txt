@@ -1,0 +1,81 @@
+Privacy Policy
+Elevated Living Enterprise Limited Last updated: 17th September 2026
+Who we are
+Elevated Living Enterprise Limited ("Elevated Living", "we", "us") is the data controller for the personal information collected through elevatedliving.uk and our related services. If you have any questions about this policy or how we handle your data, contact us at contact@elevatedliving.uk.
+
+Company registration number: 14986946 Registered address: Office 1270, 12 Farwig Lane, Bromley BR1 3RB. ICO registration number: ZB668763
+What information we collect
+We collect different information depending on how you interact with us:
+
+Newsletter / mailing list signup: name and email address (required); phone number, website, and company name (optional, if you choose to provide them).
+Contact and enquiry forms: name, email address, and the content of your message. Where you get in touch or express interest in our services, your details may be stored in our customer relationship management (CRM) system so we can manage and follow up on that contact.
+Quiz / lead magnets: email address (required to receive your result) and your quiz responses.
+Bookings and consultations: name, email address, and any details you provide when booking a free consultation or paid session.
+Session and client work: where you work with us on a 1:1 or retainer basis, we may hold notes, action plans, and related material from your sessions in order to deliver the service.
+Payments: if you pay for a service, payment is processed by Stripe. We do not store your card details ourselves.
+How we use your information
+We use your information to:
+
+Send you newsletter content and updates, where you've signed up to receive them
+Respond to enquiries and contact form submissions, and manage that relationship through our CRM system
+Deliver quiz results and related follow-up content
+Manage and confirm bookings and consultations
+Deliver the services you've engaged us for, including keeping session notes and action plans
+Process payments for services
+Meet our legal and accounting obligations (e.g. keeping financial records)
+Legal basis for processing
+Consent — for newsletter emails and marketing communications. You can withdraw this at any time.
+Contract — for delivering a service you've booked or paid for, including session notes and payment processing.
+Legitimate interests — for responding to general enquiries and understanding how people find and use our services.
+Legal obligation — for retaining financial records as required by UK law.
+Who we share your information with
+We use the following third-party services (data processors) to run our business. Each only receives the data needed for its specific purpose:
+
+Service
+Purpose
+Zoho Mail
+Email hosting (EU data residency)
+Zoho CRM
+Storing and managing lead and enquiry information
+MailerLite
+Newsletter and email marketing
+Tally
+Form collection (enquiries, quiz)
+Cal.com / cal.eu
+Booking and scheduling
+Stripe
+Payment processing
+Notion
+Secure storage of session notes for clients
+Make.com
+Automation that passes quiz data to MailerLite
+
+
+We do not sell, rent, or share your personal information with third parties for their own marketing purposes.
+
+Some of these providers may process data outside the UK/EU (for example, Stripe). Where this happens, we rely on the provider's own compliance mechanisms, such as Standard Contractual Clauses, to ensure your data remains protected.
+Cookies and analytics
+At the time of writing, this website does not use analytics or tracking cookies (e.g. Google Analytics, Meta Pixel). We may use essential cookies required for the site or booking tools to function correctly. If we introduce analytics or tracking tools in future, we will update this policy and, where required, ask for your consent via a cookie banner.
+How long we keep your information
+Newsletter subscribers: for as long as you remain subscribed, or until you ask us to delete your details.
+Enquiries and leads (CRM): kept for a reasonable period to allow us to follow up, then deleted or archived if no ongoing relationship develops.
+Client and session records: kept for the duration of our working relationship and for a reasonable period afterwards, in line with professional good practice.
+Financial and payment records: retained for at least 6 years, as required by UK tax law.
+Your rights
+Under UK GDPR, you have the right to:
+
+Access the personal data we hold about you
+Ask us to correct inaccurate data
+Ask us to delete your data ("right to be forgotten")
+Restrict or object to certain processing
+Request a copy of your data in a portable format
+Withdraw consent at any time (e.g. by unsubscribing from emails)
+
+To exercise any of these rights, email contact@elevatedliving.uk. You also have the right to complain to the UK's data protection regulator, the Information Commissioner's Office (ICO), at ico.org.uk.
+Children's data
+Our services are aimed at adults running businesses and organisations. We do not knowingly collect personal data from children.
+Changes to this policy
+We may update this policy from time to time to reflect changes in our practices or legal requirements. The "last updated" date at the top of this page will show when it was last revised.
+Contact us
+Elevated Living Enterprise Limited Email: contact@elevatedliving.uk Website: www.elevatedliving.uk
+

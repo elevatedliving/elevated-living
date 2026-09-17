@@ -62,7 +62,7 @@ export function Footer() {
             <p>ICO Registration No. ZB668763</p>
           </div>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-background transition-colors">Privacy Policy</Link>
+            <Link href="/privacy" className="hover:text-background transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-background transition-colors">Terms of Service</Link>
           </div>
         </div>
