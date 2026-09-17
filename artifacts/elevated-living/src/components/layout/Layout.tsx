@@ -5,12 +5,16 @@ import { Link } from "wouter";
 import { Button } from "../ui/button";
 import { Calendar } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLocation } from "wouter";
+import { SignupPopup } from "../ui/SignupPopup";
 
 interface LayoutProps {
   children: ReactNode;
 }
 
 export function Layout({ children }: LayoutProps) {
+  const [location] = useLocation();
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
@@ -27,6 +31,7 @@ export function Layout({ children }: LayoutProps) {
       </main>
 
       <Footer />
+      <SignupPopup disabled={location === "/contact"} />
 
       {/* Floating Contact Tab — desktop only */}
       <div className="hidden md:flex fixed left-0 top-1/2 -translate-y-1/2 z-40">
