@@ -77,7 +77,7 @@ export function Footer() {
             <p>© {new Date().getFullYear()} Elevated Living. All rights reserved.</p>
             <p>ICO Registration No. ZB668763</p>
           </div>
-          <div className="flex gap-6">
+          <div className="flex flex-col items-center gap-2 md:flex-row md:gap-6">
             <Link href="/privacy" className="hover:text-background transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-background transition-colors">Terms of Service</Link>
           </div>
