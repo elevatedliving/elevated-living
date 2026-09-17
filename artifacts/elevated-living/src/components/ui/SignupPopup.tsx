@@ -55,23 +55,24 @@ export function SignupPopup({ disabled = false }: { disabled?: boolean }) {
         aria-labelledby="signup-popup-title"
         className="relative max-h-[calc(100vh-2rem)] w-full max-w-2xl overflow-y-auto rounded-2xl bg-background shadow-2xl"
       >
-        <button
-          type="button"
-          onClick={() => setOpen(false)}
-          aria-label="Close signup form"
-          className="absolute right-4 top-4 z-10 rounded-full p-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-        >
-          <X className="h-5 w-5" />
-        </button>
-
         <div className="px-5 pb-6 pt-8 sm:px-8">
-          <div className="mb-5 max-w-xl pr-8">
-            <h2 id="signup-popup-title" className="mb-2 text-2xl">
-              Stay in the loop
-            </h2>
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              Sign up for useful resources, upcoming sessions, and news from Elevated Living.
-            </p>
+          <div className="mb-5 flex items-start justify-between gap-4">
+            <div className="max-w-xl">
+              <h2 id="signup-popup-title" className="mb-2 text-2xl">
+                Stay in the loop
+              </h2>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Sign up for useful resources, upcoming sessions, and news from Elevated Living.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => setOpen(false)}
+              aria-label="Close signup form"
+              className="flex min-h-10 min-w-10 shrink-0 items-center justify-center rounded-full p-2 text-red-600 transition-colors hover:bg-red-50 hover:text-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2"
+            >
+              <X className="h-6 w-6" />
+            </button>
           </div>
           <ZohoSignupForm />
         </div>
