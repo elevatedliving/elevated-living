@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Calendar, Mail } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { ZohoSignupForm } from "@/components/ui/ZohoSignupForm";
 
 export function Contact() {
 
@@ -55,6 +56,17 @@ export function Contact() {
                 src="https://forms.zohopublic.eu/elevatedlivingenterprisegm1/form/contactelevatedlivingenterprise/formperma/mKCVYfjzwhDyApINx2pCQK9o4oDVfhKDYg0qWVslecc"
               />
             </div>
+          </div>
+
+          <div className="mx-auto mt-20 max-w-4xl">
+            <div className="mb-8 text-center">
+              <h2 className="mb-3 text-2xl">Stay in the loop</h2>
+              <p className="mx-auto max-w-2xl text-muted-foreground">
+                Sign up for email updates from Elevated Living, including useful resources, upcoming
+                sessions, and news for entrepreneurs and community organisations.
+              </p>
+            </div>
+            <ZohoSignupForm />
           </div>
         </div>
       </Section>
