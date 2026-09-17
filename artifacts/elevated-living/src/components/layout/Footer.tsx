@@ -35,7 +35,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="group mt-6 inline-flex w-28 flex-col items-center text-center"
-              aria-label="Get your policy here and receive £20 from PolicyBee"
+              aria-label="Get your insurance policy here and receive £20 from PolicyBee"
             >
               <img
                 src={`${import.meta.env.BASE_URL}images/policybee-badge.png`}
@@ -43,7 +43,7 @@ export function Footer() {
                 className="h-20 w-20 object-contain transition-transform group-hover:scale-105"
               />
               <span className="mt-2 text-xs leading-snug text-background/70 transition-colors group-hover:text-background">
-                Get your policy here and receive £20
+                Get your insurance policy here and receive £20
               </span>
             </a>
           </div>
