@@ -241,7 +241,7 @@ export function Services() {
                 <CalBooking calLink="elevatedlivingenterprise/fractional-project-management-monthly-retainer-intensive-16-hours" label="Book Intensive Retainer" />
               </div>
             </div>
-            <p className="text-xs text-muted-foreground mt-3 italic">A scoping session is recommended before any retainer. Retainer rates are discounted against ad hoc booking. Minimum 1-month commitment, payable in advance, with 30 days' notice to end.</p>
+            <p className="text-xs text-muted-foreground mt-3 italic">A scoping session is recommended before any retainer. Retainer rates are discounted against ad hoc booking. Monthly Retainers have a minimum 2-month commitment, payable monthly in advance, with 30 days' notice to end.</p>
           </div>
 
           {/* SERVICE 03 — AI Services */}
