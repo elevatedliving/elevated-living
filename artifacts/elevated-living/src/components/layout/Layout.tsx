@@ -39,7 +39,7 @@ export function Layout({ children }: LayoutProps) {
           <div className="flex items-center gap-2 bg-primary text-primary-foreground text-xs font-semibold tracking-widest uppercase px-3 py-3 rounded-r-lg shadow-lg hover:bg-primary/90 transition-colors cursor-pointer"
             style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
           >
-            Contact Us
+            Contact
           </div>
         </Link>
       </div>

@@ -27,9 +27,9 @@ export function AISolutions() {
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="mb-4">AI Solutions</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Practical AI support to help your business or organisation work smarter. We build
-            websites, automated workflows and chatbots, and offer friendly training for people
-            who are completely new to AI.
+            Practical AI support helps businesses and organisations work smarter. Elevated Living
+            builds websites, automated workflows and chatbots, and provides friendly training for
+            people who are completely new to AI.
           </p>
         </div>
       </Section>
@@ -39,15 +39,16 @@ export function AISolutions() {
           <div className="mb-8 text-center">
             <h2 className="mb-3">Practical AI services</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Straightforward builds designed around the way you work.
+              Straightforward builds shaped around each business or organisation&apos;s needs.
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-3">
             <article className="rounded-2xl border border-border bg-card p-6 shadow-sm">
               <h3 className="mb-3 text-lg font-semibold">Website building</h3>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                Clear, effective websites that explain what you do and help visitors take the next
-                step. We can add useful AI tools and integrations where they make sense.
+                Clear, effective websites that explain a business or organisation&apos;s services
+                and help visitors take the next step. AI tools and integrations can be included
+                where they add practical value.
               </p>
             </article>
             <article className="rounded-2xl border border-border bg-card p-6 shadow-sm">
@@ -72,9 +73,9 @@ export function AISolutions() {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-4">AI training for absolute beginners</h2>
           <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-            New to AI? Start with the basics. Our friendly, practical sessions introduce useful AI
-            tools and show you how to apply them to everyday tasks. No technical knowledge or
-            previous experience is needed.
+            Beginner-friendly, practical sessions introduce useful AI tools and demonstrate how
+            they can support everyday tasks. No technical knowledge or previous experience is
+            needed.
           </p>
           <Link href="/contact">
             <Button>Ask about AI training</Button>

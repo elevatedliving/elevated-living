@@ -244,7 +244,7 @@ export function Services() {
               <p className="text-xs font-bold text-primary uppercase tracking-widest mb-1">Service 03</p>
               <h3 className="text-xl font-semibold mb-2">AI Services</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Two ways in: learn to use AI yourself, or hand the work to someone who already knows how. Whether you want the skills or just the outcome, this service meets you where you are.
+                Two ways in: build confidence using AI, or get hands-on support with practical implementation. Elevated Living offers beginner training and tailored AI services for businesses and organisations.
               </p>
             </div>
 
@@ -254,7 +254,7 @@ export function Services() {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                   <div className="flex-1">
                     <h4 className="font-semibold text-lg mb-1">Getting Ahead with AI</h4>
-                    <p className="text-muted-foreground text-sm leading-relaxed">Practical training for absolute beginners. No prior experience needed — learn the essentials of AI tools and how to use them confidently in everyday work. Contact us to discuss upcoming sessions.</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">Practical training for absolute beginners. No prior experience needed — sessions cover the essentials of AI tools and their everyday uses. Contact Elevated Living to discuss upcoming sessions.</p>
                   </div>
                   <div className="sm:text-right shrink-0">
                     <p className="text-lg font-semibold text-muted-foreground">Contact to discuss</p>
