@@ -68,13 +68,7 @@ export function Services() {
                     <p className="text-muted-foreground text-sm leading-relaxed">A focused 60-minute session on one key challenge — cut through, one clear next step.</p>
                   </div>
                   <div className="sm:text-right shrink-0">
-                    <p className="inline-block rounded-full bg-red-100 px-3 py-1 text-xs font-bold uppercase tracking-wide text-red-600 mb-2">
-                      September Special · 25% discount
-                    </p>
-                    <p className="text-2xl font-bold text-primary">
-                      <span className="text-muted-foreground line-through decoration-red-500 decoration-2 mr-2">£125</span>
-                      £93.75
-                    </p>
+                    <p className="text-2xl font-bold text-primary">£125</p>
                   </div>
                 </div>
                 <CalBooking calLink="elevatedlivingenterprise/elevated-edit-power-hour" label="Book Power Hour" />
