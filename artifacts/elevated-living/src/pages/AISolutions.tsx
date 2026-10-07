@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 export function AISolutions() {
   return (
@@ -9,12 +11,12 @@ export function AISolutions() {
         <title>AI Solutions | Elevated Living</title>
         <meta
           name="description"
-          content="Practical AI training and support from Elevated Living, including beginner-friendly sessions through Square AI Academy."
+          content="Website building, automated workflows, chatbots, and practical AI training for absolute beginners from Elevated Living."
         />
         <meta property="og:title" content="AI Solutions | Elevated Living" />
         <meta
           property="og:description"
-          content="Practical AI training and support from Elevated Living, including beginner-friendly sessions through Square AI Academy."
+          content="Website building, automated workflows, chatbots, and practical AI training for absolute beginners from Elevated Living."
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
@@ -25,34 +27,58 @@ export function AISolutions() {
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="mb-4">AI Solutions</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Practical AI training and support to help you build confidence, save time, and use AI
-            in ways that work for your business or organisation.
+            Practical AI support to help your business or organisation work smarter. We build
+            websites, automated workflows and chatbots, and offer friendly training for people
+            who are completely new to AI.
           </p>
         </div>
       </Section>
 
+      <Section bg="muted">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-8 text-center">
+            <h2 className="mb-3">Practical AI services</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Straightforward builds designed around the way you work.
+            </p>
+          </div>
+          <div className="grid gap-5 md:grid-cols-3">
+            <article className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+              <h3 className="mb-3 text-lg font-semibold">Website building</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Clear, effective websites that explain what you do and help visitors take the next
+                step. We can add useful AI tools and integrations where they make sense.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+              <h3 className="mb-3 text-lg font-semibold">Automated workflows</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Reduce repetitive admin by connecting everyday tasks and tools, so information
+                moves smoothly and routine work takes less time.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+              <h3 className="mb-3 text-lg font-semibold">Chatbot builds</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Helpful chatbots tailored to your services that answer common questions and guide
+                visitors, with a clear route to a person when needed.
+              </p>
+            </article>
+          </div>
+        </div>
+      </Section>
+
       <Section>
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="mb-4">Introducing Square AI Academy</h2>
-          <img
-            src={`${import.meta.env.BASE_URL}images/square-ai-academy-primary.png`}
-            alt="Square AI Academy — Learn Locally, Grow Globally"
-            className="mx-auto w-full max-w-md mb-8"
-          />
-          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Square AI Academy is Elevated Living&apos;s dedicated AI training arm. Delivering
-            in-person sessions for absolute beginners of all ages and all backgrounds. These
-            sessions take place in different locations or can be hosted in your own space. Click{" "}
-            <a
-              href="https://www.squareaiacademy.uk/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-primary underline underline-offset-4 hover:text-primary/80"
-            >
-              here
-            </a>{" "}
-            for more details.
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="mb-4">AI training for absolute beginners</h2>
+          <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
+            New to AI? Start with the basics. Our friendly, practical sessions introduce useful AI
+            tools and show you how to apply them to everyday tasks. No technical knowledge or
+            previous experience is needed.
           </p>
+          <Link href="/contact">
+            <Button>Ask about AI training</Button>
+          </Link>
         </div>
       </Section>
     </Layout>

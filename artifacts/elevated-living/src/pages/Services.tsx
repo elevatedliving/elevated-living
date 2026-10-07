@@ -254,7 +254,7 @@ export function Services() {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
                   <div className="flex-1">
                     <h4 className="font-semibold text-lg mb-1">Getting Ahead with AI</h4>
-                    <p className="text-muted-foreground text-sm leading-relaxed">A cohort-based course for absolute beginners. No prior experience needed — delivered at a pace that works for people building confidence with AI tools for the first time. Delivered in partnership with Square AI Academy. Cohort dates and booking via their site.</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">Practical training for absolute beginners. No prior experience needed — learn the essentials of AI tools and how to use them confidently in everyday work. Contact us to discuss upcoming sessions.</p>
                   </div>
                   <div className="sm:text-right shrink-0">
                     <p className="text-lg font-semibold text-muted-foreground">Contact to discuss</p>
