@@ -64,6 +64,16 @@ export function AISolutions() {
                 Reduce repetitive admin by connecting everyday tasks and tools, so information
                 moves smoothly and routine work takes less time.
               </p>
+              <Button
+                variant="outline"
+                size="sm"
+                className="mt-5"
+                disabled
+                title="Enquiry link to be added"
+                data-testid="button-workflow-enquiry-form"
+              >
+                Workflow Enquiry Form
+              </Button>
             </article>
             <article className="rounded-2xl border border-border bg-card p-6 shadow-sm">
               <h3 className="mb-3 text-lg font-semibold">Chatbot builds</h3>
@@ -71,6 +81,16 @@ export function AISolutions() {
                 Helpful chatbots tailored to your services that answer common questions and guide
                 visitors, with a clear route to a person when needed.
               </p>
+              <Button
+                variant="outline"
+                size="sm"
+                className="mt-5"
+                disabled
+                title="Enquiry link to be added"
+                data-testid="button-chatbot-enquiry-form"
+              >
+                Chatbot Enquiry Form
+              </Button>
             </article>
           </div>
         </div>
