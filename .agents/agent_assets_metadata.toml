@@ -1,5 +1,4 @@
 uploads = []
-outputs = []
 
 [[generated]]
 id = "nVfURKDsLmjxNFISsNlye"
@@ -30,3 +29,17 @@ id = "pJUHMiVzqlK5XGJFF0N9C"
 uri = "file://artifacts/elevated-living/public/images/solopreneur-section.png"
 type = "image"
 title = "solopreneur working warmly"
+
+[[outputs]]
+id = "4CB3FuuQKCuk1dVTK1EvU"
+uri = "file://artifacts/elevated-living/public/documents/whats-keeping-you-stuck-results.pdf"
+type = "pdf"
+title = "What’s Keeping You Stuck? Results PDF"
+description = "Results summary PDF with a clickable link to the Elevated Living services page."
+logical_id = "4aad78e9-1d6a-4d8d-bdb6-cdf4e5d362bc"
+content_hash = "sha256:b2381d7a4243c1312dcf3eb6da8b3498e87e06cff1672953cc63ead32d10da76"
+size = 68822
+mtime_ms = 1791493880565
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:2355ebb9-9bb0-46b2-be34-d52110ac009c/4aad78e9-1d6a-4d8d-bdb6-cdf4e5d362bc/cb94ae6a-4af7-465d-a2b9-d4addc8f97c3"
+storage_version_token = "1791493905093112"
+content_type = "application/pdf"
