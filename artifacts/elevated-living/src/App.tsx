@@ -28,6 +28,7 @@ import { Terms } from "@/pages/Terms";
 import { Privacy } from "@/pages/Privacy";
 import { AISolutions } from "@/pages/AISolutions";
 import { WebsiteEnquiryForm } from "@/pages/WebsiteEnquiryForm";
+import { StuckResults } from "@/pages/StuckResults";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -65,6 +66,7 @@ function Router() {
       <Route path="/workshops-events" component={WorkshopsEvents} />
       <Route path="/ai-solutions" component={AISolutions} />
       <Route path="/website-enquiry-form" component={WebsiteEnquiryForm} />
+      <Route path="/whats-keeping-you-stuck-results" component={StuckResults} />
       <Route path="/terms" component={Terms} />
       <Route path="/privacy" component={Privacy} />
       <Route component={NotFound} />
