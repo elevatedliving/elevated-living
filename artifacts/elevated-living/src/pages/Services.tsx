@@ -11,9 +11,9 @@ export function Services() {
     <Layout>
       <Helmet>
         <title>Services | Elevated Living</title>
-        <meta name="description" content="Operational support for solopreneurs, small business owners, and community organisations. Strategy, project management, AI services, and impact support — all in one place." />
+        <meta name="description" content="Operational support for solopreneurs, small business owners, and community organisations. Strategy, project management, and impact support — all in one place." />
         <meta property="og:title" content="Services | Elevated Living" />
-        <meta property="og:description" content="Operational support for solopreneurs, small business owners, and community organisations. Strategy, project management, AI services, and impact support — all in one place." />
+        <meta property="og:description" content="Operational support for solopreneurs, small business owners, and community organisations. Strategy, project management, and impact support — all in one place." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
         <meta name="twitter:card" content="summary" />
@@ -238,82 +238,10 @@ export function Services() {
             <p className="text-xs text-muted-foreground mt-3 italic">A scoping session is recommended before any retainer. Retainer rates are discounted against ad hoc booking. Monthly Retainers have a minimum 2-month commitment, payable monthly in advance, with 30 days' notice to end.</p>
           </div>
 
-          {/* SERVICE 03 — AI Services */}
-          <div className="mb-14">
-            <div className="mb-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-widest mb-1">Service 03</p>
-              <h3 className="text-xl font-semibold mb-2">AI Services</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Two ways in: build confidence using AI, or get hands-on support with practical implementation. Elevated Living offers beginner training and tailored AI services for businesses and organisations.
-              </p>
-            </div>
-
-            <h4 className="text-sm font-bold uppercase tracking-wide text-muted-foreground mb-3">Getting Ahead with AI</h4>
-            <div className="grid gap-4 mb-8">
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
-                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-lg mb-1">Getting Ahead with AI</h4>
-                    <p className="text-muted-foreground text-sm leading-relaxed">Practical training for absolute beginners. No prior experience needed — sessions cover the essentials of AI tools and their everyday uses. Contact Elevated Living to discuss upcoming sessions.</p>
-                  </div>
-                  <div className="sm:text-right shrink-0">
-                    <p className="text-lg font-semibold text-muted-foreground">Contact to discuss</p>
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <Link href="/contact">
-                    <Button variant="outline" size="sm">Get in touch →</Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <h4 className="text-sm font-bold uppercase tracking-wide text-muted-foreground mb-3">Done-For-You AI Support</h4>
-            <div className="grid gap-4">
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">AI Audit / Quick Win</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">A single session identifying where AI could save real time, with one thing actually set up before you finish.</p>
-                  <div className="mt-3">
-                    <Link href="/contact"><Button variant="outline" size="sm">Get in touch →</Button></Link>
-                  </div>
-                </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-lg font-semibold text-muted-foreground">Contact to discuss</p>
-                </div>
-              </div>
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Ad Hoc AI Support</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">Workflow builds, prompt templates, content systems and one-off automation, booked as needed.</p>
-                  <div className="mt-3">
-                    <Link href="/contact"><Button variant="outline" size="sm">Get in touch →</Button></Link>
-                  </div>
-                </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-lg font-semibold text-muted-foreground">Contact to discuss</p>
-                </div>
-              </div>
-              <div className="bg-card border border-border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold text-lg mb-1">Monthly AI Retainer</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">Ongoing, done-for-you AI support: content generation, admin automation, reporting and whatever your actual bottleneck is, month to month.</p>
-                  <div className="mt-3">
-                    <Link href="/contact"><Button variant="outline" size="sm">Get in touch →</Button></Link>
-                  </div>
-                </div>
-                <div className="sm:text-right shrink-0">
-                  <p className="text-lg font-semibold text-muted-foreground">Contact to discuss</p>
-                </div>
-              </div>
-            </div>
-            <p className="text-xs text-muted-foreground mt-3 italic">The short discovery conversation is free. AI Services pricing is confirmed afterwards, so the support is scoped properly to what you actually need.</p>
-          </div>
-
           {/* SERVICE 04 — Impact & Partnerships */}
           <div className="mb-4">
             <div className="mb-6">
-              <p className="text-xs font-bold text-primary uppercase tracking-widest mb-1">Service 04</p>
+              <p className="text-xs font-bold text-primary uppercase tracking-widest mb-1">Service 03</p>
               <h3 className="text-xl font-semibold mb-2">Impact &amp; Partnerships</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Strong partnerships and evidenced impact sit at the heart of long-term, sustainable growth — for any organisation, not just VCSE. This service covers both: building the relationships that matter, and proving the difference your work makes. All work is scoped individually to your context.
