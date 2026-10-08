@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 
 export function AISolutions() {
   return (
@@ -50,6 +50,13 @@ export function AISolutions() {
                 and help visitors take the next step. AI tools and integrations can be included
                 where they add practical value.
               </p>
+              <Link
+                href="/website-enquiry-form"
+                className={`${buttonVariants({ variant: "outline", size: "sm" })} mt-5`}
+                data-testid="link-website-enquiry-form"
+              >
+                Website Enquiry Form
+              </Link>
             </article>
             <article className="rounded-2xl border border-border bg-card p-6 shadow-sm">
               <h3 className="mb-3 text-lg font-semibold">Automated workflows</h3>
