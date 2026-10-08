@@ -66,6 +66,7 @@ function Router() {
       <Route path="/workshops-events" component={WorkshopsEvents} />
       <Route path="/ai-solutions" component={AISolutions} />
       <Route path="/website-enquiry-form" component={WebsiteEnquiryForm} />
+      <Route path="/whatskeepingyourstuckresults" component={StuckResults} />
       <Route path="/whats-keeping-you-stuck-results" component={StuckResults} />
       <Route path="/terms" component={Terms} />
       <Route path="/privacy" component={Privacy} />
