@@ -11,6 +11,7 @@ const DUMMY_POSTS = [
     category: "Neurodivergence & Business",
     date: "Oct 2026",
     excerpt: "A note for neurodivergent solopreneurs about hyperfocus, getting started, deadline pressure, and finding support that works with your brain.",
+    image: "images/adhd-awareness-month.jpg",
   },
   {
     id: 7,

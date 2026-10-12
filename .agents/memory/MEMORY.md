@@ -1,0 +1,1 @@
+- [Elevated Living domain](elevated-living-domain.md) — the primary domain is elevatedliving.uk; never use elevatedliving.co.uk.

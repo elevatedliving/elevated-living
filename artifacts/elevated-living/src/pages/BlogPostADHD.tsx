@@ -18,9 +18,17 @@ export function BlogPostADHD() {
           property="og:description"
           content="A note for neurodivergent solopreneurs about ADHD, working with your brain, and finding support that fits."
         />
-        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
+        <link rel="canonical" href="https://www.elevatedliving.uk/blog/adhd-awareness-month" />
+        <meta property="og:url" content="https://www.elevatedliving.uk/blog/adhd-awareness-month" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/adhd-awareness-month.jpg" />
         <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Hands up: who’s got at least 147 tabs open? | Elevated Living" />
+        <meta
+          name="twitter:description"
+          content="A note for neurodivergent solopreneurs about ADHD, working with your brain, and finding support that fits."
+        />
+        <meta name="twitter:image" content="https://www.elevatedliving.uk/images/adhd-awareness-month.jpg" />
       </Helmet>
       <Section className="pt-20">
         <div className="mx-auto max-w-2xl">
@@ -41,6 +49,16 @@ export function BlogPostADHD() {
           <h1 className="mb-8 text-3xl font-bold leading-tight md:text-4xl">
             Hands up: who’s got at least 147 tabs open?
           </h1>
+
+          <div className="mb-10 overflow-hidden rounded-2xl shadow-md">
+            <img
+              src={`${import.meta.env.BASE_URL}images/adhd-awareness-month.jpg`}
+              alt="Laptop displaying Elevated Living’s ADHD Awareness Month resource in a bright workspace"
+              width="1706"
+              height="608"
+              className="h-auto w-full object-cover"
+            />
+          </div>
 
           <div className="prose prose-lg mt-2 max-w-none prose-headings:font-bold prose-headings:text-foreground prose-p:leading-relaxed prose-p:text-foreground/80 prose-strong:text-foreground">
             <p>
