@@ -97,6 +97,15 @@ export function BlogPostADHD() {
             <p>
               So a lot of people quietly decide they're <strong>lazy, or disorganised, or just not cut out for this</strong>, when what's really happening is that they're running a business with no scaffolding and a mind that works differently, and they've got this far on willpower and coffee.
             </p>
+            <figure className="mx-auto mb-8 max-w-xs overflow-hidden rounded-xl">
+              <img
+                src={`${import.meta.env.BASE_URL}images/adhd-overwhelm.jpg`}
+                alt="Two people looking overwhelmed while working on laptops in a cluttered living room"
+                width="1408"
+                height="768"
+                className="h-auto w-full"
+              />
+            </figure>
             <p>
               It's also worth saying that plenty of people, women and people from global majority communities in particular, are diagnosed late or missed altogether, and many spend years running a business before anyone gives them a word for any of it.
             </p>
