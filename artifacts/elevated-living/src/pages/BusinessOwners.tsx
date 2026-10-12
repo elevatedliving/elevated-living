@@ -11,13 +11,13 @@ export function BusinessOwners() {
         <title>Business Support in London | Elevated Living</title>
         <meta
           name="description"
-          content="Practical support for London solopreneurs and small business owners: focus sessions, strategy and project delivery. The Elevated Edit is online or in person."
+          content="Practical business support for solopreneurs and small business owners. Work online nationally or internationally; in-person availability depends on location."
         />
         <link rel="canonical" href="https://www.elevatedliving.uk/for-business-owners" />
         <meta property="og:title" content="Business Support in London | Elevated Living" />
         <meta
           property="og:description"
-          content="Practical support for London solopreneurs and small business owners: focus sessions, strategy and project delivery. The Elevated Edit is online or in person."
+          content="Practical business support for solopreneurs and small business owners. Work online nationally or internationally; in-person availability depends on location."
         />
         <meta property="og:url" content="https://www.elevatedliving.uk/for-business-owners" />
         <meta property="og:type" content="website" />
@@ -26,7 +26,7 @@ export function BusinessOwners() {
         <meta name="twitter:title" content="Business Support in London | Elevated Living" />
         <meta
           name="twitter:description"
-          content="Practical support for London solopreneurs and small business owners: focus sessions, strategy and project delivery. The Elevated Edit is online or in person."
+          content="Practical business support for solopreneurs and small business owners. Work online nationally or internationally; in-person availability depends on location."
         />
         <meta name="twitter:image" content="https://www.elevatedliving.uk/images/og-social.png" />
       </Helmet>
@@ -41,7 +41,7 @@ export function BusinessOwners() {
             You started your business because you were good at something. Then the invoices, inbox, projects and endless to-do list arrived. Elevated Living offers practical support to help you find focus and move the work forward.
           </p>
           <p className="mt-5 leading-relaxed text-muted-foreground">
-            The Elevated Edit is delivered online or in person across London and surrounding areas. Additional travel costs may apply outside Greater London.
+            Services are available online nationally and internationally. In-person availability depends on your location.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link href="/book">
@@ -68,7 +68,7 @@ export function BusinessOwners() {
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             <article className="rounded-2xl border border-border bg-card p-7 shadow-sm">
-              <h3 className="mb-3 text-xl font-semibold">The Elevated Edit</h3>
+              <h3 className="mb-3 text-xl font-semibold">Focus and strategy sessions</h3>
               <p className="mb-5 leading-relaxed text-muted-foreground">
                 One-to-one thinking and strategy sessions for when you are doing too much, going round in circles, or need a clear next step. Work through the challenge, set priorities and leave with a practical way forward.
               </p>
