@@ -123,6 +123,16 @@ export function BlogPostADHD() {
             <p>
               The second is the <strong>structured session</strong>, which suits people who don't want any surprises at all, and I completely understand that. You get the plan beforehand, so you know what the session will cover, in what order, how long it will take and what I'll need from you. With no unexpected changes, you can spend your energy on the work instead of bracing for what might come next.
             </p>
+            <figure className="my-8 overflow-hidden rounded-xl shadow-sm">
+              <img
+                src={`${import.meta.env.BASE_URL}images/adhd-structured-session.jpg`}
+                alt="Two people working side by side on laptops in a café"
+                width="1408"
+                height="768"
+                loading="lazy"
+                className="h-auto w-full rounded-xl"
+              />
+            </figure>
             <p>
               The third is <strong>body doubling</strong>, where very few words are spoken and you simply sit in the same room as me and get on with your own work while I get on with mine, and for a surprising number of people that is exactly what turns a morning of drifting into one where everything gets done, because I'm not coaching you or checking up on you, I'm just there, quietly and usefully present.
             </p>
