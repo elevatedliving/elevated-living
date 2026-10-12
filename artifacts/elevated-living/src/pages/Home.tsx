@@ -199,7 +199,7 @@ export function Home() {
       <Section>
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="mb-4">How the Process Works</h2>
-          <p className="text-muted-foreground">A simple, transparent process to get you from overwhelmed to moving forward with confidence.</p>
+          <p className="text-muted-foreground">Start with a free consultation, receive a service recommendation, and decide whether you would like to proceed.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 relative">
@@ -209,18 +209,18 @@ export function Home() {
           {[
             {
               icon: MessageSquare,
-              title: "1. The Focus Session",
-              desc: "Start with a free 20-minute chat. No pressure or pitch—just a chance to clarify what you need and see whether Elevated Living is a good fit."
+              title: "1. Free Consultation",
+              desc: "A free 20-minute conversation to talk through what you need, ask questions, and see whether Elevated Living is a good fit."
             },
             {
               icon: Lightbulb,
-              title: "2. The Plan",
-              desc: "Elevated Living will map out exactly how to tackle your roadblocks. You'll get a clear proposal outlining scope, timelines, and costs."
+              title: "2. Service Recommendation",
+              desc: "Elevated Living will suggest the service that seems best suited to your needs and explain what it involves."
             },
             {
               icon: Target,
-              title: "3. The Execution",
-              desc: "Elevated Living steps in with project management, virtual assistant support, or accountability check-ins — so you can focus on leading your organisation."
+              title: "3. If You Choose to Proceed",
+              desc: "If the recommendation feels right, Elevated Living can provide the agreed support, such as project management, virtual assistant help, or accountability check-ins."
             }
           ].map((step, i) => (
             <div key={i} className="relative z-10 flex flex-col items-center text-center">
