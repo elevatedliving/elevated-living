@@ -148,7 +148,7 @@ export function Home() {
       {/* Audience Split Cards */}
       <Section bg="muted">
         <div className="text-center mb-16">
-          <h2 className="mb-4">Who We Help</h2>
+          <h2 className="mb-4">Who Elevated Living Helps</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">Tailored infrastructure and strategic support, adapted for your specific world.</p>
         </div>
 
@@ -198,7 +198,7 @@ export function Home() {
       {/* 3 Step Process */}
       <Section>
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <h2 className="mb-4">How We Work Together</h2>
+          <h2 className="mb-4">How the Process Works</h2>
           <p className="text-muted-foreground">A simple, transparent process to get you from overwhelmed to moving forward with confidence.</p>
         </div>
 
@@ -210,7 +210,7 @@ export function Home() {
             {
               icon: MessageSquare,
               title: "1. The Focus Session",
-              desc: "We start with a free 20-minute chat. No pressure, no pitch. Just untangling what you need and seeing if we're a fit."
+              desc: "Start with a free 20-minute chat. No pressure or pitch—just a chance to clarify what you need and see whether Elevated Living is a good fit."
             },
             {
               icon: Lightbulb,

@@ -77,7 +77,7 @@ export function BlogPostCorporateJargon() {
             None of these words are inherently evil. Some of them — used precisely and sparingly — have legitimate meaning. But the moment they become wallpaper, the moment they're assembled into sentences that could apply to literally any organisation doing literally anything, they stop communicating and start obscuring.
           </p>
           <p>
-            And here's the uncomfortable truth: jargon is often what we reach for when we're not quite sure what we're trying to say. It sounds authoritative. It sounds like we know the language of the sector. It fills space without committing to anything specific.
+            And here's the uncomfortable truth: jargon often fills the gap when the message isn't clear. It sounds authoritative and can signal familiarity with sector language, yet still takes up space without committing to anything specific.
           </p>
           <p>
             Funders have read thousands of reports. They can smell vagueness from three paragraphs away.
@@ -100,7 +100,7 @@ export function BlogPostCorporateJargon() {
             What they <em>are</em> hoping to encounter is something like this:
           </p>
           <blockquote>
-            <p>"Maria came to us in January having not left her flat in four months. By March, she'd completed our confidence programme, secured a part-time job, and last week she sent us a voice note saying she felt like herself again for the first time in two years. Maria is one of 34 people we supported this quarter, 28 of whom reported significant improvements in wellbeing and social connection — generating an estimated £127,000 in social value."</p>
+            <p>Maria sought support in January after not leaving her flat for four months. By March, she had completed a confidence programme and secured a part-time job. She later shared that she felt like herself again for the first time in two years. Maria is one of 34 people Elevated Living supported this quarter; 28 reported significant improvements in wellbeing and social connection, generating an estimated £127,000 in social value.</p>
           </blockquote>
           <p>
             Read that back. It's got the story. It's got the data. It's got the human being at the centre of it. And it took fewer words than most organisations use to introduce their theory of change.
@@ -157,7 +157,7 @@ export function BlogPostCorporateJargon() {
             When impact reports and funding applications are written in dense sector-specific language, they create an uneven playing field. Larger organisations with professional bid writers, communications teams, and decades of sector fluency can navigate that language with ease. Smaller grassroots groups — often closer to the communities they serve, often doing some of the most vital work — frequently can't compete on those terms. Not because their work is weaker, but because the game is stacked against them from the start.
           </p>
           <p>
-            And when we talk about grassroots organisations in the UK, we're talking about a genuinely diverse landscape. Community groups led by and for Black and minoritised communities. Organisations rooted in faith traditions. Groups serving refugees and asylum seekers. Peer-led mental health collectives. These organisations often have the deepest relationships with their communities and the most authentic evidence of change — and they are disproportionately disadvantaged by a funding culture built around the language of large, established institutions.
+            Grassroots organisations across the UK form a genuinely diverse landscape: community groups led by and for Black and minoritised communities, organisations rooted in faith traditions, groups serving refugees and asylum seekers, and peer-led mental health collectives. These organisations often have the deepest relationships with their communities and the most authentic evidence of change — yet a funding culture built around the language of large, established institutions can disadvantage them.
           </p>
           <p>
             Plain English in impact reporting isn't just a stylistic preference. It's a more equitable standard. One that lets the quality of the work compete on its own terms, rather than the quality of the consultant hired to write about it.
@@ -171,7 +171,7 @@ export function BlogPostCorporateJargon() {
             Read it out loud. Genuinely — out loud. The phrases that make you stumble, the sentences you'd never say in an actual conversation with a human being, the paragraphs where you lose the thread of your own argument: those are the problem areas. Mark them. Rewrite them as if you're explaining your work to a friend who cares about what you do but isn't in the sector.
           </p>
           <p>
-            Then find the humans in your data. For every set of statistics, ask yourself: is there a story behind this number? Can we name — even anonymously — one person whose life looks different because of this work? If yes, put them in. If you can't find a single human story in your entire report, that's a data collection problem, and it starts long before the writing stage.
+            Then find the humans in your data. For every set of statistics, ask: is there a story behind this number? Can you identify — even anonymously — one person whose life looks different because of this work? If yes, include that story. If no human story appears in the report, the data collection process may need attention long before the writing stage.
           </p>
           <p>
             Then ask the killer question: if I removed every piece of sector terminology from this report, would the work still be clearly described? If the answer is no — if the jargon is doing structural work, holding the thing together — you've got rewriting to do.
@@ -196,13 +196,13 @@ export function BlogPostCorporateJargon() {
 
           <h2>One Last Thing</h2>
           <p>
-            If you've read this entire article and thought <em>"this is all well and good, but I genuinely don't know how to measure or evidence my impact in the first place, let alone write about it"</em> — that's a completely valid response, and it's the most common starting point we encounter.
+            If you've read this entire article and thought <em>"this is all well and good, but I genuinely don't know how to measure or evidence my impact in the first place, let alone write about it"</em> — that's a completely valid response and a common place to start.
           </p>
           <p>
             Because the jargon problem and the measurement problem are related. When organisations aren't sure what their impact actually is, they reach for impressive-sounding language to fill the gap. The solution isn't better words. It's better systems for capturing what's already happening.
           </p>
           <p>
-            That's exactly what we're building at Elevated Living — and it's a conversation worth having.
+            That's the work Elevated Living is building at the moment — and it's a conversation worth having.
           </p>
 
           <hr />

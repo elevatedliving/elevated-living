@@ -61,7 +61,7 @@ export function About() {
             <h1 className="mb-6">The messy reality of doing good work — understood.</h1>
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
-                We know what it feels like to be a business owner or a community leader who is brilliant at what they do, but utterly bogged down by the administrative weight of doing it.
+                Elevated Living understands the pressure on business owners and community leaders who are brilliant at their work but bogged down by administration.
               </p>
               <p>
                 Elevated Living was founded because too many passionate people were burning out over operations. You shouldn't have to be an expert in project management, funding compliance, or system design just to run your business or community group.
@@ -93,19 +93,19 @@ export function About() {
             <div className="bg-card p-6 rounded-xl shadow-sm border border-border/50">
               <h3 className="text-xl mb-3 text-primary">Zero Judgment</h3>
               <p className="text-muted-foreground text-sm">
-                Elevated Living doesn't care how messy your inbox is or if you're a year behind on your impact tracking. We're here to fix it, not judge it.
+                A messy inbox or overdue impact tracking is nothing to judge. Elevated Living focuses on finding a practical way forward.
               </p>
             </div>
             <div className="bg-card p-6 rounded-xl shadow-sm border border-border/50">
               <h3 className="text-xl mb-3 text-primary">Plain English</h3>
               <p className="text-muted-foreground text-sm">
-                No corporate jargon or consultant-speak. We deal in practical, actionable steps that actually make sense for your day-to-day.
+                No corporate jargon or consultant-speak—just practical, actionable steps that make sense for your day-to-day.
               </p>
             </div>
             <div className="bg-card p-6 rounded-xl shadow-sm border border-border/50">
               <h3 className="text-xl mb-3 text-primary">Neurodivergence Understanding</h3>
               <p className="text-muted-foreground text-sm">
-                For neurodivergent founders — we get it. How we work with you is built around how your brain actually works, not a textbook ideal.
+                Support for neurodivergent founders is shaped around how each person's brain works, not a textbook ideal.
               </p>
             </div>
             <div className="bg-card p-6 rounded-xl shadow-sm border border-border/50">

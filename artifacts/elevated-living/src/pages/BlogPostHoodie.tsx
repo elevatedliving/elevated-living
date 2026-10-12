@@ -105,7 +105,7 @@ export function BlogPostHoodie() {
             The hoodie. The playlist that can't be played on shuffle. The specific mug. The desk that only works when cleared to a precise level of "organised chaos." The candle that must be vanilla, not jasmine, because jasmine is for other moods.
           </p>
           <p>
-            These aren't distractions from work. They are the work of preparing to work. They're you telling your nervous system: <em>"We're safe. We're settled. We can focus now."</em>
+            These aren't distractions from work. They are the work of preparing to work. They're you telling your nervous system: <em>"You're safe. You're settled. You can focus now."</em>
           </p>
           <p>
             This is especially true for solopreneurs who come from backgrounds where stability wasn't a given — where the permission to simply be comfortable and productive wasn't always extended freely. Reclaiming that sense of calm through ritual? That's not self-indulgence. That's self-regulation.
@@ -138,10 +138,10 @@ export function BlogPostHoodie() {
 
           <h2>A Final Thought (From Under My Hat)</h2>
           <p>
-            We live in a culture that's obsessed with productivity hacks, hustle metrics, and the aesthetics of being busy. But the most honest conversations I have with other solopreneurs are always about the stuff that actually makes it work — and it's rarely a new app or a four-hour morning routine.
+            Today's culture is obsessed with productivity hacks, hustle metrics, and the aesthetics of being busy. But the most honest conversations I have with other solopreneurs are always about the stuff that actually makes it work — and it's rarely a new app or a four-hour morning routine.
           </p>
           <p>
-            It's the rituals. The textures. The small signals we send ourselves that say: this is your space, this is your time, you're allowed to think here.
+            It's the rituals. The textures. The small signals that remind you: this is your space, this is your time, you're allowed to think here.
           </p>
           <p>
             Whatever yours looks like — own it completely. Because if a woolly hat is what stands between you and your best work, that hat is the most important item in your business toolkit.

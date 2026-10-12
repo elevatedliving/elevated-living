@@ -48,7 +48,7 @@ export function BlogPostConfidence() {
         <div className="prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground mt-2">
 
           <p>
-            Let's have an honest conversation about the lie we've all told ourselves at some point.
+            Let's have an honest conversation about the lie many people have told themselves at some point.
           </p>
           <p>
             <em>"I'll do it when I feel more confident."</em>
@@ -60,12 +60,12 @@ export function BlogPostConfidence() {
             Here's the problem. That moment rarely comes.
           </p>
           <p>
-            And if you're waiting for confidence to arrive before you take the leap, you could be waiting a very long time. Because confidence — real confidence, the kind that's actually useful — doesn't work the way we think it does.
+            And if you're waiting for confidence to arrive before you take the leap, you could be waiting a very long time. Because confidence — real confidence, the kind that's actually useful — doesn't work the way people often expect.
           </p>
 
-          <h2>We've Got the Order Wrong</h2>
+          <h2>The Order Is Backwards</h2>
           <p>
-            Somewhere along the line, we collectively absorbed the idea that confidence is a prerequisite. A green light. Something you acquire, like a qualification or a new pair of trainers, before you're allowed to start.
+            Somewhere along the line, many people absorbed the idea that confidence is a prerequisite. A green light. Something to acquire, like a qualification or a new pair of trainers, before starting.
           </p>
           <p>
             But that's not how human beings actually work.
@@ -111,7 +111,7 @@ export function BlogPostConfidence() {
             They came from doing the thing whilst not feeling ready, surviving it, learning from it, and discovering that you were more capable than the scared version of you had predicted. The confidence came after. Every single time.
           </p>
           <p>
-            And yet — we keep expecting it to show up first. We keep treating it as a condition of starting, rather than a consequence of having started.
+            And yet — confidence is still expected to show up first, treated as a condition of starting rather than a consequence of having started.
           </p>
 
           <h2>Mistakes Are Not the Opposite of Progress</h2>
@@ -136,7 +136,7 @@ export function BlogPostConfidence() {
             It means the pitch you've been sitting on needs to go out before you feel ready, because feeling ready will come from having sent it — not from polishing it for another fortnight.
           </p>
           <p>
-            It means the networking event you've been avoiding is exactly where you need to be, even if you stand awkwardly by the drinks table for the first twenty minutes. (We've all done it. It counts.)
+            It means the networking event you've been avoiding is exactly where you need to be, even if you stand awkwardly by the drinks table for the first twenty minutes. (It happens to everyone. It counts.)
           </p>
           <p>
             It means the new service, the difficult conversation, the funding application, the creative risk — all of it requires you to move before the confidence arrives.
@@ -167,7 +167,7 @@ export function BlogPostConfidence() {
 
           <div className="border-t border-border mt-12 pt-8 not-prose">
             <p className="text-sm text-muted-foreground mb-4">
-              Elevated Living supports solopreneurs, small business owners, and community organisation leaders to move through the overwhelm, get clear on what matters, and build the confidence to actually do the thing. We'd love to work with you.
+              Elevated Living supports solopreneurs, small business owners, and community organisation leaders to move through the overwhelm, get clear on what matters, and build the confidence to act. Book a focus session to discuss what support could help.
             </p>
             <Link href="/book" className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
               Book a Complimentary Focus Session →

@@ -32,8 +32,7 @@ export function Terms() {
           <div className="prose prose-lg prose-headings:font-bold prose-headings:text-foreground prose-p:text-foreground/80 prose-p:leading-relaxed prose-li:text-foreground/80 prose-strong:text-foreground max-w-none">
             <h2>1. About us</h2>
             <p>
-              Elevated Living Enterprise Limited (&quot;Elevated Living&quot;, &quot;we&quot;,
-              &quot;us&quot;) operates the website elevatedliving.uk and provides consultancy
+              Elevated Living Enterprise Limited (&quot;Elevated Living&quot;) operates the website elevatedliving.uk and provides consultancy
               services to solopreneurs, small business owners, and community-led organisations,
               including The Elevated Edit, Fractional Project Management, AI Services, and
               Impact &amp; Partnerships support.
@@ -60,11 +59,11 @@ export function Terms() {
                 Section 6, Intellectual Property)
               </li>
             </ul>
-            <p>We may update, suspend, or withdraw any part of the website at any time without notice.</p>
+            <p>Elevated Living may update, suspend, or withdraw any part of the website at any time without notice.</p>
 
             <h2>3. Our services</h2>
             <p>
-              We offer a range of consultancy services, described on our website, including but
+              Elevated Living offers a range of consultancy services, described on the website, including but
               not limited to 1:1 strategy sessions, The Elevated Edit, fractional project
               management, AI training and done-for-you AI support, and impact/partnership
               consultancy.
@@ -103,7 +102,7 @@ export function Terms() {
               Fees for services are as set out on our website or as confirmed in a written
               quote/proposal following a scoping conversation.
             </p>
-            <p>Payments are processed securely via Stripe. We do not store your card details.</p>
+            <p>Payments are processed securely via Stripe. Elevated Living does not store your card details.</p>
             <p>Retainer and package fees are payable in advance unless otherwise agreed in writing.</p>
             <p>
               Fees are refundable where you cancel in line with the notice period set out in that
@@ -124,14 +123,13 @@ export function Terms() {
               use. They become your property once any applicable fees have been paid in full.
             </p>
             <p>
-              Any frameworks, tools, or methodologies we use in delivering our services (e.g.
+              Any frameworks, tools, or methodologies used by Elevated Living in delivering services (e.g.
               proprietary session structures) remain our intellectual property.
             </p>
 
             <h2>7. Confidentiality</h2>
             <p>
-              We treat information shared with us during consultations, sessions, and ongoing
-              engagements as confidential, and will not share it with third parties except:
+              Information shared during consultations, sessions, and ongoing engagements is treated as confidential by Elevated Living and will not be shared with third parties except:
             </p>
             <ul>
               <li>Where necessary to deliver the service (e.g. using tools listed in our Privacy Policy)</li>
@@ -141,12 +139,12 @@ export function Terms() {
 
             <h2>8. Limitation of liability</h2>
             <p>
-              We provide our services with reasonable skill and care, but we do not guarantee
-              specific business outcomes, financial results, or funding success, as these depend on
+              Services are provided with reasonable skill and care, but no specific
+              business outcomes, financial results, or funding success are guaranteed, as these depend on
               factors outside our control.
             </p>
             <p>
-              We hold Professional Indemnity insurance (cover of £5,000,000) and Public and
+              Elevated Living holds Professional Indemnity insurance (cover of £5,000,000) and Public and
               Products Liability insurance (cover of £1,000,000) with Hiscox.
             </p>
             <p>
@@ -170,14 +168,14 @@ export function Terms() {
             <h2>9. Third-party tools and links</h2>
             <p>
               Our website and services may link to or rely on third-party tools (e.g. booking
-              systems, payment processors, email platforms). We are not responsible for the
+              systems, payment processors, email platforms). Elevated Living is not responsible for the
               content, accuracy, or availability of third-party services, and your use of them is
               subject to their own terms and privacy policies.
             </p>
 
             <h2>10. Changes to these terms</h2>
             <p>
-              We may update these Terms from time to time. The &quot;last updated&quot; date at
+              Elevated Living may update these Terms from time to time. The &quot;last updated&quot; date at
               the top of this page shows when they were last revised. Continued use of the website
               or our services after changes are posted means you accept the updated Terms.
             </p>

@@ -118,23 +118,23 @@ export function BlogPostADHD() {
               I learned a long time ago that the worst thing I can do is turn up with one fixed method and expect everybody's brain to fit it, so my sessions bend to suit the person, and there are three shapes they tend to take.
             </p>
             <p>
-              The first is the <strong>brain dump</strong>, where you arrive with everything in your head at once, the client, the website, the thing you promised in March and the idea you had in the car, and I listen and ask the odd question while we get it all out where we can both see it, and you'd be amazed how much room opens up once it's no longer being held in there, which means you can finally get on with the tasks because your head has the space to do it.
+              The first is the <strong>brain dump</strong>, where you arrive with everything in your head at once—the client, the website, the thing you promised in March and the idea you had in the car. I listen, ask the odd question, and help lay it all out clearly in front of you. You'd be amazed how much room opens up once those thoughts are no longer being held in your head, leaving space to get on with the tasks.
             </p>
             <p>
-              The second is the <strong>structured session</strong>, which suits the people who don't want any surprises at all, and I completely understand that. You get the plan beforehand, so you know what we'll cover, in what order, how long it will take and what I'll need from you, and because nothing is going to catch you out you can spend your energy on the work instead of bracing yourself for what might come next.
+              The second is the <strong>structured session</strong>, which suits people who don't want any surprises at all, and I completely understand that. You get the plan beforehand, so you know what the session will cover, in what order, how long it will take and what I'll need from you. With no unexpected changes, you can spend your energy on the work instead of bracing for what might come next.
             </p>
             <p>
               The third is <strong>body doubling</strong>, where very few words are spoken and you simply sit in the same room as me and get on with your own work while I get on with mine, and for a surprising number of people that is exactly what turns a morning of drifting into one where everything gets done, because I'm not coaching you or checking up on you, I'm just there, quietly and usefully present.
             </p>
             <p>
-              Plenty of people want a bit of each at different times, and that's absolutely fine, so tell me how your brain works and we'll build the session around it.
+              Plenty of people want a bit of each at different times, and that's absolutely fine. Tell me how your brain works and the session can be shaped around it.
             </p>
             <p>
               If you've been meaning to book something for a while, why not{" "}
               <Link href="/book" className="text-primary underline underline-offset-4">
                 book your free consultation
               </Link>{" "}
-              and we can discuss what you need and how I can work with you.
+              and there's time to discuss what you need and how I can work with you.
             </p>
             <p>
               And, <strong>you're not behind</strong>, you're just working without a map, and I happen to be quite good at making them.

@@ -9,10 +9,10 @@ export function Contact() {
     <Layout>
       <Helmet>
         <title>Contact | Elevated Living</title>
-        <meta name="description" content="Get in touch with Elevated Living. Book a complimentary focus session, ask about impact report writing, or find out how we can support your organisation or business." />
+        <meta name="description" content="Get in touch with Elevated Living. Book a complimentary focus session or ask about impact reports and support for your organisation or business." />
         <meta property="og:title" content="Contact | Elevated Living" />
         <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
-        <meta property="og:description" content="Get in touch with Elevated Living. Book a complimentary focus session, ask about impact report writing, or find out how we can support your organisation or business." />
+        <meta property="og:description" content="Get in touch with Elevated Living. Book a complimentary focus session or ask about impact reports and support for your organisation or business." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
       </Helmet>

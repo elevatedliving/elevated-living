@@ -54,7 +54,7 @@ export function ImpactReportWriting() {
                 <div className="shrink-0 w-10 h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">3</div>
                 <div>
                   <h4 className="text-lg font-bold mb-1">The Final Polish</h4>
-                  <p className="text-muted-foreground text-sm">We review the draft together. Once approved, you have a polished, professional document ready to send to your board and funders.</p>
+                  <p className="text-muted-foreground text-sm">The draft is reviewed together. Once approved, you have a polished, professional document ready to send to your board and funders.</p>
                 </div>
               </div>
             </div>

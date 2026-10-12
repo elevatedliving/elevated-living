@@ -104,7 +104,7 @@ export function BlogPostAccessToWork() {
           <p>
             There are also reports of awards being significantly reduced with little explanation, and the government is consulting on reforms that may change how Access to Work is delivered in the future — including platform-based or employer-led models, possibly from late 2025 or 2026 (according to <a href="https://www.anitasndconsultancy.com/blog/access-to-work-2025-benefits-changes" target="_blank" rel="noopener noreferrer" className="text-primary">Anita's ND Consultancy</a>). The landscape is shifting. The scheme is under pressure. And neurodivergent people — who arguably benefit most from it — are among those most affected by the uncertainty.
           </p>
-          <p>So why are we still telling you to apply?</p>
+          <p>So why apply now?</p>
           <p>
             Because the alternative is continuing without any support at all. Because even an imperfect award can change the game. Because the scheme, despite its flaws, remains one of the most flexible, individualised forms of support available — especially for freelancers, part-time workers, and those working from home (according to <a href="https://www.anitasndconsultancy.com/blog/access-to-work-2025-benefits-changes" target="_blank" rel="noopener noreferrer" className="text-primary">Anita's ND Consultancy</a>). And because — here's the quietly brilliant bit — once the grant is in place, you can use part of your VA's time to help you manage the ongoing claims administration too, including the paperwork that comes with the grant itself.
           </p>
@@ -141,7 +141,7 @@ export function BlogPostAccessToWork() {
             <li>Phone: <strong>0800 121 7479</strong> (BSL support available)</li>
           </ul>
           <p>
-            And if you want support navigating the process, framing your application, or understanding what you're entitled to — that's exactly the kind of work we do at Elevated Living. <Link href="/contact" className="text-primary">Get in touch.</Link>
+            If you want support navigating the process, framing your application, or understanding what you're entitled to, Elevated Living can help. <Link href="/contact" className="text-primary">Get in touch.</Link>
           </p>
 
           <div className="border-t border-border mt-12 pt-8 not-prose">

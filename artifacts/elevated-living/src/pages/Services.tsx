@@ -327,7 +327,7 @@ export function Services() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl mb-3">Not sure where to start?</h2>
           <p className="text-muted-foreground mb-10 leading-relaxed">
-            Answer a few quick questions and we'll recommend the right support for where you are right now — no jargon, no pressure.
+            Answer a few quick questions to get a recommendation for the right support for your situation — no jargon, no pressure.
           </p>
 
           <div className="mb-10">

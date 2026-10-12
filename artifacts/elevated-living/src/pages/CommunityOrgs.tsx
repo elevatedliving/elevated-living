@@ -69,7 +69,7 @@ export function CommunityOrgs() {
             There's no need to explain what a CIC is, how tricky it is to balance restricted versus unrestricted funding, or the nuanced dynamics of local authority partnerships.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Elevated Living brings three decades of built-in context, meaning we hit the ground running from day one.
+            Elevated Living brings three decades of sector experience, helping projects get up to speed quickly.
           </p>
         </div>
       </Section>
