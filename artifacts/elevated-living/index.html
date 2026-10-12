@@ -16,6 +16,21 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- MailerLite Universal -->
+    <script>
+      (function (w, d, e, u, f, l, n) {
+        w[f] = w[f] || function () {
+          (w[f].q = w[f].q || []).push(arguments);
+        };
+        l = d.createElement(e);
+        l.async = true;
+        l.src = u;
+        n = d.getElementsByTagName(e)[0];
+        n.parentNode.insertBefore(l, n);
+      })(window, document, "script", "https://assets.mailerlite.com/js/universal.js", "ml");
+      ml("account", "2620242");
+    </script>
+    <!-- End MailerLite Universal -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
