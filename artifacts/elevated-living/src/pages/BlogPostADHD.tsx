@@ -70,6 +70,15 @@ export function BlogPostADHD() {
             <p>
               There's the <strong>hyperfocus</strong>, where nothing happens for three days and then you spend eleven hours on a logo nobody asked for, forget to eat, and come out the other side blinking like you've been in a very dark room (probably because it was light when you started and now the sun has disappeared and you’ve lost the whole day), but you’ve designed a brilliant logo and never mind that the invoices still haven't been sent.
             </p>
+            <figure className="mx-auto mb-8 max-w-xs overflow-hidden rounded-xl">
+              <img
+                src={`${import.meta.env.BASE_URL}images/adhd-invoice-reminder.jpg`}
+                alt="Phone showing repeated AI assistant reminders to send an invoice"
+                width="1408"
+                height="768"
+                className="h-auto w-full"
+              />
+            </figure>
             <p>
               There's the <strong>starting</strong> problem, where you know exactly what needs doing and could describe it in detail, but you can't begin, and the longer you can't begin the bigger it gets, until it has turned into a ‘Whole Thing’ that you now have feelings about.
             </p>
