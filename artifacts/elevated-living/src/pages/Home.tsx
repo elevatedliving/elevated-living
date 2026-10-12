@@ -12,9 +12,9 @@ export function Home() {
   return (
     <Layout>
       <Helmet>
-        <title>Elevated Living | Operational Support for Solopreneurs &amp; Community Orgs</title>
+        <title>Support for Solopreneurs, Small Business Owners and Community Organisations</title>
         <meta name="description" content="Elevated Living helps solopreneurs, small business owners, and community organisations and social enterprises cut through the operational overwhelm and build structures that actually work." />
-        <meta property="og:title" content="Elevated Living | Operational Support for Solopreneurs &amp; Community Orgs" />
+        <meta property="og:title" content="Support for Solopreneurs, Small Business Owners and Community Organisations" />
         <meta property="og:description" content="Elevated Living helps solopreneurs, small business owners, and voluntary sector organisations cut through the operational overwhelm and build structures that actually work." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
