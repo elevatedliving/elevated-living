@@ -42,17 +42,17 @@ export function Contact() {
               </div>
             </div>
 
-            {/* Zoho Form Column */}
+            {/* Bigin Form Column */}
             <div>
               <h2 className="text-2xl mb-6 flex items-center gap-2">
                 <Mail className="w-6 h-6 text-primary" /> Send a Message
               </h2>
               <iframe
-                aria-label="Contact Elevated Living"
+                title="Contact Elevated Living via Bigin"
                 frameBorder="0"
                 className="w-full"
-                style={{ height: "clamp(420px, 55vh, 500px)", border: "none" }}
-                src="https://forms.zohopublic.eu/elevatedlivingenterprisegm1/form/contactelevatedlivingenterprise/formperma/mKCVYfjzwhDyApINx2pCQK9o4oDVfhKDYg0qWVslecc"
+                style={{ height: "1100px", border: "none" }}
+                src={`${import.meta.env.BASE_URL}forms/contact-bigin.html`}
               />
             </div>
           </div>
