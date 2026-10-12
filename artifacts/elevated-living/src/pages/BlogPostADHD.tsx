@@ -68,7 +68,7 @@ export function BlogPostADHD() {
               What doesn't get said enough is how all of this feels when you're self-employed, because in a job somebody else supplies the structure, whether that's a manager, a deadline or a colleague who asks how the report is going, whereas when you work for yourself <strong>you are the structure</strong> and you're also the person who can't always use it.
             </p>
             <p>
-              So a lot of people quietly decide they're lazy, or disorganised, or just not cut out for this, when what's really happening is that they're running a business with no scaffolding and a mind that works differently, and they've got this far on willpower and coffee.
+              So a lot of people quietly decide they're <strong>lazy, or disorganised, or just not cut out for this</strong>, when what's really happening is that they're running a business with no scaffolding and a mind that works differently, and they've got this far on willpower and coffee.
             </p>
             <p>
               It's also worth saying that plenty of people, women and people from global majority communities in particular, are diagnosed late or missed altogether, and many spend years running a business before anyone gives them a word for any of it.
@@ -101,7 +101,7 @@ export function BlogPostADHD() {
               and we can discuss what you need and how I can work with you.
             </p>
             <p>
-              And, you're not behind, you're just working without a map, and I happen to be quite good at making them.
+              And, <strong>you're not behind</strong>, you're just working without a map, and I happen to be quite good at making them.
             </p>
           </div>
         </div>
