@@ -16,14 +16,9 @@ const NAV_LINKS: NavLink[] = [
   { href: "/services", label: "Services" },
   { href: "/ai-solutions", label: "AI Solutions" },
   { href: "/testimonials", label: "Testimonials" },
+  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
-  {
-    href: "/about",
-    label: "About",
-    children: [
-      { href: "/blog", label: "Blog" },
-    ],
-  },
+  { href: "/about", label: "About" },
 ];
 
 function DropdownLink({ link, location }: { link: NavLink; location: string }) {
