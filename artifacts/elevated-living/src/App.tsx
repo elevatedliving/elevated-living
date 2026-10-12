@@ -19,6 +19,7 @@ import { BlogPostConfidence } from "@/pages/BlogPostConfidence";
 import { BlogPostAccessToWork } from "@/pages/BlogPostAccessToWork";
 import { BlogPostCorporateJargon } from "@/pages/BlogPostCorporateJargon";
 import { BlogPostEUAI } from "@/pages/BlogPostEUAI";
+import { BlogPostADHD } from "@/pages/BlogPostADHD";
 import { Testimonials } from "@/pages/Testimonials";
 import { Resources } from "@/pages/Resources";
 import { Services } from "@/pages/Services";
@@ -59,6 +60,7 @@ function Router() {
       <Route path="/blog/access-to-work" component={BlogPostAccessToWork} />
       <Route path="/blog/corporate-jargon" component={BlogPostCorporateJargon} />
       <Route path="/blog/eu-ai-transparency" component={BlogPostEUAI} />
+      <Route path="/blog/adhd-awareness-month" component={BlogPostADHD} />
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/resources" component={Resources} />
       <Route path="/services" component={Services} />

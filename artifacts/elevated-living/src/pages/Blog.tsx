@@ -5,6 +5,14 @@ import { Helmet } from "react-helmet-async";
 
 const DUMMY_POSTS = [
   {
+    id: 8,
+    slug: "/blog/adhd-awareness-month",
+    title: "Hands up: who’s got at least 147 tabs open?",
+    category: "Neurodivergence & Business",
+    date: "Oct 2026",
+    excerpt: "A note for neurodivergent solopreneurs about hyperfocus, getting started, deadline pressure, and finding support that works with your brain.",
+  },
+  {
     id: 7,
     slug: "/blog/eu-ai-transparency",
     title: "The EU just made AI show its working. Here's what that actually means.",
