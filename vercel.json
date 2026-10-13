@@ -3,5 +3,31 @@
   "outputDirectory": "artifacts/elevated-living/dist/public",
   "installCommand": "pnpm install",
   "framework": null,
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/about", "destination": "/about/index.html" },
+    { "source": "/for-business-owners", "destination": "/for-business-owners/index.html" },
+    { "source": "/for-community-organisations", "destination": "/for-community-organisations/index.html" },
+    { "source": "/impact-report-writing", "destination": "/impact-report-writing/index.html" },
+    { "source": "/contact", "destination": "/contact/index.html" },
+    { "source": "/blog", "destination": "/blog/index.html" },
+    { "source": "/blog/toms-vs-social-value", "destination": "/blog/toms-vs-social-value/index.html" },
+    { "source": "/blog/hoodie-hypothesis", "destination": "/blog/hoodie-hypothesis/index.html" },
+    { "source": "/blog/confidence-action", "destination": "/blog/confidence-action/index.html" },
+    { "source": "/blog/access-to-work", "destination": "/blog/access-to-work/index.html" },
+    { "source": "/blog/corporate-jargon", "destination": "/blog/corporate-jargon/index.html" },
+    { "source": "/blog/eu-ai-transparency", "destination": "/blog/eu-ai-transparency/index.html" },
+    { "source": "/blog/adhd-awareness-month", "destination": "/blog/adhd-awareness-month/index.html" },
+    { "source": "/testimonials", "destination": "/testimonials/index.html" },
+    { "source": "/resources", "destination": "/resources/index.html" },
+    { "source": "/services", "destination": "/services/index.html" },
+    { "source": "/book", "destination": "/book/index.html" },
+    { "source": "/workshops-events", "destination": "/workshops-events/index.html" },
+    { "source": "/ai-solutions", "destination": "/ai-solutions/index.html" },
+    { "source": "/website-enquiry-form", "destination": "/website-enquiry-form/index.html" },
+    { "source": "/whatskeepingyoustuckresults", "destination": "/whatskeepingyoustuckresults/index.html" },
+    { "source": "/whats-keeping-you-stuck-results", "destination": "/whats-keeping-you-stuck-results/index.html" },
+    { "source": "/terms", "destination": "/terms/index.html" },
+    { "source": "/privacy", "destination": "/privacy/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }

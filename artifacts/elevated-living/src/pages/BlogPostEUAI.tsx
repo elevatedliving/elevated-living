@@ -11,7 +11,7 @@ export function BlogPostEUAI() {
         <title>The EU just made AI show its working | Elevated Living</title>
         <meta name="description" content="Since the 2nd of August, if an AI system is talking to you, changing what you see, or reading your face, it now legally has to say so. Here's what that actually means." />
         <meta property="og:title" content="The EU just made AI show its working | Elevated Living" />
-        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/blog-eu-ai-act.jpeg" />
         <meta property="og:description" content="Since the 2nd of August, if an AI system is talking to you, changing what you see, or reading your face, it now legally has to say so. Here's what that actually means." />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary" />

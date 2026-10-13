@@ -11,7 +11,7 @@ export function BlogPostTOMs() {
         <title>TOMs vs Social Value: What's the Difference? | Elevated Living</title>
         <meta name="description" content="The Themes, Outcomes and Measures (TOMs) framework and Social Value are not the same thing. Here's what every community org and social enterprise leader needs to understand about the difference." />
         <meta property="og:title" content="TOMs vs Social Value: What's the Difference? | Elevated Living" />
-        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
+        <meta property="og:image" content="https://www.elevatedliving.uk/images/toms-social-value.png" />
         <meta property="og:description" content="The Themes, Outcomes and Measures (TOMs) framework and Social Value are not the same thing. Here's what every community org and social enterprise leader needs to understand about the difference." />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary" />
