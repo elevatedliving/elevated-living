@@ -24,6 +24,7 @@
     { "source": "/workshops-events", "destination": "/workshops-events/index.html" },
     { "source": "/ai-solutions", "destination": "/ai-solutions/index.html" },
     { "source": "/website-enquiry-form", "destination": "/website-enquiry-form/index.html" },
+    { "source": "/whats-keeping-you-stuck", "destination": "/whats-keeping-you-stuck/index.html" },
     { "source": "/whatskeepingyoustuckresults", "destination": "/whatskeepingyoustuckresults/index.html" },
     { "source": "/whats-keeping-you-stuck-results", "destination": "/whats-keeping-you-stuck-results/index.html" },
     { "source": "/terms", "destination": "/terms/index.html" },

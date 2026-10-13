@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { CalBooking } from "@/components/ui/CalBooking";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
-import { FloatingAssessmentButton } from "@/components/FloatingAssessmentButton";
 
 export function Services() {
   return (

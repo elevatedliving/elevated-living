@@ -1,38 +1,28 @@
-import { useEffect, useState } from "react";
-import { HelpCircle } from "lucide-react";
+import { Sparkles } from "lucide-react";
+import { Link, useLocation } from "wouter";
 
-interface Props {
-  targetId?: string;
-}
+const QUIZ_PATH = "/whats-keeping-you-stuck";
 
-export function FloatingAssessmentButton({ targetId = "assessment" }: Props) {
-  const [visible, setVisible] = useState(false);
+export function FloatingAssessmentButton() {
+  const [location] = useLocation();
 
-  useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 300);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const scrollToAssessment = () => {
-    document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  if (!visible) return null;
+  // Keep the quiz page itself unobstructed while the embedded form is in use.
+  if (location === QUIZ_PATH) return null;
 
   return (
-    <button
-      onClick={scrollToAssessment}
-      aria-label="Take the self-assessment for an instant recommendation"
-      className="floating-assessment-btn fixed bottom-6 right-6 z-50 w-36 h-36 rounded-full bg-primary text-primary-foreground flex flex-col items-center justify-center gap-1 cursor-pointer hover:scale-105 transition-transform duration-200 p-4"
+    <Link
+      href={QUIZ_PATH}
+      aria-label="Take a 2-minute quiz to find out What's Keeping You Stuck?"
+      data-testid="link-floating-stuck-quiz"
+      className="floating-quiz-cta fixed bottom-[5.375rem] right-3 z-[45] flex h-[100px] w-[100px] flex-col items-center justify-center rounded-full border border-[#fff1ce] px-2 text-center text-[#382714] shadow-xl transition-transform duration-200 hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#b7833f]/40 sm:bottom-24 sm:right-5 sm:h-[120px] sm:w-[120px] sm:px-3 lg:bottom-7 lg:right-7 lg:h-36 lg:w-36"
     >
-      <HelpCircle className="w-5 h-5 shrink-0 mb-0.5" />
-      <span className="text-center leading-snug" style={{ fontSize: "11px", fontWeight: 500 }}>
-        Not sure where to start?
+      <Sparkles aria-hidden="true" className="mb-1 h-3 w-3 shrink-0 text-[#fff8e7] sm:h-3.5 sm:w-3.5 lg:h-4 lg:w-4" />
+      <span className="text-[8px] font-medium leading-tight sm:text-[9px] lg:text-[11px]">
+        Take a 2-minute quiz to find out
       </span>
-      <span className="text-center leading-snug opacity-90" style={{ fontSize: "10px", fontWeight: 400 }}>
-        Take the quick self-assessment for an instant recommendation
+      <span className="mt-1 font-serif text-[9px] font-semibold leading-tight sm:text-[10px] lg:text-xs">
+        What&apos;s Keeping You Stuck?
       </span>
-    </button>
+    </Link>
   );
 }

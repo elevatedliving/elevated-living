@@ -22,6 +22,7 @@ import { Privacy } from "@/pages/Privacy";
 import { AISolutions } from "@/pages/AISolutions";
 import { WebsiteEnquiryForm } from "@/pages/WebsiteEnquiryForm";
 import { StuckResults } from "@/pages/StuckResults";
+import { WhatsKeepingYouStuck } from "@/pages/WhatsKeepingYouStuck";
 
 export const publicRoutes = [
   { path: "/", component: Home },
@@ -47,6 +48,7 @@ export const publicRoutes = [
   { path: "/website-enquiry-form", component: WebsiteEnquiryForm },
   { path: "/whatskeepingyoustuckresults", component: StuckResults },
   { path: "/whats-keeping-you-stuck-results", component: StuckResults },
+  { path: "/whats-keeping-you-stuck", component: WhatsKeepingYouStuck },
   { path: "/terms", component: Terms },
   { path: "/privacy", component: Privacy },
 ];

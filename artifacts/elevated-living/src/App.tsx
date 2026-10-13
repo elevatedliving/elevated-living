@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import type { HelmetServerState } from "react-helmet-async";
 import { publicRoutes } from "@/routes";
 import NotFound from "@/pages/not-found";
+import { FloatingAssessmentButton } from "@/components/FloatingAssessmentButton";
 
 const queryClient = new QueryClient();
 
@@ -46,7 +47,10 @@ function App({ ssrPath, helmetContext }: AppProps) {
             base={import.meta.env.BASE_URL.replace(/\/$/, "")}
             ssrPath={ssrPath}
           >
-            <Router />
+            <>
+              <Router />
+              <FloatingAssessmentButton />
+            </>
           </WouterRouter>
           <Toaster />
         </TooltipProvider>
