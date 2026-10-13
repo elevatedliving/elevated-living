@@ -4,32 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { HelmetProvider } from "react-helmet-async";
 import { useEffect } from "react";
-
-// Pages
-import { Home } from "@/pages/Home";
-import { About } from "@/pages/About";
-import { BusinessOwners } from "@/pages/BusinessOwners";
-import { CommunityOrgs } from "@/pages/CommunityOrgs";
-import { ImpactReportWriting } from "@/pages/ImpactReportWriting";
-import { Contact } from "@/pages/Contact";
-import { Blog } from "@/pages/Blog";
-import { BlogPostTOMs } from "@/pages/BlogPostTOMs";
-import { BlogPostHoodie } from "@/pages/BlogPostHoodie";
-import { BlogPostConfidence } from "@/pages/BlogPostConfidence";
-import { BlogPostAccessToWork } from "@/pages/BlogPostAccessToWork";
-import { BlogPostCorporateJargon } from "@/pages/BlogPostCorporateJargon";
-import { BlogPostEUAI } from "@/pages/BlogPostEUAI";
-import { BlogPostADHD } from "@/pages/BlogPostADHD";
-import { Testimonials } from "@/pages/Testimonials";
-import { Resources } from "@/pages/Resources";
-import { Services } from "@/pages/Services";
-import { Book } from "@/pages/Book";
-import { WorkshopsEvents } from "@/pages/WorkshopsEvents";
-import { Terms } from "@/pages/Terms";
-import { Privacy } from "@/pages/Privacy";
-import { AISolutions } from "@/pages/AISolutions";
-import { WebsiteEnquiryForm } from "@/pages/WebsiteEnquiryForm";
-import { StuckResults } from "@/pages/StuckResults";
+import type { HelmetServerState } from "react-helmet-async";
+import { publicRoutes } from "@/routes";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -47,43 +23,29 @@ function Router() {
     <>
       <ScrollToTop />
       <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/for-business-owners" component={BusinessOwners} />
-      <Route path="/for-community-organisations" component={CommunityOrgs} />
-      <Route path="/impact-report-writing" component={ImpactReportWriting} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/blog" component={Blog} />
-      <Route path="/blog/toms-vs-social-value" component={BlogPostTOMs} />
-      <Route path="/blog/hoodie-hypothesis" component={BlogPostHoodie} />
-      <Route path="/blog/confidence-action" component={BlogPostConfidence} />
-      <Route path="/blog/access-to-work" component={BlogPostAccessToWork} />
-      <Route path="/blog/corporate-jargon" component={BlogPostCorporateJargon} />
-      <Route path="/blog/eu-ai-transparency" component={BlogPostEUAI} />
-      <Route path="/blog/adhd-awareness-month" component={BlogPostADHD} />
-      <Route path="/testimonials" component={Testimonials} />
-      <Route path="/resources" component={Resources} />
-      <Route path="/services" component={Services} />
-      <Route path="/book" component={Book} />
-      <Route path="/workshops-events" component={WorkshopsEvents} />
-      <Route path="/ai-solutions" component={AISolutions} />
-      <Route path="/website-enquiry-form" component={WebsiteEnquiryForm} />
-      <Route path="/whatskeepingyoustuckresults" component={StuckResults} />
-      <Route path="/whats-keeping-you-stuck-results" component={StuckResults} />
-      <Route path="/terms" component={Terms} />
-      <Route path="/privacy" component={Privacy} />
-      <Route component={NotFound} />
-    </Switch>
+        {publicRoutes.map(({ path, component }) => (
+          <Route key={path} path={path} component={component} />
+        ))}
+        <Route component={NotFound} />
+      </Switch>
     </>
   );
 }
 
-function App() {
+interface AppProps {
+  ssrPath?: string;
+  helmetContext?: { helmet?: HelmetServerState | null };
+}
+
+function App({ ssrPath, helmetContext }: AppProps) {
   return (
-    <HelmetProvider>
+    <HelmetProvider context={helmetContext}>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+          <WouterRouter
+            base={import.meta.env.BASE_URL.replace(/\/$/, "")}
+            ssrPath={ssrPath}
+          >
             <Router />
           </WouterRouter>
           <Toaster />

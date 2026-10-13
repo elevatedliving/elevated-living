@@ -4,8 +4,10 @@ import { fileURLToPath } from "node:url";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = path.join(appRoot, "dist", "public");
-const baseHtml = fs.readFileSync(path.join(publicDir, "index.html"), "utf8");
-const appSource = fs.readFileSync(path.join(appRoot, "src", "App.tsx"), "utf8");
+const routesSource = fs.readFileSync(
+  path.join(appRoot, "src", "routes.tsx"),
+  "utf8",
+);
 const vercelConfigPath = path.resolve(appRoot, "..", "..", "vercel.json");
 const vercelRewrites = JSON.parse(
   fs.readFileSync(vercelConfigPath, "utf8"),
@@ -110,12 +112,12 @@ function getComponentMetadata(componentName) {
   };
 }
 
-function renderSocialHtml(route, metadata) {
+function renderSocialHtml(route, metadata, pageHtml) {
   const pageUrl = `${siteOrigin}${route === "/" ? "/" : route}`;
   const title = metadata.ogTitle || metadata.title;
   const description = metadata.ogDescription || metadata.description;
   const image = metadata.image || `${siteOrigin}/images/og-social.png`;
-  let html = baseHtml.replace(
+  let html = pageHtml.replace(
     /<title>[\s\S]*?<\/title>/i,
     `    <title>${escapeAttribute(metadata.title)}</title>`,
   );
@@ -140,8 +142,8 @@ function renderSocialHtml(route, metadata) {
 }
 
 const routes = [
-  ...appSource.matchAll(
-    /<Route\s+path="([^"]+)"\s+component=\{([A-Za-z]\w*)\}\s*\/>/g,
+  ...routesSource.matchAll(
+    /\{\s*path:\s*"([^"]+)"\s*,\s*component:\s*([A-Za-z]\w*)\s*\}/g,
   ),
 ].map(([, route, component]) => ({ route, component }));
 
@@ -171,8 +173,9 @@ for (const { route, component } of routes) {
     route === "/"
       ? path.join(publicDir, "index.html")
       : path.join(publicDir, route.slice(1), "index.html");
+  const pageHtml = fs.readFileSync(outputPath, "utf8");
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-  fs.writeFileSync(outputPath, renderSocialHtml(route, metadata));
+  fs.writeFileSync(outputPath, renderSocialHtml(route, metadata, pageHtml));
   generated += 1;
 }
 

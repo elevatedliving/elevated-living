@@ -1,0 +1,52 @@
+import { Home } from "@/pages/Home";
+import { About } from "@/pages/About";
+import { BusinessOwners } from "@/pages/BusinessOwners";
+import { CommunityOrgs } from "@/pages/CommunityOrgs";
+import { ImpactReportWriting } from "@/pages/ImpactReportWriting";
+import { Contact } from "@/pages/Contact";
+import { Blog } from "@/pages/Blog";
+import { BlogPostTOMs } from "@/pages/BlogPostTOMs";
+import { BlogPostHoodie } from "@/pages/BlogPostHoodie";
+import { BlogPostConfidence } from "@/pages/BlogPostConfidence";
+import { BlogPostAccessToWork } from "@/pages/BlogPostAccessToWork";
+import { BlogPostCorporateJargon } from "@/pages/BlogPostCorporateJargon";
+import { BlogPostEUAI } from "@/pages/BlogPostEUAI";
+import { BlogPostADHD } from "@/pages/BlogPostADHD";
+import { Testimonials } from "@/pages/Testimonials";
+import { Resources } from "@/pages/Resources";
+import { Services } from "@/pages/Services";
+import { Book } from "@/pages/Book";
+import { WorkshopsEvents } from "@/pages/WorkshopsEvents";
+import { Terms } from "@/pages/Terms";
+import { Privacy } from "@/pages/Privacy";
+import { AISolutions } from "@/pages/AISolutions";
+import { WebsiteEnquiryForm } from "@/pages/WebsiteEnquiryForm";
+import { StuckResults } from "@/pages/StuckResults";
+
+export const publicRoutes = [
+  { path: "/", component: Home },
+  { path: "/about", component: About },
+  { path: "/for-business-owners", component: BusinessOwners },
+  { path: "/for-community-organisations", component: CommunityOrgs },
+  { path: "/impact-report-writing", component: ImpactReportWriting },
+  { path: "/contact", component: Contact },
+  { path: "/blog", component: Blog },
+  { path: "/blog/toms-vs-social-value", component: BlogPostTOMs },
+  { path: "/blog/hoodie-hypothesis", component: BlogPostHoodie },
+  { path: "/blog/confidence-action", component: BlogPostConfidence },
+  { path: "/blog/access-to-work", component: BlogPostAccessToWork },
+  { path: "/blog/corporate-jargon", component: BlogPostCorporateJargon },
+  { path: "/blog/eu-ai-transparency", component: BlogPostEUAI },
+  { path: "/blog/adhd-awareness-month", component: BlogPostADHD },
+  { path: "/testimonials", component: Testimonials },
+  { path: "/resources", component: Resources },
+  { path: "/services", component: Services },
+  { path: "/book", component: Book },
+  { path: "/workshops-events", component: WorkshopsEvents },
+  { path: "/ai-solutions", component: AISolutions },
+  { path: "/website-enquiry-form", component: WebsiteEnquiryForm },
+  { path: "/whatskeepingyoustuckresults", component: StuckResults },
+  { path: "/whats-keeping-you-stuck-results", component: StuckResults },
+  { path: "/terms", component: Terms },
+  { path: "/privacy", component: Privacy },
+];
