@@ -20,7 +20,7 @@ export function FloatingAssessmentButton() {
       <span className="text-[8px] font-medium leading-tight sm:text-[9px] lg:text-[11px]">
         Take a 2-minute quiz to find out
       </span>
-      <span className="mt-1 font-serif text-[9px] font-semibold leading-tight sm:text-[10px] lg:text-xs">
+      <span className="mt-1 font-sans text-[9px] font-semibold leading-tight sm:text-[10px] lg:text-xs">
         What&apos;s Keeping You Stuck?
       </span>
     </Link>
