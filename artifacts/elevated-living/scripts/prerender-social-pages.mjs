@@ -14,6 +14,17 @@ const vercelRewrites = JSON.parse(
 ).rewrites;
 const siteOrigin = "https://elevatedliving.uk";
 
+function normalizeSocialImage(image) {
+  const url = new URL(image);
+  if (url.hostname === "www.elevatedliving.uk") {
+    url.hostname = new URL(siteOrigin).hostname;
+  }
+  if (url.pathname === "/images/og-social.png") {
+    url.pathname = "/opengraph.jpg";
+  }
+  return url.toString();
+}
+
 function decodeEntities(value) {
   return value
     .replace(/&amp;/g, "&")
@@ -116,7 +127,9 @@ function renderSocialHtml(route, metadata, pageHtml) {
   const pageUrl = `${siteOrigin}${route === "/" ? "/" : route}`;
   const title = metadata.ogTitle || metadata.title;
   const description = metadata.ogDescription || metadata.description;
-  const image = metadata.image || `${siteOrigin}/images/og-social.png`;
+  const image = normalizeSocialImage(
+    metadata.image || `${siteOrigin}/opengraph.jpg`,
+  );
   let html = pageHtml.replace(
     /<title>[\s\S]*?<\/title>/i,
     `    <title>${escapeAttribute(metadata.title)}</title>`,
@@ -133,6 +146,17 @@ function renderSocialHtml(route, metadata, pageHtml) {
     metadata.ogType || (route.startsWith("/blog/") ? "article" : "website"),
   );
   html = setMeta(html, "property", "og:image", image);
+  if (image === `${siteOrigin}/opengraph.jpg`) {
+    html = setMeta(html, "property", "og:image:type", "image/jpeg");
+    html = setMeta(html, "property", "og:image:width", "1200");
+    html = setMeta(html, "property", "og:image:height", "630");
+    html = setMeta(
+      html,
+      "property",
+      "og:image:alt",
+      "A preview of the Elevated Living homepage",
+    );
+  }
   html = setMeta(html, "name", "twitter:card", "summary_large_image");
   html = setMeta(html, "name", "twitter:title", title);
   html = setMeta(html, "name", "twitter:description", description);

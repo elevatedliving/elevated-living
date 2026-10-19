@@ -17,7 +17,7 @@ export function Home() {
         <meta property="og:title" content="Support for Solopreneurs, Small Business Owners and Community Organisations" />
         <meta property="og:description" content="Elevated Living helps solopreneurs, small business owners, and voluntary sector organisations cut through the operational overwhelm and build structures that actually work." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
+        <meta property="og:image" content="https://elevatedliving.uk/opengraph.jpg" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
       {/* Hero Section — raw <section> so HeroWordCloud fills the true full width */}
