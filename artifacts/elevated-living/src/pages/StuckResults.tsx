@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { buttonVariants } from "@/components/ui/button";
+import { Link } from "wouter";
 
 const RESULTS_PDF_URL = `${import.meta.env.BASE_URL}documents/whats-keeping-you-stuck-results.pdf`;
 
@@ -36,14 +37,23 @@ export function StuckResults() {
               </h1>
               <p className="text-muted-foreground">Results summary</p>
             </div>
-            <a
-              href={RESULTS_PDF_URL}
-              download="whats-keeping-you-stuck-results.pdf"
-              className={buttonVariants({ variant: "default" })}
-              data-testid="link-download-stuck-results"
-            >
-              Download the PDF
-            </a>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/"
+                className={buttonVariants({ variant: "outline" })}
+                data-testid="link-home-stuck-results"
+              >
+                Back to homepage
+              </Link>
+              <a
+                href={RESULTS_PDF_URL}
+                download="whats-keeping-you-stuck-results.pdf"
+                className={buttonVariants({ variant: "default" })}
+                data-testid="link-download-stuck-results"
+              >
+                Download the PDF
+              </a>
+            </div>
           </div>
 
           <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
