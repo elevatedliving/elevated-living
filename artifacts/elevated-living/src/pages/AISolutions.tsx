@@ -57,6 +57,9 @@ export function AISolutions() {
               >
                 Website Enquiry Form
               </Link>
+              <p className="mt-2 text-xs text-muted-foreground">
+                On the form, choose: Website building
+              </p>
             </article>
             <article className="rounded-2xl border border-border bg-card p-6 shadow-sm">
               <h3 className="mb-3 text-lg font-semibold">Automated workflows</h3>
@@ -65,12 +68,15 @@ export function AISolutions() {
                 moves smoothly and routine work takes less time.
               </p>
               <Link
-                href="/contact"
+                href="/website-enquiry-form"
                 className={`${buttonVariants({ variant: "outline", size: "sm" })} mt-5`}
                 data-testid="button-workflow-enquiry-form"
               >
                 Workflow Enquiry Form
               </Link>
+              <p className="mt-2 text-xs text-muted-foreground">
+                On the form, choose: Automated workflows
+              </p>
             </article>
             <article className="rounded-2xl border border-border bg-card p-6 shadow-sm">
               <h3 className="mb-3 text-lg font-semibold">Chatbot builds</h3>
@@ -79,12 +85,15 @@ export function AISolutions() {
                 visitors, with a clear route to a person when needed.
               </p>
               <Link
-                href="/contact"
+                href="/website-enquiry-form"
                 className={`${buttonVariants({ variant: "outline", size: "sm" })} mt-5`}
                 data-testid="button-chatbot-enquiry-form"
               >
                 Chatbot Enquiry Form
               </Link>
+              <p className="mt-2 text-xs text-muted-foreground">
+                On the form, choose: Chatbot builds
+              </p>
             </article>
           </div>
         </div>
@@ -98,9 +107,12 @@ export function AISolutions() {
             they can support everyday tasks. No technical knowledge or previous experience is
             needed.
           </p>
-          <Link href="/contact">
+          <Link href="/website-enquiry-form">
             <Button>Ask about AI training</Button>
           </Link>
+          <p className="mt-2 text-xs text-muted-foreground">
+            On the form, choose: AI training for absolute beginners
+          </p>
         </div>
       </Section>
     </Layout>
