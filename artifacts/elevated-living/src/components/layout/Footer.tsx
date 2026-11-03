@@ -30,22 +30,42 @@ export function Footer() {
                 <Mail className="w-4 h-4" />
               </Link>
             </div>
-            <a
-              href="https://www.policybee.co.uk/refer/xmxk-419"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group mt-6 inline-flex w-28 flex-col items-center text-center"
-              aria-label="Get your insurance policy here and receive £20 from PolicyBee"
-            >
-              <img
-                src={`${import.meta.env.BASE_URL}images/policybee-badge.png`}
-                alt="Insured through PolicyBee"
-                className="h-20 w-20 object-contain transition-transform group-hover:scale-105"
-              />
-              <span className="mt-2 text-xs leading-snug text-background/70 transition-colors group-hover:text-background">
-                Get your insurance policy here and receive £20
-              </span>
-            </a>
+            <div className="mt-6 flex flex-wrap items-start gap-5">
+              <a
+                href="https://www.policybee.co.uk/refer/xmxk-419"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex w-28 flex-col items-center text-center"
+                aria-label="Get your insurance policy here and receive £20 from PolicyBee"
+              >
+                <img
+                  src={`${import.meta.env.BASE_URL}images/policybee-badge.png`}
+                  alt="Insured through PolicyBee"
+                  className="h-20 w-20 object-contain transition-transform group-hover:scale-105"
+                />
+                <span className="mt-2 text-xs leading-snug text-background/70 transition-colors group-hover:text-background">
+                  Get your insurance policy here and receive £20
+                </span>
+              </a>
+              <a
+                href="https://go.zoho.com/SGBd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex w-32 flex-col items-center text-center"
+                aria-label="Communicate, collaborate and store files with Zoho"
+              >
+                <span className="flex h-20 items-center justify-center">
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/zoho-logo.png`}
+                    alt="Zoho"
+                    className="h-auto w-28 object-contain transition-transform group-hover:scale-105"
+                  />
+                </span>
+                <span className="mt-2 text-xs leading-snug text-background/70 transition-colors group-hover:text-background">
+                  Communicate, collaborate and store files with Zoho
+                </span>
+              </a>
+            </div>
           </div>
 
           <div>
