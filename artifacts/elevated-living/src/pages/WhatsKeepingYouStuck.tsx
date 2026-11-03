@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
+import { Link } from "wouter";
 
 const TALLY_SCRIPT_URL = "https://tally.so/widgets/embed.js";
 const TALLY_FORM_URL = "https://tally.so/r/BzRN85?transparentBackground=1";
@@ -92,6 +93,15 @@ export function WhatsKeepingYouStuck() {
           className="absolute inset-0 block h-full w-full border-0"
           data-testid="iframe-whats-keeping-you-stuck"
         />
+        <Link
+          href="/"
+          aria-label="Back to homepage"
+          title="Back to homepage"
+          className="fixed left-4 top-4 z-[60] inline-flex h-10 items-center rounded-md border border-border bg-background/95 px-3 text-sm font-medium text-foreground shadow-md transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          data-testid="link-home-whats-keeping-you-stuck"
+        >
+          Back to homepage
+        </Link>
       </main>
     </>
   );
