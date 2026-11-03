@@ -1,9 +1,60 @@
+import { useEffect, useRef } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Section } from "@/components/ui/Section";
 import { Calendar, Mail } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
+const TALLY_SCRIPT_URL = "https://tally.so/widgets/embed.js";
+const TALLY_FORM_URL =
+  "https://tally.so/embed/rjXOxL?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1";
+
+declare global {
+  interface Window {
+    Tally?: {
+      loadEmbeds: () => void;
+    };
+  }
+}
+
 export function Contact() {
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  useEffect(() => {
+    const iframe = iframeRef.current;
+    if (!iframe) return;
+
+    const loadTallyEmbed = () => {
+      if (window.Tally) {
+        window.Tally.loadEmbeds();
+      } else if (!iframe.hasAttribute("src")) {
+        iframe.src = iframe.dataset.tallySrc || TALLY_FORM_URL;
+      }
+    };
+
+    if (window.Tally) {
+      loadTallyEmbed();
+      return;
+    }
+
+    const existingScript = document.querySelector<HTMLScriptElement>(
+      `script[src="${TALLY_SCRIPT_URL}"]`,
+    );
+    const script = existingScript ?? document.createElement("script");
+
+    script.addEventListener("load", loadTallyEmbed);
+    script.addEventListener("error", loadTallyEmbed);
+
+    if (!existingScript) {
+      script.src = TALLY_SCRIPT_URL;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+
+    return () => {
+      script.removeEventListener("load", loadTallyEmbed);
+      script.removeEventListener("error", loadTallyEmbed);
+    };
+  }, []);
 
   return (
     <Layout>
@@ -42,17 +93,22 @@ export function Contact() {
               </div>
             </div>
 
-            {/* Bigin Form Column */}
+            {/* Message Form Column */}
             <div>
               <h2 className="text-2xl mb-6 flex items-center gap-2">
                 <Mail className="w-6 h-6 text-primary" /> Send a Message
               </h2>
               <iframe
-                title="Contact Elevated Living via Bigin"
-                frameBorder="0"
-                className="w-full"
-                style={{ height: "1100px", border: "none" }}
-                src={`${import.meta.env.BASE_URL}forms/contact-bigin.html`}
+                ref={iframeRef}
+                data-tally-src={TALLY_FORM_URL}
+                loading="lazy"
+                width="100%"
+                height={1945}
+                frameBorder={0}
+                marginHeight={0}
+                marginWidth={0}
+                title="Get in touch — Enquiry Form"
+                className="block w-full border-0"
               />
             </div>
           </div>
