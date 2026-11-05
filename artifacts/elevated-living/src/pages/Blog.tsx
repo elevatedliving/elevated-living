@@ -5,6 +5,15 @@ import { Helmet } from "react-helmet-async";
 
 const DUMMY_POSTS = [
   {
+    id: 9,
+    slug: "/blog/four-problems-i-can-solve-this-week",
+    title: "4 Problems I Can Help You Solve This Week",
+    category: "Small Businesses & Community Organisations",
+    date: "Nov 2026",
+    excerpt: "From scattered files and admin overload to competing priorities and impact reporting, here are four practical ways Elevated Living can help.",
+    image: "images/four-problems-this-week.jpg",
+  },
+  {
     id: 8,
     slug: "/blog/adhd-awareness-month",
     title: "Hands up: who’s got at least 147 tabs open?",
@@ -101,6 +110,12 @@ export function Blog() {
                           src={`${import.meta.env.BASE_URL}${post.image}`}
                           alt=""
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          style={{
+                            objectPosition:
+                              post.slug === "/blog/four-problems-i-can-solve-this-week"
+                                ? "top"
+                                : "center",
+                          }}
                         />
                         <div className="absolute inset-0 bg-primary/10 group-hover:bg-primary/5 transition-colors"></div>
                       </>

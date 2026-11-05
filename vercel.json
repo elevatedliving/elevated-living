@@ -17,6 +17,7 @@
     { "source": "/blog/corporate-jargon", "destination": "/blog/corporate-jargon/index.html" },
     { "source": "/blog/eu-ai-transparency", "destination": "/blog/eu-ai-transparency/index.html" },
     { "source": "/blog/adhd-awareness-month", "destination": "/blog/adhd-awareness-month/index.html" },
+    { "source": "/blog/four-problems-i-can-solve-this-week", "destination": "/blog/four-problems-i-can-solve-this-week/index.html" },
     { "source": "/testimonials", "destination": "/testimonials/index.html" },
     { "source": "/resources", "destination": "/resources/index.html" },
     { "source": "/services", "destination": "/services/index.html" },
