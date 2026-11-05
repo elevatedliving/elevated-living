@@ -21,11 +21,11 @@ export function About() {
       <Section className="pt-20">
         <div className="max-w-3xl mx-auto">
           <div className="bg-accent/40 border border-primary/10 rounded-2xl p-8 flex flex-col sm:flex-row gap-6 items-start">
-            <div className="shrink-0 w-28 h-36 rounded-xl overflow-hidden shadow-md">
+            <div className="shrink-0 w-40 sm:w-44 aspect-[4/5] rounded-xl overflow-hidden bg-white shadow-md">
               <img
-                src={`${import.meta.env.BASE_URL}images/kay-oldroyd.jpg`}
-                alt="Kay Oldroyd, Founder and Director of Elevated Living"
-                className="w-full h-full object-cover object-top"
+                src={`${import.meta.env.BASE_URL}images/about-kay-logo.png`}
+                alt="Kay Oldroyd smiling beside the Elevated Living logo"
+                className="w-full h-full object-contain"
               />
             </div>
             <div>
