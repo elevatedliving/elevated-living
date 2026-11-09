@@ -67,6 +67,9 @@ export function Services() {
                   <p className="mt-2 text-sm text-muted-foreground">
                     That’s 4 hours of support for £105.
                   </p>
+                  <p className="mt-2 text-sm font-semibold text-foreground">
+                    Minimum booking: 3 hours.
+                  </p>
                 </div>
                 <div className="shrink-0 sm:text-right">
                   <p className="text-2xl font-bold text-primary">

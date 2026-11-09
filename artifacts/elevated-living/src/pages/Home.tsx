@@ -61,6 +61,39 @@ export function Home() {
         </div>
       </section>
 
+      {/* Virtual Assistant special offer */}
+      <Section className="py-8 md:py-12">
+        <div className="relative isolate overflow-hidden rounded-[2rem] bg-[#087f7d] px-6 py-9 text-white shadow-lg sm:px-10 md:px-14">
+          <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-24 h-56 w-56 rounded-full bg-white/5 sm:h-72 sm:w-72" />
+          <div className="relative flex flex-col items-center gap-8 text-center md:flex-row md:gap-10 md:text-left">
+            <div className="relative flex h-40 w-44 shrink-0 rotate-[-5deg] items-center justify-center rounded-[46%_54%_49%_51%/47%_40%_60%_53%] bg-[#ec008c] px-5 text-center text-lg font-extrabold uppercase leading-tight text-black shadow-md sm:h-44 sm:w-48">
+              <span>Buy 3 hours<br />get 1 hour free!</span>
+            </div>
+            <div className="min-w-0 flex-1">
+              <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-[#f1d78e]">
+                For new or established small businesses and community organisations
+              </p>
+              <h2 className="mb-3 text-2xl font-bold text-white md:text-3xl">
+                End of year special offer
+              </h2>
+              <p className="mb-3 text-sm font-semibold text-[#f1d78e]">
+                Offer ends 31 December 2026
+              </p>
+              <p className="mx-auto mb-5 max-w-2xl text-white/90 md:mx-0">
+                Virtual Assistant support at £35 per hour. Book a minimum of 3 hours and get an extra hour free — 4 hours for £105.
+              </p>
+              <div className="flex flex-col items-center gap-4 md:flex-row">
+                <Link href="/services" className="self-start">
+                  <Button size="lg" className="w-full gap-2 bg-[#f1d78e] text-[#20232b] hover:bg-[#e8ca72] sm:w-auto">
+                    Explore the offer <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Upcoming Training & Events */}
       <Section className="hidden">
         <div className="text-center mb-10">
