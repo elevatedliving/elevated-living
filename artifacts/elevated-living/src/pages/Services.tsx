@@ -317,6 +317,48 @@ export function Services() {
               </Link>
             </div>
           </div>
+
+          {/* SERVICE 04 — Virtual Assistant Support */}
+          <div className="mb-14">
+            <div className="mb-6">
+              <p className="text-xs font-bold text-primary uppercase tracking-widest mb-1">Service 04</p>
+              <h3 className="text-xl font-semibold mb-2">Virtual Assistant Support</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Practical administrative support to help you manage your workload and free up time for your other priorities.
+              </p>
+            </div>
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
+              <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex-1">
+                  <h4 className="font-semibold text-lg mb-1">Hourly support</h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Book the support you need at a straightforward hourly rate.
+                  </p>
+                  <p className="mt-4 inline-flex rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
+                    Special offer: buy 3 hours, get 1 hour free
+                  </p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    That’s 4 hours of support for £105.
+                  </p>
+                </div>
+                <div className="shrink-0 sm:text-right">
+                  <p className="text-2xl font-bold text-primary">
+                    £35<span className="text-base font-normal text-muted-foreground">/hour</span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://cal.com/elevatedlivingenterprise/virtual-assistant"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex"
+              >
+                <Button variant="outline" size="sm">
+                  Book Virtual Assistant Support →
+                </Button>
+              </a>
+            </div>
+          </div>
         </div>
       </Section>
 
