@@ -85,7 +85,11 @@ export function Services() {
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex"
               >
-                <Button variant="outline" size="sm">
+                <Button
+                  variant="default"
+                  size="sm"
+                  className="bg-[#c00070] text-white hover:bg-[#a80061] focus-visible:ring-[#c00070]"
+                >
                   Book Virtual Assistant Support →
                 </Button>
               </a>
