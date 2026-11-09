@@ -5,6 +5,8 @@ import { CalBooking } from "@/components/ui/CalBooking";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
 
+const FREE_CONSULTATION_URL = "https://cal.com/elevatedlivingenterprise/free-consultation";
+
 export function Services() {
   return (
     <Layout>
@@ -115,7 +117,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£125</p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/elevated-edit-power-hour" label="Book Power Hour" />
+                <CalBooking calLink="elevatedlivingenterprise/power-hour" label="Book Power Hour" />
               </div>
 
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
@@ -128,7 +130,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£350</p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/elevated-edit-half-day-session" label="Book Half-Day" />
+                <CalBooking calLink="elevatedlivingenterprise/halfday-session" label="Book Half-Day" />
               </div>
 
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
@@ -141,7 +143,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£650</p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/elevated-edit-full-day-intensive" label="Book Full Day" />
+                <CalBooking calLink="elevatedlivingenterprise/fullday-intensive" label="Book Full Day" />
               </div>
 
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
@@ -223,7 +225,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£495</p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/project-scoping-setup" label="Book Scoping Session" />
+                <CalBooking calLink="elevatedlivingenterprise/project-scoping" label="Book Scoping Session" />
               </div>
 
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
@@ -299,7 +301,7 @@ export function Services() {
                   <h4 className="font-semibold text-lg mb-1">Partnership Mapping &amp; Strategy</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">A half-day session to identify and prioritise the right relationships for your vision and growth.</p>
                   <div className="mt-3">
-                    <Link href="/book"><Button variant="outline" size="sm">Book a free consultation →</Button></Link>
+                    <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer"><Button variant="outline" size="sm">Book a free consultation →</Button></a>
                   </div>
                 </div>
                 <div className="sm:text-right shrink-0">
@@ -311,7 +313,7 @@ export function Services() {
                   <h4 className="font-semibold text-lg mb-1">Community Consultation Support</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">Planning and facilitating meaningful community engagement that delivers real insight and genuine participation.</p>
                   <div className="mt-3">
-                    <Link href="/book"><Button variant="outline" size="sm">Book a free consultation →</Button></Link>
+                    <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer"><Button variant="outline" size="sm">Book a free consultation →</Button></a>
                   </div>
                 </div>
                 <div className="sm:text-right shrink-0">
@@ -323,7 +325,7 @@ export function Services() {
                   <h4 className="font-semibold text-lg mb-1">Ongoing Partnership Management</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">Regular support to manage and develop your key partnerships over time — scoped to your specific relationships.</p>
                   <div className="mt-3">
-                    <Link href="/book"><Button variant="outline" size="sm">Book a free consultation →</Button></Link>
+                    <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer"><Button variant="outline" size="sm">Book a free consultation →</Button></a>
                   </div>
                 </div>
                 <div className="sm:text-right shrink-0">
@@ -357,9 +359,9 @@ export function Services() {
                   <p className="font-bold text-primary mt-2 text-sm">Bespoke</p>
                 </div>
               </div>
-              <Link href="/book">
+              <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="sm">Book a free consultation →</Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -411,11 +413,11 @@ export function Services() {
             Book a complimentary 20-minute session — no obligation, no sales pitch. Just an honest conversation about where you are and whether Elevated Living can help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/book">
+            <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="secondary" className="text-primary font-bold w-full sm:w-auto">
                 Book your complimentary session →
               </Button>
-            </Link>
+            </a>
             <Link href="/contact">
               <Button size="lg" variant="outline" className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 w-full sm:w-auto">
                 Get in touch →

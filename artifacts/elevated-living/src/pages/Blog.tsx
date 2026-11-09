@@ -120,11 +120,12 @@ export function Blog() {
                           alt=""
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           style={{
-                            objectPosition:
-                              post.slug === "/blog/why-every-small-business-needs-a-virtual-assistant" ||
-                              post.slug === "/blog/four-problems-i-can-solve-this-week"
-                                ? "top"
-                                : "center",
+                              objectPosition:
+                                post.slug === "/blog/why-every-small-business-needs-a-virtual-assistant"
+                                  ? "center 35%"
+                                  : post.slug === "/blog/four-problems-i-can-solve-this-week"
+                                    ? "top"
+                                    : "center",
                           }}
                         />
                         <div className="absolute inset-0 bg-primary/10 group-hover:bg-primary/5 transition-colors"></div>

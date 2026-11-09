@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 
-const CAL_ORIGIN = "https://cal.eu";
+const CAL_ORIGIN = "https://cal.com";
 
 interface CalBookingProps {
   calLink: string;
