@@ -5,6 +5,15 @@ import { Helmet } from "react-helmet-async";
 
 const DUMMY_POSTS = [
   {
+    id: 10,
+    slug: "/blog/why-every-small-business-needs-a-virtual-assistant",
+    title: "Why Every Small Business Needs a Virtual Assistant",
+    category: "Small Businesses",
+    date: "Nov 2026",
+    excerpt: "A practical look at how VA support saves time, strengthens day-to-day operations, and compares with the full cost of hiring.",
+    image: "images/va-special-offer-2026.webp",
+  },
+  {
     id: 9,
     slug: "/blog/four-problems-i-can-solve-this-week",
     title: "4 Problems I Can Help You Solve This Week",

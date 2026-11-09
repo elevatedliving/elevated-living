@@ -13,6 +13,7 @@ import { BlogPostCorporateJargon } from "@/pages/BlogPostCorporateJargon";
 import { BlogPostEUAI } from "@/pages/BlogPostEUAI";
 import { BlogPostADHD } from "@/pages/BlogPostADHD";
 import { BlogPostFourProblems } from "@/pages/BlogPostFourProblems";
+import { BlogPostVirtualAssistant } from "@/pages/BlogPostVirtualAssistant";
 import { Testimonials } from "@/pages/Testimonials";
 import { Resources } from "@/pages/Resources";
 import { Services } from "@/pages/Services";
@@ -41,6 +42,7 @@ export const publicRoutes = [
   { path: "/blog/eu-ai-transparency", component: BlogPostEUAI },
   { path: "/blog/adhd-awareness-month", component: BlogPostADHD },
   { path: "/blog/four-problems-i-can-solve-this-week", component: BlogPostFourProblems },
+  { path: "/blog/why-every-small-business-needs-a-virtual-assistant", component: BlogPostVirtualAssistant },
   { path: "/testimonials", component: Testimonials },
   { path: "/resources", component: Resources },
   { path: "/services", component: Services },
