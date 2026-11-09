@@ -85,7 +85,7 @@ export function Home() {
               <div className="flex flex-col items-center gap-4 md:flex-row">
                 <Link href="/services" className="self-start">
                   <Button size="lg" className="w-full gap-2 bg-[#f1d78e] text-[#20232b] hover:bg-[#e8ca72] sm:w-auto">
-                    Explore the offer <ArrowRight className="h-4 w-4" />
+                    Book here <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
               </div>
