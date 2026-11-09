@@ -156,7 +156,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£325<span className="text-base font-normal text-muted-foreground">/month</span></p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/elevated-edit-monthly-retainer" label="Book Monthly Retainer" />
+                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book a free consultation" />
               </div>
             </div>
 
@@ -254,7 +254,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£720<span className="text-base font-normal text-muted-foreground">/month</span></p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/fractional-project-management-monthly-retainer-light-8-hours" label="Book Light Retainer" />
+                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book a free consultation" />
               </div>
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
@@ -266,7 +266,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£1,020<span className="text-base font-normal text-muted-foreground">/month</span></p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/fractional-project-management-monthly-retainer-standard-12-hours" label="Book Standard Retainer" />
+                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book a free consultation" />
               </div>
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
@@ -278,7 +278,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£1,280<span className="text-base font-normal text-muted-foreground">/month</span></p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/fractional-project-management-monthly-retainer-intensive-16-hours" label="Book Intensive Retainer" />
+                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book a free consultation" />
               </div>
             </div>
             <p className="text-xs text-muted-foreground mt-3 italic">A scoping session is recommended before any retainer. Retainer rates are discounted against ad hoc booking. Monthly Retainers have a minimum 2-month commitment, payable monthly in advance, with 30 days' notice to end.</p>
