@@ -11,7 +11,7 @@ const DUMMY_POSTS = [
     category: "Small Businesses",
     date: "Nov 2026",
     excerpt: "A practical look at how VA support saves time, strengthens day-to-day operations, and compares with the full cost of hiring.",
-    image: "images/va-special-offer-2026.webp",
+    image: "images/va-special-offer-header.webp",
   },
   {
     id: 9,

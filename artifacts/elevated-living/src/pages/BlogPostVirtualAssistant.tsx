@@ -31,7 +31,7 @@ export function BlogPostVirtualAssistant() {
         />
         <meta
           property="og:image"
-          content="https://elevatedliving.uk/images/va-special-offer-2026.webp"
+          content="https://elevatedliving.uk/images/va-special-offer-header.webp"
         />
         <meta
           property="og:image:alt"
@@ -49,7 +49,7 @@ export function BlogPostVirtualAssistant() {
         />
         <meta
           name="twitter:image"
-          content="https://elevatedliving.uk/images/va-special-offer-2026.webp"
+          content="https://elevatedliving.uk/images/va-special-offer-header.webp"
         />
       </Helmet>
 
@@ -87,10 +87,10 @@ export function BlogPostVirtualAssistant() {
 
           <figure className="mb-10 overflow-hidden rounded-2xl shadow-md">
             <img
-              src={`${import.meta.env.BASE_URL}images/va-special-offer-2026.webp`}
-              alt="Elevated Living end-of-year offer for Virtual Assistant support: buy three hours and get one hour free at £35 per hour, with a three-hour minimum booking"
-              width="1680"
-              height="2100"
+              src={`${import.meta.env.BASE_URL}images/va-special-offer-header.webp`}
+              alt="Elevated Living end-of-year offer: buy three hours of Virtual Assistant support and get one hour free, at £35 per hour with a three-hour minimum booking"
+              width="1200"
+              height="630"
               className="mx-auto h-auto w-full"
             />
             <figcaption className="sr-only">
