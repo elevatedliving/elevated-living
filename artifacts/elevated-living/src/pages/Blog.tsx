@@ -121,6 +121,7 @@ export function Blog() {
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           style={{
                             objectPosition:
+                              post.slug === "/blog/why-every-small-business-needs-a-virtual-assistant" ||
                               post.slug === "/blog/four-problems-i-can-solve-this-week"
                                 ? "top"
                                 : "center",
