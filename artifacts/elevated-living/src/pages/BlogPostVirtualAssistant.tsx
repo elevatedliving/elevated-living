@@ -85,6 +85,13 @@ export function BlogPostVirtualAssistant() {
             decisions that need your attention.
           </p>
 
+          <Link
+            href="/services"
+            className="mb-10 inline-flex items-center justify-center rounded-md bg-[#ec008c] px-6 py-3 font-semibold text-[#20232b] shadow-sm transition-colors hover:bg-[#d6007f] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ec008c] focus-visible:ring-offset-2"
+          >
+            Book Virtual Assistant Here
+          </Link>
+
           <figure className="mb-10 overflow-hidden rounded-2xl shadow-md">
             <img
               src={`${import.meta.env.BASE_URL}images/va-special-offer-header.webp`}
@@ -207,9 +214,9 @@ export function BlogPostVirtualAssistant() {
             </p>
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 font-semibold text-primary hover:underline"
+              className="inline-flex items-center justify-center rounded-md bg-[#ec008c] px-6 py-3 font-semibold text-[#20232b] shadow-sm transition-colors hover:bg-[#d6007f] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ec008c] focus-visible:ring-offset-2"
             >
-              View services and book VA support →
+              Book Virtual Assistant Here
             </Link>
           </div>
         </article>
