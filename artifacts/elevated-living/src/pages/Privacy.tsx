@@ -135,7 +135,7 @@ export function Privacy() {
                   <tr><td className="px-4 py-3 text-foreground">Zoho CRM</td><td className="px-4 py-3 text-muted-foreground">Storing and managing lead and enquiry information</td></tr>
                   <tr><td className="px-4 py-3 text-foreground">MailerLite</td><td className="px-4 py-3 text-muted-foreground">Newsletter and email marketing</td></tr>
                   <tr><td className="px-4 py-3 text-foreground">Tally</td><td className="px-4 py-3 text-muted-foreground">Form collection (enquiries, quiz)</td></tr>
-                  <tr><td className="px-4 py-3 text-foreground">Cal.com / cal.eu</td><td className="px-4 py-3 text-muted-foreground">Booking and scheduling</td></tr>
+                  <tr><td className="px-4 py-3 text-foreground">Cal.com</td><td className="px-4 py-3 text-muted-foreground">Booking and scheduling</td></tr>
                   <tr><td className="px-4 py-3 text-foreground">Stripe</td><td className="px-4 py-3 text-muted-foreground">Payment processing</td></tr>
                   <tr><td className="px-4 py-3 text-foreground">Notion</td><td className="px-4 py-3 text-muted-foreground">Secure storage of session notes for clients</td></tr>
                   <tr><td className="px-4 py-3 text-foreground">Make.com</td><td className="px-4 py-3 text-muted-foreground">Automation that passes quiz data to MailerLite</td></tr>

@@ -84,7 +84,7 @@ export function Contact() {
               </h2>
               <div className="rounded-xl overflow-hidden border border-border shadow-sm">
                 <iframe
-                  src="https://cal.eu/elevatedlivingenterprise/free-consultation"
+                  src="https://cal.com/elevatedlivingenterprise/free-consultation"
                   title="Book a complimentary focus session"
                   className="w-full"
                   style={{ height: "clamp(480px, 60vh, 700px)", border: "none" }}

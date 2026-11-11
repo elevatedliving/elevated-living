@@ -155,7 +155,7 @@ export function BlogPostFourProblems() {
               organisations. Get in touch to talk about the support you need.
             </p>
             <a
-              href="https://cal.eu/elevatedlivingenterprise/free-consultation"
+              href="https://cal.com/elevatedlivingenterprise/free-consultation"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-semibold text-primary hover:underline"
