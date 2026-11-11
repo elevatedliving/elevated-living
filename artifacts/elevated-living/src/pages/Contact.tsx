@@ -80,7 +80,7 @@ export function Contact() {
             {/* Booking Column */}
             <div>
               <h2 className="text-2xl mb-6 flex items-center gap-2">
-                <Calendar className="w-6 h-6 text-primary" /> Book a Call
+                <Calendar className="w-6 h-6 text-primary" /> Free consultation
               </h2>
               <div className="rounded-xl overflow-hidden border border-border shadow-sm">
                 <iframe
