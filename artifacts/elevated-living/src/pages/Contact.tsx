@@ -60,10 +60,10 @@ export function Contact() {
     <Layout>
       <Helmet>
         <title>Contact | Elevated Living</title>
-        <meta name="description" content="Get in touch with Elevated Living. Book a complimentary focus session or ask about impact reports and support for your organisation or business." />
+        <meta name="description" content="Get in touch with Elevated Living. Book A Free 20-Minute Session or ask about impact reports and support for your organisation or business." />
         <meta property="og:title" content="Contact | Elevated Living" />
         <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
-        <meta property="og:description" content="Get in touch with Elevated Living. Book a complimentary focus session or ask about impact reports and support for your organisation or business." />
+        <meta property="og:description" content="Get in touch with Elevated Living. Book A Free 20-Minute Session or ask about impact reports and support for your organisation or business." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
@@ -85,7 +85,7 @@ export function Contact() {
               <div className="rounded-xl overflow-hidden border border-border shadow-sm">
                 <iframe
                   src="https://cal.com/elevatedlivingenterprise/free-consultation"
-                  title="Book a complimentary focus session"
+                  title="Book A Free 20-Minute Session"
                   className="w-full"
                   style={{ height: "clamp(480px, 60vh, 700px)", border: "none" }}
                   allow="payment"

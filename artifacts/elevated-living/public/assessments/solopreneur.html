@@ -190,7 +190,7 @@ function getResult(ans){
 
 function actionButtons(svc){
   if(svc.bookPay&&svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-pay\" target=\"_blank\">Book and Pay &mdash; &pound;"+svc.price+"</a>";}
-  if(svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-book\" target=\"_blank\">Book a free consultation</a>";}
+  if(svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-book\" target=\"_blank\">Book A Free 20-Minute Session</a>";}
   return "";
 }
 
@@ -254,7 +254,7 @@ function renderResult(){
   var result=getResult(answers),secondary=result.secondary;
   var noteHtml=result.newClientNote?"<div class=\"sf-new-client-note\"><strong>New clients:</strong> "+result.newClientNote+"</div>":"";
   var secHtml=secondary?recCard(secondary,false,secondary.tag):"";
-  screen.innerHTML="<div class=\"sf-progress\"><div class=\"sf-progress-track\"><div class=\"sf-progress-fill\" style=\"width:100%\"></div></div><span class=\"sf-progress-label\">Done</span></div><div class=\"sf-card\"><span class=\"sf-result-badge\">Suggested starting point</span><h2 class=\"sf-result-title\">A good place to start</h2><p class=\"sf-result-feel\">"+result.feel+"</p>"+noteHtml+"<div class=\"sf-recs\">"+recCard(result.primary,true)+secHtml+"</div><hr class=\"sf-divider\"><p class=\"sf-cta-text\">Not quite right? A free 20-minute consultation is always the best way to make sure you get the right support — no pressure, no commitment.</p><div class=\"sf-cta-row\"><a href=\""+CONSULT+"\" class=\"sf-btn-primary\" target=\"_blank\">Book a free consultation</a><button class=\"sf-btn-secondary\" id=\"btn-restart\">Start again</button></div></div>";
+  screen.innerHTML="<div class=\"sf-progress\"><div class=\"sf-progress-track\"><div class=\"sf-progress-fill\" style=\"width:100%\"></div></div><span class=\"sf-progress-label\">Done</span></div><div class=\"sf-card\"><span class=\"sf-result-badge\">Suggested starting point</span><h2 class=\"sf-result-title\">A good place to start</h2><p class=\"sf-result-feel\">"+result.feel+"</p>"+noteHtml+"<div class=\"sf-recs\">"+recCard(result.primary,true)+secHtml+"</div><hr class=\"sf-divider\"><p class=\"sf-cta-text\">Not quite right? A free 20-minute consultation is always the best way to make sure you get the right support — no pressure, no commitment.</p><div class=\"sf-cta-row\"><a href=\""+CONSULT+"\" class=\"sf-btn-primary\" target=\"_blank\">Book A Free 20-Minute Session</a><button class=\"sf-btn-secondary\" id=\"btn-restart\">Start again</button></div></div>";
   document.getElementById("btn-restart").addEventListener("click",function(){restartQuiz();});
 }
 

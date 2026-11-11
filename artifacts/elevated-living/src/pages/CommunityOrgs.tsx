@@ -49,7 +49,7 @@ export function CommunityOrgs() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link href="/book">
               <Button size="lg" className="w-full font-bold sm:w-auto">
-                Book a complimentary session →
+                Book A Free 20-Minute Session
               </Button>
             </Link>
             <Link href="/services">
@@ -119,12 +119,12 @@ export function CommunityOrgs() {
         <div className="mx-auto max-w-2xl">
           <h2 className="mb-4 text-primary-foreground">Ready to talk through what your organisation needs?</h2>
           <p className="mb-10 text-lg leading-relaxed text-primary-foreground/80">
-            Book a complimentary 20-minute conversation. No obligation or sales pitch—just an honest discussion about your priorities and whether Elevated Living can help.
+            Book A Free 20-Minute Session. No obligation or sales pitch—just an honest discussion about your priorities and whether Elevated Living can help.
           </p>
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <Link href="/book">
               <Button size="lg" variant="secondary" className="w-full font-bold text-primary sm:w-auto">
-                Book your complimentary session →
+                Book A Free 20-Minute Session
               </Button>
             </Link>
             <Link href="/contact">

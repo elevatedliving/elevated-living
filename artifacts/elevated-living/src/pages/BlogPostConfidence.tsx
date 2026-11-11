@@ -167,10 +167,10 @@ export function BlogPostConfidence() {
 
           <div className="border-t border-border mt-12 pt-8 not-prose">
             <p className="text-sm text-muted-foreground mb-4">
-              Elevated Living supports solopreneurs, small business owners, and community organisation leaders to move through the overwhelm, get clear on what matters, and build the confidence to act. Book a focus session to discuss what support could help.
+              Elevated Living supports solopreneurs, small business owners, and community organisation leaders to move through the overwhelm, get clear on what matters, and build the confidence to act. Book A Free 20-Minute Session to discuss what support could help.
             </p>
             <Link href="/book" className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
-              Book a Complimentary Focus Session →
+              Book A Free 20-Minute Session
             </Link>
           </div>
         </div>

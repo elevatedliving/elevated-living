@@ -149,7 +149,7 @@ export function BlogPostAccessToWork() {
               Elevated Living supports neurodivergent solopreneurs and small business leaders to cut through the overwhelm, build systems that work for their brains, and access the support they're entitled to.
             </p>
             <Link href="/book" className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
-              Book a Complimentary Focus Session →
+              Book A Free 20-Minute Session
             </Link>
           </div>
 

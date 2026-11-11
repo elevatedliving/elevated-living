@@ -196,7 +196,7 @@ function getResult(ans){
 
 function actionButtons(svc){
   if(svc.bookPay&&svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-pay\" target=\"_blank\">Book and Pay &mdash; &pound;"+svc.price+"</a>";}
-  if(svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-book\" target=\"_blank\">Book a free consultation</a>";}
+  if(svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-book\" target=\"_blank\">Book A Free 20-Minute Session</a>";}
   return "";
 }
 
@@ -261,9 +261,9 @@ function renderResult(){
   var result=getResult(answers),secondary=result.secondary;
   var noteHtml=result.newClientNote?"<div class=\"sf-new-client-note\"><strong>New clients:</strong> "+result.newClientNote+"</div>":"";
   var impactHtml="";
-  if(result.showImpact&&result.primary!==services.impactReport){impactHtml="<div class=\"sf-impact-callout show\"><p class=\"sf-impact-callout-label\">Also for you</p><p class=\"sf-impact-callout-text\">You may also benefit from <strong>Impact Report Writing</strong> — capturing the real difference you make in a format funders can act on. Book a free consultation to discuss this <a href=\""+CONSULT+"\" style=\"color:var(--teal);text-decoration:underline;\">here</a>.</p></div>";}
+  if(result.showImpact&&result.primary!==services.impactReport){impactHtml="<div class=\"sf-impact-callout show\"><p class=\"sf-impact-callout-label\">Also for you</p><p class=\"sf-impact-callout-text\">You may also benefit from <strong>Impact Report Writing</strong> — capturing the real difference you make in a format funders can act on. <a href=\""+CONSULT+"\" style=\"color:var(--teal);text-decoration:underline;\">Book A Free 20-Minute Session</a>.</p></div>";}
   var secHtml=secondary?recCard(secondary,false,secondary.tag):"";
-  screen.innerHTML="<div class=\"sf-progress\"><div class=\"sf-progress-track\"><div class=\"sf-progress-fill\" style=\"width:100%\"></div></div><span class=\"sf-progress-label\">Done</span></div><div class=\"sf-card\"><span class=\"sf-result-badge\">Our recommendation</span><h2 class=\"sf-result-title\">Here's our recommendation</h2><p class=\"sf-result-feel\">"+result.feel+"</p>"+noteHtml+"<div class=\"sf-recs\">"+recCard(result.primary,true)+secHtml+"</div>"+impactHtml+"<hr class=\"sf-divider\"><p class=\"sf-cta-text\">Not quite right? A free 20-minute conversation is always the best place to start — no commitment.</p><div class=\"sf-cta-row\"><a href=\""+CONSULT+"\" class=\"sf-btn-primary\" target=\"_blank\">Book a free consultation</a><button class=\"sf-btn-secondary\" id=\"btn-restart\">Start again</button></div></div>";
+  screen.innerHTML="<div class=\"sf-progress\"><div class=\"sf-progress-track\"><div class=\"sf-progress-fill\" style=\"width:100%\"></div></div><span class=\"sf-progress-label\">Done</span></div><div class=\"sf-card\"><span class=\"sf-result-badge\">Our recommendation</span><h2 class=\"sf-result-title\">Here's our recommendation</h2><p class=\"sf-result-feel\">"+result.feel+"</p>"+noteHtml+"<div class=\"sf-recs\">"+recCard(result.primary,true)+secHtml+"</div>"+impactHtml+"<hr class=\"sf-divider\"><p class=\"sf-cta-text\">Not quite right? A free 20-minute conversation is always the best place to start — no commitment.</p><div class=\"sf-cta-row\"><a href=\""+CONSULT+"\" class=\"sf-btn-primary\" target=\"_blank\">Book A Free 20-Minute Session</a><button class=\"sf-btn-secondary\" id=\"btn-restart\">Start again</button></div></div>";
   document.getElementById("btn-restart").addEventListener("click",function(){restartQuiz();});
 }
 

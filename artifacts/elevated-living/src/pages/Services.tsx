@@ -160,7 +160,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£325<span className="text-base font-normal text-muted-foreground">/month</span></p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book a free consultation" />
+                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book A Free 20-Minute Session" />
               </div>
             </div>
 
@@ -258,7 +258,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£720<span className="text-base font-normal text-muted-foreground">/month</span></p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book a free consultation" />
+                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book A Free 20-Minute Session" />
               </div>
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
@@ -270,7 +270,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£1,020<span className="text-base font-normal text-muted-foreground">/month</span></p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book a free consultation" />
+                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book A Free 20-Minute Session" />
               </div>
               <div className="bg-card border border-border rounded-2xl p-6 shadow-sm">
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
@@ -282,7 +282,7 @@ export function Services() {
                     <p className="text-2xl font-bold text-primary">£1,280<span className="text-base font-normal text-muted-foreground">/month</span></p>
                   </div>
                 </div>
-                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book a free consultation" />
+                <CalBooking calLink="elevatedlivingenterprise/free-consultation" label="Book A Free 20-Minute Session" />
               </div>
             </div>
             <p className="text-xs text-muted-foreground mt-3 italic">A scoping session is recommended before any retainer. Retainer rates are discounted against ad hoc booking. Monthly Retainers have a minimum 2-month commitment, payable monthly in advance, with 30 days' notice to end.</p>
@@ -305,7 +305,7 @@ export function Services() {
                   <h4 className="font-semibold text-lg mb-1">Partnership Mapping &amp; Strategy</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">A half-day session to identify and prioritise the right relationships for your vision and growth.</p>
                   <div className="mt-3">
-                    <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer"><Button variant="outline" size="sm">Book a free consultation →</Button></a>
+                    <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer"><Button variant="outline" size="sm">Book A Free 20-Minute Session</Button></a>
                   </div>
                 </div>
                 <div className="sm:text-right shrink-0">
@@ -317,7 +317,7 @@ export function Services() {
                   <h4 className="font-semibold text-lg mb-1">Community Consultation Support</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">Planning and facilitating meaningful community engagement that delivers real insight and genuine participation.</p>
                   <div className="mt-3">
-                    <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer"><Button variant="outline" size="sm">Book a free consultation →</Button></a>
+                    <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer"><Button variant="outline" size="sm">Book A Free 20-Minute Session</Button></a>
                   </div>
                 </div>
                 <div className="sm:text-right shrink-0">
@@ -329,7 +329,7 @@ export function Services() {
                   <h4 className="font-semibold text-lg mb-1">Ongoing Partnership Management</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">Regular support to manage and develop your key partnerships over time — scoped to your specific relationships.</p>
                   <div className="mt-3">
-                    <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer"><Button variant="outline" size="sm">Book a free consultation →</Button></a>
+                    <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer"><Button variant="outline" size="sm">Book A Free 20-Minute Session</Button></a>
                   </div>
                 </div>
                 <div className="sm:text-right shrink-0">
@@ -364,7 +364,7 @@ export function Services() {
                 </div>
               </div>
               <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="sm">Book a free consultation →</Button>
+                <Button variant="outline" size="sm">Book A Free 20-Minute Session</Button>
               </a>
             </div>
           </div>
@@ -414,12 +414,12 @@ export function Services() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-primary-foreground mb-4">Ready to make sense of the chaos?</h2>
           <p className="text-primary-foreground/80 text-lg mb-10 leading-relaxed">
-            Book a complimentary 20-minute session — no obligation, no sales pitch. Just an honest conversation about where you are and whether Elevated Living can help.
+            Book A Free 20-Minute Session — no obligation, no sales pitch. Just an honest conversation about where you are and whether Elevated Living can help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={FREE_CONSULTATION_URL} target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="secondary" className="text-primary font-bold w-full sm:w-auto">
-                Book your complimentary session →
+                Book A Free 20-Minute Session
               </Button>
             </a>
             <Link href="/contact">

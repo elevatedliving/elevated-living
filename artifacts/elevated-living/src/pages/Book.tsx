@@ -8,19 +8,19 @@ export function Book() {
   return (
     <Layout>
       <Helmet>
-        <title>Book a Complimentary Focus Session | Elevated Living</title>
-        <meta name="description" content="Book a free 20-minute focus session with Elevated Living to talk through where you're stuck, what's getting in the way, and what support could help." />
-        <meta property="og:title" content="Book a Complimentary Focus Session | Elevated Living" />
+        <title>Book A Free 20-Minute Session | Elevated Living</title>
+        <meta name="description" content="Book A Free 20-Minute Session with Elevated Living to talk through where you're stuck, what's getting in the way, and what support could help." />
+        <meta property="og:title" content="Book A Free 20-Minute Session | Elevated Living" />
         <meta property="og:image" content="https://www.elevatedliving.uk/images/og-social.png" />
-        <meta property="og:description" content="Book a free 20-minute focus session with Elevated Living to talk through where you're stuck, what's getting in the way, and what support could help." />
+        <meta property="og:description" content="Book A Free 20-Minute Session with Elevated Living to talk through where you're stuck, what's getting in the way, and what support could help." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
       </Helmet>
 
       <Section className="pt-20 pb-4">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="mb-4 text-primary font-semibold uppercase tracking-wider text-sm">Free Session</div>
-          <h1 className="mb-4">Book a Complimentary Focus Session</h1>
+          <div className="mb-4 text-primary font-semibold uppercase tracking-wider text-sm">Free 20-Minute Session</div>
+          <h1 className="mb-4">Book A Free 20-Minute Session</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             A free 20-minute conversation to talk through where you're stuck, what's getting in the way, and whether Elevated Living is the right fit. No pressure, no obligation.
           </p>
@@ -32,7 +32,7 @@ export function Book() {
           <div className="rounded-2xl overflow-hidden shadow-sm border border-border/30">
             <iframe
               src={FREE_CONSULTATION_URL}
-              title="Book a Complimentary Focus Session"
+              title="Book A Free 20-Minute Session"
               className="w-full"
               style={{ height: "clamp(500px, 75vh, 700px)", border: "none" }}
               allow="payment"

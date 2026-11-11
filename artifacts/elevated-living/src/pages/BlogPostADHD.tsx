@@ -142,7 +142,7 @@ export function BlogPostADHD() {
             <p>
               If you've been meaning to book something for a while, why not{" "}
               <Link href="/book" className="text-primary underline underline-offset-4">
-                book your free consultation
+                Book A Free 20-Minute Session
               </Link>{" "}
               and there's time to discuss what you need and how I can work with you.
             </p>
