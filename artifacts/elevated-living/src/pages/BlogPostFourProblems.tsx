@@ -160,7 +160,7 @@ export function BlogPostFourProblems() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-semibold text-primary hover:underline"
             >
-              Book A Free 20-Minute Session
+              Free consultation
             </a>
           </div>
         </article>

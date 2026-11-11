@@ -1,4 +1,4 @@
 - [Elevated Living domain](elevated-living-domain.md) — the primary domain is elevatedliving.uk; never use elevatedliving.co.uk.
 - [Cal.com booking host](calcom-booking-domain.md) — use cal.com for booking links; cal.eu was replaced.
-- [Free-session CTA wording](free-session-cta-wording.md) — use the exact label “Book A Free 20-Minute Session” across booking CTAs.
+- [Free-session CTA wording](free-session-cta-wording.md) — use the exact label “Free consultation” across booking CTAs.
 - [MailerLite activation](mailerlite-activation.md) — loader success and behaviour settings do not prove a popup is active; check the provider-supplied forms.

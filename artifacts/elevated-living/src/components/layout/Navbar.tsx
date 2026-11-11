@@ -158,7 +158,7 @@ export function Navbar() {
             <div className="hidden md:block">
               <Link href="/book">
                 <div className="w-24 h-24 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-center text-[11px] font-semibold leading-tight p-4 hover:bg-primary/90 transition-colors cursor-pointer">
-                  Book A Free 20-Minute Session
+                  Free consultation
                 </div>
               </Link>
             </div>
@@ -239,7 +239,7 @@ export function Navbar() {
 
               <div className="mt-8">
                 <Link href="/book">
-                  <Button className="w-full rounded-full" size="lg">Book A Free 20-Minute Session</Button>
+                  <Button className="w-full rounded-full" size="lg">Free consultation</Button>
                 </Link>
               </div>
             </div>

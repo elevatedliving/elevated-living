@@ -242,8 +242,8 @@ export function Home() {
           {[
             {
               icon: MessageSquare,
-              title: "1. Free Consultation",
-              desc: "A free 20-minute conversation to talk through what you need, ask questions, and see whether Elevated Living is a good fit."
+              title: "1. Free consultation",
+              desc: "Free consultation to talk through what you need, ask questions, and see whether Elevated Living is a good fit."
             },
             {
               icon: Lightbulb,
@@ -275,7 +275,7 @@ export function Home() {
         </p>
         <Link href="/book">
           <Button size="lg" variant="secondary" className="text-primary font-bold">
-            Book A Free 20-Minute Session
+            Free consultation
           </Button>
         </Link>
       </Section>

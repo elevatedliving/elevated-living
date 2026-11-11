@@ -46,7 +46,7 @@ export function BusinessOwners() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link href="/book">
               <Button size="lg" className="w-full font-bold sm:w-auto">
-                Book A Free 20-Minute Session
+                Free consultation
               </Button>
             </Link>
             <Link href="/services">
@@ -93,12 +93,12 @@ export function BusinessOwners() {
         <div className="mx-auto max-w-3xl">
           <h2 className="mb-5">A useful first step, without pressure</h2>
           <p className="mb-8 leading-relaxed text-muted-foreground">
-            Book A Free 20-Minute Session. Talk through what is taking up your time, what you want to get moving, and whether Elevated Living is the right fit. A written agreement is provided before any engagement begins.
+            Free consultation. Talk through what is taking up your time, what you want to get moving, and whether Elevated Living is the right fit. A written agreement is provided before any engagement begins.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Link href="/book">
               <Button size="lg" className="w-full font-bold sm:w-auto">
-                Book A Free 20-Minute Session
+                Free consultation
               </Button>
             </Link>
             <Link href="/contact">

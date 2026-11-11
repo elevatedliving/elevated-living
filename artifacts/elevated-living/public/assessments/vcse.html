@@ -128,12 +128,12 @@ var services={
   powerHour:{tag:"Best start",name:"Elevated Edit — Power Hour",desc:"A focused 60-minute session — one challenge, cut through, one clear next step.",price:"125",calUrl:CAL+"/power-hour",bookPay:true},
   clarityHalfDay:{tag:"Recommended",name:"Elevated Edit — Half-Day",desc:"A structured half-day — cutting through the noise on where your organisation is and where it needs to go. You will leave with clear priorities and a practical plan.",price:"350",calUrl:CAL+"/halfday-session",bookPay:true},
   fullDay:{tag:"Recommended",name:"Elevated Edit — Full Day",desc:"A full-day session — your organisation's vision, direction and priorities worked through in full, with a written roadmap and 30-day follow-up.",price:"650",calUrl:CAL+"/fullday-intensive",bookPay:true},
-  advisory:{tag:"Ongoing",name:"Elevated Edit — Monthly Retainer",desc:"Two sessions a month plus async support — an ongoing thinking partnership as your organisation grows.",price:"475 per month",calUrl:CONSULT,bookPay:false,context:"Tailored ongoing service — book a free consultation before committing."},
+  advisory:{tag:"Ongoing",name:"Elevated Edit — Monthly Retainer",desc:"Two sessions a month plus async support — an ongoing thinking partnership as your organisation grows.",price:"475 per month",calUrl:CONSULT,bookPay:false,context:"Tailored ongoing service — discuss the scope in a free consultation before committing."},
   pm:{tag:"Recommended",name:"Project Scoping and Setup",desc:"A half-day specialist scoping session — scope, timeline, priorities, risk and next actions.",price:"495",calUrl:CAL+"/project-scoping",bookPay:true},
   pmRetainer:{tag:"Next step",name:"Project Management Retainer",desc:"Ongoing, hands-on management of your project or programme from scoping to delivery.",price:"From 1,050 per month",calUrl:CONSULT,bookPay:false,context:"Discuss ongoing management in your free consultation."},
-  partnership:{tag:"Recommended",name:"Partnership Development and Community Engagement",desc:"Support to identify, build and manage meaningful relationships with organisations, funders, local authorities and the communities you serve.",price:"Bespoke",calUrl:CONSULT,bookPay:false,context:"Tailored to your needs — book a free consultation to agree the scope."},
-  impactReport:{tag:"Recommended",name:"Impact Report Writing",desc:"A comprehensive report capturing your outcomes, social value and evidence — including impact summary and social value statement.",price:"Bespoke",calUrl:CONSULT,bookPay:false,context:"Tailored to your needs — book a free consultation to agree the scope."},
-  consultation:{tag:"Free start",name:"Free Clarity Consultation",desc:"A free 20-minute conversation about where your organisation is and what support might help. No pressure, no agenda.",price:"Free",calUrl:CONSULT,bookPay:false}
+  partnership:{tag:"Recommended",name:"Partnership Development and Community Engagement",desc:"Support to identify, build and manage meaningful relationships with organisations, funders, local authorities and the communities you serve.",price:"Bespoke",calUrl:CONSULT,bookPay:false,context:"Tailored to your needs — agree the scope in a free consultation."},
+  impactReport:{tag:"Recommended",name:"Impact Report Writing",desc:"A comprehensive report capturing your outcomes, social value and evidence — including impact summary and social value statement.",price:"Bespoke",calUrl:CONSULT,bookPay:false,context:"Tailored to your needs — agree the scope in a free consultation."},
+  consultation:{tag:"Free start",name:"Free consultation",desc:"A free consultation about where your organisation is and what support might help. No pressure, no agenda.",price:"Free",calUrl:CONSULT,bookPay:false}
 };
 
 var current=-1,answers={};
@@ -196,7 +196,7 @@ function getResult(ans){
 
 function actionButtons(svc){
   if(svc.bookPay&&svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-pay\" target=\"_blank\">Book and Pay &mdash; &pound;"+svc.price+"</a>";}
-  if(svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-book\" target=\"_blank\">Book A Free 20-Minute Session</a>";}
+  if(svc.calUrl){return "<a href=\""+svc.calUrl+"\" class=\"sf-btn-book\" target=\"_blank\">Free consultation</a>";}
   return "";
 }
 
@@ -261,9 +261,9 @@ function renderResult(){
   var result=getResult(answers),secondary=result.secondary;
   var noteHtml=result.newClientNote?"<div class=\"sf-new-client-note\"><strong>New clients:</strong> "+result.newClientNote+"</div>":"";
   var impactHtml="";
-  if(result.showImpact&&result.primary!==services.impactReport){impactHtml="<div class=\"sf-impact-callout show\"><p class=\"sf-impact-callout-label\">Also for you</p><p class=\"sf-impact-callout-text\">You may also benefit from <strong>Impact Report Writing</strong> — capturing the real difference you make in a format funders can act on. <a href=\""+CONSULT+"\" style=\"color:var(--teal);text-decoration:underline;\">Book A Free 20-Minute Session</a>.</p></div>";}
+  if(result.showImpact&&result.primary!==services.impactReport){impactHtml="<div class=\"sf-impact-callout show\"><p class=\"sf-impact-callout-label\">Also for you</p><p class=\"sf-impact-callout-text\">You may also benefit from <strong>Impact Report Writing</strong> — capturing the real difference you make in a format funders can act on. <a href=\""+CONSULT+"\" style=\"color:var(--teal);text-decoration:underline;\">Free consultation</a>.</p></div>";}
   var secHtml=secondary?recCard(secondary,false,secondary.tag):"";
-  screen.innerHTML="<div class=\"sf-progress\"><div class=\"sf-progress-track\"><div class=\"sf-progress-fill\" style=\"width:100%\"></div></div><span class=\"sf-progress-label\">Done</span></div><div class=\"sf-card\"><span class=\"sf-result-badge\">Our recommendation</span><h2 class=\"sf-result-title\">Here's our recommendation</h2><p class=\"sf-result-feel\">"+result.feel+"</p>"+noteHtml+"<div class=\"sf-recs\">"+recCard(result.primary,true)+secHtml+"</div>"+impactHtml+"<hr class=\"sf-divider\"><p class=\"sf-cta-text\">Not quite right? A free 20-minute conversation is always the best place to start — no commitment.</p><div class=\"sf-cta-row\"><a href=\""+CONSULT+"\" class=\"sf-btn-primary\" target=\"_blank\">Book A Free 20-Minute Session</a><button class=\"sf-btn-secondary\" id=\"btn-restart\">Start again</button></div></div>";
+  screen.innerHTML="<div class=\"sf-progress\"><div class=\"sf-progress-track\"><div class=\"sf-progress-fill\" style=\"width:100%\"></div></div><span class=\"sf-progress-label\">Done</span></div><div class=\"sf-card\"><span class=\"sf-result-badge\">Our recommendation</span><h2 class=\"sf-result-title\">Here's our recommendation</h2><p class=\"sf-result-feel\">"+result.feel+"</p>"+noteHtml+"<div class=\"sf-recs\">"+recCard(result.primary,true)+secHtml+"</div>"+impactHtml+"<hr class=\"sf-divider\"><p class=\"sf-cta-text\">Not quite right? A free consultation is always the best place to start — no commitment.</p><div class=\"sf-cta-row\"><a href=\""+CONSULT+"\" class=\"sf-btn-primary\" target=\"_blank\">Free consultation</a><button class=\"sf-btn-secondary\" id=\"btn-restart\">Start again</button></div></div>";
   document.getElementById("btn-restart").addEventListener("click",function(){restartQuiz();});
 }
 

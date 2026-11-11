@@ -140,11 +140,11 @@ export function BlogPostADHD() {
               Plenty of people want a bit of each at different times, and that's absolutely fine. Tell me how your brain works and the session can be shaped around it.
             </p>
             <p>
-              If you've been meaning to book something for a while, why not{" "}
+              If you've been meaning to book something for a while, a{" "}
               <Link href="/book" className="text-primary underline underline-offset-4">
-                Book A Free 20-Minute Session
+                Free consultation
               </Link>{" "}
-              and there's time to discuss what you need and how I can work with you.
+              gives us time to discuss what you need and how I can work with you.
             </p>
             <p>
               And, <strong>you're not behind</strong>, you're just working without a map, and I happen to be quite good at making them.
