@@ -83,11 +83,16 @@ export function Home() {
                 Virtual Assistant support at £35 per hour. Book a minimum of 3 hours and get an extra hour free — 4 hours for £105.
               </p>
               <div className="flex flex-col items-center gap-4 md:flex-row">
-                <Link href="/services" className="self-start">
+                <a
+                  href="https://cal.com/elevatedlivingenterprise/virtual-assistant?overlayCalendar=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="self-start"
+                >
                   <Button size="lg" className="w-full gap-2 bg-[#f1d78e] text-[#20232b] hover:bg-[#e8ca72] sm:w-auto">
                     Book here <ArrowRight className="h-4 w-4" />
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
